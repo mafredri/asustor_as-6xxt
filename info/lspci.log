@@ -1,0 +1,26 @@
+00:00.0 Class Host bridge: Intel Corporation:Atom Processor D2xxx/N2xxx DRAM Controller
+00:02.0 Class VGA compatible controller: Intel Corporation:Atom Processor D2xxx/N2xxx Integrated Graphics Controller
+00:1a.0 Class USB controller: Intel Corporation:82801JI (ICH10 Family) USB UHCI Controller #4
+00:1a.1 Class USB controller: Intel Corporation:82801JI (ICH10 Family) USB UHCI Controller #5
+00:1a.2 Class USB controller: Intel Corporation:82801JI (ICH10 Family) USB UHCI Controller #6
+00:1a.7 Class USB controller: Intel Corporation:82801JI (ICH10 Family) USB2 EHCI Controller #2
+00:1b.0 Class Audio device: Intel Corporation:82801JI (ICH10 Family) HD Audio Controller
+00:1c.0 Class PCI bridge: Intel Corporation:82801JI (ICH10 Family) PCI Express Root Port 1
+00:1c.1 Class PCI bridge: Intel Corporation:82801JI (ICH10 Family) PCI Express Port 2
+00:1c.2 Class PCI bridge: Intel Corporation:82801JI (ICH10 Family) PCI Express Root Port 3
+00:1c.3 Class PCI bridge: Intel Corporation:82801JI (ICH10 Family) PCI Express Root Port 4
+00:1c.4 Class PCI bridge: Intel Corporation:82801JI (ICH10 Family) PCI Express Root Port 5
+00:1c.5 Class PCI bridge: Intel Corporation:82801JI (ICH10 Family) PCI Express Root Port 6
+00:1d.0 Class USB controller: Intel Corporation:82801JI (ICH10 Family) USB UHCI Controller #1
+00:1d.1 Class USB controller: Intel Corporation:82801JI (ICH10 Family) USB UHCI Controller #2
+00:1d.2 Class USB controller: Intel Corporation:82801JI (ICH10 Family) USB UHCI Controller #3
+00:1d.7 Class USB controller: Intel Corporation:82801JI (ICH10 Family) USB2 EHCI Controller #1
+00:1e.0 Class PCI bridge: Intel Corporation:82801 PCI Bridge
+00:1f.0 Class ISA bridge: Intel Corporation:82801JIR (ICH10R) LPC Interface Controller
+00:1f.2 Class SATA controller: Intel Corporation:82801JI (ICH10 Family) SATA AHCI Controller
+00:1f.3 Class SMBus: Intel Corporation:82801JI (ICH10 Family) SMBus Controller
+01:00.0 Class SATA controller: Marvell Technology Group Ltd.:88SE9125 PCIe SATA 6.0 Gb/s controller
+02:00.0 Class SATA controller: Marvell Technology Group Ltd.:88SE9125 PCIe SATA 6.0 Gb/s controller
+04:00.0 Class USB controller: NEC Corporation:uPD720200 USB 3.0 Host Controller
+05:00.0 Class Ethernet controller: Broadcom Corporation:NetLink BCM57781 Gigabit Ethernet PCIe
+06:00.0 Class Ethernet controller: Broadcom Corporation:NetLink BCM57781 Gigabit Ethernet PCIe

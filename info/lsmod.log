@@ -1,0 +1,46 @@
+snd_seq_midi 13324 0 - Live 0xffffffffa02b8000
+snd_usb_audio 129442 0 - Live 0xffffffffa02d8000
+snd_usbmidi_lib 25102 1 snd_usb_audio, Live 0xffffffffa02d0000
+snd_rawmidi 26270 2 snd_seq_midi,snd_usbmidi_lib, Live 0xffffffffa02c8000
+snd_seq_midi_event 14899 1 snd_seq_midi, Live 0xffffffffa02bf000
+snd_seq 49578 2 snd_seq_midi,snd_seq_midi_event, Live 0xffffffffa02aa000
+snd_seq_device 14541 3 snd_seq_midi,snd_rawmidi,snd_seq, Live 0xffffffffa02a5000
+des_generic 21350 0 - Live 0xffffffffa029e000
+cryptodev 36834 0 - Live 0xffffffffa0290000 (O)
+iptable_filter 12810 1 - Live 0xffffffffa0225000
+usbip_host 18113 0 - Live 0xffffffffa028a000 (C)
+usbip_core 15961 1 usbip_host, Live 0xffffffffa0215000 (C)
+iscsi_scst 66982 3 - Live 0xffffffffa0263000 (O)
+scst_vdisk 79005 0 - Live 0xffffffffa0275000 (O)
+scst 225037 2 iscsi_scst,scst_vdisk, Live 0xffffffffa022b000 (O)
+snd_hda_codec_hdmi 37154 1 - Live 0xffffffffa020a000
+snd_hda_intel 34509 0 - Live 0xffffffffa021b000
+snd_hda_codec 149407 2 snd_hda_codec_hdmi,snd_hda_intel, Live 0xffffffffa01e4000
+snd_hwdep 13604 2 snd_usb_audio,snd_hda_codec, Live 0xffffffffa013a000
+snd_pcm 81877 4 snd_usb_audio,snd_hda_codec_hdmi,snd_hda_intel,snd_hda_codec, Live 0xffffffffa01cf000
+snd_timer 25607 2 snd_seq,snd_pcm, Live 0xffffffffa0125000
+snd_page_alloc 14614 2 snd_hda_intel,snd_pcm, Live 0xffffffffa00bf000
+snd 61008 11 snd_usb_audio,snd_usbmidi_lib,snd_rawmidi,snd_seq,snd_seq_device,snd_hda_codec_hdmi,snd_hda_intel,snd_hda_codec,snd_hwdep,snd_pcm,snd_timer, Live 0xffffffffa0115000
+i915 578809 0 - Live 0xffffffffa0140000
+drm_kms_helper 40466 1 i915, Live 0xffffffffa012f000
+drm 264030 2 i915,drm_kms_helper, Live 0xffffffffa00d3000
+isofs 36018 0 - Live 0xffffffffa00c5000
+udf 74399 0 - Live 0xffffffffa00ab000
+crc_itu_t 12707 1 udf, Live 0xffffffffa00a0000
+sr_mod 18405 0 - Live 0xffffffffa00a5000
+cdrom 38721 1 sr_mod, Live 0xffffffffa0095000
+sys_stat 17929 0 - Live 0xffffffffa008b000 (C)
+au6004t 12918 0 - Live 0xffffffffa0086000 (O)
+asleddrv 47729 0 - Live 0xffffffffa0075000 (O)
+iptable_nat 12810 0 - Live 0xffffffffa006d000
+nf_conntrack_ipv4 19333 1 - Live 0xffffffffa0067000
+nf_defrag_ipv4 12758 1 nf_conntrack_ipv4, Live 0xffffffffa005f000
+nf_nat_ipv4 13301 1 iptable_nat, Live 0xffffffffa005a000
+nf_nat 20934 2 iptable_nat,nf_nat_ipv4, Live 0xffffffffa003c000
+nf_conntrack 75270 4 iptable_nat,nf_conntrack_ipv4,nf_nat_ipv4,nf_nat, Live 0xffffffffa0046000
+ip_tables 22956 2 iptable_filter,iptable_nat, Live 0xffffffffa002b000
+x_tables 25831 2 iptable_filter,ip_tables, Live 0xffffffffa0034000
+bridge 81501 0 - Live 0xffffffffa0016000
+quota_v2 13477 1 - Live 0xffffffffa0011000
+quota_tree 14116 1 quota_v2, Live 0xffffffffa000a000
+dm_crypt 18907 0 - Live 0xffffffffa0000000
