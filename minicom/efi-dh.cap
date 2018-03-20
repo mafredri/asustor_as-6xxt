@@ -1,0 +1,2037 @@
+dh -v     drvdiag -cdh -v          cls
+
+Shell> clsdh -v
+Handle dump
+Handle 01 (BF6EDE98)
+   Image (BF203058)   File:DxeCore
+     ParentHandle..: 0
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(D6A2CB7F-6A18-4E2F-B43B-9920A733700A)
+     ImageBase.....: BF202000 - BF217000
+     ImageSize.....: 15000
+     CodeType......: BS_code   
+     DataType......: BS_data   
+Handle 02 (BF6EDD18)
+   76B6BDFA-2ACD-4462-9E3F-CB58C969D937 (BF202510)
+Handle 03 (BF6ED598)
+   Decompress (BF203578) 
+Handle 04 (BF6D2518)
+   Dpath (BF6D2698) 
+      Media Device Path for PIWG Firmware File
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)'
+   220E73B6-6BDB-4413-8405-B974B108619A (BF6D1D30)
+   8F644FA9-E850-4DB1-9CE2-0B44698E8DA4 (BF6D1F30)
+Handle 05 (BF6D2018)
+   A31280AD-481E-41B6-95E8-127F4C984779 (BF202638)
+   EE4E5898-3914-4259-9D6E-DC7BD79403CF (BF202638)
+   FC1BCDB0-7D31-49AA-936A-A4600D9DD083 (BF202638)
+Handle 06 (BF644398)
+   Image (BF643E40)   File:PcdDxe
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(80CF7257-87AB-47F9-A3FE-D50B76D89541)
+     ImageBase.....: BF5F6000 - BF5F96C0
+     ImageSize.....: 36C0
+     CodeType......: BS_code   
+     DataType......: BS_data   
+   ImageDpath (BF644298) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(80CF7257-87AB-47F9-A3FE-D50B76D89541)'
+Handle 07 (BF5DBF98)
+   13A3F0F6-264A-3EF0-F2E0-DEC512342F34 (BF5F63A0)
+   11B34006-D85B-4D0A-A290-D5A571310EF7 (BF5F62A0)
+Handle 08 (BF5DBC98)
+   Image (BF643C40)   File:CpuIoDxe
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(BAE7599F-3C6B-43B7-BDF0-9CE07AA91AA6)
+     ImageBase.....: BF5DA000 - BF5DA900
+     ImageSize.....: 900
+     CodeType......: RT_code   
+     DataType......: RT_data   
+   ImageDpath (BF5DBB98) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(BAE7599F-3C6B-43B7-BDF0-9CE07AA91AA6)'
+Handle 09 (BF5DB918)
+   B0732526-38C8-4B40-8877-61C7B06AAC45 (BF5DA270)
+Handle 0A (BF5DB718)
+   Image (BF643A40)   File:CpuIo2Dxe
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(A19B1FE7-C1BC-49F8-875F-54A5D542443F)
+     ImageBase.....: BF5D9000 - BF5D9900
+     ImageSize.....: 900
+     CodeType......: BS_code   
+     DataType......: BS_data   
+   ImageDpath (BF5DB618) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(A19B1FE7-C1BC-49F8-875F-54A5D542443F)'
+Handle 0B (BF5DB398)
+   AD61F191-AE5F-4C0E-B9FA-E869D288C64F (BF5D9270)
+Handle 0C (BF5DB198)
+   Image (BF643840)   File:ReportStatusCodeRouterRuntimeDxe
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(D93CE3D8-A7EB-4730-8C8E-CC466A9ECC3C)
+     ImageBase.....: BF5D6000 - BF5D7CE0
+     ImageSize.....: 1CE0
+     CodeType......: RT_code   
+     DataType......: RT_data   
+   ImageDpath (BF5DB098) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(D93CE3D8-A7EB-4730-8C8E-CC466A9ECC3C)'
+Handle 0D (BF5D5E18)
+   D2B2B828-0826-48A7-B3DF-983C006024F0 (BF5D62C0)
+   86212936-0E76-41C8-A03A-2AF2FC1C39E2 (BF5D62C8)
+Handle 0E (BF5D5B18)
+   Image (BF643640)   File:SectionExtractionDxe
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(801ADCA0-815E-46A4-84F7-657F53621A57)
+     ImageBase.....: BF18B000 - BF18D080
+     ImageSize.....: 2080
+     CodeType......: BS_code   
+     DataType......: BS_data   
+   ImageDpath (BF5D5A18) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(801ADCA0-815E-46A4-84F7-657F53621A57)'
+Handle 0F (BF5D5798)
+   448F5DA4-6DD7-4FE1-9307-69224192215D (BF18B290)
+Handle 10 (BF5D5598)
+   Image (BF643440)   File:SecurityStubDxe
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(F80697E9-7FD6-4665-8646-88E33EF71DFC)
+     ImageBase.....: BF5D4000 - BF5D4BA0
+     ImageSize.....: BA0
+     CodeType......: BS_code   
+     DataType......: BS_data   
+   ImageDpath (BF5D5498) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(F80697E9-7FD6-4665-8646-88E33EF71DFC)'
+Handle 11 (BF5D5298)
+   A46423E3-4617-49F1-B9FF-D1BFA9115839 (BF5D42C0)
+Handle 12 (BF5D5098)
+   Image (BF643240)   File:CpuArchDxe
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(62D171CB-78CD-4480-8678-C6A2A797A8DE)
+     ImageBase.....: BF187000 - BF18A980
+     ImageSize.....: 3980
+     CodeType......: BS_code   
+     DataType......: BS_data   
+   ImageDpath (BF182F98) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(62D171CB-78CD-4480-8678-C6A2A797A8DE)'
+Handle 13 (BF182D98)
+   26BACCB1-6F42-11D4-BCE7-0080C73C8881 (BF1877C0)
+Handle 14 (BF182A98)
+   Image (BF643040)   File:Metronome
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(C8339973-A563-4561-B858-D8476F9DEFC4)
+     ImageBase.....: BF12D000 - BF12D540
+     ImageSize.....: 540
+     CodeType......: BS_code   
+     DataType......: BS_data   
+   ImageDpath (BF182998) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(C8339973-A563-4561-B858-D8476F9DEFC4)'
+Handle 15 (BF182798)
+   26BACCB2-6F42-11D4-BCE7-0080C73C8881 (BF12D290)
+Handle 16 (BF182598)
+   Image (BF12CE40)   File:RuntimeDxe
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(B601F8C4-43B7-4784-95B1-F4226CB40CEE)
+     ImageBase.....: BF12A000 - BF12AE80
+     ImageSize.....: E80
+     CodeType......: RT_code   
+     DataType......: RT_data   
+   ImageDpath (BF182498) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(B601F8C4-43B7-4784-95B1-F4226CB40CEE)'
+Handle 17 (BF182298)
+   B7DFB4E1-052F-449F-87BE-9818FC91B733 (BF12A280)
+Handle 18 (BF182098)
+   Image (BF12CC40)   File:FaultTolerantWriteDxe
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(FE5CEA76-4F72-49E8-986F-2CD899DFFE5D)
+     ImageBase.....: BF127000 - BF1293A0
+     ImageSize.....: 23A0
+     CodeType......: BS_code   
+     DataType......: BS_data   
+   ImageDpath (BF12BF98) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(FE5CEA76-4F72-49E8-986F-2CD899DFFE5D)'
+Handle 19 (BF12BB98)
+   Image (BF123E40)   File:ResetSystemRuntimeDxe
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(4B28E4C7-FF36-4E10-93CF-A82159E777C5)
+     ImageBase.....: BF122000 - BF1226A0
+     ImageSize.....: 6A0
+     CodeType......: RT_code   
+     DataType......: RT_data   
+   ImageDpath (BF12BA98) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(4B28E4C7-FF36-4E10-93CF-A82159E777C5)'
+Handle 1A (BF12B898)
+   27CFAC88-46CC-11D4-9A38-0090273FC14D (00000000)
+Handle 1B (BF12B698)
+   Image (BF12CA40)   File:DevicePathDxe
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(9B680FCE-AD6B-4F3A-B60B-F59899003443)
+     ImageBase.....: BF11A000 - BF1218E0
+     ImageSize.....: 78E0
+     CodeType......: BS_code   
+     DataType......: BS_data   
+   ImageDpath (BF12B598) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(9B680FCE-AD6B-4F3A-B60B-F59899003443)'
+Handle 1C (BF12B318)
+   DpathUtil (BF11A800) 
+   DpathToText (BF11A840) 
+   DpathFromText (BF11A850) 
+Handle 1D (BF119F18)
+   Image (BF12C840)   File:DataHubDxe
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(53BCC14F-C24F-434C-B294-8ED2D4CC1860)
+     ImageBase.....: BF114000 - BF115BE0
+     ImageSize.....: 1BE0
+     CodeType......: BS_code   
+     DataType......: BS_data   
+   ImageDpath (BF119E18) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(53BCC14F-C24F-434C-B294-8ED2D4CC1860)'
+Handle 1E (BF119B98)
+   AE80D021-618E-11D4-BCD7-0080C73C8881 (BF115A70)
+Handle 1F (BF119998)
+   Image (BF12C640)   File:NullMemoryTestDxe
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(96B5C032-DF4C-4B6E-8232-438DCF448D0E)
+     ImageBase.....: BF118000 - BF1186C0
+     ImageSize.....: 6C0
+     CodeType......: BS_code   
+     DataType......: BS_data   
+   ImageDpath (BF119898) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(96B5C032-DF4C-4B6E-8232-438DCF448D0E)'
+Handle 20 (BF119618)
+   309DE7F1-7F5E-4ACE-B49C-531BE5AA95EF (BF1182A0)
+Handle 21 (BF119418)
+   Image (BF12C440)   File:RuntimeDxeIchSpi
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(C4A577B6-20AF-4CF0-AA52-01FD5CA1B3B0)
+     ImageBase.....: BF116000 - BF117720
+     ImageSize.....: 1720
+     CodeType......: RT_code   
+     DataType......: RT_data   
+   ImageDpath (BF119318) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(C4A577B6-20AF-4CF0-AA52-01FD5CA1B3B0)'
+Handle 22 (BF119098)
+   1156EFC6-EA32-4396-B5D5-26932E83C313 (BF6EEA28)
+Handle 23 (BF113D98)
+   Image (BF12C240)   File:S3SaveStateDxe
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(BDCE85BB-FBAA-4F4E-9264-501A2C249581)
+     ImageBase.....: BF110000 - BF1121E0
+     ImageSize.....: 21E0
+     CodeType......: BS_code   
+     DataType......: BS_data   
+   ImageDpath (BF113C98) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(BDCE85BB-FBAA-4F4E-9264-501A2C249581)'
+Handle 24 (BF113918)
+   E857CAF6-C046-45DC-BE3F-EE0765FBA887 (BF1102C0)
+Handle 25 (BF113718)
+   Image (BF12C040)   File:BootScriptSaveDxe
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(42BB673D-09F3-4E2E-9FEE-D081131DED5B)
+     ImageBase.....: BF10C000 - BF10D7A0
+     ImageSize.....: 17A0
+     CodeType......: BS_code   
+     DataType......: BS_data   
+   ImageDpath (BF113618) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(42BB673D-09F3-4E2E-9FEE-D081131DED5B)'
+Handle 26 (BF113398)
+   470E1529-B79E-4E32-A0FE-6A156D29F9B2 (BF10C2C0)
+Handle 27 (BF113198)
+   Image (BF10BE40)   File:AcpiTableDxe
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(9622E42C-8E38-4A08-9E8F-54F784652F6B)
+     ImageBase.....: BF0FA000 - BF0FF660
+     ImageSize.....: 5660
+     CodeType......: BS_code   
+     DataType......: BS_data   
+   ImageDpath (BF113098) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(9622E42C-8E38-4A08-9E8F-54F784652F6B)'
+Handle 28 (BF10AD98)
+   AcpiTable (BF6EC6A8) 
+Handle 29 (BF10AA98)
+   Image (BF10BC40)   File:SmbiosDxe
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(F9D88642-0737-49BC-81B5-6889CD57D9EA)
+     ImageBase.....: BF106000 - BF108260
+     ImageSize.....: 2260
+     CodeType......: BS_code   
+     DataType......: BS_data   
+   ImageDpath (BF10A998) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(F9D88642-0737-49BC-81B5-6889CD57D9EA)'
+Handle 2A (BF10A718)
+   03583FF6-CB36-4940-947E-B9B39F4AFAF7 (BF1080D0)
+Handle 2B (BF10A518)
+   Image (BF10BA40)   File:PciPlatformDxe
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(2E8CD01A-BDB7-40B4-8376-E7C26EAC21FF)
+     ImageBase.....: BF105000 - BF105760
+     ImageSize.....: 760
+     CodeType......: BS_code   
+     DataType......: BS_data   
+   ImageDpath (BF10A418) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(2E8CD01A-BDB7-40B4-8376-E7C26EAC21FF)'
+Handle 2C (BF10A198)
+   07D75280-27D4-4D69-90D0-5643E238B341 (BF1052D8)
+Handle 2D (BF104F98)
+   Image (BF10B840)   File:HiiDatabase
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(348C4D62-BFBD-4882-9ECE-C80BB1C4783B)
+     ImageBase.....: BF0EA000 - BF0F9820
+     ImageSize.....: F820
+     CodeType......: BS_code   
+     DataType......: BS_data   
+   ImageDpath (BF104E98) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(348C4D62-BFBD-4882-9ECE-C80BB1C4783B)'
+Handle 2E (BF104C18)
+   HiiFont (BF0EA3A8) 
+   HiiString (BF0EA3F0) 
+   HiiImage (BF0EA3C8) 
+   HiiDatabase (BF0EA418) 
+   HiiConfRouting (BF0EA470) 
+Handle 2F (BF104618)
+   Image (BF10B640)   File:Legacy8259
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(79CA4208-BBA1-4A9A-8456-E1E66A81484E)
+     ImageBase.....: BF103000 - BF103940
+     ImageSize.....: 940
+     CodeType......: BS_code   
+     DataType......: BS_data   
+   ImageDpath (BF104518) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(79CA4208-BBA1-4A9A-8456-E1E66A81484E)'
+Handle 30 (BF104298)
+   38321DBA-4FE0-4E17-8AEC-413055EAEDC1 (BF103280)
+Handle 31 (BF104098)
+   Image (BF10B440)   File:StatusCodeHandlerRuntimeDxe
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(6C2004EF-4E0E-4BE4-B14C-340EB4AA5891)
+     ImageBase.....: BF101000 - BF1029A0
+     ImageSize.....: 19A0
+     CodeType......: RT_code   
+     DataType......: RT_data   
+   ImageDpath (BF100F98) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(6C2004EF-4E0E-4BE4-B14C-340EB4AA5891)'
+Handle 32 (BF100C18)
+   Image (BF10B240)   File:BdsDxe
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(FC5C7020-1A48-4198-9BE2-EAD5ABC8CF2F)
+     ImageBase.....: BF0DC000 - BF0E92A0
+     ImageSize.....: D2A0
+     CodeType......: BS_code   
+     DataType......: BS_data   
+   ImageDpath (BF100B18) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(FC5C7020-1A48-4198-9BE2-EAD5ABC8CF2F)'
+Handle 33 (BF100518)
+   665E3FF6-46CC-11D4-9A38-0090273FC14D (BF0DDCD0)
+Handle 34 (BF100318)
+   Image (BF10B040)   File:FvbRuntimeDxe
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(D4E6D042-0CB2-4E4E-835C-4BAC4D709922)
+     ImageBase.....: BF0DA000 - BF0DB740
+     ImageSize.....: 1740
+     CodeType......: RT_code   
+     DataType......: RT_data   
+   ImageDpath (BF100218) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(D4E6D042-0CB2-4E4E-835C-4BAC4D709922)'
+Handle 35 (BF100018)
+   Dpath (BF5D8898) 
+      Hardware Device Path for Memory Mapped
+       Memory Type (11: FFF90000-FFFAFFFF)
+      AsStr: 'MemoryMapped(0xB,0xFFF90000,0xFFFAFFFF)'
+   8F644FA9-E850-4DB1-9CE2-0B44698E8DA4 (BF5D8930)
+Handle 36 (BF0D9C98)
+   3EBD9E82-2C78-4DE6-9786-8D4BFCB7C881 (BF124028)
+Handle 37 (BF0D9B18)
+   Image (BF0D8E40)   File:DxeIchInit
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(AFA3496C-D87F-4DF4-8000-B8FF61435F89)
+     ImageBase.....: BF0CD000 - BF0D02E0
+     ImageSize.....: 32E0
+     CodeType......: BS_code   
+     DataType......: BS_data   
+   ImageDpath (BF0D9A18) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(AFA3496C-D87F-4DF4-8000-B8FF61435F89)'
+Handle 38 (BF0D9798)
+   552CD865-58B7-4142-9FE5-612E6BCAE4A8 (BF645218)
+Handle 39 (BF0D9598)
+   Image (BF0D8C40)   File:DataHubStdErrDxe
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(CA515306-00CE-4032-874E-11B755FF6866)
+     ImageBase.....: BF0D3000 - BF0D3520
+     ImageSize.....: 520
+     CodeType......: BS_code   
+     DataType......: BS_data   
+   ImageDpath (BF0D9498) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(CA515306-00CE-4032-874E-11B755FF6866)'
+Handle 3A (BF0D9118)
+   Image (BF0D8A40)   File:SmartTimer
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(90CB75DB-71FC-489D-AACF-943477EC7212)
+     ImageBase.....: BF0D2000 - BF0D27C0
+     ImageSize.....: 7C0
+     CodeType......: BS_code   
+     DataType......: BS_data   
+   ImageDpath (BF0D9018) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(90CB75DB-71FC-489D-AACF-943477EC7212)'
+Handle 3B (BF0D1E18)
+   26BACCB3-6F42-11D4-BCE7-0080C73C8881 (BF0D2290)
+Handle 3C (BF0D1C18)
+   Image (BF0D8840)   File:DxeIchSmbus
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(E052D8A6-224A-4C32-8D37-2E0AE162364D)
+     ImageBase.....: BF0CA000 - BF0CC3E0
+     ImageSize.....: 23E0
+     CodeType......: BS_code   
+     DataType......: BS_data   
+   ImageDpath (BF0D1B18) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(E052D8A6-224A-4C32-8D37-2E0AE162364D)'
+Handle 3D (BF0D1898)
+   E49D33ED-513D-4634-B698-6F55AA751C1B (BF0C9050)
+Handle 3E (BF0D1698)
+   Image (BF0D8640)   File:SmmControlDxe
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(A0BAD9F7-AB78-491B-B583-C52B7F84B9E0)
+     ImageBase.....: BF0C8000 - BF0C8720
+     ImageSize.....: 720
+     CodeType......: RT_code   
+     DataType......: RT_data   
+   ImageDpath (BF0D1598) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(A0BAD9F7-AB78-491B-B583-C52B7F84B9E0)'
+   843DC720-AB1E-42CB-9357-8A0078F3561B (BF0C8658)
+Handle 3F (BF0D1198)
+   Image (BF0D8440)   File:SmbiosMisc
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(EF0C99B6-B1D3-4025-9405-BF6A560FE0E0)
+     ImageBase.....: BF0C1000 - BF0C7080
+     ImageSize.....: 6080
+     CodeType......: BS_code   
+     DataType......: BS_data   
+   ImageDpath (BF0D1098) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(EF0C99B6-B1D3-4025-9405-BF6A560FE0E0)'
+Handle 40 (BF0BC218)
+   Image (BF0D8240)   File:SetupBrowser
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(EBF342FE-B1D3-4EF8-957C-8048606FF671)
+     ImageBase.....: BF0A9000 - BF0BB0A0
+     ImageSize.....: 120A0
+     CodeType......: BS_code   
+     DataType......: BS_data   
+   ImageDpath (BF0BC118) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(EBF342FE-B1D3-4EF8-957C-8048606FF671)'
+Handle 41 (BF0A7B18)
+   FormBrowser2 (BF0A9408) 
+Handle 42 (BF0A7918)
+   Image (BF0D8040)   File:WatchdogTimer
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(F099D67F-71AE-4C36-B2A3-DCEB0EB2B7D8)
+     ImageBase.....: BF0A6000 - BF0A6500
+     ImageSize.....: 500
+     CodeType......: BS_code   
+     DataType......: BS_data   
+   ImageDpath (BF0A7818) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(F099D67F-71AE-4C36-B2A3-DCEB0EB2B7D8)'
+Handle 43 (BF0A7618)
+   665E3FF5-46CC-11D4-9A38-0090273FC14D (BF0A6270)
+Handle 44 (BF0A7418)
+   Image (BF0A5E40)   File:VariableRuntimeDxe
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(CBD2E4D5-7068-4FF5-B462-9822B4AD8D60)
+     ImageBase.....: BF09A000 - BF09D340
+     ImageSize.....: 3340
+     CodeType......: RT_code   
+     DataType......: RT_data   
+   ImageDpath (BF0A7318) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(CBD2E4D5-7068-4FF5-B462-9822B4AD8D60)'
+Handle 45 (BF0A7018)
+   6441F818-6362-4E44-B570-7DBA31DD2453 (00000000)
+   1E5668E2-8481-11D4-BCF1-0080C73C8881 (00000000)
+Handle 46 (BF0A3D98)
+   Image (BF0A5C40)   File:CapsuleRuntimeDxe
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(42857F0A-13F2-4B21-8A23-53D3F714B840)
+     ImageBase.....: BF0A2000 - BF0A2AA0
+     ImageSize.....: AA0
+     CodeType......: RT_code   
+     DataType......: RT_data   
+   ImageDpath (BF0A3C98) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(42857F0A-13F2-4B21-8A23-53D3F714B840)'
+Handle 47 (BF0A3A98)
+   5053697E-2CBC-4819-90D9-0580DEEE5754 (00000000)
+Handle 48 (BF0A3898)
+   Image (BF0A5A40)   File:MonotonicCounterRuntimeDxe
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(AD608272-D07F-4964-801E-7BD3B7888652)
+     ImageBase.....: BF0A1000 - BF0A1760
+     ImageSize.....: 760
+     CodeType......: RT_code   
+     DataType......: RT_data   
+   ImageDpath (BF0A3798) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(AD608272-D07F-4964-801E-7BD3B7888652)'
+Handle 49 (BF0A3598)
+   1DA97072-BDDC-4B30-99F1-72A0B56FFF2A (00000000)
+Handle 4A (BF0A3398)
+   Image (BF0A5840)   File:PcRtc
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(378D7B65-8DA9-4773-B6E4-A47826A833E1)
+     ImageBase.....: BF09F000 - BF0A0880
+     ImageSize.....: 1880
+     CodeType......: RT_code   
+     DataType......: RT_data   
+   ImageDpath (BF0A3298) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(378D7B65-8DA9-4773-B6E4-A47826A833E1)'
+Handle 4B (BF0A3098)
+   27CFAC87-46CC-11D4-9A38-0090273FC14D (00000000)
+Handle 4C (BF084E98)
+   Image (BF0A5640)   File:SetupDxe
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(DAA55048-BC3F-4DD9-999B-F58ABF2BBFCC)
+     ImageBase.....: BF085000 - BF086CC0
+     ImageSize.....: 1CC0
+     CodeType......: BS_code   
+     DataType......: BS_data   
+   ImageDpath (BF084D98) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(DAA55048-BC3F-4DD9-999B-F58ABF2BBFCC)'
+Handle 4D (BF084998)
+   2977064F-AB96-4FA9-8545-F9C40251E07F (BF085AA8)
+Handle 4E (BF084798)
+   Image (BF0A5440)   File:IchRtc
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(EE9812F3-7782-4C0B-BE67-9806114AC576)
+     ImageBase.....: BF081000 - BF0828C0
+     ImageSize.....: 18C0
+     CodeType......: RT_code   
+     DataType......: RT_data   
+   ImageDpath (BF084698) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(EE9812F3-7782-4C0B-BE67-9806114AC576)'
+Handle 4F (BF084498)
+   27CFAC87-46CC-11D4-9A38-0090273FC14D (00000000)
+Handle 50 (BF084298)
+   Image (BF0A5240)   File:BootScriptExecutorDxe
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(FA20568B-548B-4B2B-81EF-1BA08D4A3CEC)
+     ImageBase.....: BF07D000 - BF0801E0
+     ImageSize.....: 31E0
+     CodeType......: BS_code   
+     DataType......: BS_data   
+   ImageDpath (BF084198) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(FA20568B-548B-4B2B-81EF-1BA08D4A3CEC)'
+   FA20568B-548B-4B2B-81EF-1BA08D4A3CEC (00000000)
+Handle 51 (BF07CD98)
+   Image (BF0A5040)   File:MemorySubClass
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(EF17CEE7-267D-4BFD-A257-4A6AB3EE8591)
+     ImageBase.....: BF071000 - BF072EE0
+     ImageSize.....: 1EE0
+     CodeType......: BS_code   
+     DataType......: BS_data   
+   ImageDpath (BF07CC98) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(EF17CEE7-267D-4BFD-A257-4A6AB3EE8591)'
+Handle 52 (BF07C198)
+   Image (BF070E40)   File:CpuMpDxe
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(40BEAB40-CECE-4909-B133-20A413AE19E9)
+     ImageBase.....: BF050000 - BF05A2E0
+     ImageSize.....: A2E0
+     CodeType......: BS_code   
+     DataType......: BS_data   
+   ImageDpath (BF07C098) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(40BEAB40-CECE-4909-B133-20A413AE19E9)'
+Handle 53 (BF06FC98)
+   3FDDA605-A76E-4F46-AD29-12F4531B3D08 (BF050600)
+Handle 54 (BF066C18)
+   Image (BF070440)   File:SataController
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(BB65942B-521F-4EC3-BAF9-A92540CF60D2)
+     ImageBase.....: BF062000 - BF064740
+     ImageSize.....: 2740
+     CodeType......: BS_code   
+     DataType......: BS_data   
+   ImageDpath (BF066B18) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(BB65942B-521F-4EC3-BAF9-A92540CF60D2)'
+   DriverBinding (BF062320) 
+Handle 55 (BF066798)
+   Image (BF070240)   File:PciBusDxe
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(93B80004-9FB3-11D4-9A3A-0090273FC14D)
+     ImageBase.....: BF046000 - BF04F2A0
+     ImageSize.....: 92A0
+     CodeType......: BS_code   
+     DataType......: BS_data   
+   ImageDpath (BF066618) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(93B80004-9FB3-11D4-9A3A-0090273FC14D)'
+   DriverBinding (BF0463D0) 
+   ComponentName (BF046410) 
+   ComponentName2 (BF046428) 
+Handle 56 (BF066118)
+   Image (BF070040)   File:EhciDxe
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(CBD1EF97-59DB-4C8B-B60C-7274254F7FDF)
+     ImageBase.....: BF05C000 - BF061500
+     ImageSize.....: 5500
+     CodeType......: BS_code   
+     DataType......: BS_data   
+   ImageDpath (BF05BF98) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(CBD1EF97-59DB-4C8B-B60C-7274254F7FDF)'
+   DriverBinding (BF05C2D0) 
+   ComponentName (BF05C300) 
+   ComponentName2 (BF05C318) 
+Handle 57 (BF05BB98)
+   Image (BF045E40)   File:UhciDxe
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(2FB92EFA-2EE0-4BAE-9EB6-7464125E1EF7)
+     ImageBase.....: BF037000 - BF03BC60
+     ImageSize.....: 4C60
+     CodeType......: BS_code   
+     DataType......: BS_data   
+   ImageDpath (BF05BA18) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(2FB92EFA-2EE0-4BAE-9EB6-7464125E1EF7)'
+   DriverBinding (BF0372A0) 
+   ComponentName (BF0372D0) 
+   ComponentName2 (BF0372E8) 
+Handle 58 (BF05B618)
+   Image (BF045C40)   File:UsbBusDxe
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(240612B7-A063-11D4-9A3A-0090273FC14D)
+     ImageBase.....: BF03F000 - BF0449C0
+     ImageSize.....: 59C0
+     CodeType......: BS_code   
+     DataType......: BS_data   
+   ImageDpath (BF05B498) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(240612B7-A063-11D4-9A3A-0090273FC14D)'
+   DriverBinding (BF03F3F8) 
+   ComponentName (BF03F428) 
+   ComponentName2 (BF03F440) 
+Handle 59 (BF05B098)
+   Image (BF045A40)   File:UsbKbDxe
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(2D2E62CF-9ECF-43B7-8219-94E7FC713DFE)
+     ImageBase.....: BF032000 - BF0365C0
+     ImageSize.....: 45C0
+     CodeType......: BS_code   
+     DataType......: BS_data   
+   ImageDpath (BF03EF18) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(2D2E62CF-9ECF-43B7-8219-94E7FC713DFE)'
+   DriverBinding (BF032AA8) 
+   ComponentName (BF032AD8) 
+   ComponentName2 (BF032AF0) 
+Handle 5A (BF03EB18)
+   Image (BF045840)   File:UsbMouseDxe
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(2D2E62AA-9ECF-43B7-8219-94E7FC713DFE)
+     ImageBase.....: BF03C000 - BF03D860
+     ImageSize.....: 1860
+     CodeType......: BS_code   
+     DataType......: BS_data   
+   ImageDpath (BF03E998) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(2D2E62AA-9ECF-43B7-8219-94E7FC713DFE)'
+   DriverBinding (BF03C2A0) 
+   ComponentName (BF03C2D0) 
+   ComponentName2 (BF03C2E8) 
+Handle 5B (BF03E598)
+   Image (BF045640)   File:UsbMassStorageDxe
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(9FB4B4A7-42C0-4BCD-8540-9BCC6711F83E)
+     ImageBase.....: BF02F000 - BF031CA0
+     ImageSize.....: 2CA0
+     CodeType......: BS_code   
+     DataType......: BS_data   
+   ImageDpath (BF03E418) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(9FB4B4A7-42C0-4BCD-8540-9BCC6711F83E)'
+   DriverBinding (BF02F348) 
+   ComponentName (BF02F378) 
+   ComponentName2 (BF02F390) 
+Handle 5C (BF03E018)
+   Image (BF045440)   File:AtaBusDxe
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(19DF145A-B1D4-453F-8507-38816676D7F6)
+     ImageBase.....: BF02C000 - BF02E160
+     ImageSize.....: 2160
+     CodeType......: BS_code   
+     DataType......: BS_data   
+   ImageDpath (BF028E98) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(19DF145A-B1D4-453F-8507-38816676D7F6)'
+   DriverBinding (BF02C2F0) 
+   ComponentName (BF02C4E0) 
+   ComponentName2 (BF02C4F8) 
+Handle 5D (BF028A98)
+   Image (BF045240)   File:DiskIoDxe
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(6B38F7B4-AD98-40E9-9093-ACA2B5A253C4)
+     ImageBase.....: BF02B000 - BF02BFA0
+     ImageSize.....: FA0
+     CodeType......: BS_code   
+     DataType......: BS_data   
+   ImageDpath (BF028918) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(6B38F7B4-AD98-40E9-9093-ACA2B5A253C4)'
+   DriverBinding (BF02B290) 
+   ComponentName (BF02B2E8) 
+   ComponentName2 (BF02B300) 
+Handle 5E (BF028518)
+   Image (BF045040)   File:PartitionDxe
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(1FA1F39E-FEFF-4AAE-BD7B-38A070A3B609)
+     ImageBase.....: BF025000 - BF0275E0
+     ImageSize.....: 25E0
+     CodeType......: BS_code   
+     DataType......: BS_data   
+   ImageDpath (BF028398) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(1FA1F39E-FEFF-4AAE-BD7B-38A070A3B609)'
+   DriverBinding (BF0252D0) 
+   ComponentName (BF025320) 
+   ComponentName2 (BF025338) 
+Handle 5F (BF029F98)
+   Image (BF02AE40)   File:IdeBusDxe
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(69FD8E47-A161-4550-B01A-5594CEB2B2B2)
+     ImageBase.....: BF01E000 - BF024BA0
+     ImageSize.....: 6BA0
+     CodeType......: BS_code   
+     DataType......: BS_data   
+   ImageDpath (BF029E18) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(69FD8E47-A161-4550-B01A-5594CEB2B2B2)'
+   DriverBinding (BF01E348) 
+   Diagnostics (BF01E3E8) 
+   Diagnostics2 (BF01E3F8) 
+   ComponentName (BF01E378) 
+   ComponentName2 (BF01E390) 
+Handle 60 (BF029818)
+   Image (BF02AC40)   File:AhciDxe
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(75521DD9-DBF3-4F4D-80B7-F5144FD74BF8)
+     ImageBase.....: BF019000 - BF01D560
+     ImageSize.....: 4560
+     CodeType......: BS_code   
+     DataType......: BS_data   
+   ImageDpath (BF029698) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(75521DD9-DBF3-4F4D-80B7-F5144FD74BF8)'
+   DriverBinding (BF0194D8) 
+   ComponentName (BF019468) 
+   ComponentName2 (BF019480) 
+Handle 61 (BF029218)
+   Image (BF02AA40)   File:ITE8728
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(0AFAF777-AC81-4810-9C8E-04E3C093AF6E)
+     ImageBase.....: BF017000 - BF018100
+     ImageSize.....: 1100
+     CodeType......: BS_code   
+     DataType......: BS_data   
+   ImageDpath (BF029098) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(0AFAF777-AC81-4810-9C8E-04E3C093AF6E)'
+   DriverBinding (BF0172F0) 
+Handle 62 (BF016D98)
+   Image (BF02A840)   File:IsaBusDxe
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(240612B5-A063-11D4-9A3A-0090273FC14D)
+     ImageBase.....: BF014000 - BF015BE0
+     ImageSize.....: 1BE0
+     CodeType......: BS_code   
+     DataType......: BS_data   
+   ImageDpath (BF016C18) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(240612B5-A063-11D4-9A3A-0090273FC14D)'
+   DriverBinding (BF014340) 
+   ComponentName (BF014370) 
+   ComponentName2 (BF014388) 
+Handle 63 (BF016818)
+   Image (BF02A640)   File:IsaSerialDxe
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(93B80003-9FB3-11D4-9A3A-0090273FC14D)
+     ImageBase.....: BF011000 - BF0138A0
+     ImageSize.....: 28A0
+     CodeType......: BS_code   
+     DataType......: BS_data   
+   ImageDpath (BF016698) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(93B80003-9FB3-11D4-9A3A-0090273FC14D)'
+   DriverBinding (BF0112A0) 
+   ComponentName (BF0113C0) 
+   ComponentName2 (BF0113D8) 
+Handle 64 (BF016298)
+   Image (BF02A440)   File:ConPlatformDxe
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(51CCF399-4FDF-4E55-A45B-E123F84D456A)
+     ImageBase.....: BF00F000 - BF0104A0
+     ImageSize.....: 14A0
+     CodeType......: BS_code   
+     DataType......: BS_data   
+   ImageDpath (BF016118) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(51CCF399-4FDF-4E55-A45B-E123F84D456A)'
+   DriverBinding (BF00F2E0) 
+   ComponentName (BF00F340) 
+   ComponentName2 (BF00F358) 
+Handle 65 (BF00ED98)
+   DriverBinding (BF00F310) 
+   ComponentName (BF00F340) 
+   ComponentName2 (BF00F358) 
+Handle 66 (BF00E998)
+   Image (BF02A240)   File:ConSplitterDxe
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(408EDCEC-CF6D-477C-A5A8-B4844E3DE281)
+     ImageBase.....: BF007000 - BF00D1C0
+     ImageSize.....: 61C0
+     CodeType......: BS_code   
+     DataType......: BS_data   
+   ImageDpath (BF00E898) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(408EDCEC-CF6D-477C-A5A8-B4844E3DE281)'
+   DriverBinding (BF007358) 
+   ComponentName (BF007810) 
+   ComponentName2 (BF007828) 
+Handle 67 (BF00E518)
+   DriverBinding (BF0073E8) 
+   ComponentName (BF007840) 
+   ComponentName2 (BF007858) 
+Handle 68 (BF00E318)
+   DriverBinding (BF007418) 
+   ComponentName (BF007870) 
+   ComponentName2 (BF007888) 
+Handle 69 (BF00E118)
+   DriverBinding (BF007388) 
+   ComponentName (BF0078A0) 
+   ComponentName2 (BF0078B8) 
+Handle 6A (BF006F18)
+   DriverBinding (BF0073B8) 
+   ComponentName (BF0078D0) 
+   ComponentName2 (BF0078E8) 
+Handle 6B (BF006C98)
+   TxtinEx (BF007490) 
+   Txtin (BE6F9430) 
+   SimplePointer (BF0074E8) 
+   AbsolutePointer (BF007540) 
+Handle 6C (BF006698)
+   Txtout (BE6F9500) Attrib 7
+      *  mode 0: col  80 row  25
+         mode 1: col  80 row  50
+         mode 2: col 100 row  31
+   GraphicsOutput (BF007690) 
+       HorizontalReslution   800
+       VerticalReslution     600
+       PixelFormat           PixelBltOnly
+       PixelsPerScanLine     800
+       FrameBufferBase       0x0
+       FrameBufferSize       0x0
+   UgaDraw (BF007668) 
+Handle 6D (BF006098)
+   Image (BF02A040)   File:GraphicsConsoleDxe
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(CCCB0C28-4B24-11D5-9A5A-0090273FC14D)
+     ImageBase.....: BEC2C000 - BEC2FAA0
+     ImageSize.....: 3AA0
+     CodeType......: BS_code   
+     DataType......: BS_data   
+   ImageDpath (BF002F98) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(CCCB0C28-4B24-11D5-9A5A-0090273FC14D)'
+   DriverBinding (BEC2D9B0) 
+   ComponentName (BEC2D9E0) 
+   ComponentName2 (BEC2D9F8) 
+Handle 6E (BF002998)
+   Image (BF001E40)   File:TerminalDxe
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(9E863906-A40F-4875-977F-5B93FF237FC6)
+     ImageBase.....: BEC20000 - BEC25380
+     ImageSize.....: 5380
+     CodeType......: BS_code   
+     DataType......: BS_data   
+   ImageDpath (BF002818) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(9E863906-A40F-4875-977F-5B93FF237FC6)'
+   DriverBinding (BEC20468) 
+   ComponentName (BEC205E8) 
+   ComponentName2 (BEC20600) 
+Handle 6F (BF002418)
+   Image (BF001C40)   File:EnglishDxe
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(CD3BAFB6-50FB-4FE8-8E4E-AB74D2C1A600)
+     ImageBase.....: BEC2B000 - BEC2BB40
+     ImageSize.....: B40
+     CodeType......: BS_code   
+     DataType......: BS_data   
+   ImageDpath (BF002298) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(CD3BAFB6-50FB-4FE8-8E4E-AB74D2C1A600)'
+Handle 70 (BF002018)
+   UnicodeCollation (BEC2B280) 
+   UnicodeCollation2 (BEC2B2B8) 
+Handle 71 (BEC2AD98)
+   Image (BF001A40)   File:FvFile(961578FE-B6B7-44C3-AF35-6BC705CD2B1F)
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(961578FE-B6B7-44C3-AF35-6BC705CD2B1F)
+     ImageBase.....: BEC1A000 - BEC1F840
+     ImageSize.....: 5840
+     CodeType......: BS_code   
+     DataType......: BS_data   
+   ImageDpath (BEC2AC98) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(961578FE-B6B7-44C3-AF35-6BC705CD2B1F)'
+   DriverBinding (BEC1A3A8) 
+   ComponentName (BEC1A3D8) 
+   ComponentName2 (BEC1A3F0) 
+Handle 72 (BEC2A818)
+   Image (BF001840)   File:AcpiS3SaveDxe
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(2BDED685-F733-455F-A840-43A22B791FB3)
+     ImageBase.....: BEC29000 - BEC298E0
+     ImageSize.....: 8E0
+     CodeType......: BS_code   
+     DataType......: BS_data   
+   ImageDpath (BEC2A698) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(2BDED685-F733-455F-A840-43A22B791FB3)'
+Handle 73 (BEC2A398)
+   125F2DE1-FB85-440C-A54C-4D99358A8D38 (BEC2A528)
+Handle 74 (BEC2A198)
+   Image (BF001640)   File:AcpiPlatform
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(D1150ED7-E582-4192-84A2-71B4EBA9A7C6)
+     ImageBase.....: BEC17000 - BEC19EE0
+     ImageSize.....: 2EE0
+     CodeType......: BS_code   
+     DataType......: BS_data   
+   ImageDpath (BEC2A098) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(D1150ED7-E582-4192-84A2-71B4EBA9A7C6)'
+Handle 75 (BEC28E18)
+   074E1E48-8132-47A1-8C2C-3F14AD9A66DC (BEC19D60)
+Handle 76 (BEC0C118)
+   Image (BF001440)   File:CvInitDxe
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(DE23ACEE-CF55-4FB6-AA77-984AB53DE811)
+     ImageBase.....: BEBFC000 - BEC00140
+     ImageSize.....: 4140
+     CodeType......: BS_code   
+     DataType......: BS_data   
+   ImageDpath (BEC0C618) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(DE23ACEE-CF55-4FB6-AA77-984AB53DE811)'
+Handle 77 (BEC0CB98)
+   CF8034BE-6768-4D8B-B739-7CCE683A9FBE (BEBFC520)
+Handle 78 (BEC0C098)
+   Dpath (BEBFC4C0) 
+      ACPI Device Path for Acpi
+       HID PNP0A03, UID 0
+      AsStr: 'PciRoot(0x0)'
+   PciRootBridgeIo (BEBFC6D8) 
+     ParentHandle..: BEC0CB98
+     Segment #.....: 0
+     Attributes....: 0
+     Supports......: 3E
+      Type  Flag  Base              Limit             Gran
+      ====  ====  ================  ================  ====
+      I/O : 00    0000000000001000  0000000000001FFF  00
+      MEM : 00    00000000C0000000  00000000C04FFFFF  20
+      MEM : 06    0000000000000000  0000000000000000  20
+      MEM : 00    0000000000000000  0000000000000000  40
+      MEM : 06    0000000000000000  0000000000000000  40
+      BUS : 00    0000000000000000  0000000000000007  00
+Handle 79 (BEC0BE98)
+   C2702B74-800C-4131-8746-8FB5B89CE4AC (BEBFFDD0)
+Handle 7A (BEC0BD18)
+   0FC9013A-0568-4BA9-9B7E-C9C390A6609B (BEBFFEB0)
+Handle 7B (BEC0BA98)
+   CDC5DDDF-E79D-41EC-A9B0-6565490DB9D3 (BEBFFE90)
+Handle 7C (BEBF8518)
+   30CFE3E7-3DE1-4586-BE20-DEABA1B3B793 (00000000)
+Handle 7D (BEBF8398)
+   Dpath (BEC0B118) 
+      ACPI Device Path for Acpi
+       HID PNP0A03, UID 0
+      Hardware Device Path for PCI
+       Function (0) Device (0)
+      AsStr: 'PciRoot(0x0)/Pci(0x0,0x0)'
+   PciIo (BEC0A728) 
+     Segment #.....: 00
+     Bus #.........: 00
+     Device #......: 00
+     Function #....: 00
+     ROM Size......: 0
+     ROM Location..: 00000000
+     Vendor ID.....: 8086
+     Device ID.....: 0BF3
+     Class Code....: 00 00 06
+     Configuration Header :
+       8680F30B070000000400000600000000
+       00000000000000000000000000000000
+       0000000000000000000000008680E00B
+       00000000000000000000000000000000
+
+Handle 7E (BEBF8018)
+   Dpath (BEC0B198) 
+      ACPI Device Path for Acpi
+       HID PNP0A03, UID 0
+      Hardware Device Path for PCI
+       Function (0) Device (2)
+      AsStr: 'PciRoot(0x0)/Pci(0x2,0x0)'
+   PciIo (BEC0A3A8) 
+     Segment #.....: 00
+     Bus #.........: 00
+     Device #......: 02
+     Function #....: 00
+     ROM Size......: 0
+     ROM Location..: 00000000
+     Vendor ID.....: 8086
+     Device ID.....: 0BE2
+     Class Code....: 00 00 03
+     Configuration Header :
+       8680E20B070010000B00000300000000
+       000030C0111100000000000000000000
+       0000000000000000000000008680E00B
+       00000000D000000000000000FF010000
+
+Handle 7F (BEBF0D18)
+   Dpath (BEC0B218) 
+      ACPI Device Path for Acpi
+       HID PNP0A03, UID 0
+      Hardware Device Path for PCI
+       Function (0) Device (1A)
+      AsStr: 'PciRoot(0x0)/Pci(0x1A,0x0)'
+   PciIo (BEC0A028) 
+     Segment #.....: 00
+     Bus #.........: 00
+     Device #......: 1A
+     Function #....: 00
+     ROM Size......: 0
+     ROM Location..: 00000000
+     Vendor ID.....: 8086
+     Device ID.....: 3A37
+     Class Code....: 00 03 0C
+     Configuration Header :
+       8680373A050090020000030C00008000
+       00000000000000000000000000000000
+       E1100000000000000000000000000000
+       000000005000000000000000FF040000
+
+   UsbHc2 (BF6EC7A0) 
+   2B2F68CC-0CD2-44CF-8E8B-BBA20B1B5B75 (BF6B2BA0)
+Handle 80 (BEBF0A18)
+   Dpath (BEC0B298) 
+      ACPI Device Path for Acpi
+       HID PNP0A03, UID 0
+      Hardware Device Path for PCI
+       Function (1) Device (1A)
+      AsStr: 'PciRoot(0x0)/Pci(0x1A,0x1)'
+   PciIo (BEC09AA8) 
+     Segment #.....: 00
+     Bus #.........: 00
+     Device #......: 1A
+     Function #....: 01
+     ROM Size......: 0
+     ROM Location..: 00000000
+     Vendor ID.....: 8086
+     Device ID.....: 3A38
+     Class Code....: 00 03 0C
+     Configuration Header :
+       8680383A050090020000030C00000000
+       00000000000000000000000000000000
+       C1100000000000000000000000000000
+       000000005000000000000000FF010000
+
+   UsbHc2 (BF004920) 
+   2B2F68CC-0CD2-44CF-8E8B-BBA20B1B5B75 (BF6E3920)
+Handle 81 (BEBF0718)
+   Dpath (BEC0B398) 
+      ACPI Device Path for Acpi
+       HID PNP0A03, UID 0
+      Hardware Device Path for PCI
+       Function (2) Device (1A)
+      AsStr: 'PciRoot(0x0)/Pci(0x1A,0x2)'
+   PciIo (BEC09728) 
+     Segment #.....: 00
+     Bus #.........: 00
+     Device #......: 1A
+     Function #....: 02
+     ROM Size......: 0
+     ROM Location..: 00000000
+     Vendor ID.....: 8086
+     Device ID.....: 3A39
+     Class Code....: 00 03 0C
+     Configuration Header :
+       8680393A050090020000030C00000000
+       00000000000000000000000000000000
+       A1100000000000000000000000000000
+       000000005000000000000000FF020000
+
+   UsbHc2 (BF004620) 
+   2B2F68CC-0CD2-44CF-8E8B-BBA20B1B5B75 (BF6E34A0)
+Handle 82 (BEBF0418)
+   Dpath (BEC0B318) 
+      ACPI Device Path for Acpi
+       HID PNP0A03, UID 0
+      Hardware Device Path for PCI
+       Function (7) Device (1A)
+      AsStr: 'PciRoot(0x0)/Pci(0x1A,0x7)'
+   PciIo (BEC093A8) 
+     Segment #.....: 00
+     Bus #.........: 00
+     Device #......: 1A
+     Function #....: 07
+     ROM Size......: 0
+     ROM Location..: 00000000
+     Vendor ID.....: 8086
+     Device ID.....: 3A3C
+     Class Code....: 20 03 0C
+     Configuration Header :
+       86803C3A060090020020030C00000000
+       006040C0000000000000000000000000
+       0000000000000000000000000D026D4E
+       000000005000000000000000FF030000
+
+   UsbHc2 (BF004320) 
+   2B2F68CC-0CD2-44CF-8E8B-BBA20B1B5B75 (BF6E3020)
+Handle 83 (BEBF0118)
+   Dpath (BEBF8F98) 
+      ACPI Device Path for Acpi
+       HID PNP0A03, UID 0
+      Hardware Device Path for PCI
+       Function (0) Device (1B)
+      AsStr: 'PciRoot(0x0)/Pci(0x1B,0x0)'
+   PciIo (BEC09028) 
+     Segment #.....: 00
+     Bus #.........: 00
+     Device #......: 1B
+     Function #....: 00
+     ROM Size......: 0
+     ROM Location..: 00000000
+     Vendor ID.....: 8086
+     Device ID.....: 3A3E
+     Class Code....: 00 03 04
+     Configuration Header :
+       86803E3A000010000000030400000000
+       040040C0000000000000000000000000
+       00000000000000000000000086808028
+       000000005000000000000000FF010000
+
+Handle 84 (BEBEFE18)
+   Dpath (BEBF8F18) 
+      ACPI Device Path for Acpi
+       HID PNP0A03, UID 0
+      Hardware Device Path for PCI
+       Function (0) Device (1C)
+      AsStr: 'PciRoot(0x0)/Pci(0x1C,0x0)'
+   PciIo (BEBF7AA8) 
+     Segment #.....: 00
+     Bus #.........: 00
+     Device #......: 1C
+     Function #....: 00
+     ROM Size......: 0
+     ROM Location..: 00000000
+     Vendor ID.....: 8086
+     Device ID.....: 3A40
+     Class Code....: 00 04 06
+     Configuration Header :
+       8680403A000010000000040600008100
+       000000000000000000010100F0000020
+       F0FF0000F1FF0100FFFFFFFF00000000
+       000000004000000000000000FF010000
+
+Handle 85 (BEBEFB18)
+   Dpath (BEBF8E98) 
+      ACPI Device Path for Acpi
+       HID PNP0A03, UID 0
+      Hardware Device Path for PCI
+       Function (1) Device (1C)
+      AsStr: 'PciRoot(0x0)/Pci(0x1C,0x1)'
+   PciIo (BEBF7728) 
+     Segment #.....: 00
+     Bus #.........: 00
+     Device #......: 1C
+     Function #....: 01
+     ROM Size......: 0
+     ROM Location..: 00000000
+     Vendor ID.....: 8086
+     Device ID.....: 3A42
+     Class Code....: 00 04 06
+     Configuration Header :
+       8680423A000010000000040600008100
+       000000000000000000020200F0000020
+       F0FF0000F1FF0100FFFFFFFF00000000
+       000000004000000000000000FF020000
+
+Handle 86 (BEBEF818)
+   Dpath (BEBF8E18) 
+      ACPI Device Path for Acpi
+       HID PNP0A03, UID 0
+      Hardware Device Path for PCI
+       Function (2) Device (1C)
+      AsStr: 'PciRoot(0x0)/Pci(0x1C,0x2)'
+   PciIo (BEBF73A8) 
+     Segment #.....: 00
+     Bus #.........: 00
+     Device #......: 1C
+     Function #....: 02
+     ROM Size......: 0
+     ROM Location..: 00000000
+     Vendor ID.....: 8086
+     Device ID.....: 3A44
+     Class Code....: 00 04 06
+     Configuration Header :
+       8680443A000010000000040600008100
+       000000000000000000030300F0000020
+       F0FF0000F1FF0100FFFFFFFF00000000
+       000000004000000000000000FF030000
+
+Handle 87 (BEBEF518)
+   Dpath (BEBF8D98) 
+      ACPI Device Path for Acpi
+       HID PNP0A03, UID 0
+      Hardware Device Path for PCI
+       Function (3) Device (1C)
+      AsStr: 'PciRoot(0x0)/Pci(0x1C,0x3)'
+   PciIo (BEBF7028) 
+     Segment #.....: 00
+     Bus #.........: 00
+     Device #......: 1C
+     Function #....: 03
+     ROM Size......: 0
+     ROM Location..: 00000000
+     Vendor ID.....: 8086
+     Device ID.....: 3A46
+     Class Code....: 00 04 06
+     Configuration Header :
+       8680463A070010000000040600008100
+       000000000000000000040400F0000020
+       20C020C0F1FF0100FFFFFFFF00000000
+       000000004000000000000000FF040000
+
+Handle 88 (BEBEF218)
+   Dpath (BEBF8D18) 
+      ACPI Device Path for Acpi
+       HID PNP0A03, UID 0
+      Hardware Device Path for PCI
+       Function (3) Device (1C)
+      Hardware Device Path for PCI
+       Function (0) Device (0)
+      AsStr: 'PciRoot(0x0)/Pci(0x1C,0x3)/Pci(0x0,0x0)'
+   PciIo (BEBF6AA8) 
+     Segment #.....: 00
+     Bus #.........: 04
+     Device #......: 00
+     Function #....: 00
+     ROM Size......: 0
+     ROM Location..: 00000000
+     Vendor ID.....: 1033
+     Device ID.....: 0194
+     Class Code....: 30 03 0C
+     Configuration Header :
+       33109401000010000430030C00000000
+       040020C0000000000000000000000000
+       000000000000000000000000FFFFFFFF
+       000000005000000000000000FF010000
+
+Handle 89 (BEBEEF18)
+   Dpath (BEBF8C98) 
+      ACPI Device Path for Acpi
+       HID PNP0A03, UID 0
+      Hardware Device Path for PCI
+       Function (4) Device (1C)
+      AsStr: 'PciRoot(0x0)/Pci(0x1C,0x4)'
+   PciIo (BEBF6728) 
+     Segment #.....: 00
+     Bus #.........: 00
+     Device #......: 1C
+     Function #....: 04
+     ROM Size......: 0
+     ROM Location..: 00000000
+     Vendor ID.....: 8086
+     Device ID.....: 3A48
+     Class Code....: 00 04 06
+     Configuration Header :
+       8680483A070010000000040600008100
+       000000000000000000050500F0000020
+       F0FF000011C011C00000000000000000
+       000000004000000000000000FF010000
+
+Handle 8A (BEBEEC18)
+   Dpath (BEBF8C18) 
+      ACPI Device Path for Acpi
+       HID PNP0A03, UID 0
+      Hardware Device Path for PCI
+       Function (4) Device (1C)
+      Hardware Device Path for PCI
+       Function (0) Device (0)
+      AsStr: 'PciRoot(0x0)/Pci(0x1C,0x4)/Pci(0x0,0x0)'
+   PciIo (BEBF63A8) 
+     Segment #.....: 00
+     Bus #.........: 05
+     Device #......: 00
+     Function #....: 00
+     ROM Size......: 0
+     ROM Location..: 00000000
+     Vendor ID.....: 14E4
+     Device ID.....: 16B1
+     Class Code....: 00 00 02
+     Configuration Header :
+       E414B116000010001000000200000000
+       0C0011C0000000000C0010C000000000
+       000000000000000000000000E414B196
+       00F8FFFF4800000000000000FF010000
+
+Handle 8B (BEBEE918)
+   Dpath (BEBF8B98) 
+      ACPI Device Path for Acpi
+       HID PNP0A03, UID 0
+      Hardware Device Path for PCI
+       Function (5) Device (1C)
+      AsStr: 'PciRoot(0x0)/Pci(0x1C,0x5)'
+   PciIo (BEBF6028) 
+     Segment #.....: 00
+     Bus #.........: 00
+     Device #......: 1C
+     Function #....: 05
+     ROM Size......: 0
+     ROM Location..: 00000000
+     Vendor ID.....: 8086
+     Device ID.....: 3A4A
+     Class Code....: 00 04 06
+     Configuration Header :
+       86804A3A070010000000040600008100
+       000000000000000000060600F0000020
+       F0FF000001C001C00000000000000000
+       000000004000000000000000FF020000
+
+Handle 8C (BEBEE618)
+   Dpath (BEBF8B18) 
+      ACPI Device Path for Acpi
+       HID PNP0A03, UID 0
+      Hardware Device Path for PCI
+       Function (5) Device (1C)
+      Hardware Device Path for PCI
+       Function (0) Device (0)
+      AsStr: 'PciRoot(0x0)/Pci(0x1C,0x5)/Pci(0x0,0x0)'
+   PciIo (BEBF5AA8) 
+     Segment #.....: 00
+     Bus #.........: 06
+     Device #......: 00
+     Function #....: 00
+     ROM Size......: 0
+     ROM Location..: 00000000
+     Vendor ID.....: 14E4
+     Device ID.....: 16B1
+     Class Code....: 00 00 02
+     Configuration Header :
+       E414B116000010001000000200000000
+       0C0001C0000000000C0000C000000000
+       000000000000000000000000E414B196
+       00F8FFFF4800000000000000FF010000
+
+Handle 8D (BEBEE318)
+   Dpath (BEBF8A98) 
+      ACPI Device Path for Acpi
+       HID PNP0A03, UID 0
+      Hardware Device Path for PCI
+       Function (0) Device (1D)
+      AsStr: 'PciRoot(0x0)/Pci(0x1D,0x0)'
+   PciIo (BEBF5728) 
+     Segment #.....: 00
+     Bus #.........: 00
+     Device #......: 1D
+     Function #....: 00
+     ROM Size......: 0
+     ROM Location..: 00000000
+     Vendor ID.....: 8086
+     Device ID.....: 3A34
+     Class Code....: 00 03 0C
+     Configuration Header :
+       8680343A050090020000030C00008000
+       00000000000000000000000000000000
+       81100000000000000000000086807072
+       000000005000000000000000FF020000
+
+   UsbHc2 (BF004020) 
+   2B2F68CC-0CD2-44CF-8E8B-BBA20B1B5B75 (BEB57920)
+Handle 8E (BEBEE018)
+   Dpath (BEBF8A18) 
+      ACPI Device Path for Acpi
+       HID PNP0A03, UID 0
+      Hardware Device Path for PCI
+       Function (1) Device (1D)
+      AsStr: 'PciRoot(0x0)/Pci(0x1D,0x1)'
+   PciIo (BEBF53A8) 
+     Segment #.....: 00
+     Bus #.........: 00
+     Device #......: 1D
+     Function #....: 01
+     ROM Size......: 0
+     ROM Location..: 00000000
+     Vendor ID.....: 8086
+     Device ID.....: 3A35
+     Class Code....: 00 03 0C
+     Configuration Header :
+       8680353A050090020000030C00000000
+       00000000000000000000000000000000
+       61100000000000000000000086807072
+       000000005000000000000000FF030000
+
+   UsbHc2 (BEB52C20) 
+   2B2F68CC-0CD2-44CF-8E8B-BBA20B1B5B75 (BEB574A0)
+Handle 8F (BEBEDD18)
+   Dpath (BEBF8998) 
+      ACPI Device Path for Acpi
+       HID PNP0A03, UID 0
+      Hardware Device Path for PCI
+       Function (2) Device (1D)
+      AsStr: 'PciRoot(0x0)/Pci(0x1D,0x2)'
+   PciIo (BEBF5028) 
+     Segment #.....: 00
+     Bus #.........: 00
+     Device #......: 1D
+     Function #....: 02
+     ROM Size......: 0
+     ROM Location..: 00000000
+     Vendor ID.....: 8086
+     Device ID.....: 3A36
+     Class Code....: 00 03 0C
+     Configuration Header :
+       8680363A050090020000030C00000000
+       00000000000000000000000000000000
+       41100000000000000000000086807072
+       000000005000000000000000FF040000
+
+   UsbHc2 (BEB52920) 
+   2B2F68CC-0CD2-44CF-8E8B-BBA20B1B5B75 (BEB57020)
+Handle 90 (BEBEDA18)
+   Dpath (BEBF8918) 
+      ACPI Device Path for Acpi
+       HID PNP0A03, UID 0
+      Hardware Device Path for PCI
+       Function (7) Device (1D)
+      AsStr: 'PciRoot(0x0)/Pci(0x1D,0x7)'
+   PciIo (BEBF4AA8) 
+     Segment #.....: 00
+     Bus #.........: 00
+     Device #......: 1D
+     Function #....: 07
+     ROM Size......: 0
+     ROM Location..: 00000000
+     Vendor ID.....: 8086
+     Device ID.....: 3A3A
+     Class Code....: 20 03 0C
+     Configuration Header :
+       86803A3A060090020020030C00000000
+       005040C0000000000000000000000000
+       00000000000000000000000086807072
+       000000005000000000000000FF010000
+
+   UsbHc2 (BEB52620) 
+   2B2F68CC-0CD2-44CF-8E8B-BBA20B1B5B75 (BEB0F920)
+Handle 91 (BEBED718)
+   Dpath (BEBF8898) 
+      ACPI Device Path for Acpi
+       HID PNP0A03, UID 0
+      Hardware Device Path for PCI
+       Function (0) Device (1E)
+      AsStr: 'PciRoot(0x0)/Pci(0x1E,0x0)'
+   PciIo (BEBF4728) 
+     Segment #.....: 00
+     Bus #.........: 00
+     Device #......: 1E
+     Function #....: 00
+     ROM Size......: 0
+     ROM Location..: 00000000
+     Vendor ID.....: 8086
+     Device ID.....: 244E
+     Class Code....: 01 04 06
+     Configuration Header :
+       86804E24000110009001040600000100
+       000000000000000000070720F0008022
+       F0FF0000F1FF0100FFFFFFFF00000000
+       000000005000000000000000FF000000
+
+Handle 92 (BEBED418)
+   Dpath (BEBF8818) 
+      ACPI Device Path for Acpi
+       HID PNP0A03, UID 0
+      Hardware Device Path for PCI
+       Function (0) Device (1F)
+      AsStr: 'PciRoot(0x0)/Pci(0x1F,0x0)'
+   PciIo (BEBF43A8) 
+     Segment #.....: 00
+     Bus #.........: 00
+     Device #......: 1F
+     Function #....: 00
+     ROM Size......: 0
+     ROM Location..: 00000000
+     Vendor ID.....: 8086
+     Device ID.....: 3A16
+     Class Code....: 00 01 06
+     Configuration Header :
+       8680163A070110020000010600008000
+       00000000000000000000000000000000
+       0000000000000000000000008680163A
+       00000000E00000000000000000000000
+
+   IsaAcpi (BF017320) 
+Handle 93 (BEBED118)
+   Dpath (BEBF8798) 
+      ACPI Device Path for Acpi
+       HID PNP0A03, UID 0
+      Hardware Device Path for PCI
+       Function (2) Device (1F)
+      AsStr: 'PciRoot(0x0)/Pci(0x1F,0x2)'
+   PciIo (BEBF4028) 
+     Segment #.....: 00
+     Bus #.........: 00
+     Device #......: 1F
+     Function #....: 02
+     ROM Size......: 0
+     ROM Location..: 00000000
+     Vendor ID.....: 8086
+     Device ID.....: 3A22
+     Class Code....: 01 06 01
+     Configuration Header :
+       8680223A0700B0020001060100000000
+       091100001D1100000111000019110000
+       21100000004040C0000000008680203A
+       000000008000000000000000FF010000
+
+   BB929DA9-68F7-4035-B22C-A3BB3F23DA55 (00000000)
+Handle 94 (BEBECE18)
+   Dpath (BEBF8718) 
+      ACPI Device Path for Acpi
+       HID PNP0A03, UID 0
+      Hardware Device Path for PCI
+       Function (3) Device (1F)
+      AsStr: 'PciRoot(0x0)/Pci(0x1F,0x3)'
+   PciIo (BEBF3AA8) 
+     Segment #.....: 00
+     Bus #.........: 00
+     Device #......: 1F
+     Function #....: 03
+     ROM Size......: 0
+     ROM Location..: 00000000
+     Vendor ID.....: 8086
+     Device ID.....: 3A30
+     Class Code....: 00 05 0C
+     Configuration Header :
+       8680303A000080020000050C00000000
+       047040C0000000000000000000000000
+       0110000000000000000000008680303A
+       000000000000000000000000FF030000
+
+Handle 95 (BEBD8A98)
+   Dpath (BEBD8B98) 
+      ACPI Device Path for Acpi
+       HID PNP0A03, UID 0
+      Hardware Device Path for PCI
+       Function (0) Device (1F)
+      ACPI Device Path for Acpi
+       HID PNP0501, UID 0
+      AsStr: 'PciRoot(0x0)/Pci(0x1F,0x0)/Serial(0x0)'
+   IsaIo (BEB3B128) 
+     ROM Size......: 00000000
+     ROM Location..: 00000000
+     ISA Resource List :
+       IO  : 000003F8-000003FF  Attr : 00000000
+       INT : 00000004-00000000  Attr : 00000000
+
+Handle 96 (BEBD8718)
+   Dpath (BEBD8818) 
+      ACPI Device Path for Acpi
+       HID PNP0A03, UID 0
+      Hardware Device Path for PCI
+       Function (0) Device (1F)
+      ACPI Device Path for Acpi
+       HID PNP0501, UID 1
+      AsStr: 'PciRoot(0x0)/Pci(0x1F,0x0)/Serial(0x1)'
+   IsaIo (BEB3BA28) 
+     ROM Size......: 00000000
+     ROM Location..: 00000000
+     ISA Resource List :
+       IO  : 000002F8-000002FF  Attr : 00000000
+       INT : 00000003-00000000  Attr : 00000000
+
+Handle 97 (BEBD8018)
+   Dpath (BEBD8118) 
+      ACPI Device Path for Acpi
+       HID PNP0A03, UID 0
+      Hardware Device Path for PCI
+       Function (0) Device (1F)
+      ACPI Device Path for Acpi
+       HID PNP0501, UID 0
+      Messaging Device Path for UART
+       UART (115200 N 8 1)
+      AsStr: 'PciRoot(0x0)/Pci(0x1F,0x0)/Serial(0x0)/Uart(115200,8,N,1)'
+   SerialIo (BEB521A8) 
+   9E863906-A40F-4875-977F-5B93FF237FC6 (BEBD7A98)
+Handle 98 (BEBD7518)
+   Dpath (BEBD7598) 
+      ACPI Device Path for Acpi
+       HID PNP0A03, UID 0
+      Hardware Device Path for PCI
+       Function (0) Device (1F)
+      ACPI Device Path for Acpi
+       HID PNP0501, UID 0
+      Messaging Device Path for UART
+       UART (115200 N 8 1)
+      Messaging Device Path for Vendor-Defined
+       Guid PcAnsi
+       00000000: 00 00 00 00                                      *....*
+
+      AsStr: 'PciRoot(0x0)/Pci(0x1F,0x0)/Serial(0x0)/Uart(115200,8,N,1)/VenPcAnsi()'
+   TxtinEx (BEB52100) 
+   Txtin (BEB52040) 
+   Txtout (BEB52058) Attrib 7
+      *  mode 0: col  80 row  25
+         mode 1: col  80 row  50
+         mode 2: col 100 row  31
+   ConIn (0) 
+   ConOut (0) 
+Handle 99 (BEBD5598)
+   Dpath (BEBD5718) 
+      ACPI Device Path for Acpi
+       HID PNP0A03, UID 0
+      Hardware Device Path for PCI
+       Function (0) Device (1F)
+      ACPI Device Path for Acpi
+       HID PNP0501, UID 1
+      Messaging Device Path for UART
+       UART (115200 N 8 1)
+      AsStr: 'PciRoot(0x0)/Pci(0x1F,0x0)/Serial(0x1)/Uart(115200,8,N,1)'
+   SerialIo (BEBD6AA8) 
+   9E863906-A40F-4875-977F-5B93FF237FC6 (BEBD5098)
+Handle 9A (BEBD2B98)
+   Dpath (BEBD2C18) 
+      ACPI Device Path for Acpi
+       HID PNP0A03, UID 0
+      Hardware Device Path for PCI
+       Function (0) Device (1F)
+      ACPI Device Path for Acpi
+       HID PNP0501, UID 1
+      Messaging Device Path for UART
+       UART (115200 N 8 1)
+      Messaging Device Path for Vendor-Defined
+       Guid PcAnsi
+       00000000: 00 00 00 00                                      *....*
+
+      AsStr: 'PciRoot(0x0)/Pci(0x1F,0x0)/Serial(0x1)/Uart(115200,8,N,1)/VenPcAnsi()'
+   TxtinEx (BEBD6880) 
+   Txtin (BEBD67C0) 
+   Txtout (BEBD67D8) Attrib 7
+      *  mode 0: col  80 row  25
+         mode 1: col  80 row  50
+         mode 2: col 100 row  31
+Handle 9B (BEBD2218)
+   Image (BEBF3E40)   File:PiSmmIpl
+     ParentHandle..: BF6EDE98
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(2FA2A6DA-11D5-4DC3-999A-749648B03C56)
+     ImageBase.....: BEBCB000 - BEBCCF00
+     ImageSize.....: 1F00
+     CodeType......: RT_code   
+     DataType......: RT_data   
+   ImageDpath (BEBD2118) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(2FA2A6DA-11D5-4DC3-999A-749648B03C56)'
+Handle 9C (BEBCAD98)
+   C68ED8E2-9DC6-4CBD-9D94-DB65ACC5C332 (BEBCB360)
+   F4CCBFB7-F6E0-47FD-9DD4-10A8F150C191 (BEBCB350)
+Handle 9D (BEBC5F98)
+   Image (BEBC9F18)   File:ReportStatusCodeRouterSmm
+     ParentHandle..: BEBD2218
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(A6885402-D022-4B0E-A509-4711B90F2A39)
+     ImageBase.....: BF7F6000 - BF7F7A20
+     ImageSize.....: 1A20
+     CodeType......: RT_code   
+     DataType......: RT_data   
+Handle 9E (BEBC5D98)
+   Image (BEBC9E18)   File:PiSmmCpuDxeSmm
+     ParentHandle..: BEBD2218
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(A3FF0EF5-0C28-42F5-B544-8C7DE1E80014)
+     ImageBase.....: BF7EF000 - BF7F5FA0
+     ImageSize.....: 6FA0
+     CodeType......: RT_code   
+     DataType......: RT_data   
+Handle 9F (BEBC5C98)
+   26EEB3DE-B689-492E-80F0-BE8BD7DA4BA7 (BF7EFE60)
+Handle A0 (BEBC5A98)
+   Image (BEBC9D18)   File:CpuIo2Smm
+     ParentHandle..: BEBD2218
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(A47EE2D8-F60E-42FD-8E58-7BD65EE4C29B)
+     ImageBase.....: BF7BD000 - BF7BDA40
+     ImageSize.....: A40
+     CodeType......: RT_code   
+     DataType......: RT_data   
+Handle A1 (BEBC5898)
+   Image (BEBC9C18)   File:StatusCodeHandlerSmm
+     ParentHandle..: BEBD2218
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(79CD78D8-6EDC-4978-BD02-3299C387AB17)
+     ImageBase.....: BF7BB000 - BF7BCA20
+     ImageSize.....: 1A20
+     CodeType......: RT_code   
+     DataType......: RT_data   
+Handle A2 (BEBC5698)
+   Image (BEBC9B18)   File:IchSmmDispatcher
+     ParentHandle..: BEBD2218
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(CC80049C-F566-43E0-A9DF-4B5578F3EAB5)
+     ImageBase.....: BF7B6000 - BF7BADC0
+     ImageSize.....: 4DC0
+     CodeType......: RT_code   
+     DataType......: RT_data   
+Handle A3 (BEBC5498)
+   Image (BEBC9A18)   File:SmmPlatformHandler
+     ParentHandle..: BEBD2218
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(671CF5B5-D546-45D8-B1E9-8DFE770F57CE)
+     ImageBase.....: BF7B3000 - BF7B5C20
+     ImageSize.....: 2C20
+     CodeType......: RT_code   
+     DataType......: RT_data   
+Handle A4 (BEBC5398)
+   60FF8964-E906-41D0-AFED-F241E974E08E (00000000)
+Handle A5 (BEBBCE18)
+   D088A413-0A70-4217-BA55-9A3CB65C41B3 (00000000)
+Handle A6 (BEBBC198)
+   Dpath (BEBBC218) 
+      ACPI Device Path for Acpi
+       HID PNP0A03, UID 0
+      Hardware Device Path for PCI
+       Function (7) Device (1D)
+      Messaging Device Path for USB
+       USB (0, 0)
+      AsStr: 'PciRoot(0x0)/Pci(0x1D,0x7)/USB(0x0,0x0)'
+   DiskIo (BEA71DA0) 
+   BlkIo (BEBC9538) Removable MId:1 bsize 200, lblock 1EBFFF (1,031,798,784), raw rw !cached
+   UsbIo (BEBC9640) 
+     Interface Number #.....: 00
+     Interface Class #......: 08
+     Interface Subclass #...: 06
+     Interface Protocol #...: 50
+
+Handle A7 (BEAFAB18)
+   Dpath (BEAFAB98) 
+      ACPI Device Path for Acpi
+       HID PNP0A03, UID 0
+      Hardware Device Path for PCI
+       Function (7) Device (1D)
+      Messaging Device Path for USB
+       USB (0, 0)
+      Media Device Path for Hard Drive
+       Partition (1) Start (0000000000000800) Size (0000000000001000)
+      AsStr: 'PciRoot(0x0)/Pci(0x1D,0x7)/USB(0x0,0x0)/HD(1,GPT,7891DC25-EB83-4C4E-87F5-7BD928113662,0x800,0x1000)'
+   Fs (BEA78030) 
+   DiskIo (BEAF4BA0) 
+   BlkIo (BEA77B30) Removable MId:1 bsize 200, lblock FFF (2,097,152), partition rw !cached
+   ESP (0) 
+Handle A8 (BEAF8418)
+   Dpath (BEAF4618) 
+      ACPI Device Path for Acpi
+       HID PNP0A03, UID 0
+      Hardware Device Path for PCI
+       Function (7) Device (1D)
+      Messaging Device Path for USB
+       USB (0, 0)
+      Media Device Path for Hard Drive
+       Partition (2) Start (0000000000001800) Size (0000000000055000)
+      AsStr: 'PciRoot(0x0)/Pci(0x1D,0x7)/USB(0x0,0x0)/HD(2,GPT,EE9D8F6A-D51F-4760-A588-7A0EAC306D6B,0x1800,0x55000)'
+   DiskIo (BEAFA7A0) 
+   BlkIo (BEA77C30) Removable MId:1 bsize 200, lblock 54FFF (178,257,920), partition rw !cached
+Handle A9 (BEAF4118)
+   Dpath (BEAF4398) 
+      ACPI Device Path for Acpi
+       HID PNP0A03, UID 0
+      Hardware Device Path for PCI
+       Function (7) Device (1D)
+      Messaging Device Path for USB
+       USB (0, 0)
+      Media Device Path for Hard Drive
+       Partition (3) Start (0000000000056800) Size (0000000000055000)
+      AsStr: 'PciRoot(0x0)/Pci(0x1D,0x7)/USB(0x0,0x0)/HD(3,GPT,29CE2FCA-2408-41CE-9A9D-C66C1E1CBC53,0x56800,0x55000)'
+   DiskIo (BEAF8E20) 
+   BlkIo (BEA77D30) Removable MId:1 bsize 200, lblock 54FFF (178,257,920), partition rw !cached
+Handle AA (BEAF4998)
+   Dpath (BEAF4418) 
+      ACPI Device Path for Acpi
+       HID PNP0A03, UID 0
+      Hardware Device Path for PCI
+       Function (7) Device (1D)
+      Messaging Device Path for USB
+       USB (0, 0)
+      Media Device Path for Hard Drive
+       Partition (4) Start (00000000000AB800) Size (000000000013E7DF)
+      AsStr: 'PciRoot(0x0)/Pci(0x1D,0x7)/USB(0x0,0x0)/HD(4,GPT,20BB0296-23A8-42BF-A551-9168CC25159A,0xAB800,0x13E7DF)'
+   DiskIo (BEAF87A0) 
+   BlkIo (BEA77630) Removable MId:1 bsize 200, lblock 13E7DE (667,926,016), partition rw !cached
+Handle AB (BE8CB498)
+   Image (BEBBBE40)   File:FvFile(C57AD6B7-0515-40A8-9D21-551652854E37)
+     ParentHandle..: BF100C18
+     SystemTable...: BF6EEF18
+     DeviceHandle..: BF6D2518
+     FilePath......: FvFile(C57AD6B7-0515-40A8-9D21-551652854E37)
+     ImageBase.....: BE6F0000 - BE7A87C0
+     ImageSize.....: B87C0
+     CodeType......: LoaderCode
+     DataType......: LoaderData
+   ImageDpath (BE8CB398) 
+      Media Device Path for PIWG Firmware File
+      Media Device Path for PIWG FV
+      AsStr: 'Fv(30D9ED01-38D2-418A-90D5-C561750BF80F)/FvFile(C57AD6B7-0515-40A8-9D21-551652854E37)'
+   ShellInt (BF201970) 
+   47C7B221-C42A-11D2-8E57-00A0C969723B (BE6F7F90)
+
+Shell> 

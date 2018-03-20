@@ -1,0 +1,815 @@
+smbiosview   smbiosview -acls          clearcls  helpcls smbiosviewsmbiosview -acls          clearcls  smbiosview -a
+SMBIOS Entry Point Structure:
+Anchor String:        _SM_
+EPS Checksum:         0x2
+Entry Point Len:      31
+Version:              2.6
+Number of Structures: 37
+Max Struct size:      121
+Table Address:        0xBEA7E000
+Table Length:         1239
+Entry Point revision: 0x0
+SMBIOS BCD Revision:  0x0
+Inter Anchor:         _DMI_
+Inter Checksum:       0x23
+Formatted Area:  
+  00000000: 00 00 00 00 00                                   *.....*
+
+=========================================================
+Query Structure, conditions are:
+QueryType   = Random 
+QueryHandle = Random
+ShowType    = SHOW_ALL
+
+
+
+=========================================================
+Type=0, Handle=0x1
+Dump Structure as:
+Index=0,Length=0x43,Addr=0xBEA7E043
+00000000: 00 18 01 00 01 02 00 E0-03 1F 80 98 09 7C 03 03  *................*
+00000010: 00 00 01 00 01 00 FF FF-41 53 55 53 54 4F 52 20  *........ASUSTOR *
+00000020: 49 6E 63 2E 00 54 69 61-6E 6F 2D 47 72 61 6E 69  *Inc..Tiano-Grani*
+00000030: 74 65 57 65 6C 6C 00 31-30 2F 31 30 2F 32 30 31  *teWell.10/10/201*
+00000040: 31 00 00                                         *1..*
+
+Structure Type: BIOS Information
+Format part Len : 24
+Structure Handle: 1
+Vendor: ASUSTOR Inc.
+BiosVersion: Tiano-GraniteWell
+BiosSegment: 57344
+BiosReleaseDate: 10/10/2011
+BiosSize:  2048 KB
+BIOS Characteristics: 
+PCI is supported
+BIOS is Upgradeable(FLASH)
+BIOS shadowing is allowed
+Boot form CD is supported
+Selectable Boot is supported
+EDD Enhanced Disk Driver) Specification is supported
+Int 5h, Print screen Services is supported
+Int 9h, 8042 Keyboard services are supported
+Int 14h, Serial Services are supported
+Int 17h, Printer services are supported
+Int 10h, CGA/Mono Video services are supported2
+ Bits 32:47 are reserved for BIOS Vendor
+ Bits 48:64 are reserved for System Vendor
+BIOS Characteristics Extension Byte1:
+ACPI supported
+BIOS Characteristics Extension Byte2:
+ Bits 2:7 are reserved for future assignment
+Dump BiosCharacteristics
+size=6:
+00000000: 80 98 09 7C 03 03                                *......*
+
+
+
+=========================================================
+Type=1, Handle=0x2
+Dump Structure as:
+Index=1,Length=0x5A,Addr=0xBEA7E09D
+00000000: 01 1B 02 00 01 02 03 04-63 5E 0E DB 25 E3 42 83  *........c^..%.B.*
+00000010: AD 4C 7C 69 B0 DF 01 FB-06 05 06 41 53 55 53 54  *.L.i.......ASUST*
+00000020: 4F 52 20 49 6E 63 2E 00-41 53 2D 36 78 78 54 00  *OR Inc..AS-6xxT.*
+00000030: 31 2E 30 00 55 6E 6B 6E-6F 77 6E 00 41 53 2D 36  *1.0.Unknown.AS-6*
+00000040: 78 78 54 2D 32 30 31 31-00 4D 69 6C 73 74 65 61  *xxT-2011.Milstea*
+00000050: 64 20 53 79 73 74 65 6D-00 00                    *d System..*
+
+Structure Type: System Information
+Format part Len : 27
+Structure Handle: 2
+Manufacturer: ASUSTOR Inc.
+ProductName: AS-6xxT
+Version: 1.0
+SerialNumber: Unknown
+Dump Uuid
+size=16:
+00000000: 63 5E 0E DB 25 E3 42 83-AD 4C 7C 69 B0 DF 01 FB  *c^..%.B..L.i....*
+System Wakeup Type: Power Switch
+
+
+
+=========================================================
+Type=3, Handle=0x3
+Dump Structure as:
+Index=2,Length=0x43,Addr=0xBEA7E0E0
+00000000: 03 18 03 00 01 03 02 03-04 03 03 01 01 00 00 00  *................*
+00000010: 00 00 00 00 00 00 00 00-41 53 55 53 54 4F 52 20  *........ASUSTOR *
+00000020: 49 6E 63 2E 00 30 2E 31-00 73 65 72 69 61 6C 00  *Inc..0.1.serial.*
+00000030: 43 68 61 73 73 69 73 20-41 73 73 65 74 20 54 61  *Chassis Asset Ta*
+00000040: 67 00 00                                         *g..*
+
+Structure Type: System Enclosure
+Format part Len : 24
+Structure Handle: 3
+Manufacturer: ASUSTOR Inc.
+Type: 3
+System Enclosure or Chassis Types:  Desktop
+Version: 0.1
+SerialNumber: serial
+AssetTag: Chassis Asset Tag
+Bootup state System Enclosure or Chassis Status:  Safe
+Power Supply State System Enclosure or Chassis Status:  Safe
+Thermal state System Enclosure or Chassis Status:  Other
+Security Status System Enclosure or Chassis Security Status:  Other
+Dump OemDefined
+size=4:
+00000000: 00 00 00 00                                      *....*
+
+
+
+=========================================================
+Type=8, Handle=0x4
+Dump Structure as:
+Index=3,Length=0x18,Addr=0xBEA7E0F8
+00000000: 08 09 04 00 01 0F 02 0F-0D 58 31 34 20 00 4B 65  *.........X14 .Ke*
+00000010: 79 62 6F 61 72 64 00 00-                         *yboard..*
+
+Structure Type: Port Connector Information 
+Format part Len : 9
+Structure Handle: 4
+InternalReferenceDesignator: X14 
+Internal Port Connector Type: PS/2
+ExternalReferenceDesignator: Keyboard
+External Port Connector Type: PS/2
+Port Type: Keyboard Port
+
+
+
+=========================================================
+Type=8, Handle=0x5
+Dump Structure as:
+Index=4,Length=0x15,Addr=0xBEA7E10D
+00000000: 08 09 05 00 01 0F 02 0F-0E 58 31 35 20 00 4D 6F  *.........X15 .Mo*
+00000010: 75 73 65 00 00                                   *use..*
+
+Structure Type: Port Connector Information 
+Format part Len : 9
+Structure Handle: 5
+InternalReferenceDesignator: X15 
+Internal Port Connector Type: PS/2
+ExternalReferenceDesignator: Mouse
+External Port Connector Type: PS/2
+Port Type: Mouse Port
+
+
+
+=========================================================
+Type=8, Handle=0x6
+Dump Structure as:
+Index=5,Length=0x15,Addr=0xBEA7E122
+00000000: 08 09 06 00 01 FF 02 00-09 58 31 36 20 00 43 4F  *.........X16 .CO*
+00000010: 4D 20 31 00 00                                   *M 1..*
+
+Structure Type: Port Connector Information 
+Format part Len : 9
+Structure Handle: 6
+InternalReferenceDesignator: X16 
+Internal Port Connector Type: Other
+ExternalReferenceDesignator: COM 1
+External Port Connector Type: None
+Port Type: Serial Port 16550A Compatible
+
+
+
+=========================================================
+Type=8, Handle=0x7
+Dump Structure as:
+Index=6,Length=0x15,Addr=0xBEA7E137
+00000000: 08 09 07 00 01 FF 02 00-09 58 31 37 20 00 43 4F  *.........X17 .CO*
+00000010: 4D 20 32 00 00                                   *M 2..*
+
+Structure Type: Port Connector Information 
+Format part Len : 9
+Structure Handle: 7
+InternalReferenceDesignator: X17 
+Internal Port Connector Type: Other
+ExternalReferenceDesignator: COM 2
+External Port Connector Type: None
+Port Type: Serial Port 16550A Compatible
+
+
+
+=========================================================
+Type=8, Handle=0x8
+Dump Structure as:
+Index=7,Length=0x15,Addr=0xBEA7E14C
+00000000: 08 09 08 00 01 FF 02 00-09 58 31 38 20 00 43 4F  *.........X18 .CO*
+00000010: 4D 20 33 00 00                                   *M 3..*
+
+Structure Type: Port Connector Information 
+Format part Len : 9
+Structure Handle: 8
+InternalReferenceDesignator: X18 
+Internal Port Connector Type: Other
+ExternalReferenceDesignator: COM 3
+External Port Connector Type: None
+Port Type: Serial Port 16550A Compatible
+
+
+
+=========================================================
+Type=8, Handle=0x9
+Dump Structure as:
+Index=8,Length=0x15,Addr=0xBEA7E161
+00000000: 08 09 09 00 01 FF 02 00-09 58 31 39 20 00 43 4F  *.........X19 .CO*
+00000010: 4D 20 34 00 00                                   *M 4..*
+
+Structure Type: Port Connector Information 
+Format part Len : 9
+Structure Handle: 9
+InternalReferenceDesignator: X19 
+Internal Port Connector Type: Other
+ExternalReferenceDesignator: COM 4
+External Port Connector Type: None
+Port Type: Serial Port 16550A Compatible
+
+
+
+=========================================================
+Type=8, Handle=0xA
+Dump Structure as:
+Index=9,Length=0x15,Addr=0xBEA7E176
+00000000: 08 09 0A 00 01 00 02 04-05 4A 34 41 32 00 4C 50  *.........J4A2.LP*
+00000010: 54 20 31 00 00                                   *T 1..*
+
+Structure Type: Port Connector Information 
+Format part Len : 9
+Structure Handle: 10
+InternalReferenceDesignator: J4A2
+Internal Port Connector Type: None
+ExternalReferenceDesignator: LPT 1
+External Port Connector Type: DB-25 pin male
+Port Type: Parallel Port ECP/EPP
+
+
+
+=========================================================
+Type=8, Handle=0xB
+Dump Structure as:
+Index=10,Length=0x14,Addr=0xBEA7E18A
+00000000: 08 09 0B 00 01 00 02 12-10 58 32 30 20 00 55 53  *.........X20 .US*
+00000010: 42 31 00 00                                      *B1..*
+
+Structure Type: Port Connector Information 
+Format part Len : 9
+Structure Handle: 11
+InternalReferenceDesignator: X20 
+Internal Port Connector Type: None
+ExternalReferenceDesignator: USB1
+External Port Connector Type: Access Bus (USB)
+Port Type: USB
+
+
+
+=========================================================
+Type=8, Handle=0xC
+Dump Structure as:
+Index=11,Length=0x14,Addr=0xBEA7E19E
+00000000: 08 09 0C 00 01 00 02 12-10 58 32 31 20 00 55 53  *.........X21 .US*
+00000010: 42 32 00 00                                      *B2..*
+
+Structure Type: Port Connector Information 
+Format part Len : 9
+Structure Handle: 12
+InternalReferenceDesignator: X21 
+Internal Port Connector Type: None
+ExternalReferenceDesignator: USB2
+External Port Connector Type: Access Bus (USB)
+Port Type: USB
+
+
+
+=========================================================
+Type=8, Handle=0xD
+Dump Structure as:
+Index=12,Length=0x14,Addr=0xBEA7E1B2
+00000000: 08 09 0D 00 01 00 02 12-10 58 32 32 20 00 55 53  *.........X22 .US*
+00000010: 42 33 00 00                                      *B3..*
+
+Structure Type: Port Connector Information 
+Format part Len : 9
+Structure Handle: 13
+InternalReferenceDesignator: X22 
+Internal Port Connector Type: None
+ExternalReferenceDesignator: USB3
+External Port Connector Type: Access Bus (USB)
+Port Type: USB
+
+
+
+=========================================================
+Type=8, Handle=0xE
+Dump Structure as:
+Index=13,Length=0x14,Addr=0xBEA7E1C6
+00000000: 08 09 0E 00 01 00 02 12-10 58 32 33 20 00 55 53  *.........X23 .US*
+00000010: 42 34 00 00                                      *B4..*
+
+Structure Type: Port Connector Information 
+Format part Len : 9
+Structure Handle: 14
+InternalReferenceDesignator: X23 
+Internal Port Connector Type: None
+ExternalReferenceDesignator: USB4
+External Port Connector Type: Access Bus (USB)
+Port Type: USB
+
+
+
+=========================================================
+Type=8, Handle=0xF
+Dump Structure as:
+Index=14,Length=0x1A,Addr=0xBEA7E1E0
+00000000: 08 09 0F 00 01 00 02 0B-1F 58 32 38 20 00 52 4A  *.........X28 .RJ*
+00000010: 2D 34 35 20 54 79 70 65-00 00                    *-45 Type..*
+
+Structure Type: Port Connector Information 
+Format part Len : 9
+Structure Handle: 15
+InternalReferenceDesignator: X28 
+Internal Port Connector Type: None
+ExternalReferenceDesignator: RJ-45 Type
+External Port Connector Type: RJ-45
+Port Type: Network Port
+
+
+
+=========================================================
+Type=8, Handle=0x10
+Dump Structure as:
+Index=15,Length=0x16,Addr=0xBEA7E1F6
+00000000: 08 09 10 00 01 17 02 00-FF 4A 31 47 31 00 46 6C  *.........J1G1.Fl*
+00000010: 6F 70 70 79 00 00                                *oppy..*
+
+Structure Type: Port Connector Information 
+Format part Len : 9
+Structure Handle: 16
+InternalReferenceDesignator: J1G1
+Internal Port Connector Type: On Board Floppy
+ExternalReferenceDesignator: Floppy
+External Port Connector Type: None
+Port Type: Other 
+
+
+
+=========================================================
+Type=8, Handle=0x11
+Dump Structure as:
+Index=16,Length=0x13,Addr=0xBEA7E209
+00000000: 08 09 11 00 01 16 02 00-FF 4A 32 48 32 00 49 44  *.........J2H2.ID*
+00000010: 45 00 00                                         *E..*
+
+Structure Type: Port Connector Information 
+Format part Len : 9
+Structure Handle: 17
+InternalReferenceDesignator: J2H2
+Internal Port Connector Type: On Board IDE
+ExternalReferenceDesignator: IDE
+External Port Connector Type: None
+Port Type: Other 
+
+
+
+=========================================================
+Type=8, Handle=0x12
+Dump Structure as:
+Index=17,Length=0x15,Addr=0xBEA7E21E
+00000000: 08 09 12 00 01 16 02 00-FF 58 32 39 20 00 53 41  *.........X29 .SA*
+00000010: 54 41 31 00 00                                   *TA1..*
+
+Structure Type: Port Connector Information 
+Format part Len : 9
+Structure Handle: 18
+InternalReferenceDesignator: X29 
+Internal Port Connector Type: On Board IDE
+ExternalReferenceDesignator: SATA1
+External Port Connector Type: None
+Port Type: Other 
+
+
+
+=========================================================
+Type=8, Handle=0x13
+Dump Structure as:
+Index=18,Length=0x15,Addr=0xBEA7E233
+00000000: 08 09 13 00 01 16 02 00-FF 58 33 30 20 00 53 41  *.........X30 .SA*
+00000010: 54 41 32 00 00                                   *TA2..*
+
+Structure Type: Port Connector Information 
+Format part Len : 9
+Structure Handle: 19
+InternalReferenceDesignator: X30 
+Internal Port Connector Type: On Board IDE
+ExternalReferenceDesignator: SATA2
+External Port Connector Type: None
+Port Type: Other 
+
+
+
+=========================================================
+Type=9, Handle=0x14
+Dump Structure as:
+Index=19,Length=0x1C,Addr=0xBEA7E24F
+00000000: 09 11 14 00 01 06 05 03-04 01 00 04 05 00 00 00  *................*
+00000010: 00 50 43 49 20 53 4C 4F-54 31 00 00              *.PCI SLOT1..*
+
+Structure Type: System Slots 
+Format part Len : 17
+Structure Handle: 20
+SlotDesignation: PCI SLOT1
+System Slot Type: PCI
+System Slot Data Bus Width:  32 bit
+System Slot Current Usage:  Available
+System Slot Length:  Long Length
+System Slot Type: PCI
+ Slot Id: the value present in the Slot Number field of the PCI Interrupt Routing table entry that is associated with this slot is: 1
+Slot characteristics 1:  Provides 3.3 Volts | 
+Slot characteristics 2:  PCI slot supports Power Management Enable (PME#) signal |  PCI slot supports SMBus signal | 
+SegmentGroupNum: 0x0
+BusNum: 0x0
+DevFuncNum: 0x0
+
+
+
+=========================================================
+Type=9, Handle=0x15
+Dump Structure as:
+Index=20,Length=0x20,Addr=0xBEA7E26F
+00000000: 09 11 15 00 01 A5 05 03-04 02 00 04 05 00 00 00  *................*
+00000010: 00 50 43 49 2D 45 78 70-72 65 73 73 20 31 00 00  *.PCI-Express 1..*
+
+Structure Type: System Slots 
+Format part Len : 17
+Structure Handle: 21
+SlotDesignation: PCI-Express 1
+System Slot Type: PCI Express 
+System Slot Data Bus Width:  32 bit
+System Slot Current Usage:  Available
+System Slot Length:  Long Length
+System Slot Type: PCI Express 
+ Slot Id: the value present in the Slot Number field of the PCI Interrupt Routing table entry that is associated with this slot is: 2
+Slot characteristics 1:  Provides 3.3 Volts | 
+Slot characteristics 2:  PCI slot supports Power Management Enable (PME#) signal |  PCI slot supports SMBus signal | 
+SegmentGroupNum: 0x0
+BusNum: 0x0
+DevFuncNum: 0x0
+
+
+
+=========================================================
+Type=9, Handle=0x16
+Dump Structure as:
+Index=21,Length=0x20,Addr=0xBEA7E28F
+00000000: 09 11 16 00 01 A5 05 03-04 03 00 04 05 00 00 00  *................*
+00000010: 00 50 43 49 2D 45 78 70-72 65 73 73 20 32 00 00  *.PCI-Express 2..*
+
+Structure Type: System Slots 
+Format part Len : 17
+Structure Handle: 22
+SlotDesignation: PCI-Express 2
+System Slot Type: PCI Express 
+System Slot Data Bus Width:  32 bit
+System Slot Current Usage:  Available
+System Slot Length:  Long Length
+System Slot Type: PCI Express 
+ Slot Id: the value present in the Slot Number field of the PCI Interrupt Routing table entry that is associated with this slot is: 3
+Slot characteristics 1:  Provides 3.3 Volts | 
+Slot characteristics 2:  PCI slot supports Power Management Enable (PME#) signal |  PCI slot supports SMBus signal | 
+SegmentGroupNum: 0x0
+BusNum: 0x0
+DevFuncNum: 0x0
+
+
+
+=========================================================
+Type=9, Handle=0x17
+Dump Structure as:
+Index=22,Length=0x20,Addr=0xBEA7E2AF
+00000000: 09 11 17 00 01 A5 05 03-04 04 00 04 05 00 00 00  *................*
+00000010: 00 50 43 49 2D 45 78 70-72 65 73 73 20 33 00 00  *.PCI-Express 3..*
+
+Structure Type: System Slots 
+Format part Len : 17
+Structure Handle: 23
+SlotDesignation: PCI-Express 3
+System Slot Type: PCI Express 
+System Slot Data Bus Width:  32 bit
+System Slot Current Usage:  Available
+System Slot Length:  Long Length
+System Slot Type: PCI Express 
+ Slot Id: the value present in the Slot Number field of the PCI Interrupt Routing table entry that is associated with this slot is: 4
+Slot characteristics 1:  Provides 3.3 Volts | 
+Slot characteristics 2:  PCI slot supports Power Management Enable (PME#) signal |  PCI slot supports SMBus signal | 
+SegmentGroupNum: 0x0
+BusNum: 0x0
+DevFuncNum: 0x0
+
+
+
+=========================================================
+Type=9, Handle=0x18
+Dump Structure as:
+Index=23,Length=0x1D,Addr=0xBEA7E2CC
+00000000: 09 11 18 00 01 A5 05 03-04 05 00 04 05 00 00 00  *................*
+00000010: 00 4D 69 6E 69 20 50 43-49 2D 45 00 00           *.Mini PCI-E..*
+
+Structure Type: System Slots 
+Format part Len : 17
+Structure Handle: 24
+SlotDesignation: Mini PCI-E
+System Slot Type: PCI Express 
+System Slot Data Bus Width:  32 bit
+System Slot Current Usage:  Available
+System Slot Length:  Long Length
+System Slot Type: PCI Express 
+ Slot Id: the value present in the Slot Number field of the PCI Interrupt Routing table entry that is associated with this slot is: 5
+Slot characteristics 1:  Provides 3.3 Volts | 
+Slot characteristics 2:  PCI slot supports Power Management Enable (PME#) signal |  PCI slot supports SMBus signal | 
+SegmentGroupNum: 0x0
+BusNum: 0x0
+DevFuncNum: 0x0
+
+
+
+=========================================================
+Type=10, Handle=0x19
+Dump Structure as:
+Index=24,Length=0x2E,Addr=0xBEA7E2FA
+00000000: 0A 06 19 00 83 01 49 6E-74 65 6C 28 52 29 20 45  *......Intel(R) E*
+00000010: 78 74 72 65 6D 65 20 47-72 61 70 68 69 63 73 20  *xtreme Graphics *
+00000020: 33 20 43 6F 6E 74 72 6F-6C 6C 65 72 00 00        *3 Controller..*
+
+Structure Type: On Board Devices Information  
+Format part Len : 6
+Structure Handle: 25
+Onboard Device Type: Undefined Value
+Description String: Intel(R) Extreme Graphics 3 Controller
+
+
+=========================================================
+Type=11, Handle=0x1A
+Dump Structure as:
+Index=25,Length=0x10,Addr=0xBEA7E30A
+00000000: 0B 05 1A 00 01 49 6E 74-65 6C 20 53 53 47 00 00  *.....Intel SSG..*
+
+Structure Type: OEM Strings
+Format part Len : 5
+Structure Handle: 26
+StringCount: 1
+Intel SSG
+
+
+
+=========================================================
+Type=12, Handle=0x1B
+Dump Structure as:
+Index=26,Length=0x45,Addr=0xBEA7E34F
+00000000: 0C 05 1B 00 01 4A 31 44-34 3A 31 2D 32 2C 35 2D  *.....J1D4:1-2,5-*
+00000010: 36 2C 39 2D 31 30 44 65-66 61 75 6C 74 3B 32 2D  *6,9-10Default;2-*
+00000020: 33 43 4D 4F 53 20 63 6C-72 2C 36 2D 37 50 73 77  *3CMOS clr,6-7Psw*
+00000030: 64 20 63 6C 72 2C 31 30-2D 31 31 52 65 63 6F 76  *d clr,10-11Recov*
+00000040: 65 72 79 00 00                                   *ery..*
+
+Structure Type: System Configuration Options 
+Format part Len : 5
+Structure Handle: 27
+StringCount: 1
+J1D4:1-2,5-6,9-10Default;2-3CMOS clr,6-7Pswd clr,10-11Recovery
+
+
+
+=========================================================
+Type=13, Handle=0x1C
+Dump Structure as:
+Index=27,Length=0x18,Addr=0xBEA7E367
+00000000: 0D 16 1C 00 01 00 00 00-00 00 00 00 00 00 00 00  *................*
+00000010: 00 00 00 00 00 01 00 00-                         *........*
+
+Structure Type: BIOS Language Information  
+Format part Len : 22
+Structure Handle: 28
+InstallableLanguages: 1
+Flags: 0
+Dump reserved
+size=15:
+00000000: 00 00 00 00 00 00 00 00-00 00 00 00 00 00 00     *...............*
+CurrentLanguages: 
+
+
+
+=========================================================
+Type=32, Handle=0x1D
+Dump Structure as:
+Index=28,Length=0xD,Addr=0xBEA7E374
+00000000: 20 0B 1D 00 00 00 00 00-00 00 00 00 00           * ............*
+
+Structure Type: System Boot Information 
+Format part Len : 11
+Structure Handle: 29
+Dump Reserved
+size=6:
+00000000: 00 00 00 00 00 00                                *......*
+System Boot Status:  No errors detected
+
+
+=========================================================
+Type=16, Handle=0x1E
+Dump Structure as:
+Index=29,Length=0x11,Addr=0xBEA7E385
+00000000: 10 0F 1E 00 03 03 03 00-00 10 00 FE FF 02 00 00  *................*
+00000010: 00                                               *.*
+
+Structure Type: Physical Memory Array 
+Format part Len : 15
+Structure Handle: 30
+Physical Memory Array Location:   System board or motherboard
+Physical Memory Array Location:  System memory
+Physical Memory Array Error Correction Types:   None
+MaximumCapacity: 0x100000
+MemoryErrorInformationHandle: 0xFFFE
+NumberOfMemoryDevices: 0x2
+
+
+
+=========================================================
+Type=19, Handle=0x1F
+Dump Structure as:
+Index=30,Length=0x17,Addr=0xBEA7E39C
+00000000: 13 0F 1F 00 00 00 00 00-FF FF 2F 00 1E 00 02 00  *........../.....*
+00000010: 70 74 61 6C 30 00 00                             *ptal0..*
+
+Structure Type: Memory Array Mapped Address 
+Format part Len : 15
+Structure Handle: 31
+StartingAddress: 0x0
+EndingAddress: 0x2FFFFF
+MemoryArrayHandle: 0x1E
+PartitionWidth: 0x2
+
+
+
+=========================================================
+Type=6, Handle=0x20
+Dump Structure as:
+Index=31,Length=0x19,Addr=0xBEA7E3B5
+00000000: 06 0C 20 00 01 00 01 00-00 0B 0B 00 53 4F 4C 44  *.. .........SOLD*
+00000010: 45 52 20 44 4F 57 4E 00-00                       *ER DOWN..*
+
+Structure Type: Memory Module Information 
+Format part Len : 12
+Structure Handle: 32
+SocketDesignation: SOLDER DOWN
+Bank Connections:Banks 0 & 0(RAS# 0 & -4294967296)
+CurrentSpeed: 1
+Memory Module Memory Type: No Info
+Installed Memory Size: Memory Size: 2048 MB
+The memory module has a Single-bank connection
+Enabled Memory Size: Memory Size: 2048 MB
+The memory module has a Single-bank connection
+Memory Module Error Status: No Info
+
+
+
+=========================================================
+Type=17, Handle=0x21
+Dump Structure as:
+Index=32,Length=0x79,Addr=0xBEA7E42E
+00000000: 11 1C 21 00 1E 00 FE FF-40 00 40 00 00 0C 05 00  *..!.....@.@.....*
+00000010: 01 02 13 80 00 20 03 03-04 05 06 01 53 4F 4C 44  *..... ......SOLD*
+00000020: 45 52 20 44 4F 57 4E 00-53 4F 4C 44 45 52 20 44  *ER DOWN.SOLDER D*
+00000030: 4F 57 4E 00 4E 4F 20 44-49 4D 4D 2C 4D 45 4D 52  *OWN.NO DIMM,MEMR*
+00000040: 4F 59 20 44 4F 57 4E 00-4E 4F 20 44 49 4D 4D 2C  *OY DOWN.NO DIMM,*
+00000050: 4D 45 4D 52 4F 59 20 44-4F 57 4E 00 55 6E 6B 6E  *MEMROY DOWN.Unkn*
+00000060: 6F 77 6E 00 4E 4F 20 44-49 4D 4D 2C 4D 45 4D 52  *own.NO DIMM,MEMR*
+00000070: 4F 59 20 44 4F 57 4E 00-00                       *OY DOWN..*
+
+Structure Type: Memory Device 
+Format part Len : 28
+Structure Handle: 33
+MemoryArrayHandle: 0x1E
+MemoryErrorInformationHandle: 0xFFFE
+TotalWidth: 64
+DataWidth: 64
+Size: 3072
+Memory Device - Form Factor:   Chip
+DeviceSet: 0x0
+DeviceLocator: SOLDER DOWN
+BankLocator: SOLDER DOWN
+Memory Device - Type:   DDR2
+Memory Device - Type Detail:  Synchronous | 
+Speed: 0x320
+Manufacturer: NO DIMM,MEMROY DOWN
+SerialNumber: NO DIMM,MEMROY DOWN
+AssetTag: Unknown
+PartNumber: NO DIMM,MEMROY DOWN
+Attributes: 0x1
+
+
+
+=========================================================
+Type=20, Handle=0x22
+Dump Structure as:
+Index=33,Length=0x16,Addr=0xBEA7E444
+00000000: 14 13 22 00 00 00 00 00-FF FF 2F 00 21 00 1F 00  *.."......./.!...*
+00000010: 01 00 00 BF 00 00                                *......*
+
+Structure Type: Memory Device Mapped Address  
+Format part Len : 19
+Structure Handle: 34
+StartingAddress: 0x0
+EndingAddress: 0x2FFFFF
+MemoryDeviceHandle: 0x21
+MemoryArrayMappedAddressHandle: 0x1F
+PartitionRowPosition: 0x1
+InterleavePosition: 0x0
+InterleavedDataDepth: 0x0
+
+
+
+=========================================================
+Type=7, Handle=0x23
+Dump Structure as:
+Index=34,Length=0x1C,Addr=0xBEA7E460
+00000000: 07 13 23 00 01 80 01 20-00 20 00 40 00 40 00 00  *..#.... . .@.@..*
+00000010: 05 03 07 55 6E 6B 6E 6F-77 6E 00 00              *...Unknown..*
+
+Structure Type: Cache Information 
+Format part Len : 19
+Structure Handle: 35
+SocketDesignation: Unknown
+CacheConfiguration: 0x180
+MaximumCacheSize: 0x20
+InstalledSize: 0x20
+SupportedSRAMType: 0x40
+CurrentSRAMType: 0x40
+Cache SRAM Type:  Asynchronous | 
+CacheSpeed: 0x0
+Cache Error Correcting Type: Single-bit ECC
+Cache System Cache Type:Instruction
+Cache Associativity:8-way Set-Associative
+
+
+
+=========================================================
+Type=4, Handle=0x24
+Dump Structure as:
+Index=35,Length=0x71,Addr=0xBEA7E4D1
+00000000: 04 2A 24 00 01 03 B2 02-61 06 03 00 FF FB EB BF  *.*$.....a.......*
+00000010: 03 90 85 00 D8 0E 50 08-00 15 23 00 FF FF FF FF  *......P...#.....*
+00000020: 00 04 00 00 00 00 00 00-00 00 4C 47 41 37 37 35  *..........LGA775*
+00000030: 00 49 6E 74 65 6C 28 52-29 20 43 6F 72 70 6F 72  *.Intel(R) Corpor*
+00000040: 61 74 69 6F 6E 00 49 6E-74 65 6C 28 52 29 20 41  *ation.Intel(R) A*
+00000050: 74 6F 6D 28 54 4D 29 20-43 50 55 20 44 32 37 30  *tom(TM) CPU D270*
+00000060: 31 20 20 20 40 20 32 2E-31 33 47 48 7A 00 20 00  *1   @ 2.13GHz. .*
+00000070: 00                                               *.*
+
+Structure Type: Processor Information
+Format part Len : 42
+Structure Handle: 36
+Socket: 1
+Processor Type:  Central Processor
+Processor Family:Reserved for specific Pentium(R) Processor versions
+ProcessorManufacture: Intel(R) Corporation
+Dump ProcessorId
+size=8:
+00000000: 61 06 03 00 FF FB EB BF-                         *a.......*
+ProcessorVersion: Intel(R) Atom(TM) CPU D2701   @ 2.13GHz
+Processor Information -  Voltage:
+Processor current voltage = (16/10)V
+ExternalClock: 133
+MaxSpeed: 3800
+CurrentSpeed: 2128
+Processor Status:
+CPU Socket Unpopulated Bits
+Unknown
+Processor Upgrade: Socket LGA775
+L1CacheHandle: 0x23
+L2CacheHandle: 0xFFFF
+L3CacheHandle: 0xFFFF
+SerialNumber: 
+AssetTag:  
+PartNumber: 
+CoreCount: 0
+EnabledCoreCount: 0
+ThreadCount: 0
+ProcessorCharacteristics: 0x0
+
+
+
+=========================================================
+Type=127, Handle=0xFEFF
+Dump Structure as:
+Index=36,Length=0x6,Addr=0xBEA7E4D7
+00000000: 7F 04 FF FE 00 00                                *......*
+
+Structure Type: End-of-Table 
+Format part Len : 4
+Structure Handle: 65279
+This structure indicates the End-of-table!
+
+
+
+=========================================================
+
+Shell> 
