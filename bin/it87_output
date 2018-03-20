@@ -1,0 +1,26 @@
+#!/usr/bin/env zsh
+
+it87_base() {
+        cat ${$(grep -l gpio_it87 /sys/class/gpio/gpiochip*/label):h}/base
+}
+it87_pin_offset() {
+        local bank=$1 pin=$2 base
+        base=$(it87_base)
+        print $((base + (bank - 1) * 8 + pin))
+}
+it87_export() {
+        local bank=$1 pin=$2 offset
+        offset=$(it87_pin_offset $bank $pin)
+        print $offset >/sys/class/gpio/export
+}
+it87_output() {
+        local bank=$1 pin=$2 value=$3 dir
+        dir=/sys/class/gpio/it87_gp$bank$pin
+        if [[ ! -d $dir ]]; then
+                it87_export $bank $pin
+        fi
+        print out >$dir/direction
+        print $value >$dir/value
+}
+
+it87_output $@
