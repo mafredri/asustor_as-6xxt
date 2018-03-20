@@ -1,0 +1,73 @@
+rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7f6604607d10}, NULL, 8) = 0
+close(4)                                = 0
+dup2(3, 0)                              = 0
+close(3)                                = 0
+dup2(5, 1)                              = 1
+close(5)                                = 0
+execve("/bin/grep", ["grep", "-v", "sd\\+[[:alpha:]]\\+[[:digit:]]"], 0x229ac80 /* 24 vars */) = 0
+brk(NULL)                               = 0x1487000
+readlink("grep", 0x7fff6e7f9580, 4096)  = -1 ENOENT (No such file or directory)
+open(".", O_RDONLY)                     = 3
+chdir("grep")                           = -1 ENOENT (No such file or directory)
+getcwd("/", 4096)                       = 2
+fchdir(3)                               = 0
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f97a5f9f000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=33541, ...}) = 0
+mmap(NULL, 33541, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f97a5f96000
+close(3)                                = 0
+open("/lib64/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0 W\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0555, st_size=1038720, ...}) = 0
+mmap(NULL, 3133768, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f97a5a82000
+mprotect(0x7f97a5b7f000, 2093056, PROT_NONE) = 0
+mmap(0x7f97a5d7e000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xfc000) = 0x7f97a5d7e000
+close(3)                                = 0
+open("/lib64/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\340\1\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0555, st_size=1679912, ...}) = 0
+mmap(NULL, 3791936, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f97a56e4000
+mprotect(0x7f97a5878000, 2097152, PROT_NONE) = 0
+mmap(0x7f97a5a78000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x194000) = 0x7f97a5a78000
+mmap(0x7f97a5a7e000, 15424, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f97a5a7e000
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f97a5f95000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f97a5f94000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f97a5f93000
+arch_prctl(ARCH_SET_FS, 0x7f97a5f94700) = 0
+mprotect(0x7f97a5a78000, 16384, PROT_READ) = 0
+mprotect(0x7f97a5d7e000, 4096, PROT_READ) = 0
+mprotect(0x7f97a5fa0000, 4096, PROT_READ) = 0
+munmap(0x7f97a5f96000, 33541)           = 0
+getuid()                                = 0
+brk(NULL)                               = 0x1487000
+brk(0x14a8000)                          = 0x14a8000
+fstat(0, {st_mode=S_IFIFO|0600, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f97a5f9e000
+read(0, "Linux 3.12.20 (AS-604T-215C) \t02"..., 4096) = 60
+fstat(1, {st_mode=S_IFIFO|0600, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f97a5f9d000
+read(0, "avg-cpu:  %user   %nice %system "..., 4096) = 56
+read(0, "           0.26    0.00    0.64 "..., 4096) = 57
+read(0, "Device:            tps", 4096) = 22
+read(0, "    kB_read/s    kB_wrtn/s    kB"..., 4096) = 48
+read(0, "\n", 4096)                     = 1
+read(0, "sda          ", 4096)          = 13
+read(0, "    20.52         7.38      9803"..., 4096) = 58
+read(0, "sdb          ", 4096)          = 13
+read(0, "     0.29         1.33         0"..., 4096) = 58
+read(0, "sdc          ", 4096)          = 13
+read(0, "     0.58        48.27         0"..., 4096) = 58
+read(0, "md0          ", 4096)          = 13
+read(0, "     4.72         3.38       142"..., 4096) = 58
+read(0, "md126        ", 4096)          = 13
+read(0, "     0.00         0.01         0"..., 4096) = 58
+read(0, "md1          ", 4096)          = 13
+read(0, "    20.30         3.44      9660"..., 4096) = 58
+read(0, "\n", 4096)                     = 1
+read(0, "", 4096)                               = 0
+write(1, "Linux 3.12.20 (AS-604T-215C) \t02"..., 671) = 671
+exit_group(0)                           = ?
++++ exited with 0 +++

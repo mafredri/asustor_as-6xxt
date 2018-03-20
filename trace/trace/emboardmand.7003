@@ -1,0 +1,126 @@
+set_robust_list(0x7fadc9e709e0, 24)     = 0
+write(1, "[EMBOARD] Hdd_Light_Service_Hand"..., 83) = 83
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=3, tv_nsec=0}, 0x7fadc9e6fe20) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=10, tv_nsec=0}, 0x7fadc9e6fe20) = 0
+lstat("/dev/shm/hu5lbo", 0x7fadc9e6fab0) = -1 ENOENT (No such file or directory)
+open("/dev/shm/hu5lbo", O_RDWR|O_CREAT|O_EXCL, 01130) = 3
+write(3, "\1\0\0\0\0\0\0\0\200\0\0\0\255\177\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0", 32) = 32
+mmap(NULL, 32, PROT_READ|PROT_WRITE, MAP_SHARED, 3, 0) = 0x7fadcf5b2000
+link("/dev/shm/hu5lbo", "/dev/shm/sem.HALINFO_SEMAPHORE") = -1 EEXIST (File exists)
+munmap(0x7fadcf5b2000, 32)              = 0
+unlink("/dev/shm/hu5lbo")               = 0
+close(3)                                = 0
+open("/dev/shm/sem.HALINFO_SEMAPHORE", O_RDWR|O_NOFOLLOW) = 3
+fstat(3, {st_mode=S_IFREG|S_ISVTX|0130, st_size=32, ...}) = 0
+mmap(0x7fadb0000000, 67108864, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7fadb0000000
+mprotect(0x7fadb0000000, 135168, PROT_READ|PROT_WRITE) = 0
+mmap(NULL, 32, PROT_READ|PROT_WRITE, MAP_SHARED, 3, 0) = 0x7fadcf5b2000
+close(3)                                = 0
+munmap(0x7fadcf5b2000, 32)              = 0
+lstat("/dev/shm/ZyFeK8", 0x7fadc9e6f9f0) = -1 ENOENT (No such file or directory)
+open("/dev/shm/ZyFeK8", O_RDWR|O_CREAT|O_EXCL, 01130) = 3
+write(3, "\1\0\0\0\0\0\0\0\200\0\0\0\255\177\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0", 32) = 32
+mmap(NULL, 32, PROT_READ|PROT_WRITE, MAP_SHARED, 3, 0) = 0x7fadcf5b2000
+link("/dev/shm/ZyFeK8", "/dev/shm/sem.HW_SEMAPHORE_PCI") = -1 EEXIST (File exists)
+munmap(0x7fadcf5b2000, 32)              = 0
+unlink("/dev/shm/ZyFeK8")               = 0
+close(3)                                = 0
+open("/dev/shm/sem.HW_SEMAPHORE_PCI", O_RDWR|O_NOFOLLOW) = 3
+fstat(3, {st_mode=S_IFREG|S_ISVTX|0130, st_size=32, ...}) = 0
+mmap(NULL, 32, PROT_READ|PROT_WRITE, MAP_SHARED, 3, 0) = 0x7fadcf5b2000
+close(3)                                = 0
+ioperm(0xcf8, 0x4, 1)                   = 0
+ioperm(0xcf8, 0x4, 0)                   = 0
+ioperm(0xeb, 0x1, 1)                    = 0
+ioperm(0xeb, 0x1, 0)                    = 0
+ioperm(0xcfc, 0x4, 1)                   = 0
+ioperm(0xcfc, 0x4, 0)                   = 0
+ioperm(0xeb, 0x1, 1)                    = 0
+ioperm(0xeb, 0x1, 0)                    = 0
+ioperm(0xcf8, 0x4, 1)                   = 0
+ioperm(0xcf8, 0x4, 0)                   = 0
+ioperm(0xeb, 0x1, 1)                    = 0
+ioperm(0xeb, 0x1, 0)                    = 0
+munmap(0x7fadcf5b2000, 32)              = 0
+lstat("/dev/shm/1HsrjT", 0x7fadc9e6fa60) = -1 ENOENT (No such file or directory)
+open("/dev/shm/1HsrjT", O_RDWR|O_CREAT|O_EXCL, 01130) = 3
+write(3, "\1\0\0\0\0\0\0\0\200\0\0\0\255\177\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0", 32) = 32
+mmap(NULL, 32, PROT_READ|PROT_WRITE, MAP_SHARED, 3, 0) = 0x7fadcf5b2000
+link("/dev/shm/1HsrjT", "/dev/shm/sem.HW_SEMAPHORE_MV9125") = -1 EEXIST (File exists)
+munmap(0x7fadcf5b2000, 32)              = 0
+unlink("/dev/shm/1HsrjT")               = 0
+close(3)                                = 0
+open("/dev/shm/sem.HW_SEMAPHORE_MV9125", O_RDWR|O_NOFOLLOW) = 3
+fstat(3, {st_mode=S_IFREG|S_ISVTX|0130, st_size=32, ...}) = 0
+mmap(NULL, 32, PROT_READ|PROT_WRITE, MAP_SHARED, 3, 0) = 0x7fadcf5b2000
+close(3)                                = 0
+open("/dev/mem", O_RDWR)                = 3
+mmap(NULL, 60, PROT_READ|PROT_WRITE, MAP_SHARED, 3, 0xc0400000) = 0x7fadcf5b1000
+nanosleep({tv_sec=0, tv_nsec=100000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=100000}, NULL) = 0
+munmap(0x7fadcf5b1000, 60)              = 0
+close(3)                                = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+munmap(0x7fadcf5b2000, 32)              = 0
+lstat("/dev/shm/7AM7SD", 0x7fadc9e6fa00) = -1 ENOENT (No such file or directory)
+open("/dev/shm/7AM7SD", O_RDWR|O_CREAT|O_EXCL, 01130) = 3
+write(3, "\1\0\0\0\0\0\0\0\200\0\0\0\255\177\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0", 32) = 32
+mmap(NULL, 32, PROT_READ|PROT_WRITE, MAP_SHARED, 3, 0) = 0x7fadcf5b2000
+link("/dev/shm/7AM7SD", "/dev/shm/sem.HW_SEMAPHORE_PCI") = -1 EEXIST (File exists)
+munmap(0x7fadcf5b2000, 32)              = 0
+unlink("/dev/shm/7AM7SD")               = 0
+close(3)                                = 0
+open("/dev/shm/sem.HW_SEMAPHORE_PCI", O_RDWR|O_NOFOLLOW) = 3
+fstat(3, {st_mode=S_IFREG|S_ISVTX|0130, st_size=32, ...}) = 0
+mmap(NULL, 32, PROT_READ|PROT_WRITE, MAP_SHARED, 3, 0) = 0x7fadcf5b2000
+close(3)                                = 0
+ioperm(0xcf8, 0x4, 1)                   = 0
+ioperm(0xcf8, 0x4, 0)                   = 0
+ioperm(0xeb, 0x1, 1)                    = 0
+ioperm(0xeb, 0x1, 0)                    = 0
+ioperm(0xcfc, 0x4, 1)                   = 0
+ioperm(0xcfc, 0x4, 0)                   = 0
+ioperm(0xeb, 0x1, 1)                    = 0
+ioperm(0xeb, 0x1, 0)                    = 0
+ioperm(0xcf8, 0x4, 1)                   = 0
+ioperm(0xcf8, 0x4, 0)                   = 0
+ioperm(0xeb, 0x1, 1)                    = 0
+ioperm(0xeb, 0x1, 0)                    = 0
+munmap(0x7fadcf5b2000, 32)              = 0
+lstat("/dev/shm/fxV8so", 0x7fadc9e6fa70) = -1 ENOENT (No such file or directory)
+open("/dev/shm/fxV8so", O_RDWR|O_CREAT|O_EXCL, 01130) = 3
+write(3, "\1\0\0\0\0\0\0\0\200\0\0\0\255\177\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0", 32) = 32
+mmap(NULL, 32, PROT_READ|PROT_WRITE, MAP_SHARED, 3, 0) = 0x7fadcf5b2000
+link("/dev/shm/fxV8so", "/dev/shm/sem.HW_SEMAPHORE_MV9125") = -1 EEXIST (File exists)
+munmap(0x7fadcf5b2000, 32)              = 0
+unlink("/dev/shm/fxV8so")               = 0
+close(3)                                = 0
+open("/dev/shm/sem.HW_SEMAPHORE_MV9125", O_RDWR|O_NOFOLLOW) = 3
+fstat(3, {st_mode=S_IFREG|S_ISVTX|0130, st_size=32, ...}) = 0
+mmap(NULL, 32, PROT_READ|PROT_WRITE, MAP_SHARED, 3, 0) = 0x7fadcf5b2000
+close(3)                                = 0
+open("/dev/mem", O_RDWR)                = 3
+mmap(NULL, 60, PROT_READ|PROT_WRITE, MAP_SHARED, 3, 0xc0400000) = 0x7fadcf5b1000
+nanosleep({tv_sec=0, tv_nsec=100000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=100000}, NULL) = 0
+munmap(0x7fadcf5b1000, 60)              = 0
+close(3)                                = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+munmap(0x7fadcf5b2000, 32)              = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=3, tv_nsec=0}, 0x7fadc9e6fe20) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=10, tv_nsec=0}, 0x7fadc9e6fe20) = 0
+madvise(0x7fadc9670000, 8368128, MADV_DONTNEED) = 0
+exit(0)                                 = ?
++++ exited with 0 +++

@@ -1,0 +1,2304 @@
+rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7f61088abd10}, NULL, 8) = 0
+close(10)                               = 0
+execve("/sbin/mdadm", ["/sbin/mdadm", "-D", "/dev/md1"], 0x1a85c38 /* 24 vars */) = 0
+brk(NULL)                               = 0x23a8000
+readlink("/sbin/mdadm", 0x7fff9590c950, 4096) = -1 EINVAL (Invalid argument)
+open(".", O_RDONLY)                     = 3
+chdir("/sbin/")                         = 0
+getcwd("/sbin", 4096)                   = 6
+fchdir(3)                               = 0
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f74d06b2000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=33541, ...}) = 0
+mmap(NULL, 33541, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f74d06a9000
+close(3)                                = 0
+open("/lib64/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\340\1\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0555, st_size=1679912, ...}) = 0
+mmap(NULL, 3791936, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f74d00f5000
+mprotect(0x7f74d0289000, 2097152, PROT_NONE) = 0
+mmap(0x7f74d0489000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x194000) = 0x7f74d0489000
+mmap(0x7f74d048f000, 15424, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f74d048f000
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f74d06a8000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f74d06a7000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f74d06a6000
+arch_prctl(ARCH_SET_FS, 0x7f74d06a7700) = 0
+mprotect(0x7f74d0489000, 16384, PROT_READ) = 0
+mprotect(0x7f74d06b3000, 4096, PROT_READ) = 0
+munmap(0x7f74d06a9000, 33541)           = 0
+getpid()                                = 18166
+brk(NULL)                               = 0x23a8000
+brk(0x23c9000)                          = 0x23c9000
+open("/etc/mdadm.conf", O_RDONLY)       = -1 ENOENT (No such file or directory)
+open("/etc/mdadm/mdadm.conf", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/etc/mdadm.conf.d", O_RDONLY)     = -1 ENOENT (No such file or directory)
+uname({sysname="Linux", nodename="AS-604T-215C", ...}) = 0
+geteuid()                               = 0
+open("/dev/md1", O_RDONLY)              = 3
+uname({sysname="Linux", nodename="AS-604T-215C", ...}) = 0
+fstat(3, {st_mode=S_IFBLK|0777, st_rdev=makedev(9, 1), ...}) = 0
+ioctl(3, RAID_VERSION, 0x7fff9590bb40)  = 0
+ioctl(3, RAID_VERSION, 0x7fff95909b20)  = 0
+fstat(3, {st_mode=S_IFBLK|0777, st_rdev=makedev(9, 1), ...}) = 0
+readlink("/sys/dev/block/9:1", "../../devices/virtual/block/md1", 199) = 31
+open("/sys/block/md1/md/metadata_version", O_RDONLY) = 4
+read(4, "1.2\n", 1024)                  = 4
+close(4)                                = 0
+stat("/sys/block/md1/md/", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+open("/sys/block/md1/md/", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+getdents(4, /* 33 entries */, 32768)    = 1128
+open("/sys/block/md1/md/dev-sda4/slot", O_RDONLY) = 5
+read(5, "0\n", 1024)                    = 2
+close(5)                                = 0
+open("/sys/block/md1/md/dev-sda4/block/dev", O_RDONLY) = 5
+read(5, "8:4\n", 1024)                  = 4
+close(5)                                = 0
+open("/sys/block/md1/md/dev-sda4/block/device/state", O_RDONLY) = -1 ENOENT (No such file or directory)
+getdents(4, /* 0 entries */, 32768)     = 0
+close(4)                                = 0
+ioctl(3, RAID_VERSION, 0x7fff95909a40)  = 0
+fstat(3, {st_mode=S_IFBLK|0777, st_rdev=makedev(9, 1), ...}) = 0
+readlink("/sys/dev/block/9:1", "../../devices/virtual/block/md1", 199) = 31
+open("/sys/block/md1/md/metadata_version", O_RDONLY) = 4
+read(4, "1.2\n", 1024)                  = 4
+close(4)                                = 0
+fstat(3, {st_mode=S_IFBLK|0777, st_rdev=makedev(9, 1), ...}) = 0
+readlink("/sys/dev/block/9:1", "../../devices/virtual/block/md1", 199) = 31
+ioctl(3, GET_ARRAY_INFO, 0x7fff9590d210) = 0
+fstat(3, {st_mode=S_IFBLK|0777, st_rdev=makedev(9, 1), ...}) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d140) = 0
+lstat("/dev", {st_mode=S_IFDIR|0755, st_size=4920, ...}) = 0
+lstat("/dev", {st_mode=S_IFDIR|0755, st_size=4920, ...}) = 0
+stat("/dev", {st_mode=S_IFDIR|0755, st_size=4920, ...}) = 0
+open("/dev", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4920, ...}) = 0
+getdents(4, /* 246 entries */, 32768)   = 7384
+newfstatat(4, "seq", {st_mode=S_IFCHR|0777, st_rdev=makedev(116, 1), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "log", {st_mode=S_IFSOCK|0666, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "crypto", {st_mode=S_IFCHR|0777, st_rdev=makedev(10, 59), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "iscsi-scst-ctl", {st_mode=S_IFCHR|0600, st_rdev=makedev(246, 0), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "controlC0", {st_mode=S_IFCHR|0777, st_rdev=makedev(116, 4), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "hwC0D1", {st_mode=S_IFCHR|0777, st_rdev=makedev(116, 3), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "pcmC0D3p", {st_mode=S_IFCHR|0777, st_rdev=makedev(116, 2), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "event3", {st_mode=S_IFCHR|0777, st_rdev=makedev(13, 67), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "timer", {st_mode=S_IFCHR|0777, st_rdev=makedev(116, 33), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "md1", {st_mode=S_IFBLK|0777, st_rdev=makedev(9, 1), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "md126", {st_mode=S_IFBLK|0777, st_rdev=makedev(9, 126), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "loop31", {st_mode=S_IFBLK|0777, st_rdev=makedev(7, 31), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "loop30", {st_mode=S_IFBLK|0777, st_rdev=makedev(7, 30), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "loop29", {st_mode=S_IFBLK|0777, st_rdev=makedev(7, 29), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "loop28", {st_mode=S_IFBLK|0777, st_rdev=makedev(7, 28), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "loop27", {st_mode=S_IFBLK|0777, st_rdev=makedev(7, 27), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "loop26", {st_mode=S_IFBLK|0777, st_rdev=makedev(7, 26), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "loop25", {st_mode=S_IFBLK|0777, st_rdev=makedev(7, 25), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "loop24", {st_mode=S_IFBLK|0777, st_rdev=makedev(7, 24), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "loop23", {st_mode=S_IFBLK|0777, st_rdev=makedev(7, 23), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "loop22", {st_mode=S_IFBLK|0777, st_rdev=makedev(7, 22), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "loop21", {st_mode=S_IFBLK|0777, st_rdev=makedev(7, 21), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "loop20", {st_mode=S_IFBLK|0777, st_rdev=makedev(7, 20), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "loop19", {st_mode=S_IFBLK|0777, st_rdev=makedev(7, 19), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "loop18", {st_mode=S_IFBLK|0777, st_rdev=makedev(7, 18), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "loop17", {st_mode=S_IFBLK|0777, st_rdev=makedev(7, 17), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "loop16", {st_mode=S_IFBLK|0777, st_rdev=makedev(7, 16), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "loop15", {st_mode=S_IFBLK|0777, st_rdev=makedev(7, 15), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "loop14", {st_mode=S_IFBLK|0777, st_rdev=makedev(7, 14), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "loop13", {st_mode=S_IFBLK|0777, st_rdev=makedev(7, 13), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "loop12", {st_mode=S_IFBLK|0777, st_rdev=makedev(7, 12), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "loop11", {st_mode=S_IFBLK|0777, st_rdev=makedev(7, 11), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "loop10", {st_mode=S_IFBLK|0777, st_rdev=makedev(7, 10), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "loop9", {st_mode=S_IFBLK|0777, st_rdev=makedev(7, 9), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "loop8", {st_mode=S_IFBLK|0777, st_rdev=makedev(7, 8), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "md0", {st_mode=S_IFBLK|0777, st_rdev=makedev(9, 0), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "usb2", {st_mode=S_IFCHR|0777, st_rdev=makedev(189, 128), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "2-1", {st_mode=S_IFCHR|0777, st_rdev=makedev(189, 129), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "usb8", {st_mode=S_IFCHR|0777, st_rdev=makedev(189, 896), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "usb7", {st_mode=S_IFCHR|0777, st_rdev=makedev(189, 768), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "usb6", {st_mode=S_IFCHR|0777, st_rdev=makedev(189, 640), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "usb10", {st_mode=S_IFCHR|0777, st_rdev=makedev(189, 1152), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "usb9", {st_mode=S_IFCHR|0777, st_rdev=makedev(189, 1024), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "usb1", {st_mode=S_IFCHR|0777, st_rdev=makedev(189, 0), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "sdc", {st_mode=S_IFBLK|0777, st_rdev=makedev(8, 32), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "1-2", {st_mode=S_IFCHR|0777, st_rdev=makedev(189, 1), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "usb5", {st_mode=S_IFCHR|0777, st_rdev=makedev(189, 512), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "usb4", {st_mode=S_IFCHR|0777, st_rdev=makedev(189, 384), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "usb3", {st_mode=S_IFCHR|0777, st_rdev=makedev(189, 256), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "usbmon10", {st_mode=S_IFCHR|0777, st_rdev=makedev(249, 10), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "usbmon9", {st_mode=S_IFCHR|0777, st_rdev=makedev(249, 9), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "sdb2", {st_mode=S_IFBLK|0777, st_rdev=makedev(8, 18), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "sdb1", {st_mode=S_IFBLK|0777, st_rdev=makedev(8, 17), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "sdb", {st_mode=S_IFBLK|0777, st_rdev=makedev(8, 16), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "usbmon8", {st_mode=S_IFCHR|0777, st_rdev=makedev(249, 8), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "usbmon7", {st_mode=S_IFCHR|0777, st_rdev=makedev(249, 7), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "usbmon6", {st_mode=S_IFCHR|0777, st_rdev=makedev(249, 6), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "usbmon5", {st_mode=S_IFCHR|0777, st_rdev=makedev(249, 5), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "usbmon4", {st_mode=S_IFCHR|0777, st_rdev=makedev(249, 4), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "usbmon3", {st_mode=S_IFCHR|0777, st_rdev=makedev(249, 3), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "usbmon2", {st_mode=S_IFCHR|0777, st_rdev=makedev(249, 2), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "usbmon1", {st_mode=S_IFCHR|0777, st_rdev=makedev(249, 1), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "usbmon0", {st_mode=S_IFCHR|0777, st_rdev=makedev(249, 0), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "sg0", {st_mode=S_IFCHR|0777, st_rdev=makedev(21, 0), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "mouse0", {st_mode=S_IFCHR|0777, st_rdev=makedev(13, 32), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "event2", {st_mode=S_IFCHR|0777, st_rdev=makedev(13, 66), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "event1", {st_mode=S_IFCHR|0777, st_rdev=makedev(13, 65), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "event0", {st_mode=S_IFCHR|0777, st_rdev=makedev(13, 64), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "mice", {st_mode=S_IFCHR|0777, st_rdev=makedev(13, 63), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "ram15", {st_mode=S_IFBLK|0777, st_rdev=makedev(1, 15), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "ram14", {st_mode=S_IFBLK|0777, st_rdev=makedev(1, 14), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "ram13", {st_mode=S_IFBLK|0777, st_rdev=makedev(1, 13), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "ram12", {st_mode=S_IFBLK|0777, st_rdev=makedev(1, 12), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "ram11", {st_mode=S_IFBLK|0777, st_rdev=makedev(1, 11), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "ram10", {st_mode=S_IFBLK|0777, st_rdev=makedev(1, 10), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "loop7", {st_mode=S_IFBLK|0777, st_rdev=makedev(7, 7), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "loop6", {st_mode=S_IFBLK|0777, st_rdev=makedev(7, 6), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "loop5", {st_mode=S_IFBLK|0777, st_rdev=makedev(7, 5), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "loop4", {st_mode=S_IFBLK|0777, st_rdev=makedev(7, 4), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "loop3", {st_mode=S_IFBLK|0777, st_rdev=makedev(7, 3), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "loop2", {st_mode=S_IFBLK|0777, st_rdev=makedev(7, 2), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "sg2", {st_mode=S_IFCHR|0777, st_rdev=makedev(21, 2), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "loop1", {st_mode=S_IFBLK|0777, st_rdev=makedev(7, 1), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "11:0:0:0", {st_mode=S_IFCHR|0777, st_rdev=makedev(250, 2), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "loop0", {st_mode=S_IFBLK|0777, st_rdev=makedev(7, 0), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "sda4", {st_mode=S_IFBLK|0777, st_rdev=makedev(8, 4), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "sda3", {st_mode=S_IFBLK|0777, st_rdev=makedev(8, 3), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "sda2", {st_mode=S_IFBLK|0777, st_rdev=makedev(8, 2), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "sda1", {st_mode=S_IFBLK|0777, st_rdev=makedev(8, 1), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "ram9", {st_mode=S_IFBLK|0777, st_rdev=makedev(1, 9), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "ram8", {st_mode=S_IFBLK|0777, st_rdev=makedev(1, 8), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "ram7", {st_mode=S_IFBLK|0777, st_rdev=makedev(1, 7), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "ram6", {st_mode=S_IFBLK|0777, st_rdev=makedev(1, 6), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "ram5", {st_mode=S_IFBLK|0777, st_rdev=makedev(1, 5), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "ram4", {st_mode=S_IFBLK|0777, st_rdev=makedev(1, 4), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "ram3", {st_mode=S_IFBLK|0777, st_rdev=makedev(1, 3), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "ram2", {st_mode=S_IFBLK|0777, st_rdev=makedev(1, 2), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "ram1", {st_mode=S_IFBLK|0777, st_rdev=makedev(1, 1), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "10:0:0:0", {st_mode=S_IFCHR|0777, st_rdev=makedev(250, 1), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "ram0", {st_mode=S_IFBLK|0777, st_rdev=makedev(1, 0), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "sda", {st_mode=S_IFBLK|0777, st_rdev=makedev(8, 0), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "sg1", {st_mode=S_IFCHR|0777, st_rdev=makedev(21, 1), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "usbdev10.1", {st_mode=S_IFCHR|0777, st_rdev=makedev(189, 1152), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "usbdev9.1", {st_mode=S_IFCHR|0777, st_rdev=makedev(189, 1024), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "usbdev8.1", {st_mode=S_IFCHR|0777, st_rdev=makedev(189, 896), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "usbdev7.1", {st_mode=S_IFCHR|0777, st_rdev=makedev(189, 768), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "usbdev6.1", {st_mode=S_IFCHR|0777, st_rdev=makedev(189, 640), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "usbdev5.1", {st_mode=S_IFCHR|0777, st_rdev=makedev(189, 512), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "usbdev4.1", {st_mode=S_IFCHR|0777, st_rdev=makedev(189, 384), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "usbdev3.1", {st_mode=S_IFCHR|0777, st_rdev=makedev(189, 256), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "usbdev2.2", {st_mode=S_IFCHR|0777, st_rdev=makedev(189, 129), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "usbdev2.1", {st_mode=S_IFCHR|0777, st_rdev=makedev(189, 128), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "usbdev1.2", {st_mode=S_IFCHR|0777, st_rdev=makedev(189, 1), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "usbdev1.1", {st_mode=S_IFCHR|0777, st_rdev=makedev(189, 0), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "i2c-0", {st_mode=S_IFCHR|0777, st_rdev=makedev(89, 0), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "network_throughput", {st_mode=S_IFCHR|0777, st_rdev=makedev(10, 60), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "device-mapper", {st_mode=S_IFCHR|0777, st_rdev=makedev(10, 236), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "microcode", {st_mode=S_IFCHR|0777, st_rdev=makedev(10, 184), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "vga_arbiter", {st_mode=S_IFCHR|0777, st_rdev=makedev(10, 63), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "snapshot", {st_mode=S_IFCHR|0777, st_rdev=makedev(10, 231), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "uinput", {st_mode=S_IFCHR|0777, st_rdev=makedev(10, 223), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "mcelog", {st_mode=S_IFCHR|0777, st_rdev=makedev(10, 227), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "loop-control", {st_mode=S_IFCHR|0777, st_rdev=makedev(10, 237), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "network_latency", {st_mode=S_IFCHR|0777, st_rdev=makedev(10, 61), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "psaux", {st_mode=S_IFCHR|0777, st_rdev=makedev(10, 1), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "cpu_dma_latency", {st_mode=S_IFCHR|0777, st_rdev=makedev(10, 62), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "hpet", {st_mode=S_IFCHR|0777, st_rdev=makedev(10, 228), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "fuse", {st_mode=S_IFCHR|0777, st_rdev=makedev(10, 229), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "ttyprintk", {st_mode=S_IFCHR|0777, st_rdev=makedev(5, 3), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "ttyS31", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 95), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "ttyS30", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 94), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "ttyS29", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 93), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "ttyS28", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 92), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "ttyS27", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 91), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "ttyS26", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 90), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "ttyS25", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 89), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "ttyS24", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 88), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "ttyS23", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 87), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "ttyS22", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 86), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "ttyS21", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 85), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "ttyS20", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 84), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "ttyS19", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 83), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "ttyS18", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 82), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "ttyS17", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 81), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "ttyS16", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 80), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "ttyS15", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 79), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "ttyS14", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 78), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "ttyS13", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 77), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "ttyS12", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 76), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "ttyS11", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 75), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "ttyS10", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 74), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "ttyS9", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 73), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "ttyS8", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 72), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "ttyS7", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 71), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "ttyS6", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 70), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "ttyS5", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 69), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "ttyS4", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 68), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "ttyS3", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 67), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "ttyS2", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 66), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "ttyS1", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 65), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "ttyS0", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 64), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty63", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 63), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty62", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 62), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty61", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 61), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty60", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 60), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty59", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 59), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty58", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 58), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty57", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 57), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty56", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 56), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty55", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 55), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty54", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 54), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty53", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 53), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty52", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 52), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty51", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 51), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty50", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 50), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty49", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 49), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty48", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 48), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty47", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 47), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty46", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 46), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty45", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 45), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty44", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 44), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty43", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 43), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty42", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 42), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty41", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 41), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty40", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 40), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty39", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 39), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty38", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 38), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty37", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 37), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty36", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 36), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty35", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 35), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty34", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 34), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty33", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 33), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty32", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 32), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty31", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 31), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty30", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 30), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty29", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 29), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty28", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 28), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty27", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 27), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty26", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 26), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty25", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 25), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty24", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 24), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty23", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 23), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty22", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 22), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty21", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 21), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty20", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 20), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty19", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 19), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty18", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 18), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty17", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 17), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty16", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 16), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty15", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 15), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty14", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 14), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty13", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 13), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty12", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 12), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty11", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 11), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty10", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 10), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty9", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 9), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty8", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 8), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty7", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 7), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty6", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 6), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty5", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 5), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty4", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 4), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty3", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 3), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty2", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 2), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty1", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 1), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty0", {st_mode=S_IFCHR|0777, st_rdev=makedev(4, 0), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "ptmx", {st_mode=S_IFCHR|0777, st_rdev=makedev(5, 2), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "rtc0", {st_mode=S_IFCHR|0777, st_rdev=makedev(254, 0), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "urandom", {st_mode=S_IFCHR|0777, st_rdev=makedev(1, 9), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "random", {st_mode=S_IFCHR|0777, st_rdev=makedev(1, 8), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "zero", {st_mode=S_IFCHR|0777, st_rdev=makedev(1, 5), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "port", {st_mode=S_IFCHR|0777, st_rdev=makedev(1, 4), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "kmsg", {st_mode=S_IFCHR|0777, st_rdev=makedev(1, 11), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "full", {st_mode=S_IFCHR|0777, st_rdev=makedev(1, 7), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "mem", {st_mode=S_IFCHR|0777, st_rdev=makedev(1, 1), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "7:0:0:0", {st_mode=S_IFCHR|0777, st_rdev=makedev(250, 0), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "vcsa1", {st_mode=S_IFCHR|0777, st_rdev=makedev(7, 129), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "vcsa", {st_mode=S_IFCHR|0777, st_rdev=makedev(7, 128), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "vcs1", {st_mode=S_IFCHR|0777, st_rdev=makedev(7, 1), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "vcs", {st_mode=S_IFCHR|0777, st_rdev=makedev(7, 0), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "tty", {st_mode=S_IFCHR|0777, st_rdev=makedev(5, 0), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "null", {st_mode=S_IFCHR|0777, st_rdev=makedev(1, 3), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "pts", {st_mode=S_IFDIR|0755, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(4, "pts", O_RDONLY|O_NONBLOCK|O_DIRECTORY) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+fcntl(5, F_GETFL)                       = 0x18800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_DIRECTORY)
+fcntl(5, F_SETFD, FD_CLOEXEC)           = 0
+getdents(5, /* 5 entries */, 32768)     = 120
+newfstatat(5, "1", {st_mode=S_IFCHR|0622, st_rdev=makedev(136, 1), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "0", {st_mode=S_IFCHR|0622, st_rdev=makedev(136, 0), ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "ptmx", {st_mode=S_IFCHR|000, st_rdev=makedev(5, 2), ...}, AT_SYMLINK_NOFOLLOW) = 0
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+newfstatat(4, "shm", {st_mode=S_IFLNK|0777, st_size=8, ...}, AT_SYMLINK_NOFOLLOW) = 0
+stat("/dev/shm", {st_mode=S_IFDIR|0755, st_size=320, ...}) = 0
+newfstatat(4, "console", {st_mode=S_IFCHR|0777, st_rdev=makedev(5, 1), ...}, AT_SYMLINK_NOFOLLOW) = 0
+getdents(4, /* 0 entries */, 32768)     = 0
+close(4)                                = 0
+open("/dev/sda4", O_RDONLY|O_DIRECT)    = 4
+ioctl(4, BLKSSZGET, [512])              = 0
+fstat(4, {st_mode=S_IFBLK|0777, st_rdev=makedev(8, 4), ...}) = 0
+ioctl(4, BLKGETSIZE64, [1995835441152]) = 0
+lseek(4, 4096, SEEK_SET)                = 4096
+read(4, "\374N+\251\1\0\0\0\0\0\0\0\0\0\0\0\37'\341\261\6\7\373\32\334\257\203\344\273\204\226\272"..., 4096) = 4096
+lseek(4, 0, SEEK_CUR)                   = 8192
+close(4)                                = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+ioctl(3, GET_DISK_INFO, 0x7fff9590d110) = 0
+open("/proc/mdstat", O_RDONLY)          = 4
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+fstat(4, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f74d06b1000
+read(4, "Personalities : [linear] [raid0]"..., 1024) = 334
+read(4, "", 1024)                       = 0
+read(4, "", 1024)                       = 0
+close(4)                                = 0
+munmap(0x7f74d06b1000, 4096)            = 0
+readlink("/sys/dev/block/9:1", "../../devices/virtual/block/md1", 199) = 31
+fstat(3, {st_mode=S_IFBLK|0777, st_rdev=makedev(9, 1), ...}) = 0
+ioctl(3, BLKGETSIZE64, [1995701223424]) = 0
+fstat(1, {st_mode=S_IFIFO|0600, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f74d06b1000
+open("/etc/localtime", O_RDONLY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=128, ...}) = 0
+fstat(4, {st_mode=S_IFREG|0644, st_size=128, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f74d06b0000
+read(4, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\1\0\0\0\1\0\0\0\0"..., 4096) = 128
+lseek(4, -72, SEEK_CUR)                 = 56
+read(4, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\1\0\0\0\1\0\0\0\0"..., 4096) = 72
+close(4)                                = 0
+munmap(0x7f74d06b0000, 4096)            = 0
+fstat(3, {st_mode=S_IFBLK|0777, st_rdev=makedev(9, 1), ...}) = 0
+open("/proc/devices", O_RDONLY)         = 4
+fstat(4, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f74d06b0000
+read(4, "Character devices:\n  1 mem\n  4 /"..., 1024) = 552
+read(4, "", 1024)                       = 0
+close(4)                                = 0
+munmap(0x7f74d06b0000, 4096)            = 0
+open("/sys/block/md1/md/component_size", O_RDONLY) = 4
+read(4, "1948926976\n", 50)             = 11
+close(4)                                = 0
+ioctl(3, GET_BITMAP_FILE, 0x7fff9590bc20) = 0
+stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=128, ...}) = 0
+close(3)                                = 0
+write(1, "/dev/md1:\n        Version : 1.2\n"..., 688) = 688
+exit_group(0)                           = ?
++++ exited with 0 +++

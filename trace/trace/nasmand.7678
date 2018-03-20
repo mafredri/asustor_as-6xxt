@@ -1,0 +1,356 @@
+rt_sigaction(SIGINT, {sa_handler=SIG_IGN, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f360dd23d10}, {sa_handler=0x466dc5, sa_mask=~[KILL STOP RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7f360dd23d10}, 8) = 0
+close(0)                                = 0
+open("/dev/null", O_RDONLY)             = 0
+open("/dev/null", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 5
+fcntl(1, F_DUPFD, 10)                   = 10
+dup2(5, 1)                              = 1
+close(5)                                = 0
+fcntl(2, F_DUPFD, 10)                   = 11
+dup2(1, 2)                              = 2
+close(10)                               = 0
+close(11)                               = 0
+execve("/usr/sbin/logrotate", ["/usr/sbin/logrotate", "/etc/logrotate.conf"], 0x1ec2c48 /* 24 vars */) = 0
+brk(NULL)                               = 0x19c5000
+readlink("/usr/sbin/logrotate", 0x7fff2f0f5b80, 4096) = -1 EINVAL (Invalid argument)
+open(".", O_RDONLY)                     = 5
+chdir("/usr/sbin/")                     = 0
+getcwd("/usr/sbin", 4096)               = 10
+fchdir(5)                               = 0
+close(5)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f99fbe5f000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=33541, ...}) = 0
+mmap(NULL, 33541, PROT_READ, MAP_PRIVATE, 5, 0) = 0x7f99fbe56000
+close(5)                                = 0
+open("/usr/lib/libpopt.so.0", O_RDONLY|O_CLOEXEC) = 5
+read(5, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0 $\0\0\0\0\0\0"..., 832) = 832
+fstat(5, {st_mode=S_IFREG|0755, st_size=69492, ...}) = 0
+mmap(NULL, 2156368, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 5, 0) = 0x7f99fba31000
+mprotect(0x7f99fba3f000, 2097152, PROT_NONE) = 0
+mmap(0x7f99fbc3f000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0xe000) = 0x7f99fbc3f000
+close(5)                                = 0
+open("/lib64/libc.so.6", O_RDONLY|O_CLOEXEC) = 5
+read(5, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\340\1\2\0\0\0\0\0"..., 832) = 832
+fstat(5, {st_mode=S_IFREG|0555, st_size=1679912, ...}) = 0
+mmap(NULL, 3791936, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 5, 0) = 0x7f99fb693000
+mprotect(0x7f99fb827000, 2097152, PROT_NONE) = 0
+mmap(0x7f99fba27000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0x194000) = 0x7f99fba27000
+mmap(0x7f99fba2d000, 15424, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f99fba2d000
+close(5)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f99fbe55000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f99fbe54000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f99fbe53000
+arch_prctl(ARCH_SET_FS, 0x7f99fbe54700) = 0
+mprotect(0x7f99fba27000, 16384, PROT_READ) = 0
+mprotect(0x7f99fbe60000, 4096, PROT_READ) = 0
+munmap(0x7f99fbe56000, 33541)           = 0
+brk(NULL)                               = 0x19c5000
+brk(0x19e6000)                          = 0x19e6000
+open("/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=10314176, ...}) = 0
+mmap(NULL, 10314176, PROT_READ, MAP_PRIVATE, 5, 0) = 0x7f99facbc000
+close(5)                                = 0
+open("/usr/etc/popt", O_RDONLY)         = -1 ENOENT (No such file or directory)
+open("/etc/popt", O_RDONLY)             = -1 ENOENT (No such file or directory)
+stat("/etc/popt.d", 0x7fff2f0f6940)     = -1 ENOENT (No such file or directory)
+open("/root/.popt", O_RDONLY)           = -1 ENOENT (No such file or directory)
+stat("/etc/logrotate.conf", {st_mode=S_IFREG|0644, st_size=324, ...}) = 0
+open("/etc/logrotate.conf", O_RDONLY)   = 5
+fcntl(5, F_GETFD)                       = 0
+fcntl(5, F_SETFD, FD_CLOEXEC)           = 0
+fcntl(5, F_SETLK, {l_type=F_RDLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+fstat(5, {st_mode=S_IFREG|0644, st_size=324, ...}) = 0
+getuid()                                = 0
+socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 6
+connect(6, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+close(6)                                = 0
+socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 6
+connect(6, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+close(6)                                = 0
+open("/etc/nsswitch.conf", O_RDONLY|O_CLOEXEC) = 6
+fstat(6, {st_mode=S_IFREG|0644, st_size=160, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f99fbe5e000
+read(6, "passwd: compat\ngroup: compat\nsha"..., 4096) = 160
+read(6, "", 4096)                       = 0
+close(6)                                = 0
+munmap(0x7f99fbe5e000, 4096)            = 0
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 6
+fstat(6, {st_mode=S_IFREG|0644, st_size=33541, ...}) = 0
+mmap(NULL, 33541, PROT_READ, MAP_PRIVATE, 6, 0) = 0x7f99fbe56000
+close(6)                                = 0
+open("/lib64/libnss_compat.so.2", O_RDONLY|O_CLOEXEC) = 6
+read(6, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220\22\0\0\0\0\0\0"..., 832) = 832
+fstat(6, {st_mode=S_IFREG|0555, st_size=35696, ...}) = 0
+mmap(NULL, 2131088, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 6, 0) = 0x7f99faab3000
+mprotect(0x7f99faaba000, 2097152, PROT_NONE) = 0
+mmap(0x7f99facba000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 6, 0x7000) = 0x7f99facba000
+close(6)                                = 0
+open("/lib64/libnsl.so.1", O_RDONLY|O_CLOEXEC) = 6
+read(6, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0000@\0\0\0\0\0\0"..., 832) = 832
+fstat(6, {st_mode=S_IFREG|0555, st_size=89056, ...}) = 0
+mmap(NULL, 2194040, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 6, 0) = 0x7f99fa89b000
+mprotect(0x7f99fa8b0000, 2093056, PROT_NONE) = 0
+mmap(0x7f99faaaf000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 6, 0x14000) = 0x7f99faaaf000
+mmap(0x7f99faab1000, 6776, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f99faab1000
+close(6)                                = 0
+mprotect(0x7f99faaaf000, 4096, PROT_READ) = 0
+mprotect(0x7f99facba000, 4096, PROT_READ) = 0
+munmap(0x7f99fbe56000, 33541)           = 0
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 6
+fstat(6, {st_mode=S_IFREG|0644, st_size=33541, ...}) = 0
+mmap(NULL, 33541, PROT_READ, MAP_PRIVATE, 6, 0) = 0x7f99fbe56000
+close(6)                                = 0
+open("/lib64/libnss_nis.so.2", O_RDONLY|O_CLOEXEC) = 6
+read(6, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320 \0\0\0\0\0\0"..., 832) = 832
+fstat(6, {st_mode=S_IFREG|0555, st_size=43552, ...}) = 0
+mmap(NULL, 2139320, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 6, 0) = 0x7f99fa690000
+mprotect(0x7f99fa69a000, 2093056, PROT_NONE) = 0
+mmap(0x7f99fa899000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 6, 0x9000) = 0x7f99fa899000
+close(6)                                = 0
+open("/lib64/libnss_files.so.2", O_RDONLY|O_CLOEXEC) = 6
+read(6, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0`!\0\0\0\0\0\0"..., 832) = 832
+fstat(6, {st_mode=S_IFREG|0555, st_size=47584, ...}) = 0
+mmap(NULL, 2168248, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 6, 0) = 0x7f99fa47e000
+mprotect(0x7f99fa488000, 2097152, PROT_NONE) = 0
+mmap(0x7f99fa688000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 6, 0xa000) = 0x7f99fa688000
+mmap(0x7f99fa68a000, 21944, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f99fa68a000
+close(6)                                = 0
+mprotect(0x7f99fa688000, 4096, PROT_READ) = 0
+mprotect(0x7f99fa899000, 4096, PROT_READ) = 0
+munmap(0x7f99fbe56000, 33541)           = 0
+open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 6
+lseek(6, 0, SEEK_CUR)                   = 0
+fstat(6, {st_mode=S_IFREG|0644, st_size=304, ...}) = 0
+mmap(NULL, 304, PROT_READ, MAP_SHARED, 6, 0) = 0x7f99fbe5e000
+lseek(6, 304, SEEK_SET)                 = 304
+munmap(0x7f99fbe5e000, 304)             = 0
+close(6)                                = 0
+getuid()                                = 0
+open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 6
+lseek(6, 0, SEEK_CUR)                   = 0
+fstat(6, {st_mode=S_IFREG|0644, st_size=304, ...}) = 0
+mmap(NULL, 304, PROT_READ, MAP_SHARED, 6, 0) = 0x7f99fbe5e000
+lseek(6, 304, SEEK_SET)                 = 304
+munmap(0x7f99fbe5e000, 304)             = 0
+close(6)                                = 0
+mmap(NULL, 324, PROT_READ, MAP_PRIVATE|MAP_POPULATE, 5, 0) = 0x7f99fbe5e000
+open("/usr/lib64/gconv/gconv-modules.cache", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/gconv/gconv-modules", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+access("/usr/bin/bzip2", X_OK)          = 0
+stat("/etc/logrotate.d", {st_mode=S_IFDIR|0755, st_size=120, ...}) = 0
+open(".", O_RDONLY)                     = 6
+stat("/etc/logrotate.d", {st_mode=S_IFDIR|0755, st_size=120, ...}) = 0
+open("/etc/logrotate.d", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 7
+fstat(7, {st_mode=S_IFDIR|0755, st_size=120, ...}) = 0
+getdents(7, /* 6 entries */, 32768)     = 176
+getdents(7, /* 0 entries */, 32768)     = 0
+close(7)                                = 0
+chdir("/etc/logrotate.d")               = 0
+open("apache2", O_RDONLY)               = 7
+fcntl(7, F_GETFD)                       = 0
+fcntl(7, F_SETFD, FD_CLOEXEC)           = 0
+fcntl(7, F_SETLK, {l_type=F_RDLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+fstat(7, {st_mode=S_IFREG|0644, st_size=83, ...}) = 0
+getuid()                                = 0
+open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 8
+lseek(8, 0, SEEK_CUR)                   = 0
+fstat(8, {st_mode=S_IFREG|0644, st_size=304, ...}) = 0
+mmap(NULL, 304, PROT_READ, MAP_SHARED, 8, 0) = 0x7f99fbe5d000
+lseek(8, 304, SEEK_SET)                 = 304
+munmap(0x7f99fbe5d000, 304)             = 0
+close(8)                                = 0
+getuid()                                = 0
+open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 8
+lseek(8, 0, SEEK_CUR)                   = 0
+fstat(8, {st_mode=S_IFREG|0644, st_size=304, ...}) = 0
+mmap(NULL, 304, PROT_READ, MAP_SHARED, 8, 0) = 0x7f99fbe5d000
+lseek(8, 304, SEEK_SET)                 = 304
+munmap(0x7f99fbe5d000, 304)             = 0
+close(8)                                = 0
+mmap(NULL, 83, PROT_READ, MAP_PRIVATE|MAP_POPULATE, 7, 0) = 0x7f99fbe5d000
+stat("/usr/builtin/var/log/apache2", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+open("/usr/builtin/var/log/apache2", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 8
+fstat(8, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+getdents(8, /* 2 entries */, 32768)     = 48
+getdents(8, /* 0 entries */, 32768)     = 0
+close(8)                                       = 0
+lstat("/usr/builtin/var/log/apache2/*_log", 0x7fff2f0f6060) = -1 ENOENT (No such file or directory)
+munmap(0x7f99fbe5d000, 83)              = 0
+close(7)                                = 0
+open("lighttpd", O_RDONLY)              = 7
+fcntl(7, F_GETFD)                       = 0
+fcntl(7, F_SETFD, FD_CLOEXEC)           = 0
+fcntl(7, F_SETLK, {l_type=F_RDLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+fstat(7, {st_mode=S_IFREG|0644, st_size=72, ...}) = 0
+getuid()                                = 0
+open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 8
+lseek(8, 0, SEEK_CUR)                   = 0
+fstat(8, {st_mode=S_IFREG|0644, st_size=304, ...}) = 0
+mmap(NULL, 304, PROT_READ, MAP_SHARED, 8, 0) = 0x7f99fbe5d000
+lseek(8, 304, SEEK_SET)                 = 304
+munmap(0x7f99fbe5d000, 304)             = 0
+close(8)                                = 0
+getuid()                                = 0
+open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 8
+lseek(8, 0, SEEK_CUR)                   = 0
+fstat(8, {st_mode=S_IFREG|0644, st_size=304, ...}) = 0
+mmap(NULL, 304, PROT_READ, MAP_SHARED, 8, 0) = 0x7f99fbe5d000
+lseek(8, 304, SEEK_SET)                 = 304
+munmap(0x7f99fbe5d000, 304)             = 0
+close(8)                                = 0
+mmap(NULL, 72, PROT_READ, MAP_PRIVATE|MAP_POPULATE, 7, 0) = 0x7f99fbe5d000
+stat("/var/log/lighttpd", {st_mode=S_IFDIR|0755, st_size=40, ...}) = 0
+open("/var/log/lighttpd", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 8
+fstat(8, {st_mode=S_IFDIR|0755, st_size=40, ...}) = 0
+getdents(8, /* 2 entries */, 32768)     = 48
+getdents(8, /* 0 entries */, 32768)     = 0
+close(8)                                = 0
+lstat("/var/log/lighttpd/*.log", 0x7fff2f0f6060) = -1 ENOENT (No such file or directory)
+munmap(0x7f99fbe5d000, 72)              = 0
+close(7)                                = 0
+open("mailserver", O_RDONLY)            = 7
+fcntl(7, F_GETFD)                       = 0
+fcntl(7, F_SETFD, FD_CLOEXEC)           = 0
+fcntl(7, F_SETLK, {l_type=F_RDLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+fstat(7, {st_mode=S_IFREG|0644, st_size=96, ...}) = 0
+getuid()                                = 0
+open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 8
+lseek(8, 0, SEEK_CUR)                   = 0
+fstat(8, {st_mode=S_IFREG|0644, st_size=304, ...}) = 0
+mmap(NULL, 304, PROT_READ, MAP_SHARED, 8, 0) = 0x7f99fbe5d000
+lseek(8, 304, SEEK_SET)                 = 304
+munmap(0x7f99fbe5d000, 304)             = 0
+close(8)                                = 0
+getuid()                                = 0
+open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 8
+lseek(8, 0, SEEK_CUR)                   = 0
+fstat(8, {st_mode=S_IFREG|0644, st_size=304, ...}) = 0
+mmap(NULL, 304, PROT_READ, MAP_SHARED, 8, 0) = 0x7f99fbe5d000
+lseek(8, 304, SEEK_SET)                 = 304
+munmap(0x7f99fbe5d000, 304)             = 0
+close(8)                                = 0
+mmap(NULL, 96, PROT_READ, MAP_PRIVATE|MAP_POPULATE, 7, 0) = 0x7f99fbe5d000
+lstat("/usr/local/AppCentral/mail-server/log/maillog", {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+munmap(0x7f99fbe5d000, 96)              = 0
+close(7)                                = 0
+open("nginx", O_RDONLY)                 = 7
+fcntl(7, F_GETFD)                       = 0
+fcntl(7, F_SETFD, FD_CLOEXEC)           = 0
+fcntl(7, F_SETLK, {l_type=F_RDLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+fstat(7, {st_mode=S_IFREG|0644, st_size=277, ...}) = 0
+getuid()                                = 0
+open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 8
+lseek(8, 0, SEEK_CUR)                   = 0
+fstat(8, {st_mode=S_IFREG|0644, st_size=304, ...}) = 0
+mmap(NULL, 304, PROT_READ, MAP_SHARED, 8, 0) = 0x7f99fbe5d000
+lseek(8, 304, SEEK_SET)                 = 304
+munmap(0x7f99fbe5d000, 304)             = 0
+close(8)                                = 0
+getuid()                                = 0
+open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 8
+lseek(8, 0, SEEK_CUR)                   = 0
+fstat(8, {st_mode=S_IFREG|0644, st_size=304, ...}) = 0
+mmap(NULL, 304, PROT_READ, MAP_SHARED, 8, 0) = 0x7f99fbe5d000
+lseek(8, 304, SEEK_SET)                 = 304
+munmap(0x7f99fbe5d000, 304)             = 0
+close(8)                                = 0
+mmap(NULL, 277, PROT_READ, MAP_PRIVATE|MAP_POPULATE, 7, 0) = 0x7f99fbe5d000
+stat("/usr/builtin/var/log/nginx", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+open("/usr/builtin/var/log/nginx", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 8
+fstat(8, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+getdents(8, /* 3 entries */, 32768)     = 80
+getdents(8, /* 0 entries */, 32768)     = 0
+close(8)                                = 0
+lstat("/usr/builtin/var/log/nginx/error.log", {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+munmap(0x7f99fbe5d000, 277)             = 0
+close(7)                                = 0
+fchdir(6)                               = 0
+close(6)                                = 0
+lstat("/var/log/messages", {st_mode=S_IFREG|0644, st_size=144555, ...}) = 0
+munmap(0x7f99fbe5e000, 324)             = 0
+close(5)                                = 0
+stat("/var/lib/logrotate.status", {st_mode=S_IFREG|0644, st_size=284, ...}) = 0
+open("/var/lib/logrotate.status", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=284, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f99fbe5e000
+read(5, "logrotate state -- version 2\n\"/v"..., 4096) = 284
+open("/etc/localtime", O_RDONLY|O_CLOEXEC) = 6
+fstat(6, {st_mode=S_IFREG|0644, st_size=128, ...}) = 0
+fstat(6, {st_mode=S_IFREG|0644, st_size=128, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f99fbe5d000
+read(6, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\1\0\0\0\1\0\0\0\0"..., 4096) = 128
+lseek(6, -72, SEEK_CUR)                 = 56
+read(6, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\1\0\0\0\1\0\0\0\0"..., 4096) = 72
+close(6)                                = 0
+munmap(0x7f99fbe5d000, 4096)            = 0
+stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=128, ...}) = 0
+stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=128, ...}) = 0
+stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=128, ...}) = 0
+stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=128, ...}) = 0
+stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=128, ...}) = 0
+stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=128, ...}) = 0
+stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=128, ...}) = 0
+stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=128, ...}) = 0
+stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=128, ...}) = 0
+stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=128, ...}) = 0
+stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=128, ...}) = 0
+stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=128, ...}) = 0
+stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=128, ...}) = 0
+stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=128, ...}) = 0
+stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=128, ...}) = 0
+stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=128, ...}) = 0
+stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=128, ...}) = 0
+stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=128, ...}) = 0
+stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=128, ...}) = 0
+stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=128, ...}) = 0
+stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=128, ...}) = 0
+stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=128, ...}) = 0
+stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=128, ...}) = 0
+stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=128, ...}) = 0
+read(5, "", 4096)                       = 0
+close(5)                                = 0
+munmap(0x7f99fbe5e000, 4096)            = 0
+stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=128, ...}) = 0
+getuid()                                = 0
+stat("/usr/builtin/var/log/apache2", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/usr/builtin/var/log/apache2/*_log", 0x7fff2f0f68c0) = -1 ENOENT (No such file or directory)
+stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=128, ...}) = 0
+stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=128, ...}) = 0
+getuid()                                = 0
+stat("/var/log/lighttpd", {st_mode=S_IFDIR|0755, st_size=40, ...}) = 0
+lstat("/var/log/lighttpd/*.log", 0x7fff2f0f68c0) = -1 ENOENT (No such file or directory)
+stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=128, ...}) = 0
+stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=128, ...}) = 0
+getuid()                                = 0
+stat("/usr/local/AppCentral/mail-server/log", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+lstat("/usr/local/AppCentral/mail-server/log/maillog", {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=128, ...}) = 0
+stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=128, ...}) = 0
+getuid()                                = 0
+stat("/usr/builtin/var/log/nginx", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/usr/builtin/var/log/nginx/error.log", {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=128, ...}) = 0
+stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=128, ...}) = 0
+getuid()                                = 0
+stat("/var/log", {st_mode=S_IFDIR|0755, st_size=220, ...}) = 0
+lstat("/var/log/messages", {st_mode=S_IFREG|0644, st_size=144555, ...}) = 0
+stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=128, ...}) = 0
+unlink("/var/lib/logrotate.status.tmp") = -1 ENOENT (No such file or directory)
+open("/var/lib/logrotate.status", O_RDONLY) = 5
+close(5)                                = 0
+stat("/var/lib/logrotate.status", {st_mode=S_IFREG|0644, st_size=284, ...}) = 0
+open("/var/lib/logrotate.status.tmp", O_RDWR|O_CREAT|O_EXCL|O_TRUNC|O_NOFOLLOW, 0600) = 5
+fchmod(5, 0600)                         = 0
+fstat(5, {st_mode=S_IFREG|0600, st_size=0, ...}) = 0
+fchmod(5, 0100644)                      = 0
+fcntl(5, F_GETFL)                       = 0x28002 (flags O_RDWR|O_LARGEFILE|O_NOFOLLOW)
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f99fbe5e000
+fsync(5)                                = 0
+write(5, "logrotate state -- version 2\n\"/u"..., 284) = 284
+close(5)                                = 0
+munmap(0x7f99fbe5e000, 4096)            = 0
+rename("/var/lib/logrotate.status.tmp", "/var/lib/logrotate.status") = 0
+exit_group(0)                           = ?
++++ exited with 0 +++

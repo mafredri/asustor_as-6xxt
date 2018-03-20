@@ -1,0 +1,2497 @@
+set_robust_list(0x7fb8817e0a60, 24)     = 0
+close(0)                                = 0
+close(1)                                = 0
+close(2)                                = 0
+unlink("/var/run/storage.ipc")          = 0
+socket(AF_UNIX, SOCK_DGRAM, 0)          = 0
+bind(0, {sa_family=AF_UNIX, sun_path="/var/run/storage.ipc"}, 23) = 0
+open("/proc/mounts", O_RDONLY)          = 1
+socket(AF_NETLINK, SOCK_DGRAM, NETLINK_KOBJECT_UEVENT) = 2
+setsockopt(2, SOL_SOCKET, SO_RCVBUFFORCE, [4096], 4) = 0
+bind(2, {sa_family=AF_NETLINK, nl_pid=18159, nl_groups=0x000001}, 12) = 0
+open("/proc/mounts", O_RDONLY)          = 3
+fstat(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817f0000
+read(3, "rootfs / rootfs rw,size=1518960k"..., 1024) = 1024
+read(3, "37,iocharset=utf8,shortname=mixe"..., 1024) = 56
+read(3, "", 1024)                       = 0
+rt_sigaction(SIGINT, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fb880187d10}, {sa_handler=0x404910, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fb880187d10}, 8) = 0
+rt_sigaction(SIGQUIT, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fb880187d10}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+clone(child_stack=NULL, flags=CLONE_PARENT_SETTID|SIGCHLD, parent_tidptr=0x7fffe68f4d9c) = 18160
+wait4(18160, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 18160
+rt_sigaction(SIGINT, {sa_handler=0x404910, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fb880187d10}, NULL, 8) = 0
+rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fb880187d10}, NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=18160, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+stat("/proc", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+getdents(4, /* 229 entries */, 32768)   = 6000
+newfstatat(4, "1", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/1/comm", O_RDONLY)          = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "init\n", 1024)                 = 5
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2/comm", O_RDONLY)          = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "kthreadd\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "3", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/3/comm", O_RDONLY)          = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "ksoftirqd/0\n", 1024)          = 12
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "5", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/5/comm", O_RDONLY)          = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "kworker/0:0H\n", 1024)         = 13
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "7", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/7/comm", O_RDONLY)          = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "migration/0\n", 1024)          = 12
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "8", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/8/comm", O_RDONLY)          = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "rcu_bh\n", 1024)               = 7
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "9", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/9/comm", O_RDONLY)          = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "rcu_sched\n", 1024)            = 10
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "10", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/10/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "migration/1\n", 1024)          = 12
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "11", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/11/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "ksoftirqd/1\n", 1024)          = 12
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "13", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/13/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "kworker/1:0H\n", 1024)         = 13
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "14", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/14/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "migration/2\n", 1024)          = 12
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "15", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/15/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "ksoftirqd/2\n", 1024)          = 12
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "17", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/17/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "kworker/2:0H\n", 1024)         = 13
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "18", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/18/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "migration/3\n", 1024)          = 12
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "19", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/19/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "ksoftirqd/3\n", 1024)          = 12
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "21", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/21/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "kworker/3:0H\n", 1024)         = 13
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "22", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/22/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "khelper\n", 1024)              = 8
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "23", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/23/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "kdevtmpfs\n", 1024)            = 10
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "24", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/24/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "netns\n", 1024)                = 6
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "25", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/25/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "writeback\n", 1024)            = 10
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "26", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/26/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "kintegrityd\n", 1024)          = 12
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "27", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/27/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "bioset\n", 1024)               = 7
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "28", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/28/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "kblockd\n", 1024)              = 8
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "29", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/29/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "ata_sff\n", 1024)              = 8
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "30", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/30/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "khubd\n", 1024)                = 6
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "31", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/31/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "md\n", 1024)                   = 3
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "37", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/37/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "khungtaskd\n", 1024)           = 11
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "38", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/38/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "kswapd0\n", 1024)              = 8
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "39", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/39/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "fsnotify_mark\n", 1024)        = 14
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "40", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/40/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "crypto\n", 1024)               = 7
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "51", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/51/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "kthrotld\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "52", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/52/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "scsi_eh_0\n", 1024)            = 10
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "53", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/53/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "scsi_eh_1\n", 1024)            = 10
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "54", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/54/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "scsi_eh_2\n", 1024)            = 10
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "55", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/55/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "scsi_eh_3\n", 1024)            = 10
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "56", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/56/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "scsi_eh_4\n", 1024)            = 10
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "57", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/57/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "scsi_eh_5\n", 1024)            = 10
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "64", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/64/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "scsi_eh_6\n", 1024)            = 10
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "65", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/65/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "scsi_eh_7\n", 1024)            = 10
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "68", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/68/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "scsi_eh_8\n", 1024)            = 10
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "69", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/69/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "scsi_eh_9\n", 1024)            = 10
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "70", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/70/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "kworker/u8:9\n", 1024)         = 13
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "73", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/73/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "scsi_eh_10\n", 1024)           = 11
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "74", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/74/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "usb-storage\n", 1024)          = 12
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "75", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/75/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "kpsmoused\n", 1024)            = 10
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "77", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/77/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "scsi_eh_11\n", 1024)           = 11
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "78", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/78/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "usb-storage\n", 1024)          = 12
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "80", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/80/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "raid5wq\n", 1024)              = 8
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "81", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/81/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "deferwq\n", 1024)              = 8
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "1134", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/1134/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "netmand\n", 1024)              = 8
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "1245", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/1245/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "kworker/0:1H\n", 1024)         = 13
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "1247", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/1247/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "kworker/1:1H\n", 1024)         = 13
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "1261", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/1261/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "kworker/2:1H\n", 1024)         = 13
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "1279", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/1279/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "kworker/3:1H\n", 1024)         = 13
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "1377", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/1377/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "bioset\n", 1024)               = 7
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "1379", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/1379/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "md0_raid1\n", 1024)            = 10
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "1389", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/1389/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "jbd2/md0-8\n", 1024)           = 11
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "1390", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/1390/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "ext4-rsv-conver\n", 1024)      = 16
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "1393", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/1393/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "volmand\n", 1024)              = 8
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "1403", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/1403/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "loop0\n", 1024)                = 6
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "1410", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/1410/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "ext4-rsv-conver\n", 1024)      = 16
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "1708", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/1708/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "bioset\n", 1024)               = 7
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "1709", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/1709/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "md126_raid1\n", 1024)          = 12
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "1771", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/1771/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "bioset\n", 1024)               = 7
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "1774", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/1774/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "md1_raid1\n", 1024)            = 10
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "1811", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/1811/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "jbd2/md1-8\n", 1024)           = 11
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "1812", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/1812/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "ext4-rsv-conver\n", 1024)      = 16
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "1816", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/1816/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "volmand\n", 1024)              = 8
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "1938", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/1938/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "crond\n", 1024)                = 6
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "1962", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/1962/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "dhclient\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2124", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2124/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "lighttpd\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2126", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2126/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "lighttpd\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2127", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2127/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "lighttpd\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2128", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2128/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "lighttpd\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2129", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2129/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "lighttpd\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2130", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2130/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "lighttpd\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2131", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2131/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "lighttpd\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2132", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2132/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "lighttpd\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2133", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2133/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "lighttpd\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2134", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2134/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "lighttpd\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2135", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2135/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "lighttpd\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2136", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2136/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "lighttpd\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2137", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2137/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "lighttpd\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2139", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2139/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "lighttpd\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2140", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2140/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "lighttpd\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2141", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2141/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "lighttpd\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2142", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2142/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "lighttpd\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2249", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2249/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "hostmand\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2395", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2395/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "crontab_check\n", 1024)        = 14
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2403", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2403/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "watchmand\n", 1024)            = 10
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2407", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2407/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "logmand\n", 1024)              = 8
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2423", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2423/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "sys_stat\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2623", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2623/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "hd-audio0\n", 1024)            = 10
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2744", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2744/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "scst_uid\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2800", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2800/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "scstd0\n", 1024)               = 7
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2810", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2810/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "scstd1\n", 1024)               = 7
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2812", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2812/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "scstd2\n", 1024)               = 7
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2819", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2819/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "scstd3\n", 1024)               = 7
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2825", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2825/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "scst_initd\n", 1024)           = 11
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2827", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2827/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "scsi_tm\n", 1024)              = 8
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2831", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2831/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "scst_mgmtd\n", 1024)           = 11
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2844", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2844/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "scst_actid\n", 1024)           = 11
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2863", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2863/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "iscsird0\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2865", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2865/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "iscsird1\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2868", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2868/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "iscsird2\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2870", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2870/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "iscsird3\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2871", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2871/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "iscsiwr0\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2872", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2872/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "iscsiwr1\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2873", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2873/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "iscsiwr2\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2874", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2874/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "iscsiwr3\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2907", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2907/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "iscsi-scstd\n", 1024)          = 12
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2915", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2915/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "rsyncd\n", 1024)               = 7
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2922", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2922/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "recybind\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2928", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2928/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "smbd\n", 1024)                 = 5
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2930", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2930/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "smbd-notifyd\n", 1024)         = 13
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2931", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2931/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "cleanupd\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2936", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2936/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "lpqd\n", 1024)                 = 5
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2937", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2937/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "nmbd\n", 1024)                 = 5
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2941", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2941/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "winbindd\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2946", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2946/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "dbus-daemon\n", 1024)          = 12
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2952", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2952/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "winbindd\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2963", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2963/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "nginx\n", 1024)                = 6
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2964", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2964/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "nginx\n", 1024)                = 6
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2982", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2982/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "sftpmand\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2991", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2991/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "sshd\n", 1024)                 = 5
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "3026", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/3026/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "usbipd\n", 1024)               = 7
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "3034", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/3034/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "cupsd\n", 1024)                = 6
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "3046", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/3046/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "ftpbackupd\n", 1024)           = 11
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "3074", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/3074/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "actmand\n", 1024)              = 8
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "3079", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/3079/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "cryptodev_queue\n", 1024)      = 16
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "3095", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/3095/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "taskmonitord\n", 1024)         = 13
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "3099", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/3099/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "websocketd\n", 1024)           = 11
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "3108", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/3108/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "avahi-daemon\n", 1024)         = 13
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "3109", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/3109/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "avahi-daemon\n", 1024)         = 13
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "3204", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/3204/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "cdmand\n", 1024)               = 7
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "3224", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/3224/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "myhttpd\n", 1024)              = 8
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "3227", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/3227/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "myhttpd\n", 1024)              = 8
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "3236", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/3236/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "cifsdrvd\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "3249", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/3249/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "thumbnail\n", 1024)            = 10
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "3291", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/3291/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "rsyslogd\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "3524", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/3524/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "sh\n", 1024)                   = 3
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "3962", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/3962/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "sshd\n", 1024)                 = 5
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "3963", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/3963/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "sshd\n", 1024)                 = 5
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "3966", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/3966/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "sshd\n", 1024)                 = 5
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "3975", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/3975/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "sh\n", 1024)                   = 3
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "6876", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/6876/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "sshd\n", 1024)                 = 5
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "6887", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/6887/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "sh\n", 1024)                   = 3
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "6993", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/6993/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "kworker/u8:0\n", 1024)         = 13
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "7054", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/7054/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "emboardmand\n", 1024)          = 12
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "7225", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/7225/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "lcmd\n", 1024)                 = 5
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "7785", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/7785/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "nasmand\n", 1024)              = 8
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "14186", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/14186/comm", O_RDONLY)      = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "kworker/2:0\n", 1024)          = 12
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "16017", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/16017/comm", O_RDONLY)      = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "kworker/3:0\n", 1024)          = 12
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "16379", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/16379/comm", O_RDONLY)      = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "kworker/0:2\n", 1024)          = 12
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "16803", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/16803/comm", O_RDONLY)      = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "kworker/1:1\n", 1024)          = 12
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "16976", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/16976/comm", O_RDONLY)      = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "kworker/2:1\n", 1024)          = 12
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "17023", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/17023/comm", O_RDONLY)      = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "kworker/3:2\n", 1024)          = 12
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "17375", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/17375/comm", O_RDONLY)      = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "kworker/1:0\n", 1024)          = 12
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "17403", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/17403/comm", O_RDONLY)      = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "kworker/0:1\n", 1024)          = 12
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "17859", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/17859/comm", O_RDONLY)      = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "kworker/2:2\n", 1024)          = 12
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "17986", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/17986/comm", O_RDONLY)      = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "kworker/0:0\n", 1024)          = 12
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "18012", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/18012/comm", O_RDONLY)      = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "kworker/3:1\n", 1024)          = 12
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "18156", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/18156/comm", O_RDONLY)      = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "strace\n", 1024)               = 7
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "18159", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/18159/comm", O_RDONLY)      = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "stormand\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "18161", 0x7fffe68f4680, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+getdents(4, /* 0 entries */, 32768)     = 0
+close(4)                                = 0
+rt_sigreturn({mask=[]})                 = 0
+rt_sigaction(SIGINT, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fb880187d10}, {sa_handler=0x404910, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fb880187d10}, 8) = 0
+rt_sigaction(SIGQUIT, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fb880187d10}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fb880187d10}, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+clone(child_stack=NULL, flags=CLONE_PARENT_SETTID|SIGCHLD, parent_tidptr=0x7fffe68f4d9c) = 18162
+wait4(18162, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 18162
+rt_sigaction(SIGINT, {sa_handler=0x404910, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fb880187d10}, NULL, 8) = 0
+rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fb880187d10}, NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=18162, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+stat("/proc", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+getdents(4, /* 229 entries */, 32768)   = 6000
+newfstatat(4, "1", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/1/comm", O_RDONLY)          = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "init\n", 1024)                 = 5
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2/comm", O_RDONLY)          = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "kthreadd\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "3", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/3/comm", O_RDONLY)          = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "ksoftirqd/0\n", 1024)          = 12
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "5", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/5/comm", O_RDONLY)          = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "kworker/0:0H\n", 1024)         = 13
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "7", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/7/comm", O_RDONLY)          = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "migration/0\n", 1024)          = 12
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "8", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/8/comm", O_RDONLY)          = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "rcu_bh\n", 1024)               = 7
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "9", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/9/comm", O_RDONLY)          = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "rcu_sched\n", 1024)            = 10
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "10", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/10/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "migration/1\n", 1024)          = 12
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "11", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/11/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "ksoftirqd/1\n", 1024)          = 12
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "13", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/13/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "kworker/1:0H\n", 1024)         = 13
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "14", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/14/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "migration/2\n", 1024)          = 12
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "15", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/15/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "ksoftirqd/2\n", 1024)          = 12
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "17", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/17/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "kworker/2:0H\n", 1024)         = 13
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "18", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/18/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "migration/3\n", 1024)          = 12
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "19", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/19/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "ksoftirqd/3\n", 1024)          = 12
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "21", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/21/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "kworker/3:0H\n", 1024)         = 13
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "22", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/22/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "khelper\n", 1024)              = 8
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "23", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/23/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "kdevtmpfs\n", 1024)            = 10
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "24", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/24/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "netns\n", 1024)                = 6
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "25", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/25/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "writeback\n", 1024)            = 10
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "26", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/26/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "kintegrityd\n", 1024)          = 12
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "27", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/27/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "bioset\n", 1024)               = 7
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "28", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/28/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "kblockd\n", 1024)              = 8
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "29", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/29/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "ata_sff\n", 1024)              = 8
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "30", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/30/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "khubd\n", 1024)                = 6
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "31", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/31/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "md\n", 1024)                   = 3
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "37", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/37/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "khungtaskd\n", 1024)           = 11
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "38", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/38/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "kswapd0\n", 1024)              = 8
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "39", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/39/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "fsnotify_mark\n", 1024)        = 14
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "40", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/40/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "crypto\n", 1024)               = 7
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "51", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/51/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "kthrotld\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "52", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/52/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "scsi_eh_0\n", 1024)            = 10
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "53", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/53/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "scsi_eh_1\n", 1024)            = 10
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "54", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/54/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "scsi_eh_2\n", 1024)            = 10
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "55", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/55/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "scsi_eh_3\n", 1024)            = 10
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "56", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/56/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "scsi_eh_4\n", 1024)            = 10
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "57", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/57/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "scsi_eh_5\n", 1024)            = 10
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "64", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/64/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "scsi_eh_6\n", 1024)            = 10
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "65", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/65/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "scsi_eh_7\n", 1024)            = 10
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "68", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/68/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "scsi_eh_8\n", 1024)            = 10
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "69", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/69/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "scsi_eh_9\n", 1024)            = 10
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "70", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/70/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "kworker/u8:9\n", 1024)         = 13
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "73", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/73/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "scsi_eh_10\n", 1024)           = 11
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "74", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/74/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "usb-storage\n", 1024)          = 12
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "75", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/75/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "kpsmoused\n", 1024)            = 10
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "77", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/77/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "scsi_eh_11\n", 1024)           = 11
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "78", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/78/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "usb-storage\n", 1024)          = 12
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "80", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/80/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "raid5wq\n", 1024)              = 8
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "81", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/81/comm", O_RDONLY)         = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "deferwq\n", 1024)              = 8
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "1134", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/1134/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "netmand\n", 1024)              = 8
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "1245", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/1245/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "kworker/0:1H\n", 1024)         = 13
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "1247", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/1247/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "kworker/1:1H\n", 1024)         = 13
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "1261", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/1261/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "kworker/2:1H\n", 1024)         = 13
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "1279", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/1279/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "kworker/3:1H\n", 1024)         = 13
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "1377", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/1377/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "bioset\n", 1024)               = 7
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "1379", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/1379/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "md0_raid1\n", 1024)            = 10
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "1389", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/1389/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "jbd2/md0-8\n", 1024)           = 11
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "1390", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/1390/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "ext4-rsv-conver\n", 1024)      = 16
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "1393", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/1393/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "volmand\n", 1024)              = 8
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "1403", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/1403/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "loop0\n", 1024)                = 6
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "1410", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/1410/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "ext4-rsv-conver\n", 1024)      = 16
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "1708", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/1708/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "bioset\n", 1024)               = 7
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "1709", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/1709/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "md126_raid1\n", 1024)          = 12
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "1771", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/1771/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "bioset\n", 1024)               = 7
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "1774", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/1774/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "md1_raid1\n", 1024)            = 10
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "1811", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/1811/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "jbd2/md1-8\n", 1024)           = 11
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "1812", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/1812/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "ext4-rsv-conver\n", 1024)      = 16
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "1816", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/1816/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "volmand\n", 1024)              = 8
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "1938", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/1938/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "crond\n", 1024)                = 6
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "1962", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/1962/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "dhclient\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2124", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2124/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "lighttpd\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2126", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2126/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "lighttpd\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2127", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2127/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "lighttpd\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2128", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2128/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "lighttpd\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2129", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2129/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "lighttpd\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2130", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2130/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "lighttpd\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2131", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2131/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "lighttpd\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2132", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2132/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "lighttpd\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2133", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2133/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "lighttpd\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2134", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2134/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "lighttpd\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2135", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2135/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "lighttpd\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2136", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2136/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "lighttpd\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2137", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2137/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "lighttpd\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2139", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2139/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "lighttpd\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2140", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2140/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "lighttpd\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2141", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2141/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "lighttpd\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2142", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2142/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "lighttpd\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2249", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2249/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "hostmand\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2395", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2395/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "crontab_check\n", 1024)        = 14
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2403", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2403/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "watchmand\n", 1024)            = 10
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2407", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2407/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "logmand\n", 1024)              = 8
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2423", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2423/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "sys_stat\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2623", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2623/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "hd-audio0\n", 1024)            = 10
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2744", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2744/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "scst_uid\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2800", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2800/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "scstd0\n", 1024)               = 7
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2810", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2810/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "scstd1\n", 1024)               = 7
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2812", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2812/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "scstd2\n", 1024)               = 7
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2819", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2819/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "scstd3\n", 1024)               = 7
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2825", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2825/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "scst_initd\n", 1024)           = 11
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2827", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2827/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "scsi_tm\n", 1024)              = 8
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2831", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2831/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "scst_mgmtd\n", 1024)           = 11
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2844", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2844/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "scst_actid\n", 1024)           = 11
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2863", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2863/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "iscsird0\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2865", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2865/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "iscsird1\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2868", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2868/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "iscsird2\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2870", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2870/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "iscsird3\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2871", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2871/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "iscsiwr0\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2872", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2872/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "iscsiwr1\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2873", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2873/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "iscsiwr2\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2874", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2874/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "iscsiwr3\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2907", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2907/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "iscsi-scstd\n", 1024)          = 12
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2915", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2915/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "rsyncd\n", 1024)               = 7
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2922", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2922/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "recybind\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2928", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2928/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "smbd\n", 1024)                 = 5
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2930", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2930/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "smbd-notifyd\n", 1024)         = 13
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2931", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2931/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "cleanupd\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2936", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2936/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "lpqd\n", 1024)                 = 5
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2937", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2937/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "nmbd\n", 1024)                 = 5
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2941", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2941/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "winbindd\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2946", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2946/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "dbus-daemon\n", 1024)          = 12
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2952", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2952/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "winbindd\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2963", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2963/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "nginx\n", 1024)                = 6
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2964", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2964/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "nginx\n", 1024)                = 6
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2982", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2982/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "sftpmand\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "2991", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/2991/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "sshd\n", 1024)                 = 5
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "3026", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/3026/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "usbipd\n", 1024)               = 7
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "3034", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/3034/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "cupsd\n", 1024)                = 6
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "3046", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/3046/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "ftpbackupd\n", 1024)           = 11
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "3074", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/3074/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "actmand\n", 1024)              = 8
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "3079", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/3079/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "cryptodev_queue\n", 1024)      = 16
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "3095", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/3095/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "taskmonitord\n", 1024)         = 13
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "3099", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/3099/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "websocketd\n", 1024)           = 11
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "3108", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/3108/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "avahi-daemon\n", 1024)         = 13
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "3109", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/3109/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "avahi-daemon\n", 1024)         = 13
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "3204", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/3204/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "cdmand\n", 1024)               = 7
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "3224", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/3224/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "myhttpd\n", 1024)              = 8
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "3227", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/3227/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "myhttpd\n", 1024)              = 8
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "3236", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/3236/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "cifsdrvd\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "3249", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/3249/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "thumbnail\n", 1024)            = 10
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "3291", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/3291/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "rsyslogd\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "3524", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/3524/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "sh\n", 1024)                   = 3
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "3962", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/3962/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "sshd\n", 1024)                 = 5
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "3963", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/3963/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "sshd\n", 1024)                 = 5
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "3966", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/3966/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "sshd\n", 1024)                 = 5
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "3975", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/3975/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "sh\n", 1024)                   = 3
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "6876", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/6876/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "sshd\n", 1024)                 = 5
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "6887", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/6887/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "sh\n", 1024)                   = 3
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "6993", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/6993/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "kworker/u8:0\n", 1024)         = 13
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "7054", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/7054/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "emboardmand\n", 1024)          = 12
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "7225", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/7225/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "lcmd\n", 1024)                 = 5
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "7785", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/7785/comm", O_RDONLY)       = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "nasmand\n", 1024)              = 8
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "14186", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/14186/comm", O_RDONLY)      = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "kworker/2:0\n", 1024)          = 12
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "16017", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/16017/comm", O_RDONLY)      = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "kworker/3:0\n", 1024)          = 12
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "16379", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/16379/comm", O_RDONLY)      = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "kworker/0:2\n", 1024)          = 12
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "16803", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/16803/comm", O_RDONLY)      = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "kworker/1:1\n", 1024)          = 12
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "16976", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/16976/comm", O_RDONLY)      = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "kworker/2:1\n", 1024)          = 12
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "17023", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/17023/comm", O_RDONLY)      = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "kworker/3:2\n", 1024)          = 12
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "17375", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/17375/comm", O_RDONLY)      = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "kworker/1:0\n", 1024)          = 12
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "17403", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/17403/comm", O_RDONLY)      = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "kworker/0:1\n", 1024)          = 12
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "17859", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/17859/comm", O_RDONLY)      = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "kworker/2:2\n", 1024)          = 12
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "17986", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/17986/comm", O_RDONLY)      = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "kworker/0:0\n", 1024)          = 12
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "18012", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/18012/comm", O_RDONLY)      = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "kworker/3:1\n", 1024)          = 12
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "18156", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/18156/comm", O_RDONLY)      = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "strace\n", 1024)               = 7
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "18159", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/18159/comm", O_RDONLY)      = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "stormand\n", 1024)             = 9
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+newfstatat(4, "18163", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open("/proc/18163/comm", O_RDONLY)      = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817ef000
+read(5, "volmand\n", 1024)              = 8
+close(5)                                = 0
+munmap(0x7fb8817ef000, 4096)            = 0
+getdents(4, /* 0 entries */, 32768)     = 0
+close(4)                                = 0
+rt_sigreturn({mask=[]})                 = 0
+close(3)                                = 0
+munmap(0x7fb8817f0000, 4096)            = 0
+mmap(NULL, 8392704, PROT_READ|PROT_WRITE|PROT_EXEC, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7fb87c89c000
+mprotect(0x7fb87c89c000, 4096, PROT_NONE) = 0
+clone(child_stack=0x7fb87d09bf70, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7fb87d09c9d0, tls=0x7fb87d09c700, child_tidptr=0x7fb87d09c9d0) = 18164
+select(3, [0 2], NULL, [1], {tv_sec=3600, tv_usec=0}) = ? ERESTARTNOHAND (To be restarted if no handler)
+select(3, [0 2], NULL, [1], {tv_sec=3599, tv_usec=794868}) = ? ERESTARTNOHAND (To be restarted if no handler)
+select(3, [0 2], NULL, [1], {tv_sec=3599, tv_usec=671683}) = ? ERESTARTNOHAND (To be restarted if no handler)
+select(3, [0 2], NULL, [1], {tv_sec=3599, tv_usec=548757}) = ? ERESTARTNOHAND (To be restarted if no handler)
+select(3, [0 2], NULL, [1], {tv_sec=3599, tv_usec=426717}) = ? ERESTARTNOHAND (To be restarted if no handler)
+select(3, [0 2], NULL, [1], {tv_sec=3599, tv_usec=303586}) = ? ERESTARTNOHAND (To be restarted if no handler)
+select(3, [0 2], NULL, [1], {tv_sec=3599, tv_usec=180824}) = ? ERESTARTNOHAND (To be restarted if no handler)
+select(3, [0 2], NULL, [1], {tv_sec=3599, tv_usec=57696}) = ? ERESTARTNOHAND (To be restarted if no handler)
+select(3, [0 2], NULL, [1], {tv_sec=3598, tv_usec=935660}) = ? ERESTARTNOHAND (To be restarted if no handler)
+select(3, [0 2], NULL, [1], {tv_sec=3598, tv_usec=812841}) = ? ERESTARTNOHAND (To be restarted if no handler)
+select(3, [0 2], NULL, [1], {tv_sec=3598, tv_usec=691138}) = ? ERESTARTNOHAND (To be restarted if no handler)
+select(3, [0 2], NULL, [1], {tv_sec=3598, tv_usec=569196}) = ? ERESTARTNOHAND (To be restarted if no handler)
+select(3, [0 2], NULL, [1], {tv_sec=3598, tv_usec=447618}) = ? ERESTARTNOHAND (To be restarted if no handler)
+select(3, [0 2], NULL, [1], {tv_sec=3598, tv_usec=326423}) = ? ERESTARTNOHAND (To be restarted if no handler)
+select(3, [0 2], NULL, [1], {tv_sec=3598, tv_usec=204247}) = ? ERESTARTNOHAND (To be restarted if no handler)
+select(3, [0 2], NULL, [1], {tv_sec=3598, tv_usec=81780}) = ? ERESTARTNOHAND (To be restarted if no handler)
+select(3, [0 2], NULL, [1], {tv_sec=3597, tv_usec=959339}) = ? ERESTARTNOHAND (To be restarted if no handler)
+select(3, [0 2], NULL, [1], {tv_sec=3597, tv_usec=837684}) = ? ERESTARTNOHAND (To be restarted if no handler)
+select(3, [0 2], NULL, [1], {tv_sec=3597, tv_usec=714788}) = ? ERESTARTNOHAND (To be restarted if no handler)
+select(3, [0 2], NULL, [1], {tv_sec=3597, tv_usec=592265}) = ? ERESTARTNOHAND (To be restarted if no handler)
+select(3, [0 2], NULL, [1], {tv_sec=3597, tv_usec=470072}) = ? ERESTARTNOHAND (To be restarted if no handler)
+select(3, [0 2], NULL, [1], {tv_sec=3597, tv_usec=347834}) = ? ERESTARTNOHAND (To be restarted if no handler)
+select(3, [0 2], NULL, [1], {tv_sec=3597, tv_usec=226118}) = ? ERESTARTNOHAND (To be restarted if no handler)
+select(3, [0 2], NULL, [1], {tv_sec=3597, tv_usec=104022}) = ? ERESTARTNOHAND (To be restarted if no handler)
+select(3, [0 2], NULL, [1], {tv_sec=3596, tv_usec=982663}) = ? ERESTARTNOHAND (To be restarted if no handler)
+select(3, [0 2], NULL, [1], {tv_sec=3596, tv_usec=859404}) = ? ERESTARTNOHAND (To be restarted if no handler)
+select(3, [0 2], NULL, [1], {tv_sec=3596, tv_usec=737180}) = ? ERESTARTNOHAND (To be restarted if no handler)
+select(3, [0 2], NULL, [1], {tv_sec=3596, tv_usec=615538}) = ? ERESTARTNOHAND (To be restarted if no handler)
+select(3, [0 2], NULL, [1], {tv_sec=3596, tv_usec=493503}) = 1 (in [2], left {tv_sec=3585, tv_usec=31145})
+recvfrom(2, {{len=1851877475, type=0x6567 /* NLMSG_??? */, flags=0x2f40 /* NLM_F_??? */, seq=1769366884, pid=796091747}, "\x70\x63\x69\x30\x30\x30\x30\x3a\x30\x30\x2f\x30\x30\x30\x30\x3a\x30\x30\x3a\x31\x64\x2e\x37\x2f\x75\x73\x62\x32\x2f\x32\x2d\x31"...}, 4095, 0, NULL, NULL) = 297
+open("/sys/bus/scsi/devices/target11:0:0/power/runtime_active_kids", O_RDONLY) = 3
+read(3, "1\n", 63)                      = 2
+close(3)                                = 0
+clock_gettime(CLOCK_MONOTONIC_RAW, {tv_sec=8885, tv_nsec=975872213}) = 0
+mmap(NULL, 8392704, PROT_READ|PROT_WRITE|PROT_EXEC, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7fb87c09b000
+mprotect(0x7fb87c09b000, 4096, PROT_NONE) = 0
+clone(child_stack=0x7fb87c89af70, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7fb87c89b9d0, tls=0x7fb87c89b700, child_tidptr=0x7fb87c89b9d0) = 18244
+select(3, [0 2], NULL, [1], {tv_sec=3, tv_usec=0}) = 1 (in [2], left {tv_sec=2, tv_usec=938538})
+recvfrom(2, {{len=1851877475, type=0x6567 /* NLMSG_??? */, flags=0x2f40 /* NLM_F_??? */, seq=1769366884, pid=796091747}, "\x70\x63\x69\x30\x30\x30\x30\x3a\x30\x30\x2f\x30\x30\x30\x30\x3a\x30\x30\x3a\x31\x64\x2e\x37\x2f\x75\x73\x62\x32\x2f\x32\x2d\x31"...}, 4095, 0, NULL, NULL) = 277
+open("/sys/bus/scsi/devices/target11:0:0/power/runtime_active_kids", O_RDONLY) = 3
+read(3, "1\n", 63)                      = 2
+close(3)                                = 0
+clock_gettime(CLOCK_MONOTONIC_RAW, {tv_sec=8886, tv_nsec=46326882}) = 0
+select(3, [0 2], NULL, [1], {tv_sec=3, tv_usec=0}) = 1 (in [2], left {tv_sec=2, tv_usec=907592})
+recvfrom(2, {{len=1080321121, type=0x642f /* NLMSG_??? */, flags=NLM_F_REQUEST|NLM_F_ACK|NLM_F_DUMP_FILTERED|0x7640, seq=1936024425, pid=1768124463}, "\x30\x30\x30\x30\x3a\x30\x30\x2f\x30\x30\x30\x30\x3a\x30\x30\x3a\x31\x64\x2e\x37\x2f\x75\x73\x62\x32\x2f\x32\x2d\x31\x2f\x32\x2d"...}, 4095, 0, NULL, NULL) = 287
+open("/sys/bus/scsi/devices/target11:0:0/power/runtime_active_kids", O_RDONLY) = 3
+read(3, "1\n", 63)                      = 2
+close(3)                                = 0
+clock_gettime(CLOCK_MONOTONIC_RAW, {tv_sec=8886, tv_nsec=149512242}) = 0
+select(3, [0 2], NULL, [1], {tv_sec=3, tv_usec=0}) = 1 (in [2], left {tv_sec=2, tv_usec=909825})
+recvfrom(2, {{len=1080321121, type=0x642f /* NLMSG_??? */, flags=NLM_F_REQUEST|NLM_F_ACK|NLM_F_DUMP_FILTERED|0x7640, seq=1936024425, pid=1768124463}, "\x30\x30\x30\x30\x3a\x30\x30\x2f\x30\x30\x30\x30\x3a\x30\x30\x3a\x31\x64\x2e\x37\x2f\x75\x73\x62\x32\x2f\x32\x2d\x31\x2f\x32\x2d"...}, 4095, 0, NULL, NULL) = 287
+open("/sys/bus/scsi/devices/target11:0:0/power/runtime_active_kids", O_RDONLY) = 3
+read(3, "1\n", 63)                      = 2
+close(3)                                = 0
+clock_gettime(CLOCK_MONOTONIC_RAW, {tv_sec=8886, tv_nsec=255695424}) = 0
+select(3, [0 2], NULL, [1], {tv_sec=3, tv_usec=0}) = 1 (in [2], left {tv_sec=2, tv_usec=909013})
+recvfrom(2, {{len=1080321121, type=0x642f /* NLMSG_??? */, flags=NLM_F_REQUEST|NLM_F_ACK|NLM_F_DUMP_FILTERED|0x7640, seq=1936024425, pid=1768124463}, "\x30\x30\x30\x30\x3a\x30\x30\x2f\x30\x30\x30\x30\x3a\x30\x30\x3a\x31\x64\x2e\x37\x2f\x75\x73\x62\x32\x2f\x32\x2d\x31\x2f\x32\x2d"...}, 4095, 0, NULL, NULL) = 287
+open("/sys/bus/scsi/devices/target11:0:0/power/runtime_active_kids", O_RDONLY) = 3
+read(3, "1\n", 63)                      = 2
+close(3)                                = 0
+clock_gettime(CLOCK_MONOTONIC_RAW, {tv_sec=8886, tv_nsec=360087834}) = 0
+select(3, [0 2], NULL, [1], {tv_sec=3, tv_usec=0}) = 1 (in [2], left {tv_sec=2, tv_usec=909375})
+recvfrom(2, {{len=1080321121, type=0x642f /* NLMSG_??? */, flags=NLM_F_REQUEST|NLM_F_ACK|NLM_F_DUMP_FILTERED|0x7640, seq=1936024425, pid=1768124463}, "\x30\x30\x30\x30\x3a\x30\x30\x2f\x30\x30\x30\x30\x3a\x30\x30\x3a\x31\x64\x2e\x37\x2f\x75\x73\x62\x32\x2f\x32\x2d\x31\x2f\x32\x2d"...}, 4095, 0, NULL, NULL) = 287
+open("/sys/bus/scsi/devices/target11:0:0/power/runtime_active_kids", O_RDONLY) = 3
+read(3, "1\n", 63)                      = 2
+close(3)                                = 0
+clock_gettime(CLOCK_MONOTONIC_RAW, {tv_sec=8886, tv_nsec=463027548}) = 0
+select(3, [0 2], NULL, [1], {tv_sec=3, tv_usec=0}) = 1 (except [1], left {tv_sec=2, tv_usec=987147})
+open("/proc/mounts", O_RDONLY)          = 3
+fstat(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817f0000
+read(3, "rootfs / rootfs rw,size=1518960k"..., 1024) = 1024
+read(3, "37,iocharset=utf8,shortname=mixe"..., 1024) = 113
+read(3, "", 1024)                       = 0
+close(3)                                = 0
+munmap(0x7fb8817f0000, 4096)            = 0
+select(3, [0 2], NULL, [1], {tv_sec=3, tv_usec=0}) = 1 (except [1], left {tv_sec=2, tv_usec=987625})
+open("/proc/mounts", O_RDONLY)          = 3
+fstat(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8817f0000
+read(3, "rootfs / rootfs rw,size=1518960k"..., 1024) = 1024
+read(3, "37,iocharset=utf8,shortname=mixe"..., 1024) = 56
+read(3, "", 1024)                       = 0
+close(3)                                = 0
+munmap(0x7fb8817f0000, 4096)            = 0
+select(3, [0 2], NULL, [1], {tv_sec=3, tv_usec=0}) = 0 (Timeout)
+nanosleep({tv_sec=0, tv_nsec=0}, 0x7fffe68f5010) = 0
+wait4(-1, 0x7fffe68f54f4, WNOHANG|WSTOPPED|WCONTINUED, NULL) = -1 ECHILD (No child processes)
+select(3, [0 2], NULL, [1], {tv_sec=3, tv_usec=0}) = 0 (Timeout)
+nanosleep({tv_sec=0, tv_nsec=0}, 0x7fffe68f5010) = 0
+wait4(-1, 0x7fffe68f54f4, WNOHANG|WSTOPPED|WCONTINUED, NULL) = -1 ECHILD (No child processes)
+select(3, [0 2], NULL, [1], {tv_sec=3600, tv_usec=0}) = 1 (in [2], left {tv_sec=3599, tv_usec=117927})
+recvfrom(2, {{len=1851877475, type=0x6567 /* NLMSG_??? */, flags=0x2f40 /* NLM_F_??? */, seq=1769366884, pid=796091747}, "\x70\x63\x69\x30\x30\x30\x30\x3a\x30\x30\x2f\x30\x30\x30\x30\x3a\x30\x30\x3a\x31\x64\x2e\x37\x2f\x75\x73\x62\x32\x2f\x32\x2d\x31"...}, 4095, 0, NULL, NULL) = 297
+open("/sys/bus/scsi/devices/target11:0:0/power/runtime_active_kids", O_RDONLY) = 3
+read(3, "1\n", 63)                      = 2
+close(3)                                = 0
+clock_gettime(CLOCK_MONOTONIC_RAW, {tv_sec=8893, tv_nsec=390500953}) = 0
+clone(child_stack=0x7fb87c89af70, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7fb87c89b9d0, tls=0x7fb87c89b700, child_tidptr=0x7fb87c89b9d0) = 18418
+select(3, [0 2], NULL, [1], {tv_sec=3, tv_usec=0}) = 1 (in [2], left {tv_sec=2, tv_usec=999989})
+recvfrom(2, {{len=1869440370, type=0x6576 /* NLMSG_??? */, flags=0x2f40 /* NLM_F_??? */, seq=1769366884, pid=796091747}, "\x70\x63\x69\x30\x30\x30\x30\x3a\x30\x30\x2f\x30\x30\x30\x30\x3a\x30\x30\x3a\x31\x64\x2e\x37\x2f\x75\x73\x62\x32\x2f\x32\x2d\x31"...}, 4095, 0, NULL, NULL) = 293
+open("/sys/bus/scsi/devices/target11:0:0/power/runtime_active_kids", O_RDONLY) = 3
+read(3, "1\n", 63)                      = 2
+close(3)                                = 0
+select(3, [0 2], NULL, [1], {tv_sec=3, tv_usec=0}) = 1 (in [2], left {tv_sec=2, tv_usec=999986})
+recvfrom(2, {{len=1869440370, type=0x6576 /* NLMSG_??? */, flags=0x2f40 /* NLM_F_??? */, seq=1769366884, pid=796091747}, "\x70\x63\x69\x30\x30\x30\x30\x3a\x30\x30\x2f\x30\x30\x30\x30\x3a\x30\x30\x3a\x31\x64\x2e\x37\x2f\x75\x73\x62\x32\x2f\x32\x2d\x31"...}, 4095, 0, NULL, NULL) = 293
+open("/sys/bus/scsi/devices/target11:0:0/power/runtime_active_kids", O_RDONLY) = 3
+read(3, "1\n", 63)                      = 2
+close(3)                                = 0
+select(3, [0 2], NULL, [1], {tv_sec=3, tv_usec=0}) = 1 (in [2], left {tv_sec=2, tv_usec=999989})
+recvfrom(2, {{len=1869440370, type=0x6576 /* NLMSG_??? */, flags=0x2f40 /* NLM_F_??? */, seq=1769366884, pid=796091747}, "\x70\x63\x69\x30\x30\x30\x30\x3a\x30\x30\x2f\x30\x30\x30\x30\x3a\x30\x30\x3a\x31\x64\x2e\x37\x2f\x75\x73\x62\x32\x2f\x32\x2d\x31"...}, 4095, 0, NULL, NULL) = 293
+open("/sys/bus/scsi/devices/target11:0:0/power/runtime_active_kids", O_RDONLY) = 3
+read(3, "1\n", 63)                      = 2
+close(3)                                = 0
+select(3, [0 2], NULL, [1], {tv_sec=3, tv_usec=0}) = 1 (in [2], left {tv_sec=2, tv_usec=999987})
+recvfrom(2, {{len=1869440370, type=0x6576 /* NLMSG_??? */, flags=0x2f40 /* NLM_F_??? */, seq=1769366884, pid=796091747}, "\x70\x63\x69\x30\x30\x30\x30\x3a\x30\x30\x2f\x30\x30\x30\x30\x3a\x30\x30\x3a\x31\x64\x2e\x37\x2f\x75\x73\x62\x32\x2f\x32\x2d\x31"...}, 4095, 0, NULL, NULL) = 293
+open("/sys/bus/scsi/devices/target11:0:0/power/runtime_active_kids", O_RDONLY) = 3
+read(3, "1\n", 63)                      = 2
+close(3)                                = 0
+select(3, [0 2], NULL, [1], {tv_sec=3, tv_usec=0}) = 0 (Timeout)
+nanosleep({tv_sec=0, tv_nsec=0}, 0x7fffe68f5010) = 0
+wait4(-1, 0x7fffe68f54f4, WNOHANG|WSTOPPED|WCONTINUED, NULL) = -1 ECHILD (No child processes)
+select(3, [0 2], NULL, [1], {tv_sec=3, tv_usec=0}) = 0 (Timeout)
+nanosleep({tv_sec=0, tv_nsec=0}, 0x7fffe68f5010) = 0
+wait4(-1, 0x7fffe68f54f4, WNOHANG|WSTOPPED|WCONTINUED, NULL) = -1 ECHILD (No child processes)
+select(3, [0 2], NULL, [1], {tv_sec=3600, tv_usec=0}) = ? ERESTARTNOHAND (To be restarted if no handler)
+--- SIGTERM {si_signo=SIGTERM, si_code=SI_USER, si_pid=18510, si_uid=0} ---
+close(2)                                = 0
+rt_sigreturn({mask=[]})                 = -1 EINTR (Interrupted system call)
+close(0)                                = 0
+close(1)                                = 0
+write(1, "stormand: Exiting the daemon pro"..., 42) = -1 EBADF (Bad file descriptor)
+stat("/dev/shm/.nas.summary", {st_mode=S_IFREG|0744, st_size=10120, ...}) = 0
+munmap(0x7fb8817f3000, 10120)           = 0
+stat("/dev/shm/.nas.diskstat", {st_mode=S_IFREG|0744, st_size=3536, ...}) = 0
+munmap(0x7fb8817f2000, 3536)            = 0
+stat("/dev/shm/.nas.partstat", {st_mode=S_IFREG|0744, st_size=4080, ...}) = 0
+munmap(0x7fb8817f1000, 4080)            = 0
+exit_group(1)                           = ?
++++ exited with 1 +++

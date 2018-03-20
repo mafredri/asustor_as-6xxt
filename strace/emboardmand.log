@@ -1,0 +1,343 @@
+[EMBOARD] Load_Hardware_Conf(566):	 --> The nas bay number is 4
+[EMBOARD] Reset_Led_Status(3976):	 --> LED brightness g_iLedBright=30
+[EMBOARD] main(4380):	 --> Init_Nas_Hardware_Status finished!
+[EMBOARD] Init_Fan_Attribute(699):	 --> Fan control attributes baseline
+[EMBOARD] Init_Fan_Attribute(704):	 --> Low: 45 Medium: 104 High: 164 Max: 255 Step: 3
+[EMBOARD] Init_Fan_Attribute(706):	 --> CPU target temp: 75 warning temp: 94
+[EMBOARD] Init_Fan_Attribute(708):	 --> HDD target temp: 52 warning temp: 58
+[EMBOARD] Set_Ubox_Pwm_By_Nas(426):	 --> No ubox be found
+recreate semphore success
+[EMBOARD] Disk_Doctor_Service_Handler(3230):	 --> Enter Disk_Doctor_Service_Handler...
+[EMBOARD] Fan_Service_Handler(1033):	 --> Enter Fan_Service_Handler...
+[EMBOARD] Init_Hardware_Service_Threads(2952):	 --> Success create fan service thread! (0)
+[EMBOARD] Init_Hardware_Service_Threads(2962):	 --> Night Mode
+[EMBOARD] Led_Night_Service_Handler(2301):	 --> Enter Led_Night_Service_Handler...
+[EMBOARD] Init_Hardware_Service_Threads(3007):	 --> Success create led night service thread! (0)
+[EMBOARD] Power_Service_Handler(1754):	 --> Enter Power_Service_Handler...
+[EMBOARD] Power_Service_Handler(1835):	 --> Current Time: mon = 3, day = 3, hour = 16, min = 56
+[EMBOARD] Power_Service_Handler(1841):	 --> PowerOn schedule: nothing to match
+[EMBOARD] Power_Service_Handler(1851):	 --> PowerOff schedule: nothing to match
+[EMBOARD] Power_Service_Handler(1856):	 --> Restart schedule: nothing to match
+[EMBOARD] Power_Service_Handler(1866):	 --> Sleep schedule: nothing to match
+[EMBOARD] Init_Hardware_Service_Threads(3109):	 --> Success create power service thread! (0)
+[EMBOARD] Button_Service_Handler(2068):	 --> Enter Button_Service_Handler...
+[EMBOARD] Init_Hardware_Service_Threads(3129):	 --> Success create button service thread! (0)
+[EMBOARD] Hdd_Standby_Service_Handler(2415):	 --> Enter Hdd_Standby_Service_Handler...
+[EMBOARD] Init_Hardware_Service_Threads(3181):	 --> Success create hdd standby service thread! (0)
+[EMBOARD] Hdd_Standby_Service_Handler(2490):	 --> bay[ 2]  sda check state is active
+[EMBOARD] main(4444):	 --> Enter Main Loop!
+[EMBOARD] Fan_Auto_Mode(918):	 --> iCpuTempDelta: 0, iHddTempDelta: 0, iPwmDelta: 0
+[EMBOARD] Fan_Auto_Mode(928):	 --> iPrePwm: 45, iPwmDelta: 0
+[EMBOARD] Fan_Auto_Mode(956):	 --> Final Pwm to set: 45
+[EMBOARD] Hdd_Standby_Service_Handler(2523):	 --> bay[ 2]  sda disktemp 32.000000
+[EMBOARD] Set_Ubox_Pwm_By_Nas(426):	 --> No ubox be found
+[EMBOARD] Check_System_Healthy(768):	 --> Fan0 speed = 569
+[EMBOARD] Led_Night_Service_Handler(2350):	 --> Sleep led light
+[EMBOARD] Disk_Doctor_Service_Handler(3278):	 --> internal disk hibernation timeout: 1800
+[EMBOARD] Disk_Doctor_Service_Handler(3348):	 --> bay[ 2] sda has IO
+[EMBOARD] Disk_Doctor_Service_Handler(3442):	 --> external disk hibernation timeout: 1800
+[EMBOARD] Disk_Doctor_Service_Handler(3465):	 --> ext disk sdb is plug in
+[EMBOARD] Led_Night_Service_Handler(2368):	 --> Sleep led dark
+[EMBOARD] Power_Service_Handler(1835):	 --> Current Time: mon = 3, day = 3, hour = 16, min = 57
+[EMBOARD] Power_Service_Handler(1841):	 --> PowerOn schedule: nothing to match
+[EMBOARD] Power_Service_Handler(1851):	 --> PowerOff schedule: nothing to match
+[EMBOARD] Power_Service_Handler(1856):	 --> Restart schedule: nothing to match
+[EMBOARD] Power_Service_Handler(1866):	 --> Sleep schedule: nothing to match
+[EMBOARD] Emboardmand_Reload_Signal_Handler(351):	 --> Catched a signal with ID [1]. Reload conf file...
+[EMBOARD] Emboardmand_Reload_Signal_Handler(353):	 --> g_bReloadConf=1
+[EMBOARD] main(4451):	 --> Reload hardware configurations and restart all service threads
+[EMBOARD] Load_Hardware_Conf(566):	 --> The nas bay number is 4
+[EMBOARD] main(4459):	 --> Success to reload hw configs! (0)
+[EMBOARD] main(4467):	 --> Success reload lookup HAL info! (215)
+[EMBOARD] Reset_Led_Status(3976):	 --> LED brightness g_iLedBright=30
+[EMBOARD] Reset_Led_Status(3986):	 --> Reset Led
+[EMBOARD] Hdd_Standby_Service_Handler(2668):	 --> The disk MaxTmep is 32
+[EMBOARD] Hdd_Standby_Service_Handler(2498):	 --> bay[ 2]  sda may active
+[EMBOARD] Init_Hardware_Service_Threads(2926):	 --> Cancel the fan service thread success
+[EMBOARD] Init_Hardware_Service_Threads(2952):	 --> Success create fan service thread! (0)
+[EMBOARD] Fan_Service_Handler(1033):	 --> Enter Fan_Service_Handler...
+[EMBOARD] Init_Hardware_Service_Threads(3015):	 --> Custom Mode
+[EMBOARD] Init_Hardware_Service_Threads(3025):	 --> Cancel the  led night service thread success
+[EMBOARD] Init_Hardware_Service_Threads(3054):	 --> Hdd light enable
+[EMBOARD] Hdd_Light_Service_Handler(2697):	 --> Enter Hdd_Light_Service_Handler...
+[EMBOARD] Fan_Auto_Mode(918):	 --> iCpuTempDelta: 0, iHddTempDelta: 0, iPwmDelta: 0
+[EMBOARD] Fan_Auto_Mode(928):	 --> iPrePwm: 45, iPwmDelta: 0
+[EMBOARD] Fan_Auto_Mode(956):	 --> Final Pwm to set: 45
+[EMBOARD] Set_Ubox_Pwm_By_Nas(426):	 --> No ubox be found
+[EMBOARD] Init_Hardware_Service_Threads(3064):	 --> Success create hdd light service thread! (0)
+[EMBOARD] Check_System_Healthy(768):	 --> Fan0 speed = 551
+[EMBOARD] main(4474):	 --> Init_Hardware_Service_Threads Complete[EMBOARD] main(4485):	 --> Reload completed
+[EMBOARD] Power_Service_Handler(1835):	 --> Current Time: mon = 3, day = 3, hour = 16, min = 57
+[EMBOARD] Power_Service_Handler(1841):	 --> PowerOn schedule: nothing to match
+[EMBOARD] Power_Service_Handler(1851):	 --> PowerOff schedule: nothing to match
+[EMBOARD] Power_Service_Handler(1856):	 --> Restart schedule: nothing to match
+[EMBOARD] Power_Service_Handler(1866):	 --> Sleep schedule: nothing to match
+[EMBOARD] Emboardmand_Reload_Signal_Handler(351):	 --> Catched a signal with ID [1]. Reload conf file...
+[EMBOARD] Emboardmand_Reload_Signal_Handler(353):	 --> g_bReloadConf=1
+[EMBOARD] main(4451):	 --> Reload hardware configurations and restart all service threads
+[EMBOARD] Load_Hardware_Conf(566):	 --> The nas bay number is 4
+[EMBOARD] main(4459):	 --> Success to reload hw configs! (0)
+[EMBOARD] main(4467):	 --> Success reload lookup HAL info! (215)
+[EMBOARD] Reset_Led_Status(3976):	 --> LED brightness g_iLedBright=30
+[EMBOARD] Init_Hardware_Service_Threads(2926):	 --> Cancel the fan service thread success
+[EMBOARD] Init_Hardware_Service_Threads(2952):	 --> Success create fan service thread! (0)
+[EMBOARD] Fan_Service_Handler(1033):	 --> Enter Fan_Service_Handler...
+[EMBOARD] Init_Hardware_Service_Threads(2962):	 --> Night Mode
+[EMBOARD] Disk_Doctor_Service_Handler(3278):	 --> internal disk hibernation timeout: 1800
+[EMBOARD] Init_Hardware_Service_Threads(2972):	 --> Cancel the hdd light service thread success
+[EMBOARD] Disk_Doctor_Service_Handler(3348):	 --> bay[ 2] sda has IO
+[EMBOARD] Led_Night_Service_Handler(2301):	 --> Enter Led_Night_Service_Handler...
+[EMBOARD] Disk_Doctor_Service_Handler(3442):	 --> external disk hibernation timeout: 1800
+[EMBOARD] Fan_Auto_Mode(918):	 --> iCpuTempDelta: 0, iHddTempDelta: 0, iPwmDelta: 0
+[EMBOARD] Fan_Auto_Mode(928):	 --> iPrePwm: 45, iPwmDelta: 0
+[EMBOARD] Fan_Auto_Mode(956):	 --> Final Pwm to set: 45
+[EMBOARD] Init_Hardware_Service_Threads(3007):	 --> Success create led night service thread! (0)
+[EMBOARD] Set_Ubox_Pwm_By_Nas(426):	 --> No ubox be found
+[EMBOARD] main(4474):	 --> Init_Hardware_Service_Threads Complete[EMBOARD] Disk_Doctor_Service_Handler(3474):	 --> ext disk sdb state is standby
+[EMBOARD] Disk_Doctor_Service_Handler(3527):	 --> ext disk sdb has sleep 18 seconds
+[EMBOARD] main(4485):	 --> Reload completed
+[EMBOARD] Check_System_Healthy(768):	 --> Fan0 speed = 556
+[EMBOARD] Hdd_Standby_Service_Handler(2668):	 --> The disk MaxTmep is 32
+[EMBOARD] Hdd_Standby_Service_Handler(2498):	 --> bay[ 2]  sda may active
+[EMBOARD] Led_Night_Service_Handler(2350):	 --> Sleep led light
+[EMBOARD] Led_Night_Service_Handler(2368):	 --> Sleep led dark
+[EMBOARD] Power_Service_Handler(1835):	 --> Current Time: mon = 3, day = 3, hour = 16, min = 57
+[EMBOARD] Power_Service_Handler(1841):	 --> PowerOn schedule: nothing to match
+[EMBOARD] Power_Service_Handler(1851):	 --> PowerOff schedule: nothing to match
+[EMBOARD] Power_Service_Handler(1856):	 --> Restart schedule: nothing to match
+[EMBOARD] Power_Service_Handler(1866):	 --> Sleep schedule: nothing to match
+[EMBOARD] Emboardmand_Reload_Signal_Handler(351):	 --> Catched a signal with ID [1]. Reload conf file...
+[EMBOARD] Emboardmand_Reload_Signal_Handler(353):	 --> g_bReloadConf=1
+[EMBOARD] main(4451):	 --> Reload hardware configurations and restart all service threads
+[EMBOARD] Load_Hardware_Conf(566):	 --> The nas bay number is 4
+[EMBOARD] main(4459):	 --> Success to reload hw configs! (0)
+[EMBOARD] main(4467):	 --> Success reload lookup HAL info! (215)
+[EMBOARD] Reset_Led_Status(3976):	 --> LED brightness g_iLedBright=30
+[EMBOARD] Reset_Led_Status(3986):	 --> Reset Led
+[EMBOARD] Init_Hardware_Service_Threads(2926):	 --> Cancel the fan service thread success
+[EMBOARD] Init_Hardware_Service_Threads(2952):	 --> Success create fan service thread! (0)
+[EMBOARD] Fan_Service_Handler(1033):	 --> Enter Fan_Service_Handler...
+[EMBOARD] Init_Hardware_Service_Threads(3015):	 --> Custom Mode
+[EMBOARD] Init_Hardware_Service_Threads(3025):	 --> Cancel the  led night service thread success
+[EMBOARD] Init_Hardware_Service_Threads(3054):	 --> Hdd light enable
+[EMBOARD] Hdd_Light_Service_Handler(2697):	 --> Enter Hdd_Light_Service_Handler...
+[EMBOARD] Init_Hardware_Service_Threads(3064):	 --> Success create hdd light service thread! (0)
+[EMBOARD] main(4474):	 --> Init_Hardware_Service_Threads Complete[EMBOARD] main(4485):	 --> Reload completed
+[EMBOARD] Fan_Auto_Mode(918):	 --> iCpuTempDelta: 0, iHddTempDelta: 0, iPwmDelta: 0
+[EMBOARD] Fan_Auto_Mode(928):	 --> iPrePwm: 45, iPwmDelta: 0
+[EMBOARD] Fan_Auto_Mode(956):	 --> Final Pwm to set: 45
+[EMBOARD] Set_Ubox_Pwm_By_Nas(426):	 --> No ubox be found
+[EMBOARD] Check_System_Healthy(768):	 --> Fan0 speed = 555
+[EMBOARD] Hdd_Standby_Service_Handler(2668):	 --> The disk MaxTmep is 32
+[EMBOARD] Hdd_Standby_Service_Handler(2498):	 --> bay[ 2]  sda may active
+[EMBOARD] Power_Service_Handler(1835):	 --> Current Time: mon = 3, day = 3, hour = 16, min = 57
+[EMBOARD] Power_Service_Handler(1841):	 --> PowerOn schedule: nothing to match
+[EMBOARD] Power_Service_Handler(1851):	 --> PowerOff schedule: nothing to match
+[EMBOARD] Power_Service_Handler(1856):	 --> Restart schedule: nothing to match
+[EMBOARD] Power_Service_Handler(1866):	 --> Sleep schedule: nothing to match
+[EMBOARD] Emboardmand_Reload_Signal_Handler(351):	 --> Catched a signal with ID [1]. Reload conf file...
+[EMBOARD] Emboardmand_Reload_Signal_Handler(353):	 --> g_bReloadConf=1
+[EMBOARD] Disk_Doctor_Service_Handler(3278):	 --> internal disk hibernation timeout: 1800
+[EMBOARD] main(4451):	 --> Reload hardware configurations and restart all service threads
+[EMBOARD] Disk_Doctor_Service_Handler(3348):	 --> bay[ 2] sda has IO
+[EMBOARD] Disk_Doctor_Service_Handler(3442):	 --> external disk hibernation timeout: 1800
+[EMBOARD] Disk_Doctor_Service_Handler(3474):	 --> ext disk sdb state is standby
+[EMBOARD] Disk_Doctor_Service_Handler(3527):	 --> ext disk sdb has sleep 36 seconds
+[EMBOARD] Load_Hardware_Conf(566):	 --> The nas bay number is 4
+[EMBOARD] main(4459):	 --> Success to reload hw configs! (0)
+[EMBOARD] main(4467):	 --> Success reload lookup HAL info! (215)
+[EMBOARD] Reset_Led_Status(3976):	 --> LED brightness g_iLedBright=30
+[EMBOARD] Reset_Led_Status(3986):	 --> Reset Led
+[EMBOARD] Fan_Auto_Mode(918):	 --> iCpuTempDelta: 0, iHddTempDelta: 0, iPwmDelta: 0
+[EMBOARD] Fan_Auto_Mode(928):	 --> iPrePwm: 45, iPwmDelta: 0
+[EMBOARD] Fan_Auto_Mode(956):	 --> Final Pwm to set: 45
+[EMBOARD] Set_Ubox_Pwm_By_Nas(426):	 --> No ubox be found
+[EMBOARD] Check_System_Healthy(768):	 --> Fan0 speed = 552
+[EMBOARD] Power_Service_Handler(1835):	 --> Current Time: mon = 3, day = 3, hour = 16, min = 57
+[EMBOARD] Power_Service_Handler(1841):	 --> PowerOn schedule: nothing to match
+[EMBOARD] Power_Service_Handler(1851):	 --> PowerOff schedule: nothing to match
+[EMBOARD] Power_Service_Handler(1856):	 --> Restart schedule: nothing to match
+[EMBOARD] Power_Service_Handler(1866):	 --> Sleep schedule: nothing to match
+[EMBOARD] Init_Hardware_Service_Threads(2926):	 --> Cancel the fan service thread success
+[EMBOARD] Init_Hardware_Service_Threads(2952):	 --> Success create fan service thread! (0)
+[EMBOARD] Fan_Service_Handler(1033):	 --> Enter Fan_Service_Handler...
+[EMBOARD] Init_Hardware_Service_Threads(3015):	 --> Custom Mode
+[EMBOARD] Init_Hardware_Service_Threads(3042):	 --> Cancel the hdd light service thread success
+[EMBOARD] Init_Hardware_Service_Threads(3072):	 --> Hdd light disable or bright = 0
+[EMBOARD] main(4474):	 --> Init_Hardware_Service_Threads Complete[EMBOARD] main(4485):	 --> Reload completed
+[EMBOARD] Fan_Auto_Mode(918):	 --> iCpuTempDelta: 0, iHddTempDelta: 0, iPwmDelta: 0
+[EMBOARD] Fan_Auto_Mode(928):	 --> iPrePwm: 45, iPwmDelta: 0
+[EMBOARD] Fan_Auto_Mode(956):	 --> Final Pwm to set: 45
+[EMBOARD] Set_Ubox_Pwm_By_Nas(426):	 --> No ubox be found
+[EMBOARD] Check_System_Healthy(768):	 --> Fan0 speed = 556
+[EMBOARD] Hdd_Standby_Service_Handler(2668):	 --> The disk MaxTmep is 32
+[EMBOARD] Hdd_Standby_Service_Handler(2498):	 --> bay[ 2]  sda may active
+[EMBOARD] Emboardmand_Reload_Signal_Handler(351):	 --> Catched a signal with ID [1]. Reload conf file...
+[EMBOARD] Emboardmand_Reload_Signal_Handler(353):	 --> g_bReloadConf=1
+[EMBOARD] main(4451):	 --> Reload hardware configurations and restart all service threads
+[EMBOARD] Load_Hardware_Conf(566):	 --> The nas bay number is 4
+[EMBOARD] main(4459):	 --> Success to reload hw configs! (0)
+[EMBOARD] main(4467):	 --> Success reload lookup HAL info! (215)
+[EMBOARD] Reset_Led_Status(3976):	 --> LED brightness g_iLedBright=30
+[EMBOARD] Reset_Led_Status(3986):	 --> Reset Led
+[EMBOARD] Init_Hardware_Service_Threads(2926):	 --> Cancel the fan service thread success
+[EMBOARD] Init_Hardware_Service_Threads(2952):	 --> Success create fan service thread! (0)
+[EMBOARD] Fan_Service_Handler(1033):	 --> Enter Fan_Service_Handler...
+[EMBOARD] Init_Hardware_Service_Threads(3015):	 --> Custom Mode
+[EMBOARD] Init_Hardware_Service_Threads(3054):	 --> Hdd light enable
+[EMBOARD] Init_Hardware_Service_Threads(3064):	 --> Success create hdd light service thread! (0)
+[EMBOARD] Hdd_Light_Service_Handler(2697):	 --> Enter Hdd_Light_Service_Handler...
+[EMBOARD] main(4474):	 --> Init_Hardware_Service_Threads Complete[EMBOARD] main(4485):	 --> Reload completed
+[EMBOARD] Fan_Auto_Mode(918):	 --> iCpuTempDelta: 0, iHddTempDelta: 0, iPwmDelta: 0
+[EMBOARD] Fan_Auto_Mode(928):	 --> iPrePwm: 45, iPwmDelta: 0
+[EMBOARD] Fan_Auto_Mode(956):	 --> Final Pwm to set: 45
+[EMBOARD] Set_Ubox_Pwm_By_Nas(426):	 --> No ubox be found
+[EMBOARD] Check_System_Healthy(768):	 --> Fan0 speed = 556
+[EMBOARD] Power_Service_Handler(1835):	 --> Current Time: mon = 3, day = 3, hour = 16, min = 57
+[EMBOARD] Power_Service_Handler(1841):	 --> PowerOn schedule: nothing to match
+[EMBOARD] Power_Service_Handler(1851):	 --> PowerOff schedule: nothing to match
+[EMBOARD] Power_Service_Handler(1856):	 --> Restart schedule: nothing to match
+[EMBOARD] Power_Service_Handler(1866):	 --> Sleep schedule: nothing to match
+[EMBOARD] Hdd_Standby_Service_Handler(2668):	 --> The disk MaxTmep is 32
+[EMBOARD] Hdd_Standby_Service_Handler(2498):	 --> bay[ 2]  sda may active
+[EMBOARD] Power_Service_Handler(1835):	 --> Current Time: mon = 3, day = 3, hour = 16, min = 57
+[EMBOARD] Power_Service_Handler(1841):	 --> PowerOn schedule: nothing to match
+[EMBOARD] Power_Service_Handler(1851):	 --> PowerOff schedule: nothing to match
+[EMBOARD] Power_Service_Handler(1856):	 --> Restart schedule: nothing to match
+[EMBOARD] Power_Service_Handler(1866):	 --> Sleep schedule: nothing to match
+[EMBOARD] Disk_Doctor_Service_Handler(3278):	 --> internal disk hibernation timeout: 1800
+[EMBOARD] Disk_Doctor_Service_Handler(3348):	 --> bay[ 2] sda has IO
+[EMBOARD] Disk_Doctor_Service_Handler(3442):	 --> external disk hibernation timeout: 1800
+[EMBOARD] Disk_Doctor_Service_Handler(3474):	 --> ext disk sdb state is standby
+[EMBOARD] Disk_Doctor_Service_Handler(3527):	 --> ext disk sdb has sleep 54 seconds
+[EMBOARD] Fan_Auto_Mode(918):	 --> iCpuTempDelta: 0, iHddTempDelta: 0, iPwmDelta: 0
+[EMBOARD] Fan_Auto_Mode(928):	 --> iPrePwm: 45, iPwmDelta: 0
+[EMBOARD] Fan_Auto_Mode(956):	 --> Final Pwm to set: 45
+[EMBOARD] Set_Ubox_Pwm_By_Nas(426):	 --> No ubox be found
+[EMBOARD] Check_System_Healthy(768):	 --> Fan0 speed = 555
+[EMBOARD] Hdd_Standby_Service_Handler(2668):	 --> The disk MaxTmep is 32
+[EMBOARD] Hdd_Standby_Service_Handler(2498):	 --> bay[ 2]  sda may active
+[EMBOARD] Power_Service_Handler(1835):	 --> Current Time: mon = 3, day = 3, hour = 16, min = 57
+[EMBOARD] Power_Service_Handler(1841):	 --> PowerOn schedule: nothing to match
+[EMBOARD] Power_Service_Handler(1851):	 --> PowerOff schedule: nothing to match
+[EMBOARD] Power_Service_Handler(1856):	 --> Restart schedule: nothing to match
+[EMBOARD] Power_Service_Handler(1866):	 --> Sleep schedule: nothing to match
+[EMBOARD] Fan_Auto_Mode(918):	 --> iCpuTempDelta: 0, iHddTempDelta: 0, iPwmDelta: 0
+[EMBOARD] Fan_Auto_Mode(928):	 --> iPrePwm: 45, iPwmDelta: 0
+[EMBOARD] Fan_Auto_Mode(956):	 --> Final Pwm to set: 45
+[EMBOARD] Set_Ubox_Pwm_By_Nas(426):	 --> No ubox be found
+[EMBOARD] Check_System_Healthy(768):	 --> Fan0 speed = 551
+[EMBOARD] Emboardmand_Reload_Signal_Handler(351):	 --> Catched a signal with ID [1]. Reload conf file...
+[EMBOARD] Emboardmand_Reload_Signal_Handler(353):	 --> g_bReloadConf=1
+[EMBOARD] main(4451):	 --> Reload hardware configurations and restart all service threads
+[EMBOARD] Load_Hardware_Conf(566):	 --> The nas bay number is 4
+[EMBOARD] main(4459):	 --> Success to reload hw configs! (0)
+[EMBOARD] main(4467):	 --> Success reload lookup HAL info! (215)
+[EMBOARD] Reset_Led_Status(3976):	 --> LED brightness g_iLedBright=30
+[EMBOARD] Reset_Led_Status(3986):	 --> Reset Led
+[EMBOARD] Init_Hardware_Service_Threads(2926):	 --> Cancel the fan service thread success
+[EMBOARD] Fan_Service_Handler(1033):	 --> Enter Fan_Service_Handler...
+[EMBOARD] Init_Hardware_Service_Threads(2952):	 --> Success create fan service thread! (0)
+[EMBOARD] Init_Hardware_Service_Threads(3015):	 --> Custom Mode
+[EMBOARD] Fan_Auto_Mode(918):	 --> iCpuTempDelta: 0, iHddTempDelta: 0, iPwmDelta: 0
+[EMBOARD] Fan_Auto_Mode(928):	 --> iPrePwm: 45, iPwmDelta: 0
+[EMBOARD] Fan_Auto_Mode(956):	 --> Final Pwm to set: 45
+[EMBOARD] Set_Ubox_Pwm_By_Nas(426):	 --> No ubox be found
+[EMBOARD] Init_Hardware_Service_Threads(3042):	 --> Cancel the hdd light service thread success
+[EMBOARD] Init_Hardware_Service_Threads(3054):	 --> Hdd light enable
+[EMBOARD] Hdd_Light_Service_Handler(2697):	 --> Enter Hdd_Light_Service_Handler...
+[EMBOARD] Init_Hardware_Service_Threads(3064):	 --> Success create hdd light service thread! (0)
+[EMBOARD] Check_System_Healthy(768):	 --> Fan0 speed = 551
+[EMBOARD] main(4474):	 --> Init_Hardware_Service_Threads Complete[EMBOARD] main(4485):	 --> Reload completed
+[EMBOARD] Hdd_Standby_Service_Handler(2668):	 --> The disk MaxTmep is 32
+[EMBOARD] Hdd_Standby_Service_Handler(2498):	 --> bay[ 2]  sda may active
+[EMBOARD] Hdd_Standby_Service_Handler(2523):	 --> bay[ 2]  sda disktemp 33.000000
+[EMBOARD] Power_Service_Handler(1835):	 --> Current Time: mon = 3, day = 3, hour = 16, min = 58
+[EMBOARD] Power_Service_Handler(1841):	 --> PowerOn schedule: nothing to match
+[EMBOARD] Power_Service_Handler(1851):	 --> PowerOff schedule: nothing to match
+[EMBOARD] Power_Service_Handler(1856):	 --> Restart schedule: nothing to match
+[EMBOARD] Power_Service_Handler(1866):	 --> Sleep schedule: nothing to match
+[EMBOARD] Disk_Doctor_Service_Handler(3278):	 --> internal disk hibernation timeout: 1800
+[EMBOARD] Disk_Doctor_Service_Handler(3348):	 --> bay[ 2] sda has IO
+[EMBOARD] Disk_Doctor_Service_Handler(3442):	 --> external disk hibernation timeout: 1800
+[EMBOARD] Disk_Doctor_Service_Handler(3474):	 --> ext disk sdb state is standby
+[EMBOARD] Disk_Doctor_Service_Handler(3527):	 --> ext disk sdb has sleep 72 seconds
+[EMBOARD] Power_Service_Handler(1835):	 --> Current Time: mon = 3, day = 3, hour = 16, min = 58
+[EMBOARD] Power_Service_Handler(1841):	 --> PowerOn schedule: nothing to match
+[EMBOARD] Power_Service_Handler(1851):	 --> PowerOff schedule: nothing to match
+[EMBOARD] Power_Service_Handler(1856):	 --> Restart schedule: nothing to match
+[EMBOARD] Power_Service_Handler(1866):	 --> Sleep schedule: nothing to match
+[EMBOARD] Hdd_Standby_Service_Handler(2668):	 --> The disk MaxTmep is 33
+[EMBOARD] Hdd_Standby_Service_Handler(2498):	 --> bay[ 2]  sda may active
+[EMBOARD] Fan_Auto_Mode(918):	 --> iCpuTempDelta: 0, iHddTempDelta: 0, iPwmDelta: 0
+[EMBOARD] Fan_Auto_Mode(928):	 --> iPrePwm: 45, iPwmDelta: 0
+[EMBOARD] Fan_Auto_Mode(956):	 --> Final Pwm to set: 45
+[EMBOARD] Set_Ubox_Pwm_By_Nas(426):	 --> No ubox be found
+[EMBOARD] Check_System_Healthy(768):	 --> Fan0 speed = 552
+[EMBOARD] Emboardmand_Reload_Signal_Handler(351):	 --> Catched a signal with ID [1]. Reload conf file...
+[EMBOARD] Emboardmand_Reload_Signal_Handler(353):	 --> g_bReloadConf=1
+[EMBOARD] main(4451):	 --> Reload hardware configurations and restart all service threads
+[EMBOARD] Load_Hardware_Conf(566):	 --> The nas bay number is 4
+[EMBOARD] main(4459):	 --> Success to reload hw configs! (0)
+[EMBOARD] main(4467):	 --> Success reload lookup HAL info! (215)
+[EMBOARD] Reset_Led_Status(3976):	 --> LED brightness g_iLedBright=30
+[EMBOARD] Reset_Led_Status(3986):	 --> Reset Led
+[EMBOARD] Init_Hardware_Service_Threads(2926):	 --> Cancel the fan service thread success
+[EMBOARD] Fan_Service_Handler(1033):	 --> Enter Fan_Service_Handler...
+[EMBOARD] Init_Hardware_Service_Threads(2952):	 --> Success create fan service thread! (0)
+[EMBOARD] Init_Hardware_Service_Threads(3015):	 --> Custom Mode
+[EMBOARD] Fan_Auto_Mode(918):	 --> iCpuTempDelta: 0, iHddTempDelta: 0, iPwmDelta: 0
+[EMBOARD] Fan_Auto_Mode(928):	 --> iPrePwm: 45, iPwmDelta: 0
+[EMBOARD] Fan_Auto_Mode(956):	 --> Final Pwm to set: 45
+[EMBOARD] Init_Hardware_Service_Threads(3042):	 --> Cancel the hdd light service thread success
+[EMBOARD] Init_Hardware_Service_Threads(3072):	 --> Hdd light disable or bright = 0
+[EMBOARD] main(4474):	 --> Init_Hardware_Service_Threads Complete[EMBOARD] main(4485):	 --> Reload completed
+[EMBOARD] Set_Ubox_Pwm_By_Nas(426):	 --> No ubox be found
+[EMBOARD] Check_System_Healthy(768):	 --> Fan0 speed = 551
+[EMBOARD] Power_Service_Handler(1835):	 --> Current Time: mon = 3, day = 3, hour = 16, min = 58
+[EMBOARD] Power_Service_Handler(1841):	 --> PowerOn schedule: nothing to match
+[EMBOARD] Power_Service_Handler(1851):	 --> PowerOff schedule: nothing to match
+[EMBOARD] Power_Service_Handler(1856):	 --> Restart schedule: nothing to match
+[EMBOARD] Power_Service_Handler(1866):	 --> Sleep schedule: nothing to match
+[EMBOARD] Hdd_Standby_Service_Handler(2668):	 --> The disk MaxTmep is 33
+[EMBOARD] Hdd_Standby_Service_Handler(2498):	 --> bay[ 2]  sda may active
+[EMBOARD] Disk_Doctor_Service_Handler(3278):	 --> internal disk hibernation timeout: 1800
+[EMBOARD] Disk_Doctor_Service_Handler(3348):	 --> bay[ 2] sda has IO
+[EMBOARD] Disk_Doctor_Service_Handler(3442):	 --> external disk hibernation timeout: 1800
+[EMBOARD] Disk_Doctor_Service_Handler(3474):	 --> ext disk sdb state is standby
+[EMBOARD] Disk_Doctor_Service_Handler(3527):	 --> ext disk sdb has sleep 91 seconds
+[EMBOARD] Fan_Auto_Mode(918):	 --> iCpuTempDelta: 0, iHddTempDelta: 0, iPwmDelta: 0
+[EMBOARD] Fan_Auto_Mode(928):	 --> iPrePwm: 45, iPwmDelta: 0
+[EMBOARD] Fan_Auto_Mode(956):	 --> Final Pwm to set: 45
+[EMBOARD] Set_Ubox_Pwm_By_Nas(426):	 --> No ubox be found
+[EMBOARD] Check_System_Healthy(768):	 --> Fan0 speed = 556
+[EMBOARD] Power_Service_Handler(1835):	 --> Current Time: mon = 3, day = 3, hour = 16, min = 58
+[EMBOARD] Power_Service_Handler(1841):	 --> PowerOn schedule: nothing to match
+[EMBOARD] Power_Service_Handler(1851):	 --> PowerOff schedule: nothing to match
+[EMBOARD] Power_Service_Handler(1856):	 --> Restart schedule: nothing to match
+[EMBOARD] Power_Service_Handler(1866):	 --> Sleep schedule: nothing to match
+[EMBOARD] Hdd_Standby_Service_Handler(2668):	 --> The disk MaxTmep is 33
+[EMBOARD] Hdd_Standby_Service_Handler(2498):	 --> bay[ 2]  sda may active
+[EMBOARD] Power_Service_Handler(1835):	 --> Current Time: mon = 3, day = 3, hour = 16, min = 58
+[EMBOARD] Power_Service_Handler(1841):	 --> PowerOn schedule: nothing to match
+[EMBOARD] Power_Service_Handler(1851):	 --> PowerOff schedule: nothing to match
+[EMBOARD] Power_Service_Handler(1856):	 --> Restart schedule: nothing to match
+[EMBOARD] Power_Service_Handler(1866):	 --> Sleep schedule: nothing to match
+[EMBOARD] Fan_Auto_Mode(918):	 --> iCpuTempDelta: 0, iHddTempDelta: 0, iPwmDelta: 0
+[EMBOARD] Fan_Auto_Mode(928):	 --> iPrePwm: 45, iPwmDelta: 0
+[EMBOARD] Fan_Auto_Mode(956):	 --> Final Pwm to set: 45
+[EMBOARD] Set_Ubox_Pwm_By_Nas(426):	 --> No ubox be found
+[EMBOARD] Check_System_Healthy(768):	 --> Fan0 speed = 556
+[EMBOARD] Emboardmand_Safe_Exit_Signal_Handler(439):	 --> Catched a signal with ID [15]. Prepare to exit...
+[EMBOARD] Emboardmand_Safe_Exit_Signal_Handler(460):	 --> g_bKeepGoing=0
+[EMBOARD] main(4496):	 --> Clean-up daemon...
+[EMBOARD] Thread_Cleanup_Handler(643):	 --> Do the Button_Service_Handler thread clean-up...
+[EMBOARD] Hdd_Standby_Service_Handler(2668):	 --> The disk MaxTmep is 33
+[EMBOARD] Thread_Cleanup_Handler(643):	 --> Do the Hdd_Standby_Service_Handler thread clean-up...
+[EMBOARD] Thread_Cleanup_Handler(643):	 --> Do the Power_Service_Handler thread clean-up...
+[EMBOARD] Thread_Cleanup_Handler(643):	 --> Do the Disk_Doctor_Service_Handler thread clean-up...
+[EMBOARD] main(4511):	 --> Cancel the ID[140049711322880] service thread...
+[EMBOARD] main(4536):	 --> Destroy Conf Object
+[EMBOARD] main(4539):	 --> Badblock Destroy Scan Status
+[EMBOARD] main(4541):	 --> Ndal Destroy Hardware Status
+[EMBOARD] main(4544):	 --> Exiting daemon...

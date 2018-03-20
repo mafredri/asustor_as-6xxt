@@ -1,0 +1,44 @@
+rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7f57042edd10}, NULL, 8) = 0
+close(10)                               = 0
+execve("/sbin/mdadm", ["/sbin/mdadm", "-D", "/dev/md50"], 0x2332c38 /* 24 vars */) = 0
+brk(NULL)                               = 0x24c6000
+readlink("/sbin/mdadm", 0x7fff78fcc5a0, 4096) = -1 EINVAL (Invalid argument)
+open(".", O_RDONLY)                     = 3
+chdir("/sbin/")                         = 0
+getcwd("/sbin", 4096)                   = 6
+fchdir(3)                               = 0
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fe1fdabe000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=33541, ...}) = 0
+mmap(NULL, 33541, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fe1fdab5000
+close(3)                                = 0
+open("/lib64/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\340\1\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0555, st_size=1679912, ...}) = 0
+mmap(NULL, 3791936, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fe1fd501000
+mprotect(0x7fe1fd695000, 2097152, PROT_NONE) = 0
+mmap(0x7fe1fd895000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x194000) = 0x7fe1fd895000
+mmap(0x7fe1fd89b000, 15424, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fe1fd89b000
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fe1fdab4000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fe1fdab3000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fe1fdab2000
+arch_prctl(ARCH_SET_FS, 0x7fe1fdab3700) = 0
+mprotect(0x7fe1fd895000, 16384, PROT_READ) = 0
+mprotect(0x7fe1fdabf000, 4096, PROT_READ) = 0
+munmap(0x7fe1fdab5000, 33541)           = 0
+getpid()                                = 18192
+brk(NULL)                               = 0x24c6000
+brk(0x24e7000)                          = 0x24e7000
+open("/etc/mdadm.conf", O_RDONLY)       = -1 ENOENT (No such file or directory)
+open("/etc/mdadm/mdadm.conf", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/etc/mdadm.conf.d", O_RDONLY)     = -1 ENOENT (No such file or directory)
+uname({sysname="Linux", nodename="AS-604T-215C", ...}) = 0
+geteuid()                               = 0
+open("/dev/md50", O_RDONLY)             = -1 ENOENT (No such file or directory)
+uname({sysname="Linux", nodename="AS-604T-215C", ...}) = 0
+write(2, "mdadm: cannot open /dev/md50: No"..., 56) = 56
+exit_group(1)                           = ?
++++ exited with 1 +++

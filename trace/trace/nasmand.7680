@@ -1,0 +1,195 @@
+rt_sigaction(SIGINT, {sa_handler=SIG_IGN, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fa91ddf4d10}, {sa_handler=0x466dc5, sa_mask=~[KILL STOP RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7fa91ddf4d10}, 8) = 0
+close(0)                                = 0
+open("/dev/null", O_RDONLY)             = 0
+open("/dev/null", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 1
+fcntl(2, F_DUPFD, 10)                   = -1 EBADF (Bad file descriptor)
+dup2(1, 2)                              = 2
+execve("/usr/builtin/sbin/shareroutines", ["/usr/builtin/sbin/shareroutines", "-expextvolshsizeinfo"], 0x1622c48 /* 24 vars */) = 0
+brk(NULL)                               = 0xbce000
+readlink("/usr/builtin/sbin/shareroutines", 0x7fffa8ca1960, 4096)                   = -1 EINVAL (Invalid argument)
+open(".", O_RDONLY)                     = 5
+chdir("/usr/builtin/sbin/")             = 0
+getcwd("/volume0/usr/builtin/sbin", 4096) = 26
+fchdir(5)                               = 0
+close(5)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2af5bce000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=33541, ...}) = 0
+mmap(NULL, 33541, PROT_READ, MAP_PRIVATE, 5, 0) = 0x7f2af5bc5000
+close(5)                                = 0
+open("/usr/lib/libgeneral.so", O_RDONLY|O_CLOEXEC) = 5
+read(5, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300\327\1\0\0\0\0\0"..., 832) = 832
+fstat(5, {st_mode=S_IFREG|0644, st_size=607600, ...}) = 0
+mmap(NULL, 2707168, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 5, 0) = 0x7f2af571a000
+mprotect(0x7f2af57ac000, 2093056, PROT_NONE) = 0
+mmap(0x7f2af59ab000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0x91000) = 0x7f2af59ab000
+mmap(0x7f2af59ae000, 3808, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f2af59ae000
+close(5)                                = 0
+open("/usr/lib/libservice.so", O_RDONLY|O_CLOEXEC) = 5
+read(5, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320\354\1\0\0\0\0\0"..., 832) = 832
+fstat(5, {st_mode=S_IFREG|0644, st_size=725328, ...}) = 0
+mmap(NULL, 2820560, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 5, 0) = 0x7f2af5469000
+mprotect(0x7f2af5518000, 2093056, PROT_NONE) = 0
+mmap(0x7f2af5717000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0xae000) = 0x7f2af5717000
+close(5)                                = 0
+open("/lib64/libc.so.6", O_RDONLY|O_CLOEXEC) = 5
+read(5, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\340\1\2\0\0\0\0\0"..., 832) = 832
+fstat(5, {st_mode=S_IFREG|0555, st_size=1679912, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2af5bc4000
+mmap(NULL, 3791936, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 5, 0) = 0x7f2af50cb000
+mprotect(0x7f2af525f000, 2097152, PROT_NONE) = 0
+mmap(0x7f2af545f000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0x194000) = 0x7f2af545f000
+mmap(0x7f2af5465000, 15424, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f2af5465000
+close(5)                                = 0
+open("/lib64/libstdc++.so.6", O_RDONLY|O_CLOEXEC) = 5
+read(5, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@\307\5\0\0\0\0\0"..., 832) = 832
+fstat(5, {st_mode=S_IFREG|0555, st_size=817928, ...}) = 0
+mmap(NULL, 2997168, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 5, 0) = 0x7f2af4def000
+mprotect(0x7f2af4ead000, 2097152, PROT_NONE) = 0
+mmap(0x7f2af50ad000, 40960, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0xbe000) = 0x7f2af50ad000
+mmap(0x7f2af50b7000, 80816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f2af50b7000
+close(5)                                = 0
+open("/lib64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 5
+read(5, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@r\0\0\0\0\0\0"..., 832) = 832
+fstat(5, {st_mode=S_IFREG|0555, st_size=101640, ...}) = 0
+mmap(NULL, 2213008, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 5, 0) = 0x7f2af4bd2000
+mprotect(0x7f2af4bea000, 2093056, PROT_NONE) = 0
+mmap(0x7f2af4de9000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0x17000) = 0x7f2af4de9000
+mmap(0x7f2af4deb000, 13456, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f2af4deb000
+close(5)                                = 0
+open("/lib64/libcrypt.so.1", O_RDONLY|O_CLOEXEC) = 5
+read(5, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0p\v\0\0\0\0\0\0"..., 832) = 832
+fstat(5, {st_mode=S_IFREG|0555, st_size=35120, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2af5bc3000
+mmap(NULL, 2318816, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 5, 0) = 0x7f2af499b000
+mprotect(0x7f2af49a3000, 2093056, PROT_NONE) = 0
+mmap(0x7f2af4ba2000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0x7000) = 0x7f2af4ba2000
+mmap(0x7f2af4ba4000, 184800, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f2af4ba4000
+close(5)                                = 0
+open("/usr/lib/libcrypto.so.1.0.0", O_RDONLY|O_CLOEXEC) = 5
+read(5, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\231\6\0\0\0\0\0"..., 832) = 832
+fstat(5, {st_mode=S_IFREG|0755, st_size=2626967, ...}) = 0
+mmap(NULL, 4456072, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 5, 0) = 0x7f2af455b000
+mprotect(0x7f2af4770000, 2097152, PROT_NONE) = 0
+mmap(0x7f2af4970000, 159744, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0x215000) = 0x7f2af4970000
+mmap(0x7f2af4997000, 16008, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f2af4997000
+mprotect(0x7fffa8ca2000, 4096, PROT_READ|PROT_WRITE|PROT_EXEC|PROT_GROWSDOWN) = 0
+close(5)                                = 0
+open("/lib64/librt.so.1", O_RDONLY|O_CLOEXEC) = 5
+read(5, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\360 \0\0\0\0\0\0"..., 832) = 832
+fstat(5, {st_mode=S_IFREG|0555, st_size=31696, ...}) = 0
+mmap(NULL, 2128832, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 5, 0) = 0x7f2af4353000
+mprotect(0x7f2af435a000, 2093056, PROT_NONE) = 0
+mmap(0x7f2af4559000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0x6000) = 0x7f2af4559000
+close(5)                                = 0
+open("/usr/lib/libjson-c.so.2", O_RDONLY|O_CLOEXEC) = 5
+read(5, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240(\0\0\0\0\0\0"..., 832) = 832
+fstat(5, {st_mode=S_IFREG|0755, st_size=50561, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2af5bc2000
+mmap(NULL, 2136144, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 5, 0) = 0x7f2af4149000
+mprotect(0x7f2af4153000, 2093056, PROT_NONE) = 0
+mmap(0x7f2af4352000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0x9000) = 0x7f2af4352000
+close(5)                                = 0
+open("/lib64/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = 5
+read(5, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300'\0\0\0\0\0\0"..., 832) = 832
+fstat(5, {st_mode=S_IFREG|0444, st_size=69128, ...}) = 0
+mmap(NULL, 2164840, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 5, 0) = 0x7f2af3f38000
+mprotect(0x7f2af3f49000, 2093056, PROT_NONE) = 0
+mmap(0x7f2af4148000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0x10000) = 0x7f2af4148000
+close(5)                                = 0
+open("/usr/lib/libgtop-2.0.so.7", O_RDONLY|O_CLOEXEC) = 5
+read(5, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\20D\0\0\0\0\0\0"..., 832) = 832
+fstat(5, {st_mode=S_IFREG|0755, st_size=83798, ...}) = 0
+mmap(NULL, 2164808, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 5, 0) = 0x7f2af3d27000
+mprotect(0x7f2af3d37000, 2093056, PROT_NONE) = 0
+mmap(0x7f2af3f36000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0xf000) = 0x7f2af3f36000
+close(5)                                = 0
+open("/usr/lib/libuuid.so.1", O_RDONLY|O_CLOEXEC) = 5
+read(5, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300\23\0\0\0\0\0\0"..., 832) = 832
+fstat(5, {st_mode=S_IFREG|0755, st_size=19030, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2af5bc1000
+mmap(NULL, 2108960, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 5, 0) = 0x7f2af3b24000
+mprotect(0x7f2af3b27000, 2093056, PROT_NONE) = 0
+mmap(0x7f2af3d26000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0x2000) = 0x7f2af3d26000
+close(5)                                = 0
+open("/usr/lib/libcgi.so", O_RDONLY|O_CLOEXEC) = 5
+read(5, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\20W\0\0\0\0\0\0"..., 832) = 832
+fstat(5, {st_mode=S_IFREG|0644, st_size=46304, ...}) = 0
+mmap(NULL, 2141424, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 5, 0) = 0x7f2af3919000
+mprotect(0x7f2af3924000, 2093056, PROT_NONE) = 0
+mmap(0x7f2af3b23000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0xa000) = 0x7f2af3b23000
+close(5)                                = 0
+open("/lib64/libm.so.6", O_RDONLY|O_CLOEXEC) = 5
+read(5, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0 W\0\0\0\0\0\0"..., 832) = 832
+fstat(5, {st_mode=S_IFREG|0555, st_size=1038720, ...}) = 0
+mmap(NULL, 3133768, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 5, 0) = 0x7f2af361b000
+mprotect(0x7f2af3718000, 2093056, PROT_NONE) = 0
+mmap(0x7f2af3917000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0xfc000) = 0x7f2af3917000
+close(5)                                = 0
+open("/lib64/libdl.so.2", O_RDONLY|O_CLOEXEC) = 5
+read(5, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240\r\0\0\0\0\0\0"..., 832) = 832
+fstat(5, {st_mode=S_IFREG|0555, st_size=14688, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2af5bc0000
+mmap(NULL, 2109720, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 5, 0) = 0x7f2af3417000
+mprotect(0x7f2af3419000, 2097152, PROT_NONE) = 0
+mmap(0x7f2af3619000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0x2000) = 0x7f2af3619000
+close(5)                                = 0
+open("/asustor/branch3_0_2018_01_29/x64_g1/x64_g1/staging/usr/lib/tls/x86_64/libglib-2.0.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/asustor/branch3_0_2018_01_29/x64_g1/x64_g1/staging/usr/lib/tls/x86_64", 0x7fffa8ca0c70) = -1 ENOENT (No such file or directory)
+open("/asustor/branch3_0_2018_01_29/x64_g1/x64_g1/staging/usr/lib/tls/libglib-2.0.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/asustor/branch3_0_2018_01_29/x64_g1/x64_g1/staging/usr/lib/tls", 0x7fffa8ca0c70) = -1 ENOENT (No such file or directory)
+open("/asustor/branch3_0_2018_01_29/x64_g1/x64_g1/staging/usr/lib/x86_64/libglib-2.0.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/asustor/branch3_0_2018_01_29/x64_g1/x64_g1/staging/usr/lib/x86_64", 0x7fffa8ca0c70) = -1 ENOENT (No such file or directory)
+open("/asustor/branch3_0_2018_01_29/x64_g1/x64_g1/staging/usr/lib/libglib-2.0.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/asustor/branch3_0_2018_01_29/x64_g1/x64_g1/staging/usr/lib", 0x7fffa8ca0c70) = -1 ENOENT (No such file or directory)
+open("/usr/lib/libglib-2.0.so.0", O_RDONLY|O_CLOEXEC) = 5
+read(5, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0`\227\1\0\0\0\0\0"..., 832) = 832
+fstat(5, {st_mode=S_IFREG|0755, st_size=1182091, ...}) = 0
+mmap(NULL, 3115392, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 5, 0) = 0x7f2af311e000
+mprotect(0x7f2af3215000, 2097152, PROT_NONE) = 0
+mmap(0x7f2af3415000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0xf7000) = 0x7f2af3415000
+close(5)                                = 0
+open("/usr/lib/libiconv.so.2", O_RDONLY|O_CLOEXEC) = 5
+read(5, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0p+\0\0\0\0\0\0"..., 832) = 832
+fstat(5, {st_mode=S_IFREG|0644, st_size=1087341, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2af5bbf000
+mmap(NULL, 3131864, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 5, 0) = 0x7f2af2e21000
+mprotect(0x7f2af2f1c000, 2097152, PROT_NONE) = 0
+mmap(0x7f2af311c000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0xfb000) = 0x7f2af311c000
+close(5)                                = 0
+open("/usr/lib/libpcre.so.1", O_RDONLY|O_CLOEXEC) = 5
+read(5, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320\23\0\0\0\0\0\0"..., 832) = 832
+fstat(5, {st_mode=S_IFREG|0755, st_size=282441, ...}) = 0
+mmap(NULL, 2369584, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 5, 0) = 0x7f2af2bde000
+mprotect(0x7f2af2c21000, 2093056, PROT_NONE) = 0
+mmap(0x7f2af2e20000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0x42000) = 0x7f2af2e20000
+close(5)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2af5bbe000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2af5bbd000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2af5bbb000
+arch_prctl(ARCH_SET_FS, 0x7f2af5bbb780) = 0
+mprotect(0x7f2af545f000, 16384, PROT_READ) = 0
+mprotect(0x7f2af4de9000, 4096, PROT_READ) = 0
+mprotect(0x7f2af3619000, 4096, PROT_READ) = 0
+mprotect(0x7f2af3917000, 4096, PROT_READ) = 0
+mprotect(0x7f2af50ad000, 28672, PROT_READ) = 0
+mprotect(0x7f2af4ba2000, 4096, PROT_READ) = 0
+mprotect(0x7f2af4559000, 4096, PROT_READ) = 0
+mprotect(0x7f2af5bcf000, 4096, PROT_READ) = 0
+munmap(0x7f2af5bc5000, 33541)           = 0
+set_tid_address(0x7f2af5bbba50)         = 7680
+set_robust_list(0x7f2af5bbba60, 24)     = 0
+rt_sigaction(SIGRTMIN, {sa_handler=0x7f2af4bd8ca0, sa_mask=[], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x7f2af4be2bf0}, NULL, 8) = 0
+rt_sigaction(SIGRT_1, {sa_handler=0x7f2af4bd8d30, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f2af4be2bf0}, NULL, 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+futex(0x7f2af50b77e0, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+stat("/usr/builtin/etc/samba/smb.conf", {st_mode=S_IFREG|0644, st_size=2191, ...}) = 0
+open("/usr/builtin/etc/samba/smb.conf", O_RDONLY) = 5
+brk(NULL)                               = 0xbce000
+brk(0xbef000)                           = 0xbef000
+read(5, "[global]\nworkgroup = WORKGROUP\ns"..., 2191) = 2191
+close(5)                                = 0
+exit_group(0)                           = ?
++++ exited with 0 +++

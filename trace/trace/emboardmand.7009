@@ -1,0 +1,110 @@
+rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7fceec895d10}, NULL, 8) = 0
+execve("/usr/builtin/sbin/smartctl", ["/usr/builtin/sbin/smartctl", "-A", "/dev/sda"], 0x1162c08 /* 24 vars */) = 0
+brk(NULL)                               = 0x134b000
+readlink("/usr/builtin/sbin/smartctl", 0x7fff7269cbf0, 4096) = -1 EINVAL (Invalid argument)
+open(".", O_RDONLY)                     = 4
+chdir("/usr/builtin/sbin/")             = 0
+getcwd("/volume0/usr/builtin/sbin", 4096) = 26
+fchdir(4)                               = 0
+close(4)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f0fc0e5e000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=33541, ...}) = 0
+mmap(NULL, 33541, PROT_READ, MAP_PRIVATE, 4, 0) = 0x7f0fc0e55000
+close(4)                                = 0
+open("/lib64/libstdc++.so.6", O_RDONLY|O_CLOEXEC) = 4
+read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@\307\5\0\0\0\0\0"..., 832) = 832
+fstat(4, {st_mode=S_IFREG|0555, st_size=817928, ...}) = 0
+mmap(NULL, 2997168, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f0fc0963000
+mprotect(0x7f0fc0a21000, 2097152, PROT_NONE) = 0
+mmap(0x7f0fc0c21000, 40960, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0xbe000) = 0x7f0fc0c21000
+mmap(0x7f0fc0c2b000, 80816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f0fc0c2b000
+close(4)                                = 0
+open("/lib64/libm.so.6", O_RDONLY|O_CLOEXEC) = 4
+read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0 W\0\0\0\0\0\0"..., 832) = 832
+fstat(4, {st_mode=S_IFREG|0555, st_size=1038720, ...}) = 0
+mmap(NULL, 3133768, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f0fc0665000
+mprotect(0x7f0fc0762000, 2093056, PROT_NONE) = 0
+mmap(0x7f0fc0961000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0xfc000) = 0x7f0fc0961000
+close(4)                                = 0
+open("/lib64/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = 4
+read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300'\0\0\0\0\0\0"..., 832) = 832
+fstat(4, {st_mode=S_IFREG|0444, st_size=69128, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f0fc0e54000
+mmap(NULL, 2164840, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f0fc0454000
+mprotect(0x7f0fc0465000, 2093056, PROT_NONE) = 0
+mmap(0x7f0fc0664000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x10000) = 0x7f0fc0664000
+close(4)                                = 0
+open("/lib64/libc.so.6", O_RDONLY|O_CLOEXEC) = 4
+read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\340\1\2\0\0\0\0\0"..., 832) = 832
+fstat(4, {st_mode=S_IFREG|0555, st_size=1679912, ...}) = 0
+mmap(NULL, 3791936, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f0fc00b6000
+mprotect(0x7f0fc024a000, 2097152, PROT_NONE) = 0
+mmap(0x7f0fc044a000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x194000) = 0x7f0fc044a000
+mmap(0x7f0fc0450000, 15424, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f0fc0450000
+close(4)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f0fc0e53000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f0fc0e51000
+arch_prctl(ARCH_SET_FS, 0x7f0fc0e51740) = 0
+mprotect(0x7f0fc044a000, 16384, PROT_READ) = 0
+mprotect(0x7f0fc0961000, 4096, PROT_READ) = 0
+mprotect(0x7f0fc0c21000, 28672, PROT_READ) = 0
+mprotect(0x7f0fc0e5f000, 4096, PROT_READ) = 0
+munmap(0x7f0fc0e55000, 33541)           = 0
+uname({sysname="Linux", nodename="AS-604T-215C", ...}) = 0
+brk(NULL)                               = 0x134b000
+brk(0x136c000)                          = 0x136c000
+fstat(1, {st_mode=S_IFIFO|0600, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f0fc0e5d000
+write(1, "smartctl 6.3 2017-03-09 r35 [x86"..., 142) = 142
+access("/usr/builtin/etc/smart_drivedb.h", F_OK) = -1 ENOENT (No such file or directory)
+access("/usr/builtin/share/smartmontools/drivedb.h", F_OK) = -1 ENOENT (No such file or directory)
+lstat("/dev/sda", {st_mode=S_IFBLK|0777, st_rdev=makedev(8, 0), ...}) = 0
+stat("/sys/devices", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+stat("/sys/block/sda/device/..", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+access("/sys/block/sda/device/../idVendor", F_OK) = -1 ENOENT (No such file or directory)
+stat("/sys/block/sda/device/../..", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+access("/sys/block/sda/device/../../idVendor", F_OK) = -1 ENOENT (No such file or directory)
+stat("/sys/block/sda/device/../../..", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+access("/sys/block/sda/device/../../../idVendor", F_OK) = -1 ENOENT (No such file or directory)
+stat("/sys/block/sda/device/../../../..", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+access("/sys/block/sda/device/../../../../idVendor", F_OK) = -1 ENOENT (No such file or directory)
+stat("/sys/block/sda/device/../../../../..", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+access("/sys/block/sda/device/../../../../../idVendor", F_OK) = -1 ENOENT (No such file or directory)
+stat("/sys/block/sda/device/../../../../../..", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+access("/sys/block/sda/device/../../../../../../idVendor", F_OK) = -1 ENOENT (No such file or directory)
+stat("/sys/block/sda/device/../../../../../../..", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+open("/dev/sda", O_RDONLY|O_NONBLOCK)   = 4
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+ioctl(4, SG_IO, {interface_id='S', dxfer_direction=SG_DXFER_FROM_DEV, cmd_len=6, cmdp="\x12\x00\x00\x00\x24\x00", mx_sb_len=32, iovec_count=0, dxfer_len=36, timeout=20000, flags=0, dxferp="\x00\x00\x05\x02\x5b\x00\x00\x00\x41\x54\x41\x20\x20\x20\x20\x20\x53\x54\x32\x30\x30\x30\x44\x4d\x30\x30\x31\x2d\x31\x43\x48\x31"..., status=0, masked_status=0, msg_status=0, sb_len_wr=0, sbp="", host_status=0, driver_status=0, resid=0, duration=0, info=0}) = 0
+ioctl(4, SG_IO, {interface_id='S', dxfer_direction=SG_DXFER_FROM_DEV, cmd_len=16, cmdp="\x85\x08\x0e\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\xec\x00", mx_sb_len=32, iovec_count=0, dxfer_len=512, timeout=20000, flags=0, dxferp="\x5a\x0c\xff\x3f\x37\xc8\x10\x00\x00\x00\x00\x00\x3f\x00\x00\x00\x00\x00\x00\x00\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20"..., status=0, masked_status=0, msg_status=0, sb_len_wr=0, sbp="", host_status=0, driver_status=0, resid=0, duration=9, info=0}) = 0
+ioctl(4, SG_IO, {interface_id='S', dxfer_direction=SG_DXFER_FROM_DEV, cmd_len=16, cmdp="\x85\x08\x0e\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\xec\x00", mx_sb_len=32, iovec_count=0, dxfer_len=512, timeout=20000, flags=0, dxferp="\x5a\x0c\xff\x3f\x37\xc8\x10\x00\x00\x00\x00\x00\x3f\x00\x00\x00\x00\x00\x00\x00\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20"..., status=0, masked_status=0, msg_status=0, sb_len_wr=0, sbp="", host_status=0, driver_status=0, resid=0, duration=9, info=0}) = 0
+brk(0x138d000)                          = 0x138d000
+brk(0x13ae000)                          = 0x13ae000
+brk(0x136c000)                          = 0x136c000
+ioctl(4, SG_IO, {interface_id='S', dxfer_direction=SG_DXFER_FROM_DEV, cmd_len=16, cmdp="\x85\x08\x0e\x00\xd0\x00\x01\x00\x00\x00\x4f\x00\xc2\x00\xb0\x00", mx_sb_len=32, iovec_count=0, dxfer_len=512, timeout=20000, flags=0, dxferp="\x0a\x00\x01\x0f\x00\x70\x63\xae\x4c\x06\x0e\x00\x00\x00\x03\x03\x00\x61\x60\x00\x00\x00\x00\x00\x00\x00\x04\x32\x00\x61\x61\xa5"..., status=0, masked_status=0, msg_status=0, sb_len_wr=0, sbp="", host_status=0, driver_status=0, resid=0, duration=66, info=0}) = 0
+ioctl(4, SG_IO, {interface_id='S', dxfer_direction=SG_DXFER_FROM_DEV, cmd_len=16, cmdp="\x85\x08\x0e\x00\xd1\x00\x01\x00\x01\x00\x4f\x00\xc2\x00\xb0\x00", mx_sb_len=32, iovec_count=0, dxfer_len=512, timeout=20000, flags=0, dxferp="\x01\x00\x01\x06\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x04\x14\x00\x00\x00\x00"..., status=0, masked_status=0, msg_status=0, sb_len_wr=0, sbp="", host_status=0, driver_status=0, resid=0, duration=9, info=0}) = 0
+write(1, "=== START OF READ SMART DATA SEC"..., 41) = 41
+write(1, "ScanStatus 0 Progress 100\n", 26) = 26
+write(1, "SMART Attributes Data Structure "..., 52) = 52
+write(1, "Vendor Specific SMART Attributes"..., 50) = 50
+write(1, "ID# ATTRIBUTE_NAME          FLAG"..., 97) = 97
+write(1, "  1 Raw_Read_Error_Rate     000f"..., 95) = 95
+write(1, "  3 Spin_Up_Time            0003"..., 87) = 87
+write(1, "  4 Start_Stop_Count        0032"..., 90) = 90
+write(1, "  5 Reallocated_Sector_Ct   0033"..., 87) = 87
+write(1, "  7 Seek_Error_Rate         000f"..., 97) = 97
+write(1, "  9 Power_On_Hours          0032"..., 91) = 91
+write(1, " 10 Spin_Retry_Count        0013"..., 87) = 87
+write(1, " 12 Power_Cycle_Count       0032"..., 89) = 89
+write(1, "183 Runtime_Bad_Block       0032"..., 87) = 87
+write(1, "184 End-to-End_Error        0032"..., 87) = 87
+write(1, "187 Reported_Uncorrect      0032"..., 87) = 87
+write(1, "188 Command_Timeout         0032"..., 91) = 91
+write(1, "189 High_Fly_Writes         003a"..., 88) = 88
+write(1, "190 Airflow_Temperature_Cel 0022"..., 104) = 104
+write(1, "191 G-Sense_Error_Rate      0032"..., 87) = 87
+write(1, "192 Power-Off_Retract_Count 0032"..., 88) = -1 EPIPE (Broken pipe)
+--- SIGPIPE {si_signo=SIGPIPE, si_code=SI_USER, si_pid=7009, si_uid=0} ---
++++ killed by SIGPIPE +++

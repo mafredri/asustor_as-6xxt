@@ -1,0 +1,66 @@
+set_robust_list(0x7fadca6719e0, 24)     = 0
+dup2(4, 1)                              = 1
+execve("/bin/sh", ["sh", "-c", "/bin/cat /sys/devices/platform/c"...], 0x7fff6ebb6a30 /* 24 vars */) = 0
+brk(NULL)                               = 0x1326000
+readlink("sh", 0x7fffb6a86e20, 4096)    = -1 ENOENT (No such file or directory)
+open(".", O_RDONLY)                     = 3
+chdir("sh")                             = -1 ENOENT (No such file or directory)
+getcwd("/", 4096)                       = 2
+fchdir(3)                               = 0
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f5e149a8000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=33541, ...}) = 0
+mmap(NULL, 33541, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f5e1499f000
+close(3)                                = 0
+open("/lib64/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0 W\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0555, st_size=1038720, ...}) = 0
+mmap(NULL, 3133768, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f5e1448b000
+mprotect(0x7f5e14588000, 2093056, PROT_NONE) = 0
+mmap(0x7f5e14787000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xfc000) = 0x7f5e14787000
+close(3)                                = 0
+open("/lib64/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\340\1\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0555, st_size=1679912, ...}) = 0
+mmap(NULL, 3791936, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f5e140ed000
+mprotect(0x7f5e14281000, 2097152, PROT_NONE) = 0
+mmap(0x7f5e14481000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x194000) = 0x7f5e14481000
+mmap(0x7f5e14487000, 15424, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f5e14487000
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f5e1499e000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f5e1499d000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f5e1499c000
+arch_prctl(ARCH_SET_FS, 0x7f5e1499d700) = 0
+mprotect(0x7f5e14481000, 16384, PROT_READ) = 0
+mprotect(0x7f5e14787000, 4096, PROT_READ) = 0
+mprotect(0x7f5e149a9000, 4096, PROT_READ) = 0
+munmap(0x7f5e1499f000, 33541)           = 0
+getuid()                                = 0
+brk(NULL)                               = 0x1326000
+brk(0x1347000)                          = 0x1347000
+getpid()                                = 7016
+rt_sigaction(SIGCHLD, {sa_handler=SIG_DFL, sa_mask=[CHLD], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f5e1411fd10}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGHUP, {sa_handler=SIG_DFL, sa_mask=[HUP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f5e1411fd10}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+getppid()                               = 6980
+stat("/volume1/.@root/trace", {st_mode=S_IFDIR|S_ISUID|S_ISGID|S_ISVTX|0777, st_size=4096, ...}) = 0
+stat(".", {st_mode=S_IFDIR|0755, st_size=540, ...}) = 0
+getcwd("/", 4096)                       = 2
+rt_sigaction(SIGINT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGINT, {sa_handler=0x466dc5, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7f5e1411fd10}, NULL, 8) = 0
+rt_sigaction(SIGQUIT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGQUIT, {sa_handler=SIG_IGN, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7f5e1411fd10}, NULL, 8) = 0
+rt_sigaction(SIGTERM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGTERM, {sa_handler=SIG_DFL, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7f5e1411fd10}, NULL, 8) = 0
+open("/dev/null", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3
+fcntl(2, F_DUPFD, 10)                   = 10
+dup2(3, 2)                              = 2
+close(3)                                = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f5e1499d9d0) = 7017
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 7017
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=7017, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+dup2(10, 2)                             = 2
+close(10)                               = 0
+exit_group(0)                           = ?
++++ exited with 0 +++

@@ -1,0 +1,213 @@
+rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7f6604607d10}, NULL, 8) = 0
+close(3)                                = 0
+dup2(4, 1)                              = 1
+close(4)                                = 0
+execve("/bin/iostat", ["/bin/iostat"], 0x229abf0 /* 24 vars */) = 0
+brk(NULL)                               = 0x76b000
+readlink("/bin/iostat", 0x7fff2826bbf0, 4096) = -1 EINVAL (Invalid argument)
+open(".", O_RDONLY)                     = 3
+chdir("/bin/")                          = 0
+getcwd("/bin", 4096)                    = 5
+fchdir(3)                               = 0
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f9cb5fcb000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=33541, ...}) = 0
+mmap(NULL, 33541, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f9cb5fc2000
+close(3)                                = 0
+open("/lib64/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\340\1\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0555, st_size=1679912, ...}) = 0
+mmap(NULL, 3791936, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f9cb5a0e000
+mprotect(0x7f9cb5ba2000, 2097152, PROT_NONE) = 0
+mmap(0x7f9cb5da2000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x194000) = 0x7f9cb5da2000
+mmap(0x7f9cb5da8000, 15424, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f9cb5da8000
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f9cb5fc1000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f9cb5fc0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f9cb5fbf000
+arch_prctl(ARCH_SET_FS, 0x7f9cb5fc0700) = 0
+mprotect(0x7f9cb5da2000, 16384, PROT_READ) = 0
+mprotect(0x7f9cb5fcc000, 4096, PROT_READ) = 0
+munmap(0x7f9cb5fc2000, 33541)           = 0
+brk(NULL)                               = 0x76b000
+brk(0x78c000)                           = 0x78c000
+open("/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=10314176, ...}) = 0
+mmap(NULL, 10314176, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f9cb5037000
+close(3)                                = 0
+stat("/sys/devices/system/cpu", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+open("/sys/devices/system/cpu", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+getdents(3, /* 18 entries */, 32768)    = 528
+stat("/sys/devices/system/cpu/cpu0", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+stat("/sys/devices/system/cpu/cpu1", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+stat("/sys/devices/system/cpu/cpu2", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+stat("/sys/devices/system/cpu/cpu3", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+getdents(3, /* 0 entries */, 32768)     = 0
+close(3)                                = 0
+open("/proc/diskstats", O_RDONLY)       = 3
+fstat(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f9cb5fca000
+read(3, "   1       0 ram0 0 0 0 0 0 0 0 "..., 1024) = 1024
+read(3, "2407287 966821 0 263580 972446\n "..., 1024) = 672
+read(3, "", 1024)                       = 0
+close(3)                                = 0
+munmap(0x7f9cb5fca000, 4096)            = 0
+open("/etc/localtime", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=128, ...}) = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=128, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f9cb5fca000
+read(3, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\1\0\0\0\1\0\0\0\0"..., 4096) = 128
+lseek(3, -72, SEEK_CUR)                 = 56
+read(3, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\1\0\0\0\1\0\0\0\0"..., 4096) = 72
+close(3)                                = 0
+munmap(0x7f9cb5fca000, 4096)            = 0
+uname({sysname="Linux", nodename="AS-604T-215C", ...}) = 0
+fstat(1, {st_mode=S_IFIFO|0600, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f9cb5fca000
+rt_sigaction(SIGALRM, {sa_handler=0x401e90, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f9cb5a40d10}, NULL, 8) = 0
+alarm(0)                                = 0
+write(1, "Linux 3.12.20 (AS-604T-215C) \t02"..., 60) = 60
+munmap(0x7f9cb5fca000, 4096)            = 0
+open("/proc/uptime", O_RDONLY)          = 3
+fstat(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f9cb5fca000
+read(3, "2672.95 10498.86\n", 1024)     = 17
+close(3)                                = 0
+munmap(0x7f9cb5fca000, 4096)            = 0
+open("/proc/stat", O_RDONLY)            = 3
+fstat(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f9cb5fca000
+read(3, "cpu  2735 1 6822 1041212 15974 0"..., 1024) = 1024
+read(3, " 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"..., 1024) = 784
+read(3, "", 1024)                       = 0
+close(3)                                = 0
+munmap(0x7f9cb5fca000, 4096)            = 0
+open("/proc/diskstats", O_RDONLY)       = 3
+fstat(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f9cb5fca000
+read(3, "   1       0 ram0 0 0 0 0 0 0 0 "..., 1024) = 1024
+access("/sys/block/ram0", F_OK)         = 0
+open("/etc/sysconfig/sysstat.ioconf", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("./sysstat.ioconf", O_RDONLY)      = -1 ENOENT (No such file or directory)
+access("/sys/block/ram1", F_OK)         = 0
+open("/etc/sysconfig/sysstat.ioconf", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("./sysstat.ioconf", O_RDONLY)      = -1 ENOENT (No such file or directory)
+access("/sys/block/ram2", F_OK)         = 0
+open("/etc/sysconfig/sysstat.ioconf", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("./sysstat.ioconf", O_RDONLY)      = -1 ENOENT (No such file or directory)
+access("/sys/block/ram3", F_OK)         = 0
+open("/etc/sysconfig/sysstat.ioconf", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("./sysstat.ioconf", O_RDONLY)      = -1 ENOENT (No such file or directory)
+access("/sys/block/ram4", F_OK)         = 0
+open("/etc/sysconfig/sysstat.ioconf", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("./sysstat.ioconf", O_RDONLY)      = -1 ENOENT (No such file or directory)
+access("/sys/block/ram5", F_OK)         = 0
+open("/etc/sysconfig/sysstat.ioconf", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("./sysstat.ioconf", O_RDONLY)      = -1 ENOENT (No such file or directory)
+access("/sys/block/ram6", F_OK)         = 0
+open("/etc/sysconfig/sysstat.ioconf", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("./sysstat.ioconf", O_RDONLY)      = -1 ENOENT (No such file or directory)
+access("/sys/block/ram7", F_OK)         = 0
+open("/etc/sysconfig/sysstat.ioconf", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("./sysstat.ioconf", O_RDONLY)      = -1 ENOENT (No such file or directory)
+access("/sys/block/ram8", F_OK)         = 0
+open("/etc/sysconfig/sysstat.ioconf", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("./sysstat.ioconf", O_RDONLY)      = -1 ENOENT (No such file or directory)
+access("/sys/block/ram9", F_OK)         = 0
+open("/etc/sysconfig/sysstat.ioconf", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("./sysstat.ioconf", O_RDONLY)      = -1 ENOENT (No such file or directory)
+access("/sys/block/ram10", F_OK)        = 0
+open("/etc/sysconfig/sysstat.ioconf", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("./sysstat.ioconf", O_RDONLY)      = -1 ENOENT (No such file or directory)
+access("/sys/block/ram11", F_OK)        = 0
+open("/etc/sysconfig/sysstat.ioconf", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("./sysstat.ioconf", O_RDONLY)      = -1 ENOENT (No such file or directory)
+access("/sys/block/ram12", F_OK)        = 0
+open("/etc/sysconfig/sysstat.ioconf", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("./sysstat.ioconf", O_RDONLY)      = -1 ENOENT (No such file or directory)
+access("/sys/block/ram13", F_OK)        = 0
+open("/etc/sysconfig/sysstat.ioconf", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("./sysstat.ioconf", O_RDONLY)      = -1 ENOENT (No such file or directory)
+access("/sys/block/ram14", F_OK)        = 0
+open("/etc/sysconfig/sysstat.ioconf", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("./sysstat.ioconf", O_RDONLY)      = -1 ENOENT (No such file or directory)
+access("/sys/block/ram15", F_OK)        = 0
+open("/etc/sysconfig/sysstat.ioconf", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("./sysstat.ioconf", O_RDONLY)      = -1 ENOENT (No such file or directory)
+access("/sys/block/loop0", F_OK)        = 0
+open("/etc/sysconfig/sysstat.ioconf", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("./sysstat.ioconf", O_RDONLY)      = -1 ENOENT (No such file or directory)
+access("/sys/block/loop1", F_OK)        = 0
+open("/etc/sysconfig/sysstat.ioconf", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("./sysstat.ioconf", O_RDONLY)      = -1 ENOENT (No such file or directory)
+access("/sys/block/loop2", F_OK)        = 0
+open("/etc/sysconfig/sysstat.ioconf", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("./sysstat.ioconf", O_RDONLY)      = -1 ENOENT (No such file or directory)
+access("/sys/block/loop3", F_OK)        = 0
+open("/etc/sysconfig/sysstat.ioconf", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("./sysstat.ioconf", O_RDONLY)      = -1 ENOENT (No such file or directory)
+access("/sys/block/loop4", F_OK)        = 0
+open("/etc/sysconfig/sysstat.ioconf", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("./sysstat.ioconf", O_RDONLY)      = -1 ENOENT (No such file or directory)
+access("/sys/block/loop5", F_OK)        = 0
+open("/etc/sysconfig/sysstat.ioconf", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("./sysstat.ioconf", O_RDONLY)      = -1 ENOENT (No such file or directory)
+access("/sys/block/loop6", F_OK)        = 0
+open("/etc/sysconfig/sysstat.ioconf", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("./sysstat.ioconf", O_RDONLY)      = -1 ENOENT (No such file or directory)
+access("/sys/block/loop7", F_OK)        = 0
+open("/etc/sysconfig/sysstat.ioconf", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("./sysstat.ioconf", O_RDONLY)      = -1 ENOENT (No such file or directory)
+read(3, "2407287 966821 0 263580 972446\n "..., 1024) = 672
+access("/sys/block/sda", F_OK)          = 0
+open("/etc/sysconfig/sysstat.ioconf", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("./sysstat.ioconf", O_RDONLY)      = -1 ENOENT (No such file or directory)
+access("/sys/block/sda1", F_OK)         = -1 ENOENT (No such file or directory)
+access("/sys/block/sda2", F_OK)         = -1 ENOENT (No such file or directory)
+access("/sys/block/sda3", F_OK)         = -1 ENOENT (No such file or directory)
+access("/sys/block/sda4", F_OK)         = -1 ENOENT (No such file or directory)
+access("/sys/block/sdb", F_OK)          = 0
+open("/etc/sysconfig/sysstat.ioconf", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("./sysstat.ioconf", O_RDONLY)      = -1 ENOENT (No such file or directory)
+access("/sys/block/sdb1", F_OK)         = -1 ENOENT (No such file or directory)
+access("/sys/block/sdb2", F_OK)         = -1 ENOENT (No such file or directory)
+access("/sys/block/sdc", F_OK)          = 0
+open("/etc/sysconfig/sysstat.ioconf", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("./sysstat.ioconf", O_RDONLY)      = -1 ENOENT (No such file or directory)
+access("/sys/block/md0", F_OK)          = 0
+open("/etc/sysconfig/sysstat.ioconf", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("./sysstat.ioconf", O_RDONLY)      = -1 ENOENT (No such file or directory)
+access("/sys/block/md126", F_OK)        = 0
+open("/etc/sysconfig/sysstat.ioconf", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("./sysstat.ioconf", O_RDONLY)      = -1 ENOENT (No such file or directory)
+access("/sys/block/md1", F_OK)          = 0
+open("/etc/sysconfig/sysstat.ioconf", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("./sysstat.ioconf", O_RDONLY)      = -1 ENOENT (No such file or directory)
+read(3, "", 1024)                       = 0
+close(3)                                = 0
+munmap(0x7f9cb5fca000, 4096)            = 0
+stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=128, ...}) = 0
+write(1, "", 0)                         = 0
+write(1, "avg-cpu:  %user   %nice %system "..., 56) = 56
+write(1, "           0.26    0.00    0.64 "..., 57) = 57
+write(1, "Device:            tps", 22)  = 22
+write(1, "    kB_read/s    kB_wrtn/s    kB"..., 48) = 48
+write(1, "\n", 1)                       = 1
+write(1, "sda          ", 13)           = 13
+write(1, "    20.52         7.38      9803"..., 58) = 58
+write(1, "sdb          ", 13)           = 13
+write(1, "     0.29         1.33         0"..., 58) = 58
+write(1, "sdc          ", 13)           = 13
+write(1, "     0.58        48.27         0"..., 58) = 58
+write(1, "md0          ", 13)           = 13
+write(1, "     4.72         3.38       142"..., 58) = 58
+write(1, "md126        ", 13)           = 13
+write(1, "     0.00         0.01         0"..., 58) = 58
+write(1, "md1          ", 13)           = 13
+write(1, "    20.30         3.44      9660"..., 58) = 58
+write(1, "\n", 1)                       = 1
+exit_group(0)                           = ?
++++ exited with 0 +++

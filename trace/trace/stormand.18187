@@ -1,0 +1,63 @@
+set_robust_list(0x7fb87d09c9e0, 24)     = 0
+dup2(4, 1)                              = 1
+execve("/bin/sh", ["sh", "-c", "/sbin/mdadm -D /dev/md36 2>&1"], 0x7fffe68f56e0 /* 24 vars */) = 0
+brk(NULL)                               = 0x1b75000
+readlink("sh", 0x7fff6b6ca7f0, 4096)    = -1 ENOENT (No such file or directory)
+open(".", O_RDONLY)                     = 3
+chdir("sh")                             = -1 ENOENT (No such file or directory)
+getcwd("/volume1/.@root/trace", 4096)   = 22
+fchdir(3)                               = 0
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa4817e7000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=33541, ...}) = 0
+mmap(NULL, 33541, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fa4817de000
+close(3)                                = 0
+open("/lib64/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0 W\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0555, st_size=1038720, ...}) = 0
+mmap(NULL, 3133768, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fa4812ca000
+mprotect(0x7fa4813c7000, 2093056, PROT_NONE) = 0
+mmap(0x7fa4815c6000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xfc000) = 0x7fa4815c6000
+close(3)                                = 0
+open("/lib64/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\340\1\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0555, st_size=1679912, ...}) = 0
+mmap(NULL, 3791936, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fa480f2c000
+mprotect(0x7fa4810c0000, 2097152, PROT_NONE) = 0
+mmap(0x7fa4812c0000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x194000) = 0x7fa4812c0000
+mmap(0x7fa4812c6000, 15424, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fa4812c6000
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa4817dd000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa4817dc000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa4817db000
+arch_prctl(ARCH_SET_FS, 0x7fa4817dc700) = 0
+mprotect(0x7fa4812c0000, 16384, PROT_READ) = 0
+mprotect(0x7fa4815c6000, 4096, PROT_READ) = 0
+mprotect(0x7fa4817e8000, 4096, PROT_READ) = 0
+munmap(0x7fa4817de000, 33541)           = 0
+getuid()                                = 0
+brk(NULL)                               = 0x1b75000
+brk(0x1b96000)                          = 0x1b96000
+getpid()                                = 18187
+rt_sigaction(SIGCHLD, {sa_handler=SIG_DFL, sa_mask=[CHLD], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fa480f5ed10}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGHUP, {sa_handler=SIG_DFL, sa_mask=[HUP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fa480f5ed10}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+getppid()                               = 18159
+stat("/volume1/.@root/trace", {st_mode=S_IFDIR|S_ISUID|S_ISGID|S_ISVTX|0777, st_size=4096, ...}) = 0
+stat(".", {st_mode=S_IFDIR|S_ISUID|S_ISGID|S_ISVTX|0777, st_size=4096, ...}) = 0
+rt_sigaction(SIGINT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGINT, {sa_handler=0x466dc5, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7fa480f5ed10}, NULL, 8) = 0
+rt_sigaction(SIGQUIT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGQUIT, {sa_handler=SIG_IGN, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7fa480f5ed10}, NULL, 8) = 0
+rt_sigaction(SIGTERM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGTERM, {sa_handler=SIG_DFL, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7fa480f5ed10}, NULL, 8) = 0
+fcntl(2, F_DUPFD, 10)                   = 10
+dup2(1, 2)                              = 2
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fa4817dc9d0) = 18188
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 1}], 0, NULL) = 18188
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=18188, si_uid=0, si_status=1, si_utime=0, si_stime=0} ---
+dup2(10, 2)                             = 2
+close(10)                               = 0
+exit_group(1)                           = ?
++++ exited with 1 +++

@@ -1,0 +1,339 @@
+set_robust_list(0x7f5c57be9a60, 24)     = 0
+close(0)                                = 0
+open("/var/run/lcmd.pid", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 0
+fstat(0, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f5c57bfa000
+write(0, "7097", 4)                     = 4
+close(0)                                = 0
+munmap(0x7f5c57bfa000, 4096)            = 0
+open("/dev/null", O_RDWR)               = 0
+dup(0)                                  = 3
+dup(0)                                  = 4
+chdir("/var/run/")                      = 0
+open("/dev/ttyS1", O_RDWR|O_NOCTTY|O_NONBLOCK) = 5
+ioctl(5, TCFLSH, TCIFLUSH)              = 0
+ioctl(5, SNDCTL_TMR_START or TCSETS, {B115200 -opost -isig -icanon -echo ...}) = 0
+mmap(NULL, 8392704, PROT_READ|PROT_WRITE|PROT_EXEC, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f5c52ca5000
+mprotect(0x7f5c52ca5000, 4096, PROT_NONE) = 0
+clone(child_stack=0x7f5c534a4f70, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7f5c534a59d0, tls=0x7f5c534a5700, child_tidptr=0x7f5c534a59d0) = 7098
+write(5, "\360\1\21\1\3", 5)            = 5
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=15000000}, NULL) = 0
+write(5, "\360\1\"\0\23", 5)            = 5
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=15000000}, NULL) = 0
+stat("/var/log/bootup.log", {st_mode=S_IFREG|0644, st_size=186, ...}) = 0
+open("/var/log/bootup.log", O_RDONLY)   = 6
+read(6, "[phase]\nprogress = done\n\n[ramini"..., 186) = 186
+close(6)                                = 0
+open("/dev/shm/.emboard.status", O_RDWR|O_NOFOLLOW|O_CLOEXEC) = 6
+mmap(NULL, 3040, PROT_READ|PROT_WRITE, MAP_SHARED, 6, 0) = 0x7f5c57bfa000
+close(6)                                = 0
+open("/dev/shm/sem.HWSTATUS_SEMAPHORE", O_RDWR|O_NOFOLLOW) = 6
+fstat(6, {st_mode=S_IFREG|S_ISVTX|0130, st_size=32, ...}) = 0
+mmap(NULL, 32, PROT_READ|PROT_WRITE, MAP_SHARED, 6, 0) = 0x7f5c57bf9000
+close(6)                                = 0
+write(5, "\360\1\21\1\3", 5)            = 5
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+stat("/etc/nas.conf", {st_mode=S_IFREG|0644, st_size=2821, ...}) = 0
+open("/etc/nas.conf", O_RDONLY)         = 6
+read(6, "[Basic]\nModel = AS-604T\nVersion "..., 2821) = 2821
+close(6)                                = 0
+write(5, "\360\22'\0\0MAIN            \316", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=15000000}, NULL) = 0
+write(5, "\360\22'\1\0>1 TOUCH BACKUP 2", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+mmap(NULL, 8392704, PROT_READ|PROT_WRITE|PROT_EXEC, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f5c524a4000
+mprotect(0x7f5c524a4000, 4096, PROT_NONE) = 0
+clone(child_stack=0x7f5c52ca3f70, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7f5c52ca49d0, tls=0x7f5c52ca4700, child_tidptr=0x7f5c52ca49d0) = 7099
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, 0x7fff4ada51b0) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, 0x7fff4ada51b0) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, 0x7fff4ada51b0) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, 0x7fff4ada51b0) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, 0x7fff4ada51b0) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, 0x7fff4ada51b0) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, 0x7fff4ada51b0) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, 0x7fff4ada51b0) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, 0x7fff4ada51b0) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, 0x7fff4ada51b0) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, 0x7fff4ada51b0) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, 0x7fff4ada51b0) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, 0x7fff4ada51b0) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, 0x7fff4ada51b0) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, 0x7fff4ada51b0) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, 0x7fff4ada51b0) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, 0x7fff4ada51b0) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, 0x7fff4ada51b0) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, 0x7fff4ada51b0) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, 0x7fff4ada51b0) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, 0x7fff4ada51b0) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, 0x7fff4ada51b0) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, 0x7fff4ada51b0) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, 0x7fff4ada51b0) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, 0x7fff4ada51b0) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, 0x7fff4ada51b0) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, 0x7fff4ada51b0) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, 0x7fff4ada51b0) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, 0x7fff4ada51b0) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, 0x7fff4ada51b0) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, 0x7fff4ada51b0) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, 0x7fff4ada51b0) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, 0x7fff4ada51b0) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, 0x7fff4ada51b0) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, 0x7fff4ada51b0) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, 0x7fff4ada51b0) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, 0x7fff4ada51b0) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, 0x7fff4ada51b0) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, 0x7fff4ada51b0) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, 0x7fff4ada51b0) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, 0x7fff4ada51b0) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, 0x7fff4ada51b0) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, 0x7fff4ada51b0) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, {tv_sec=0, tv_nsec=807430284}) = ? ERESTART_RESTARTBLOCK (Interrupted by signal)
+--- SIGHUP {si_signo=SIGHUP, si_code=SI_USER, si_pid=7175, si_uid=0} ---
+rt_sigreturn({mask=[]})                 = -1 EINTR (Interrupted system call)
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, 0x7fff4ada51b0) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, 0x7fff4ada51b0) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, 0x7fff4ada51b0) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, 0x7fff4ada51b0) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, {tv_sec=0, tv_nsec=487484429}) = ? ERESTART_RESTARTBLOCK (Interrupted by signal)
+--- SIGHUP {si_signo=SIGHUP, si_code=SI_USER, si_pid=7178, si_uid=0} ---
+rt_sigreturn({mask=[]})                 = -1 EINTR (Interrupted system call)
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, 0x7fff4ada51b0) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, 0x7fff4ada51b0) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, 0x7fff4ada51b0) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, 0x7fff4ada51b0) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, 0x7fff4ada51b0) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, {tv_sec=0, tv_nsec=574808416}) = ? ERESTART_RESTARTBLOCK (Interrupted by signal)
+--- SIGHUP {si_signo=SIGHUP, si_code=SI_USER, si_pid=7195, si_uid=0} ---
+rt_sigreturn({mask=[]})                 = -1 EINTR (Interrupted system call)
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, 0x7fff4ada51b0) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, 0x7fff4ada51b0) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, 0x7fff4ada51b0) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, 0x7fff4ada51b0) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, {tv_sec=0, tv_nsec=965240724}) = ? ERESTART_RESTARTBLOCK (Interrupted by signal)
+--- SIGHUP {si_signo=SIGHUP, si_code=SI_USER, si_pid=7198, si_uid=0} ---
+rt_sigreturn({mask=[]})                 = -1 EINTR (Interrupted system call)
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, 0x7fff4ada51b0) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, 0x7fff4ada51b0) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, 0x7fff4ada51b0) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, 0x7fff4ada51b0) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=1, tv_nsec=0}, {tv_sec=0, tv_nsec=145351774}) = ? ERESTART_RESTARTBLOCK (Interrupted by signal)
+--- SIGTERM {si_signo=SIGTERM, si_code=SI_USER, si_pid=7205, si_uid=0} ---
+close(5)                                = 0
+stat("/dev/shm/.nas.summary", {st_mode=S_IFREG|0744, st_size=10120, ...}) = 0
+munmap(0x7f5c57bfd000, 10120)           = 0
+stat("/dev/shm/.nas.diskstat", {st_mode=S_IFREG|0744, st_size=3536, ...}) = 0
+munmap(0x7f5c57bfc000, 3536)            = 0
+stat("/dev/shm/.nas.partstat", {st_mode=S_IFREG|0744, st_size=4080, ...}) = 0
+munmap(0x7f5c57bfb000, 4080)            = 0
+exit_group(0)                           = ?
++++ exited with 0 +++

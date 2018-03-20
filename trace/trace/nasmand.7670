@@ -1,0 +1,131 @@
+set_robust_list(0x7f58b7641a60, 24)     = 0
+close(1)                                = 0
+close(2)                                = 0
+rt_sigaction(SIGINT, {sa_handler=0x7f58b6b36d20, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f58b64e3d10}, {sa_handler=0x402e30, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f58b64e3d10}, 8) = 0
+rt_sigaction(SIGTERM, {sa_handler=0x7f58b6b36d20, sa_mask=[TERM], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f58b64e3d10}, {sa_handler=0x402e30, sa_mask=[TERM], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f58b64e3d10}, 8) = 0
+stat("/usr/builtin/etc/samba/smb.conf", {st_mode=S_IFREG|0644, st_size=2191, ...}) = 0
+open("/usr/builtin/etc/samba/smb.conf", O_RDONLY) = 1
+read(1, "[global]\nworkgroup = WORKGROUP\ns"..., 2191) = 2191
+close(1)                                = 0
+clock_gettime(CLOCK_MONOTONIC_RAW, {tv_sec=3147, tv_nsec=678889284}) = 0
+open("/var/lock/sharesize.conf.lck", O_RDWR|O_CREAT|O_NOATIME, 0666) = 1
+fcntl(1, F_SETLK, {l_type=F_WRLCK, l_whence=SEEK_SET, l_start=0, l_len=16}) = 0
+stat("/usr/builtin/etc/samba/sharesize.conf", {st_mode=S_IFREG|0644, st_size=285, ...}) = 0
+open("/usr/builtin/etc/samba/sharesize.conf", O_RDONLY) = 2
+read(2, "[global]\nPid = -1\n\n[Home]\nPath ="..., 285) = 285
+close(2)                                = 0
+stat("/etc/nas.conf", {st_mode=S_IFREG|0644, st_size=2821, ...}) = 0
+open("/etc/nas.conf", O_RDONLY)         = 2
+read(2, "[Basic]\nModel = AS-604T\nVersion "..., 2821) = 2821
+close(2)                                = 0
+lstat("/usr", {st_mode=S_IFDIR|0755, st_size=300, ...}) = 0
+lstat("/usr/builtin", {st_mode=S_IFLNK|0777, st_size=20, ...}) = 0
+readlink("/usr/builtin", "/volume0/usr/builtin", 4095) = 20
+lstat("/volume0", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/volume0/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/volume0/usr/builtin", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/volume0/usr/builtin/etc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/volume0/usr/builtin/etc/samba", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/volume0/usr/builtin/etc/samba/sharesize.conf", {st_mode=S_IFREG|0644, st_size=285, ...}) = 0
+open("/volume0/usr/builtin/etc/samba/sharesize.conf.tmp.7670", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 2
+fstat(2, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f58b764e000
+write(2, "[global]\nPid = 7670\n\n[Home]\nPath"..., 297) = 297
+close(2)                                = 0
+munmap(0x7f58b764e000, 4096)            = 0
+rename("/volume0/usr/builtin/etc/samba/sharesize.conf.tmp.7670", "/volume0/usr/builtin/etc/samba/sharesize.conf") = 0
+close(1)                                = 0
+futex(0x7f58b764f000, FUTEX_WAKE, 1)    = 1
+lstat("/dev/shm/0dc5Jy", 0x7fff95deaea0) = -1 ENOENT (No such file or directory)
+open("/dev/shm/0dc5Jy", O_RDWR|O_CREAT|O_EXCL, 0600) = 1
+write(1, "\7\0\0\0\0\0\0\0\200\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0", 32) = 32
+mmap(NULL, 32, PROT_READ|PROT_WRITE, MAP_SHARED, 1, 0) = 0x7f58b764e000
+link("/dev/shm/0dc5Jy", "/dev/shm/sem.SHARE_SIZE_THREAD_SEM") = 0
+fstat(1, {st_mode=S_IFREG|0600, st_size=32, ...}) = 0
+unlink("/dev/shm/0dc5Jy")               = 0
+close(1)                                = 0
+stat("/etc/nas.conf", {st_mode=S_IFREG|0644, st_size=2821, ...}) = 0
+open("/etc/nas.conf", O_RDONLY)         = 1
+read(1, "[Basic]\nModel = AS-604T\nVersion "..., 2821) = 2821
+close(1)                                = 0
+mmap(NULL, 8392704, PROT_READ|PROT_WRITE|PROT_EXEC, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f58b3737000
+mprotect(0x7f58b3737000, 4096, PROT_NONE) = 0
+clone(child_stack=0x7f58b3f36f70, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7f58b3f379d0, tls=0x7f58b3f37700, child_tidptr=0x7f58b3f379d0) = 7671
+mmap(NULL, 8392704, PROT_READ|PROT_WRITE|PROT_EXEC, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f58b2f36000
+mprotect(0x7f58b2f36000, 4096, PROT_NONE) = 0
+clone(child_stack=0x7f58b3735f70, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7f58b37369d0, tls=0x7f58b3736700, child_tidptr=0x7f58b37369d0) = 7673
+mmap(NULL, 8392704, PROT_READ|PROT_WRITE|PROT_EXEC, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f58b2735000
+mprotect(0x7f58b2735000, 4096, PROT_NONE) = 0
+clone(child_stack=0x7f58b2f34f70, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7f58b2f359d0, tls=0x7f58b2f35700, child_tidptr=0x7f58b2f359d0) = 7674
+clone(child_stack=0x7f58b3735f70, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7f58b37369d0, tls=0x7f58b3736700, child_tidptr=0x7f58b37369d0) = 7675
+mmap(NULL, 8392704, PROT_READ|PROT_WRITE|PROT_EXEC, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f58b1f34000
+mprotect(0x7f58b1f34000, 4096, PROT_NONE) = 0
+clone(child_stack=0x7f58b2733f70, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7f58b27349d0, tls=0x7f58b2734700, child_tidptr=0x7f58b27349d0) = 7676
+futex(0x7f58b3f379d0, FUTEX_WAIT, 7671, NULL) = 0
+futex(0x7f58b2f359d0, FUTEX_WAIT, 7674, NULL) = 0
+futex(0x7f58b37369d0, FUTEX_WAIT, 7675, NULL) = 0
+munmap(0x7f58b764e000, 32)              = 0
+unlink("/dev/shm/sem.SHARE_SIZE_THREAD_SEM") = 0
+munmap(0x7f58b764f000, 32)              = 0
+unlink("/dev/shm/sem.SHARE_SIZE_FORK_SEM") = -1 ENOENT (No such file or directory)
+clock_gettime(CLOCK_MONOTONIC_RAW, {tv_sec=3147, tv_nsec=806711138}) = 0
+open("/var/lock/sharesize.conf.lck", O_RDWR|O_CREAT|O_NOATIME, 0666) = 1
+fcntl(1, F_SETLK, {l_type=F_WRLCK, l_whence=SEEK_SET, l_start=0, l_len=16}) = 0
+stat("/usr/builtin/etc/samba/sharesize.conf", {st_mode=S_IFREG|0644, st_size=287, ...}) = 0
+open("/usr/builtin/etc/samba/sharesize.conf", O_RDONLY) = 2
+read(2, "[global]\nPid = 7670\n\n[Home]\nPath"..., 287) = 287
+close(2)                                = 0
+lstat("/usr", {st_mode=S_IFDIR|0755, st_size=300, ...}) = 0
+lstat("/usr/builtin", {st_mode=S_IFLNK|0777, st_size=20, ...}) = 0
+readlink("/usr/builtin", "/volume0/usr/builtin", 4095) = 20
+lstat("/volume0", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/volume0/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/volume0/usr/builtin", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/volume0/usr/builtin/etc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/volume0/usr/builtin/etc/samba", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/volume0/usr/builtin/etc/samba/sharesize.conf", {st_mode=S_IFREG|0644, st_size=287, ...}) = 0
+open("/volume0/usr/builtin/etc/samba/sharesize.conf.tmp.7670", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 2
+fstat(2, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f58b764f000
+write(2, "[global]\nPid = -1\n\n[Home]\nPath ="..., 285) = 285
+close(2)                                = 0
+munmap(0x7f58b764f000, 4096)            = 0
+rename("/volume0/usr/builtin/etc/samba/sharesize.conf.tmp.7670", "/volume0/usr/builtin/etc/samba/sharesize.conf") = 0
+close(1)                                = 0
+clock_gettime(CLOCK_MONOTONIC_RAW, {tv_sec=3147, tv_nsec=809390865}) = 0
+open("/var/lock/events.stat.lck", O_RDWR|O_CREAT|O_NOATIME, 0666) = 1
+fcntl(1, F_SETLK, {l_type=F_WRLCK, l_whence=SEEK_SET, l_start=0, l_len=16}) = 0
+stat("/var/run/events.stat", {st_mode=S_IFREG|0644, st_size=75, ...}) = 0
+open("/var/run/events.stat", O_RDONLY)  = 2
+read(2, "[Events]\ninited = 1\nshare = 2\nex"..., 75) = 75
+close(2)                                = 0
+lstat("/var", {st_mode=S_IFDIR|0755, st_size=220, ...}) = 0
+lstat("/var/run", {st_mode=S_IFDIR|0755, st_size=640, ...}) = 0
+lstat("/var/run/events.stat", {st_mode=S_IFREG|0644, st_size=75, ...}) = 0
+open("/var/run/events.stat.tmp.7670", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 2
+fstat(2, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f58b764f000
+write(2, "[Events]\ninited = 1\nshare = 2\nex"..., 75) = 75
+close(2)                                = 0
+munmap(0x7f58b764f000, 4096)            = 0
+rename("/var/run/events.stat.tmp.7670", "/var/run/events.stat") = 0
+close(1)                                = 0
+rt_sigaction(SIGINT, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f58b64e3d10}, {sa_handler=0x7f58b6b36d20, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f58b64e3d10}, 8) = 0
+rt_sigaction(SIGQUIT, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f58b64e3d10}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f58b64e3d10}, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+clone(child_stack=NULL, flags=CLONE_PARENT_SETTID|SIGCHLD, parent_tidptr=0x7fff95deb0ac) = 7679
+wait4(7679, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 7679
+rt_sigaction(SIGINT, {sa_handler=0x7f58b6b36d20, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f58b64e3d10}, NULL, 8) = 0
+rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f58b64e3d10}, NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=7679, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+wait4(-1, 0x7fff95deaaac, WNOHANG|WSTOPPED|WCONTINUED, NULL) = -1 ECHILD (No child processes)
+rt_sigreturn({mask=[]})                 = 0
+stat("/dev/shm/.nas.summary", {st_mode=S_IFREG|0744, st_size=10120, ...}) = 0
+munmap(0x7f58b7652000, 10120)           = 0
+stat("/dev/shm/.nas.diskstat", {st_mode=S_IFREG|0744, st_size=3536, ...}) = 0
+munmap(0x7f58b7651000, 3536)            = 0
+stat("/dev/shm/.nas.partstat", {st_mode=S_IFREG|0744, st_size=4080, ...}) = 0
+munmap(0x7f58b7650000, 4080)            = 0
+exit_group(0)                           = ?
++++ exited with 0 +++

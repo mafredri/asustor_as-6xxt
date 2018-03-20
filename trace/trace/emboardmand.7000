@@ -1,0 +1,164 @@
+set_robust_list(0x7fadcae729e0, 24)     = 0
+write(1, "[EMBOARD] Disk_Doctor_Service_Ha"..., 87) = 87
+stat("/etc/nas.conf", {st_mode=S_IFREG|0644, st_size=2821, ...}) = 0
+open("/etc/nas.conf", O_RDONLY)         = 3
+mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7fadc1e71000
+munmap(0x7fadc1e71000, 35188736)        = 0
+munmap(0x7fadc8000000, 31920128)        = 0
+mprotect(0x7fadc4000000, 139264, PROT_READ|PROT_WRITE) = 0
+read(3, "[Basic]\nModel = AS-604T\nVersion "..., 2821) = 2821
+close(3)                                = 0
+clock_gettime(CLOCK_MONOTONIC_RAW, {tv_sec=2654, tv_nsec=910556811}) = 0
+open("/var/lock/emboard.conf.lck", O_RDWR|O_CREAT|O_NOATIME, 0666) = 3
+fcntl(3, F_SETLK, {l_type=F_WRLCK, l_whence=SEEK_SET, l_start=0, l_len=16}) = 0
+stat("/usr/etc/emboard.conf", {st_mode=S_IFREG|0644, st_size=1735, ...}) = 0
+open("/usr/etc/emboard.conf", O_RDONLY) = 5
+read(5, "[Led]\nEnableMask = 255\nMode = 0\n"..., 1735) = 1735
+close(5)                                = 0
+close(3)                                = 0
+stat("/etc/nas.conf", {st_mode=S_IFREG|0644, st_size=2821, ...}) = 0
+open("/etc/nas.conf", O_RDONLY)         = 4
+read(4, "[Basic]\nModel = AS-604T\nVersion "..., 2821) = 2821
+close(4)                                = 0
+clock_gettime(CLOCK_MONOTONIC_RAW, {tv_sec=2654, tv_nsec=912476646}) = 0
+open("/var/lock/emboard.conf.lck", O_RDWR|O_CREAT|O_NOATIME, 0666) = 4
+fcntl(4, F_SETLK, {l_type=F_WRLCK, l_whence=SEEK_SET, l_start=0, l_len=16}) = 0
+stat("/usr/etc/emboard.conf", {st_mode=S_IFREG|0644, st_size=1735, ...}) = 0
+open("/usr/etc/emboard.conf", O_RDONLY) = 3
+read(3, "[Led]\nEnableMask = 255\nMode = 0\n"..., 1735) = 1735
+close(3)                                = 0
+futex(0x7fadcdf60870, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+futex(0x7fadcdf60870, FUTEX_WAKE_PRIVATE, 1) = 1
+close(4)                                = 0
+stat("/etc/nas.conf", {st_mode=S_IFREG|0644, st_size=2821, ...}) = 0
+open("/etc/nas.conf", O_RDONLY)         = 3
+read(3, "[Basic]\nModel = AS-604T\nVersion "..., 2821) = 2821
+close(3)                                = 0
+clock_gettime(CLOCK_MONOTONIC_RAW, {tv_sec=2654, tv_nsec=916316802}) = 0
+open("/var/lock/emboard.conf.lck", O_RDWR|O_CREAT|O_NOATIME, 0666) = 3
+fcntl(3, F_SETLK, {l_type=F_WRLCK, l_whence=SEEK_SET, l_start=0, l_len=16}) = 0
+stat("/usr/etc/emboard.conf", {st_mode=S_IFREG|0644, st_size=1735, ...}) = 0
+open("/usr/etc/emboard.conf", O_RDONLY) = 4
+read(4, "[Led]\nEnableMask = 255\nMode = 0\n"..., 1735) = 1735
+close(4)                                = 0
+close(3)                                = 0
+write(1, "[EMBOARD] Disk_Doctor_Service_Ha"..., 90) = 90
+write(1, "[EMBOARD] Disk_Doctor_Service_Ha"..., 90) = 90
+write(1, "[EMBOARD] Disk_Doctor_Service_Ha"..., 74) = 74
+open("/dev/shm/sem.HWSTATUS_SEMAPHORE", O_RDWR|O_NOFOLLOW) = 3
+fstat(3, {st_mode=S_IFREG|S_ISVTX|0130, st_size=32, ...}) = 0
+close(3)                                = 0
+open("/dev/shm/sem.HWSTATUS_SEMAPHORE", O_RDWR|O_NOFOLLOW) = 3
+fstat(3, {st_mode=S_IFREG|S_ISVTX|0130, st_size=32, ...}) = 0
+close(3)                                = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=2, tv_nsec=0}, 0x7fadcae71a60) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=2, tv_nsec=0}, 0x7fadcae71a60) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=2, tv_nsec=0}, 0x7fadcae71a60) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=2, tv_nsec=0}, 0x7fadcae71a60) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=2, tv_nsec=0}, 0x7fadcae71a60) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=2, tv_nsec=0}, 0x7fadcae71a60) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=2, tv_nsec=0}, 0x7fadcae71a60) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=2, tv_nsec=0}, 0x7fadcae71a60) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=2, tv_nsec=0}, 0x7fadcae71a60) = 0
+write(1, "[EMBOARD] Disk_Doctor_Service_Ha"..., 90) = 90
+pipe2([3, 4], O_CLOEXEC)                = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fadcae729d0) = 7022
+close(4)                                = 0
+fcntl(3, F_SETFD, 0)                    = 0
+fstat(3, {st_mode=S_IFIFO|0600, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fadcf5b2000
+read(3, "26223379", 4096)               = 8
+read(3, "", 4096)                       = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=7022, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+close(3)                                = 0
+wait4(7022, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 7022
+munmap(0x7fadcf5b2000, 4096)            = 0
+write(1, "[EMBOARD] Disk_Doctor_Service_Ha"..., 69) = 69
+write(1, "[EMBOARD] Disk_Doctor_Service_Ha"..., 90) = 90
+pipe2([3, 4], O_CLOEXEC)                = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fadcae729d0) = 7027
+close(4)                                = 0
+fcntl(3, F_SETFD, 0)                    = 0
+fstat(3, {st_mode=S_IFIFO|0600, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fadcf5b2000
+read(3, "\n/dev/sdb:\n drive state is:  sta"..., 4096) = 42
+read(3, "", 4096)                               = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=7027, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+close(3)                                = 0
+wait4(7027, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 7027
+munmap(0x7fadcf5b2000, 4096)            = 0
+write(1, "[EMBOARD] Disk_Doctor_Service_Ha"..., 80) = 80
+write(1, "[EMBOARD] Disk_Doctor_Service_Ha"..., 84) = 84
+open("/dev/shm/sem.HWSTATUS_SEMAPHORE", O_RDWR|O_NOFOLLOW) = 3
+fstat(3, {st_mode=S_IFREG|S_ISVTX|0130, st_size=32, ...}) = 0
+close(3)                                = 0
+open("/dev/shm/sem.HWSTATUS_SEMAPHORE", O_RDWR|O_NOFOLLOW) = 3
+fstat(3, {st_mode=S_IFREG|S_ISVTX|0130, st_size=32, ...}) = 0
+close(3)                                = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=2, tv_nsec=0}, 0x7fadcae71a60) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=2, tv_nsec=0}, 0x7fadcae71a60) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=2, tv_nsec=0}, 0x7fadcae71a60) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=2, tv_nsec=0}, 0x7fadcae71a60) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=2, tv_nsec=0}, 0x7fadcae71a60) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=2, tv_nsec=0}, 0x7fadcae71a60) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=2, tv_nsec=0}, 0x7fadcae71a60) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=2, tv_nsec=0}, 0x7fadcae71a60) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=2, tv_nsec=0}, 0x7fadcae71a60) = 0
+write(1, "[EMBOARD] Thread_Cleanup_Handler"..., 98) = 98
+madvise(0x7fadca672000, 8368128, MADV_DONTNEED) = 0
+exit(0)                                 = ?
++++ exited with 0 +++

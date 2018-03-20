@@ -1,0 +1,42 @@
+rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7f2b765bdd10}, NULL, 8) = 0
+close(10)                               = 0
+execve("/bin/cat", ["/bin/cat", "/sys/devices/platform/coretemp.0"...], 0x2532c28 /* 24 vars */) = 0
+brk(NULL)                               = 0x9c5000
+readlink("/bin/cat", "/bin/busybox", 4096) = 12
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8fa0e4a000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=33541, ...}) = 0
+mmap(NULL, 33541, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f8fa0e41000
+close(3)                                = 0
+open("/lib64/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0 W\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0555, st_size=1038720, ...}) = 0
+mmap(NULL, 3133768, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f8fa092d000
+mprotect(0x7f8fa0a2a000, 2093056, PROT_NONE) = 0
+mmap(0x7f8fa0c29000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xfc000) = 0x7f8fa0c29000
+close(3)                                = 0
+open("/lib64/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\340\1\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0555, st_size=1679912, ...}) = 0
+mmap(NULL, 3791936, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f8fa058f000
+mprotect(0x7f8fa0723000, 2097152, PROT_NONE) = 0
+mmap(0x7f8fa0923000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x194000) = 0x7f8fa0923000
+mmap(0x7f8fa0929000, 15424, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f8fa0929000
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8fa0e40000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8fa0e3f000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8fa0e3e000
+arch_prctl(ARCH_SET_FS, 0x7f8fa0e3f700) = 0
+mprotect(0x7f8fa0923000, 16384, PROT_READ) = 0
+mprotect(0x7f8fa0c29000, 4096, PROT_READ) = 0
+mprotect(0x7f8fa0e4b000, 4096, PROT_READ) = 0
+munmap(0x7f8fa0e41000, 33541)           = 0
+getuid()                                = 0
+open("/sys/devices/platform/coretemp.0/temp2_input", O_RDONLY) = 3
+read(3, "43000\n", 4096)                = 6
+write(1, "43000\n", 6)                  = 6
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+exit_group(0)                           = ?
++++ exited with 0 +++

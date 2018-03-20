@@ -1,0 +1,360 @@
+set_robust_list(0x7f5c534a59e0, 24)     = 0
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1\21\0\3", 22)            = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1\"\0\24", 22)            = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1\21\0\3", 22)            = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1\"\0\24", 22)            = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 0 (Timeout)
+write(1, "[LCMD] Lcmd_Serial_Read(247):\t -"..., 45) = 45
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1\21\0\3", 22)            = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1\21\0\3", 22)            = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\360\1\200\2s", 22)            = 5
+write(5, "\361\1\200\0r", 5)            = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1\21\4\202\1\22\0", 22)   = 8
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\4", 22)                       = 1
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1\22\0\4", 22)            = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\4\35", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\4\35", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\360\1\200\2s", 22)            = 5
+write(5, "\361\1\200\0r", 5)            = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\360\1\200\1r", 22)            = 5
+write(5, "\361\1\200\0r", 5)            = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\4\35", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1\21\0\3", 22)            = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\360\1\200\4u", 22)            = 5
+write(5, "\361\1\200\0r", 5)            = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1\200\0r", 22)            = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\360\1\200\2s", 22)            = 5
+write(5, "\361\1\200\0r", 5)            = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\4\35", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\360\1\200\2s", 22)            = 5
+write(5, "\361\1\200\0r", 5)            = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1\200\0r", 22)            = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\360\1\200\2s", 22)            = 5
+write(5, "\361\1\200\0r", 5)            = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\4\35", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\360\1\200\2s", 22)            = 5
+write(5, "\361\1\200\0r", 5)            = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1\200\0r", 22)            = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\360\1\200\1r", 22)            = 5
+write(5, "\361\1\200\0r", 5)            = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\4\35", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\360\1\200\1r", 22)            = 5
+write(5, "\361\1\200\0r", 5)            = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1\200\0r", 22)            = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\360\1\200\1r", 22)            = 5
+write(5, "\361\1\200\0r", 5)            = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1\200\0r", 22)            = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\360\1\200\3t", 22)            = 5
+write(5, "\361\1\200\0r", 5)            = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\360\1\200\3t", 22)            = 5
+write(5, "\361\1\200\0r", 5)            = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\360\1\200\4u", 22)            = 5
+write(5, "\361\1\200\0r", 5)            = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\4\35", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\360\1\200\3t", 22)            = 5
+write(5, "\361\1\200\0r", 5)            = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1", 22)                   = 2
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "'\4\35", 22)                   = 3
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\360\1\200\3t", 22)            = 5
+write(5, "\361\1\200\0r", 5)            = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\360\1\200\4u", 22)            = 5
+write(5, "\361\1\200\0r", 5)            = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1\200\0r", 22)            = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\360\1\200\3t", 22)            = 5
+write(5, "\361\1\200\0r", 5)            = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1\200\0r", 22)            = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\360\1\200\3t", 22)            = 5
+write(5, "\361\1\200\0r", 5)            = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\360\1\200\4u", 22)            = 5
+write(5, "\361\1\200\0r", 5)            = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\4\35", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\360\1\200\3t", 22)            = 5
+write(5, "\361\1\200\0r", 5)            = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1\200\0r", 22)            = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\360\1\200\3t", 22)            = 5
+write(5, "\361\1\200\0r", 5)            = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\360\1\200\2s", 22)            = 5
+write(5, "\361\1\200\0r", 5)            = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\4\35", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\360\1\200\2s", 22)            = 5
+write(5, "\361\1\200\0r", 5)            = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\360\1\200\4u", 22)            = 5
+write(5, "\361\1\200\0r", 5)            = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\360\1\200\3t", 22)            = 5
+write(5, "\361\1\200\0r", 5)            = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\360\1\200\3t", 22)            = 5
+write(5, "\361\1\200\0r", 5)            = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 0 (Timeout)
+write(1, "[LCMD] Lcmd_Serial_Read(247):\t -"..., 45) = 45
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 0 (Timeout)
+write(1, "[LCMD] Lcmd_Serial_Read(247):\t -"..., 45) = 45
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 0 (Timeout)
+write(1, "[LCMD] Lcmd_Serial_Read(247):\t -"..., 45) = 45
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1\21\0\3", 22)            = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 0 (Timeout)
+write(1, "[LCMD] Lcmd_Serial_Read(247):\t -"..., 45) = 45
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 0 (Timeout)
+write(1, "[LCMD] Lcmd_Serial_Read(247):\t -"..., 45) = 45
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1\21\0\3", 22)            = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 0 (Timeout)
+write(1, "[LCMD] Lcmd_Serial_Read(247):\t -"..., 45) = 45
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 0 (Timeout)
+write(1, "[LCMD] Lcmd_Serial_Read(247):\t -"..., 45) = 45
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1\21\0\3", 22)            = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 0 (Timeout)
+write(1, "[LCMD] Lcmd_Serial_Read(247):\t -"..., 45) = 45
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 0 (Timeout)
+write(1, "[LCMD] Lcmd_Serial_Read(247):\t -"..., 45) = 45
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1\21\0\3", 22)            = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 1 ([{fd=5, revents=POLLIN}])
+read(5, "\361\1'\0\31", 22)             = 5
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 0 (Timeout)
+write(1, "[LCMD] Lcmd_Serial_Read(247):\t -"..., 45) = 45
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000) = 0 (Timeout)
+write(1, "[LCMD] Lcmd_Serial_Read(247):\t -"..., 45) = 45
+poll([{fd=5, events=POLLIN|POLLPRI|POLLERR|POLLHUP}], 1, 2000 <unfinished ...>) = ?
++++ exited with 0 +++

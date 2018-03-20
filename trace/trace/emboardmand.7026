@@ -1,0 +1,51 @@
+rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7f6604607d10}, NULL, 8) = 0
+dup2(3, 0)                              = 0
+close(3)                                = 0
+execve("/usr/bin/awk", ["awk", "{printf \"%d\",($5+$6)% 0x80000000"...], 0x229ac28 /* 24 vars */) = 0
+brk(NULL)                               = 0x1079000
+readlink("awk", 0x7fff2e58d9e0, 4096)   = -1 ENOENT (No such file or directory)
+open(".", O_RDONLY)                     = 3
+chdir("awk")                            = -1 ENOENT (No such file or directory)
+getcwd("/", 4096)                       = 2
+fchdir(3)                               = 0
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f041d713000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=33541, ...}) = 0
+mmap(NULL, 33541, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f041d70a000
+close(3)                                = 0
+open("/lib64/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0 W\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0555, st_size=1038720, ...}) = 0
+mmap(NULL, 3133768, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f041d1f6000
+mprotect(0x7f041d2f3000, 2093056, PROT_NONE) = 0
+mmap(0x7f041d4f2000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xfc000) = 0x7f041d4f2000
+close(3)                                = 0
+open("/lib64/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\340\1\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0555, st_size=1679912, ...}) = 0
+mmap(NULL, 3791936, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f041ce58000
+mprotect(0x7f041cfec000, 2097152, PROT_NONE) = 0
+mmap(0x7f041d1ec000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x194000) = 0x7f041d1ec000
+mmap(0x7f041d1f2000, 15424, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f041d1f2000
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f041d709000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f041d708000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f041d707000
+arch_prctl(ARCH_SET_FS, 0x7f041d708700) = 0
+mprotect(0x7f041d1ec000, 16384, PROT_READ) = 0
+mprotect(0x7f041d4f2000, 4096, PROT_READ) = 0
+mprotect(0x7f041d714000, 4096, PROT_READ) = 0
+munmap(0x7f041d70a000, 33541)           = 0
+getuid()                                = 0
+brk(NULL)                               = 0x1079000
+brk(0x109a000)                          = 0x109a000
+read(0, "sda              20.52         7"..., 463) = 71
+fstat(1, {st_mode=S_IFIFO|0600, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f041d712000
+write(1, "26223379", 8)                 = 8
+read(0, "", 463)                        = 0
+close(0)                                = 0
+exit_group(0)                           = ?
++++ exited with 0 +++

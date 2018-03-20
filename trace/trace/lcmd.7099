@@ -1,0 +1,1083 @@
+set_robust_list(0x7f5c52ca49e0, 24)     = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+write(5, "\360\1\"\0\23", 5)            = 5
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=15000000}, NULL) = 0
+write(5, "\360\22'\0\0                )", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=15000000}, NULL) = 0
+write(5, "\360\22'\1\0>               H", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+open("/dev/shm/sem.HWSTATUS_SEMAPHORE", O_RDWR|O_NOFOLLOW) = 6
+fstat(6, {st_mode=S_IFREG|S_ISVTX|0130, st_size=32, ...}) = 0
+close(6)                                = 0
+stat("/etc/nas.conf", {st_mode=S_IFREG|0644, st_size=2821, ...}) = 0
+open("/etc/nas.conf", O_RDONLY)         = 6
+mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7f5c4a4a4000
+munmap(0x7f5c4a4a4000, 28688384)        = 0
+munmap(0x7f5c50000000, 38420480)        = 0
+mprotect(0x7f5c4c000000, 139264, PROT_READ|PROT_WRITE) = 0
+read(6, "[Basic]\nModel = AS-604T\nVersion "..., 2821) = 2821
+close(6)                                = 0
+stat("/etc/nas.conf", {st_mode=S_IFREG|0644, st_size=2821, ...}) = 0
+open("/etc/nas.conf", O_RDONLY)         = 6
+read(6, "[Basic]\nModel = AS-604T\nVersion "..., 2821) = 2821
+close(6)                                = 0
+stat("/etc/nas.conf", {st_mode=S_IFREG|0644, st_size=2821, ...}) = 0
+open("/etc/nas.conf", O_RDONLY)         = 6
+read(6, "[Basic]\nModel = AS-604T\nVersion "..., 2821) = 2821
+close(6)                                = 0
+stat("/etc/nas.conf", {st_mode=S_IFREG|0644, st_size=2821, ...}) = 0
+open("/etc/nas.conf", O_RDONLY)         = 6
+read(6, "[Basic]\nModel = AS-604T\nVersion "..., 2821) = 2821
+close(6)                                = 0
+stat("/etc/nas.conf", {st_mode=S_IFREG|0644, st_size=2821, ...}) = 0
+open("/etc/nas.conf", O_RDONLY)         = 6
+read(6, "[Basic]\nModel = AS-604T\nVersion "..., 2821) = 2821
+close(6)                                = 0
+stat("/etc/nas.conf", {st_mode=S_IFREG|0644, st_size=2821, ...}) = 0
+open("/etc/nas.conf", O_RDONLY)         = 6
+read(6, "[Basic]\nModel = AS-604T\nVersion "..., 2821) = 2821
+close(6)                                = 0
+stat("/etc/nas.conf", {st_mode=S_IFREG|0644, st_size=2821, ...}) = 0
+open("/etc/nas.conf", O_RDONLY)         = 6
+read(6, "[Basic]\nModel = AS-604T\nVersion "..., 2821) = 2821
+close(6)                                = 0
+stat("/etc/nas.conf", {st_mode=S_IFREG|0644, st_size=2821, ...}) = 0
+open("/etc/nas.conf", O_RDONLY)         = 6
+read(6, "[Basic]\nModel = AS-604T\nVersion "..., 2821) = 2821
+close(6)                                = 0
+stat("/etc/nas.conf", {st_mode=S_IFREG|0644, st_size=2821, ...}) = 0
+open("/etc/nas.conf", O_RDONLY)         = 6
+read(6, "[Basic]\nModel = AS-604T\nVersion "..., 2821) = 2821
+close(6)                                = 0
+stat("/etc/nas.conf", {st_mode=S_IFREG|0644, st_size=2821, ...}) = 0
+open("/etc/nas.conf", O_RDONLY)         = 6
+read(6, "[Basic]\nModel = AS-604T\nVersion "..., 2821) = 2821
+close(6)                                = 0
+stat("/etc/nas.conf", {st_mode=S_IFREG|0644, st_size=2821, ...}) = 0
+open("/etc/nas.conf", O_RDONLY)         = 6
+read(6, "[Basic]\nModel = AS-604T\nVersion "..., 2821) = 2821
+close(6)                                = 0
+socket(AF_NETLINK, SOCK_RAW, NETLINK_ROUTE) = 6
+bind(6, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 0
+getsockname(6, {sa_family=AF_NETLINK, nl_pid=7097, nl_groups=00000000}, [12]) = 0
+sendto(6, {{len=20, type=0x12 /* NLMSG_??? */, flags=NLM_F_REQUEST|0x300, seq=1518960442, pid=0}, "\x00\x00\x00\x00"}, 20, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 20
+recvmsg(6, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{{len=1124, type=0x10 /* NLMSG_??? */, flags=NLM_F_MULTI, seq=1518960442, pid=7097}, "\x00\x00\x04\x03\x01\x00\x00\x00\x49\x00\x01\x00\x00\x00\x00\x00\x07\x00\x03\x00\x6c\x6f\x00\x00\x08\x00\x0d\x00\x00\x00\x00\x00"...}, {{len=1124, type=0x10 /* NLMSG_??? */, flags=NLM_F_MULTI, seq=1518960442, pid=7097}, "\x00\x00\x01\x00\x02\x00\x00\x00\x03\x10\x00\x00\x00\x00\x00\x00\x09\x00\x03\x00\x65\x74\x68\x30\x00\x00\x00\x00\x08\x00\x0d\x00"...}, {{len=1124, type=0x10 /* NLMSG_??? */, flags=NLM_F_MULTI, seq=1518960442, pid=7097}, "\x00\x00\x01\x00\x03\x00\x00\x00\x43\x10\x01\x00\x00\x00\x00\x00\x09\x00\x03\x00\x65\x74\x68\x31\x00\x00\x00\x00\x08\x00\x0d\x00"...}], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 3372
+recvmsg(6, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base={{len=20, type=NLMSG_DONE, flags=NLM_F_MULTI, seq=1518960442, pid=7097}, 0}, iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 20
+sendto(6, {{len=20, type=0x16 /* NLMSG_??? */, flags=NLM_F_REQUEST|0x300, seq=1518960443, pid=0}, "\x00\x00\x00\x00"}, 20, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 20
+recvmsg(6, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{{len=68, type=0x14 /* NLMSG_??? */, flags=NLM_F_MULTI, seq=1518960443, pid=7097}, "\x02\x08\x80\xfe\x01\x00\x00\x00\x08\x00\x01\x00\x7f\x00\x00\x01\x08\x00\x02\x00\x7f\x00\x00\x01\x07\x00\x03\x00\x6c\x6f\x00\x00"...}, {{len=80, type=0x14 /* NLMSG_??? */, flags=NLM_F_MULTI, seq=1518960443, pid=7097}, "\x02\x18\x80\x00\x03\x00\x00\x00\x08\x00\x01\x00\xc0\xa8\x01\x1c\x08\x00\x02\x00\xc0\xa8\x01\x1c\x08\x00\x04\x00\xc0\xa8\x01\xff"...}], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 148
+recvmsg(6, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{{len=64, type=0x14 /* NLMSG_??? */, flags=NLM_F_MULTI, seq=1518960443, pid=7097}, "\x0a\x80\x80\xfe\x01\x00\x00\x00\x14\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x14\x00\x06\x00"...}, {{len=64, type=0x14 /* NLMSG_??? */, flags=NLM_F_MULTI, seq=1518960443, pid=7097}, "\x0a\x40\x80\xfd\x03\x00\x00\x00\x14\x00\x01\x00\xfe\x80\x00\x00\x00\x00\x00\x00\x12\xbf\x48\xff\xfe\x8a\x21\x5c\x14\x00\x06\x00"...}], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 128
+recvmsg(6, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base={{len=20, type=NLMSG_DONE, flags=NLM_F_MULTI, seq=1518960443, pid=7097}, 0}, iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 20
+close(6)                                = 0
+stat("/etc/nas.conf", {st_mode=S_IFREG|0644, st_size=2821, ...}) = 0
+open("/etc/nas.conf", O_RDONLY)         = 6
+read(6, "[Basic]\nModel = AS-604T\nVersion "..., 2821) = 2821
+close(6)                                = 0
+socket(AF_INET, SOCK_DGRAM, IPPROTO_IP) = 6
+ioctl(6, SIOCGIFADDR, {ifr_name="eth1", ifr_addr={sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("192.168.1.28")}}) = 0
+ioctl(6, SIOCGIFNETMASK, {ifr_name="eth1", ifr_netmask={sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("255.255.255.0")}}) = 0
+close(6)                                = 0
+stat("/var/lib/dhcp/dhclient-eth1.leases", {st_mode=S_IFREG|0644, st_size=400, ...}) = 0
+open("/var/lib/dhcp/dhclient-eth1.leases", O_RDONLY) = 6
+read(6, "lease {\n  interface \"eth1\";\n  fi"..., 400) = 400
+close(6)                                = 0
+fstat(1, {st_mode=S_IFCHR|0622, st_rdev=makedev(136, 0), ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f5c57bf8000
+write(1, "[LCMD] Lcmd_Sleep(1528):\t --> sz"..., 66) = 66
+write(1, "[LCMD] Lcmd_Sleep(1530):\t --> sz"..., 44) = 44
+socket(AF_INET, SOCK_DGRAM, IPPROTO_IP) = 6
+ioctl(6, SIOCGIFADDR, {ifr_name="eth1", ifr_addr={sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("192.168.1.28")}}) = 0
+close(6)                                = 0
+write(1, "[LCMD] Lcmd_Sleep(1654):\t --> Di"..., 67) = 67
+uname({sysname="Linux", nodename="AS-604T-215C", ...}) = 0
+stat("/etc/nas.conf", {st_mode=S_IFREG|0644, st_size=2821, ...}) = 0
+open("/etc/nas.conf", O_RDONLY)         = 6
+read(6, "[Basic]\nModel = AS-604T\nVersion "..., 2821) = 2821
+close(6)                                = 0
+nanosleep({tv_sec=0, tv_nsec=15000000}, NULL) = 0
+write(5, "\360\22'\0\0AS-604T-215C    `", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=45000000}, NULL) = 0
+write(5, "\360\22'\1\000192.168.1.28    \n", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=2, tv_nsec=0}, 0x7f5c52ca3890) = 0
+write(5, "\360\22'\0\0                )", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+write(1, "[LCMD] Lcmd_Lcd_Msg_Task(2116):\t"..., 116) = 116
+nanosleep({tv_sec=0, tv_nsec=15000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+write(5, "\360\22'\0\2PRESS ANY KEY TO\214", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+write(5, "\360\22'\0\1PRESS ANY KEY TO\213", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+write(5, "\360\22'\0\0PRESS ANY KEY TO\212", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+write(5, "\360\22'\0\0ESS ANY KEY TO EM", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+write(5, "\360\22'\0\0SS ANY KEY TO ENV", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+write(5, "\360\22'\0\0S ANY KEY TO ENTW", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+write(5, "\360\22'\0\0 ANY KEY TO ENTEI", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+write(5, "\360\22'\0\0ANY KEY TO ENTER{", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+write(5, "\360\22'\0\0NY KEY TO ENTER Z", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+write(5, "\360\22'\0\0Y KEY TO ENTER MY", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+write(5, "\360\22'\0\0 KEY TO ENTER MAA", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+write(5, "\360\22'\0\0KEY TO ENTER MAIj", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+write(5, "\360\22'\0\0EY TO ENTER MAINm", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+write(5, "\360\22'\0\0Y TO ENTER MAIN H", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+write(5, "\360\22'\0\0 TO ENTER MAIN M<", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+write(5, "\360\22'\0\0TO ENTER MAIN MEa", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+write(5, "\360\22'\0\0O ENTER MAIN MEN[", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+write(5, "\360\22'\0\0 ENTER MAIN MENUa", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+write(5, "\360\22'\0\0ENTER MAIN MENU a", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+write(5, "\360\22'\0\0NTER MAIN MENU  <", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+write(5, "\360\22'\0\0TER MAIN MENU   \16", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+write(5, "\360\22'\0\0ER MAIN MENU    \332", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+write(5, "\360\22'\0\0R MAIN MENU     \265", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+write(5, "\360\22'\0\0 MAIN MENU      \203", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+write(5, "\360\22'\0\0MAIN MENU       \203", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+write(5, "\360\22'\0\0AIN MENU        V", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+write(5, "\360\22'\0\0IN MENU         5", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+write(5, "\360\22'\0\0N MENU          \f", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+write(5, "\360\22'\0\0 MENU           \336", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+write(5, "\360\22'\0\0MENU            \336", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+write(5, "\360\22'\0\0ENU             \261", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+write(5, "\360\22'\0\0NU              \214", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+write(5, "\360\22'\0\0U               ^", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+write(5, "\360\22'\0\0                )", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+write(5, "\360\22'\0\0                )", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=15000000}, NULL) = 0
+write(5, "\360\1\21\0\2", 5)            = 5
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=15000000}, NULL) = 0
+write(5, "\360\22'\0\0                )", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=15000000}, NULL) = 0
+write(5, "\360\22'\1\0                *", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=15000000}, NULL) = 0
+write(5, "\360\1\21\0\2", 5)            = 5
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+write(1, "[LCMD] Lcmd_Lcd_Msg_Task(2147):\t"..., 58) = 58
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+write(1, "[LCMD] Lcmd_Lcd_Msg_Task(2015):\t"..., 91) = 91
+write(5, "\360\1\22\1\4", 5)            = 5
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=100000000}, NULL) = 0
+write(5, "\360\1\22\1\4", 5)            = 5
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+write(1, "[LCMD] Lcmd_Lcd_Msg_Task(2022):\t"..., 79) = 79
+nanosleep({tv_sec=0, tv_nsec=15000000}, NULL) = 0
+write(5, "\360\22'\0\0                )", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=100000000}, NULL) = 0
+write(5, "\360\22'\0\0                )", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=15000000}, NULL) = 0
+write(5, "\360\22'\1\0                *", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+stat("/etc/nas.conf", {st_mode=S_IFREG|0644, st_size=2821, ...}) = 0
+open("/etc/nas.conf", O_RDONLY)         = 6
+read(6, "[Basic]\nModel = AS-604T\nVersion "..., 2821) = 2821
+close(6)                                = 0
+stat("/etc/nas.conf", {st_mode=S_IFREG|0644, st_size=2821, ...}) = 0
+open("/etc/nas.conf", O_RDONLY)         = 6
+read(6, "[Basic]\nModel = AS-604T\nVersion "..., 2821) = 2821
+close(6)                                = 0
+stat("/etc/nas.conf", {st_mode=S_IFREG|0644, st_size=2821, ...}) = 0
+open("/etc/nas.conf", O_RDONLY)         = 6
+read(6, "[Basic]\nModel = AS-604T\nVersion "..., 2821) = 2821
+close(6)                                = 0
+stat("/etc/nas.conf", {st_mode=S_IFREG|0644, st_size=2821, ...}) = 0
+open("/etc/nas.conf", O_RDONLY)         = 6
+read(6, "[Basic]\nModel = AS-604T\nVersion "..., 2821) = 2821
+close(6)                                = 0
+stat("/etc/nas.conf", {st_mode=S_IFREG|0644, st_size=2821, ...}) = 0
+open("/etc/nas.conf", O_RDONLY)         = 6
+read(6, "[Basic]\nModel = AS-604T\nVersion "..., 2821) = 2821
+close(6)                                = 0
+stat("/etc/nas.conf", {st_mode=S_IFREG|0644, st_size=2821, ...}) = 0
+open("/etc/nas.conf", O_RDONLY)         = 6
+read(6, "[Basic]\nModel = AS-604T\nVersion "..., 2821) = 2821
+close(6)                                = 0
+stat("/etc/nas.conf", {st_mode=S_IFREG|0644, st_size=2821, ...}) = 0
+open("/etc/nas.conf", O_RDONLY)         = 6
+read(6, "[Basic]\nModel = AS-604T\nVersion "..., 2821) = 2821
+close(6)                                = 0
+stat("/etc/nas.conf", {st_mode=S_IFREG|0644, st_size=2821, ...}) = 0
+open("/etc/nas.conf", O_RDONLY)         = 6
+read(6, "[Basic]\nModel = AS-604T\nVersion "..., 2821) = 2821
+close(6)                                = 0
+stat("/etc/nas.conf", {st_mode=S_IFREG|0644, st_size=2821, ...}) = 0
+open("/etc/nas.conf", O_RDONLY)         = 6
+read(6, "[Basic]\nModel = AS-604T\nVersion "..., 2821) = 2821
+close(6)                                = 0
+stat("/etc/nas.conf", {st_mode=S_IFREG|0644, st_size=2821, ...}) = 0
+open("/etc/nas.conf", O_RDONLY)         = 6
+read(6, "[Basic]\nModel = AS-604T\nVersion "..., 2821) = 2821
+close(6)                                = 0
+stat("/etc/nas.conf", {st_mode=S_IFREG|0644, st_size=2821, ...}) = 0
+open("/etc/nas.conf", O_RDONLY)         = 6
+read(6, "[Basic]\nModel = AS-604T\nVersion "..., 2821) = 2821
+close(6)                                = 0
+socket(AF_NETLINK, SOCK_RAW, NETLINK_ROUTE) = 6
+bind(6, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 0
+getsockname(6, {sa_family=AF_NETLINK, nl_pid=7097, nl_groups=00000000}, [12]) = 0
+sendto(6, {{len=20, type=0x12 /* NLMSG_??? */, flags=NLM_F_REQUEST|0x300, seq=1518960460, pid=0}, "\x00\x00\x00\x00"}, 20, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 20
+recvmsg(6, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{{len=1124, type=0x10 /* NLMSG_??? */, flags=NLM_F_MULTI, seq=1518960460, pid=7097}, "\x00\x00\x04\x03\x01\x00\x00\x00\x49\x00\x01\x00\x00\x00\x00\x00\x07\x00\x03\x00\x6c\x6f\x00\x00\x08\x00\x0d\x00\x00\x00\x00\x00"...}, {{len=1124, type=0x10 /* NLMSG_??? */, flags=NLM_F_MULTI, seq=1518960460, pid=7097}, "\x00\x00\x01\x00\x02\x00\x00\x00\x03\x10\x00\x00\x00\x00\x00\x00\x09\x00\x03\x00\x65\x74\x68\x30\x00\x00\x00\x00\x08\x00\x0d\x00"...}, {{len=1124, type=0x10 /* NLMSG_??? */, flags=NLM_F_MULTI, seq=1518960460, pid=7097}, "\x00\x00\x01\x00\x03\x00\x00\x00\x43\x10\x01\x00\x00\x00\x00\x00\x09\x00\x03\x00\x65\x74\x68\x31\x00\x00\x00\x00\x08\x00\x0d\x00"...}], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 3372
+recvmsg(6, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base={{len=20, type=NLMSG_DONE, flags=NLM_F_MULTI, seq=1518960460, pid=7097}, 0}, iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 20
+sendto(6, {{len=20, type=0x16 /* NLMSG_??? */, flags=NLM_F_REQUEST|0x300, seq=1518960461, pid=0}, "\x00\x00\x00\x00"}, 20, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 20
+recvmsg(6, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{{len=68, type=0x14 /* NLMSG_??? */, flags=NLM_F_MULTI, seq=1518960461, pid=7097}, "\x02\x08\x80\xfe\x01\x00\x00\x00\x08\x00\x01\x00\x7f\x00\x00\x01\x08\x00\x02\x00\x7f\x00\x00\x01\x07\x00\x03\x00\x6c\x6f\x00\x00"...}, {{len=80, type=0x14 /* NLMSG_??? */, flags=NLM_F_MULTI, seq=1518960461, pid=7097}, "\x02\x18\x80\x00\x03\x00\x00\x00\x08\x00\x01\x00\xc0\xa8\x01\x1c\x08\x00\x02\x00\xc0\xa8\x01\x1c\x08\x00\x04\x00\xc0\xa8\x01\xff"...}], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 148
+recvmsg(6, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{{len=64, type=0x14 /* NLMSG_??? */, flags=NLM_F_MULTI, seq=1518960461, pid=7097}, "\x0a\x80\x80\xfe\x01\x00\x00\x00\x14\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x14\x00\x06\x00"...}, {{len=64, type=0x14 /* NLMSG_??? */, flags=NLM_F_MULTI, seq=1518960461, pid=7097}, "\x0a\x40\x80\xfd\x03\x00\x00\x00\x14\x00\x01\x00\xfe\x80\x00\x00\x00\x00\x00\x00\x12\xbf\x48\xff\xfe\x8a\x21\x5c\x14\x00\x06\x00"...}], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 128
+recvmsg(6, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base={{len=20, type=NLMSG_DONE, flags=NLM_F_MULTI, seq=1518960461, pid=7097}, 0}, iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 20
+close(6)                                = 0
+stat("/etc/nas.conf", {st_mode=S_IFREG|0644, st_size=2821, ...}) = 0
+open("/etc/nas.conf", O_RDONLY)         = 6
+read(6, "[Basic]\nModel = AS-604T\nVersion "..., 2821) = 2821
+close(6)                                = 0
+socket(AF_INET, SOCK_DGRAM, IPPROTO_IP) = 6
+ioctl(6, SIOCGIFADDR, {ifr_name="eth1", ifr_addr={sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("192.168.1.28")}}) = 0
+ioctl(6, SIOCGIFNETMASK, {ifr_name="eth1", ifr_netmask={sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("255.255.255.0")}}) = 0
+close(6)                                = 0
+stat("/var/lib/dhcp/dhclient-eth1.leases", {st_mode=S_IFREG|0644, st_size=400, ...}) = 0
+open("/var/lib/dhcp/dhclient-eth1.leases", O_RDONLY) = 6
+read(6, "lease {\n  interface \"eth1\";\n  fi"..., 400) = 400
+close(6)                                = 0
+write(1, "[LCMD] Lcmd_Sleep(1528):\t --> sz"..., 66) = 66
+write(1, "[LCMD] Lcmd_Sleep(1530):\t --> sz"..., 44) = 44
+socket(AF_INET, SOCK_DGRAM, IPPROTO_IP) = 6
+ioctl(6, SIOCGIFADDR, {ifr_name="eth1", ifr_addr={sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("192.168.1.28")}}) = 0
+close(6)                                = 0
+write(1, "[LCMD] Lcmd_Sleep(1654):\t --> Di"..., 67) = 67
+uname({sysname="Linux", nodename="AS-604T-215C", ...}) = 0
+stat("/etc/nas.conf", {st_mode=S_IFREG|0644, st_size=2821, ...}) = 0
+open("/etc/nas.conf", O_RDONLY)         = 6
+read(6, "[Basic]\nModel = AS-604T\nVersion "..., 2821) = 2821
+close(6)                                = 0
+nanosleep({tv_sec=0, tv_nsec=15000000}, NULL) = 0
+write(5, "\360\22'\0\0AS-604T-215C    `", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=100000000}, NULL) = 0
+write(5, "\360\22'\0\0AS-604T-215C    `", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=100000000}, NULL) = 0
+write(5, "\360\22'\0\0AS-604T-215C    `", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=100000000}, NULL) = 0
+write(5, "\360\22'\0\0AS-604T-215C    `", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=45000000}, NULL) = 0
+write(5, "\360\22'\1\000192.168.1.28    \n", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=2, tv_nsec=0}, 0x7f5c52ca3890) = 0
+write(5, "\360\22'\0\0                )", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=15000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=15000000}, NULL) = 0
+write(5, "\360\1\21\1\3", 5)            = 5
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+write(1, "[LCMD] Lcmd_Lcd_Msg_Task(2015):\t"..., 91) = 91
+write(5, "\360\22'\0\0MAIN            \316", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=15000000}, NULL) = 0
+write(5, "\360\22'\1\0>1 TOUCH BACKUP 2", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+write(1, "[LCMD] Lcmd_Lcd_Msg_Task(2015):\t"..., 91) = 91
+write(5, "\360\22'\0\0MAIN            \316", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=20000000}, NULL) = 0
+write(5, "\360\22'\1\0>NETWORK        \222", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+write(1, "[LCMD] Lcmd_Lcd_Msg_Task(2015):\t"..., 91) = 91
+write(5, "\360\22'\0\0MAIN            \316", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=20000000}, NULL) = 0
+write(5, "\360\22'\1\0>STORAGE        }", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+write(1, "[LCMD] Lcmd_Lcd_Msg_Task(2015):\t"..., 91) = 91
+write(5, "\360\22'\0\0MAIN            \316", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=20000000}, NULL) = 0
+write(5, "\360\22'\1\0>TEMPERATURE    6", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+write(1, "[LCMD] Lcmd_Lcd_Msg_Task(2015):\t"..., 91) = 91
+write(5, "\360\22'\0\0MAIN            \316", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=20000000}, NULL) = 0
+write(5, "\360\22'\1\0>OPERATION      \331", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+write(1, "[LCMD] Lcmd_Lcd_Msg_Task(2015):\t"..., 91) = 91
+write(5, "\360\22'\0\0MAIN            \316", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=20000000}, NULL) = 0
+write(5, "\360\22'\1\0>TEMPERATURE    6", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+write(1, "[LCMD] Lcmd_Lcd_Msg_Task(2015):\t"..., 91) = 91
+write(5, "\360\22'\0\0MAIN            \316", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=20000000}, NULL) = 0
+write(5, "\360\22'\1\0>STORAGE        }", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+write(1, "[LCMD] Lcmd_Lcd_Msg_Task(2015):\t"..., 91) = 91
+write(5, "\360\22'\0\0MAIN            \316", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=20000000}, NULL) = 0
+write(5, "\360\22'\1\0>NETWORK        \222", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+write(1, "[LCMD] Lcmd_Lcd_Msg_Task(2015):\t"..., 91) = 91
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+write(1, "[LCMD] Lcmd_Lcd_Msg_Task(2015):\t"..., 91) = 91
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+write(1, "[LCMD] Lcmd_Lcd_Msg_Task(2015):\t"..., 91) = 91
+write(5, "\360\22'\0\0NETWORK         s", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=20000000}, NULL) = 0
+write(5, "\360\22'\1\0>LAN            \303", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+write(1, "[LCMD] Lcmd_Lcd_Msg_Task(2015):\t"..., 91) = 91
+write(5, "\360\22'\0\0MAIN            \316", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=20000000}, NULL) = 0
+write(5, "\360\22'\1\0>NETWORK        \222", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+write(1, "[LCMD] Lcmd_Lcd_Msg_Task(2015):\t"..., 91) = 91
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+write(1, "[LCMD] Lcmd_Lcd_Msg_Task(2015):\t"..., 91) = 91
+write(5, "\360\22'\0\0NETWORK         s", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=20000000}, NULL) = 0
+write(5, "\360\22'\1\0>LAN            \303", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+write(1, "[LCMD] Lcmd_Lcd_Msg_Task(2015):\t"..., 91) = 91
+write(5, "\360\22'\0\0MAIN            \316", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=20000000}, NULL) = 0
+write(5, "\360\22'\1\0>NETWORK        \222", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+write(1, "[LCMD] Lcmd_Lcd_Msg_Task(2015):\t"..., 91) = 91
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+write(1, "[LCMD] Lcmd_Lcd_Msg_Task(2015):\t"..., 91) = 91
+write(5, "\360\22'\0\0NETWORK         s", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=20000000}, NULL) = 0
+write(5, "\360\22'\1\0>LAN            \303", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+write(1, "[LCMD] Lcmd_Lcd_Msg_Task(2015):\t"..., 91) = 91
+write(5, "\360\22'\0\0MAIN            \316", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=20000000}, NULL) = 0
+write(5, "\360\22'\1\0>NETWORK        \222", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+write(1, "[LCMD] Lcmd_Lcd_Msg_Task(2015):\t"..., 91) = 91
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+write(1, "[LCMD] Lcmd_Lcd_Msg_Task(2015):\t"..., 91) = 91
+write(5, "\360\22'\0\0MAIN            \316", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=20000000}, NULL) = 0
+write(5, "\360\22'\1\0>STORAGE        }", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+write(1, "[LCMD] Lcmd_Lcd_Msg_Task(2015):\t"..., 91) = 91
+write(5, "\360\22'\0\0MAIN            \316", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=20000000}, NULL) = 0
+write(5, "\360\22'\1\0>TEMPERATURE    6", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+write(1, "[LCMD] Lcmd_Lcd_Msg_Task(2015):\t"..., 91) = 91
+write(5, "\360\22'\0\0TEMPERATURE     \27", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=20000000}, NULL) = 0
+write(5, "\360\22'\1\0>CPU            \320", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+write(1, "[LCMD] Lcmd_Lcd_Msg_Task(2015):\t"..., 91) = 91
+write(5, "\360\22'\0\0MAIN            \316", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=20000000}, NULL) = 0
+write(5, "\360\22'\1\0>TEMPERATURE    6", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+write(1, "[LCMD] Lcmd_Lcd_Msg_Task(2015):\t"..., 91) = 91
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+open("/dev/shm/sem.HWSTATUS_SEMAPHORE", O_RDWR|O_NOFOLLOW) = 6
+fstat(6, {st_mode=S_IFREG|S_ISVTX|0130, st_size=32, ...}) = 0
+close(6)                                = 0
+open("/dev/shm/sem.HWSTATUS_SEMAPHORE", O_RDWR|O_NOFOLLOW) = 6
+fstat(6, {st_mode=S_IFREG|S_ISVTX|0130, st_size=32, ...}) = 0
+close(6)                                = 0
+write(1, "[LCMD] Lcmd_Lcd_Msg_Task(1968):\t"..., 78) = 78
+write(5, "\360\1\21\1\3", 5)            = 5
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+open("/dev/shm/sem.HWSTATUS_SEMAPHORE", O_RDWR|O_NOFOLLOW) = 6
+fstat(6, {st_mode=S_IFREG|S_ISVTX|0130, st_size=32, ...}) = 0
+close(6)                                = 0
+nanosleep({tv_sec=0, tv_nsec=15000000}, NULL) = 0
+write(5, "\360\22'\0\0KATAPULT        \217", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=45000000}, NULL) = 0
+write(5, "\360\22'\1\0BANG BANG       Z", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+open("/dev/shm/sem.HWSTATUS_SEMAPHORE", O_RDWR|O_NOFOLLOW) = 6
+fstat(6, {st_mode=S_IFREG|S_ISVTX|0130, st_size=32, ...}) = 0
+close(6)                                = 0
+open("/dev/shm/sem.HWSTATUS_SEMAPHORE", O_RDWR|O_NOFOLLOW) = 6
+fstat(6, {st_mode=S_IFREG|S_ISVTX|0130, st_size=32, ...}) = 0
+close(6)                                = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+open("/dev/shm/sem.HWSTATUS_SEMAPHORE", O_RDWR|O_NOFOLLOW) = 6
+fstat(6, {st_mode=S_IFREG|S_ISVTX|0130, st_size=32, ...}) = 0
+close(6)                                = 0
+open("/dev/shm/sem.HWSTATUS_SEMAPHORE", O_RDWR|O_NOFOLLOW) = 6
+fstat(6, {st_mode=S_IFREG|S_ISVTX|0130, st_size=32, ...}) = 0
+close(6)                                = 0
+write(1, "[LCMD] Lcmd_Lcd_Msg_Task(1968):\t"..., 78) = 78
+write(5, "\360\1\21\1\3", 5)            = 5
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+open("/dev/shm/sem.HWSTATUS_SEMAPHORE", O_RDWR|O_NOFOLLOW) = 6
+fstat(6, {st_mode=S_IFREG|S_ISVTX|0130, st_size=32, ...}) = 0
+close(6)                                = 0
+nanosleep({tv_sec=0, tv_nsec=15000000}, NULL) = 0
+write(5, "\360\22'\0\0KATAPULT        \217", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=45000000}, NULL) = 0
+write(5, "\360\22'\1\0BANG BANG BANG  \362", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+open("/dev/shm/sem.HWSTATUS_SEMAPHORE", O_RDWR|O_NOFOLLOW) = 6
+fstat(6, {st_mode=S_IFREG|S_ISVTX|0130, st_size=32, ...}) = 0
+close(6)                                = 0
+open("/dev/shm/sem.HWSTATUS_SEMAPHORE", O_RDWR|O_NOFOLLOW) = 6
+fstat(6, {st_mode=S_IFREG|S_ISVTX|0130, st_size=32, ...}) = 0
+close(6)                                = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+open("/dev/shm/sem.HWSTATUS_SEMAPHORE", O_RDWR|O_NOFOLLOW) = 6
+fstat(6, {st_mode=S_IFREG|S_ISVTX|0130, st_size=32, ...}) = 0
+close(6)                                = 0
+open("/dev/shm/sem.HWSTATUS_SEMAPHORE", O_RDWR|O_NOFOLLOW) = 6
+fstat(6, {st_mode=S_IFREG|S_ISVTX|0130, st_size=32, ...}) = 0
+close(6)                                = 0
+write(1, "[LCMD] Lcmd_Lcd_Msg_Task(1968):\t"..., 78) = 78
+write(5, "\360\1\21\1\3", 5)            = 5
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+open("/dev/shm/sem.HWSTATUS_SEMAPHORE", O_RDWR|O_NOFOLLOW) = 6
+fstat(6, {st_mode=S_IFREG|S_ISVTX|0130, st_size=32, ...}) = 0
+close(6)                                = 0
+nanosleep({tv_sec=0, tv_nsec=15000000}, NULL) = 0
+write(5, "\360\22'\0\0KATAPULT        \217", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=45000000}, NULL) = 0
+write(5, "\360\22'\1\0HAHAHAHAHAAH    \340", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+open("/dev/shm/sem.HWSTATUS_SEMAPHORE", O_RDWR|O_NOFOLLOW) = 6
+fstat(6, {st_mode=S_IFREG|S_ISVTX|0130, st_size=32, ...}) = 0
+close(6)                                = 0
+open("/dev/shm/sem.HWSTATUS_SEMAPHORE", O_RDWR|O_NOFOLLOW) = 6
+fstat(6, {st_mode=S_IFREG|S_ISVTX|0130, st_size=32, ...}) = 0
+close(6)                                = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+open("/dev/shm/sem.HWSTATUS_SEMAPHORE", O_RDWR|O_NOFOLLOW) = 6
+fstat(6, {st_mode=S_IFREG|S_ISVTX|0130, st_size=32, ...}) = 0
+close(6)                                = 0
+open("/dev/shm/sem.HWSTATUS_SEMAPHORE", O_RDWR|O_NOFOLLOW) = 6
+fstat(6, {st_mode=S_IFREG|S_ISVTX|0130, st_size=32, ...}) = 0
+close(6)                                = 0
+write(1, "[LCMD] Lcmd_Lcd_Msg_Task(1968):\t"..., 78) = 78
+write(5, "\360\1\21\1\3", 5)            = 5
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+open("/dev/shm/sem.HWSTATUS_SEMAPHORE", O_RDWR|O_NOFOLLOW) = 6
+fstat(6, {st_mode=S_IFREG|S_ISVTX|0130, st_size=32, ...}) = 0
+close(6)                                = 0
+nanosleep({tv_sec=0, tv_nsec=15000000}, NULL) = 0
+write(5, "\360\22'\0\0KATAPULT        \217", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=45000000}, NULL) = 0
+write(5, "\360\22'\1\0HAHA HAHAH      v", 22) = 22
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=1000000}, NULL) = 0
+open("/dev/shm/sem.HWSTATUS_SEMAPHORE", O_RDWR|O_NOFOLLOW) = 6
+fstat(6, {st_mode=S_IFREG|S_ISVTX|0130, st_size=32, ...}) = 0
+close(6)                                = 0
+open("/dev/shm/sem.HWSTATUS_SEMAPHORE", O_RDWR|O_NOFOLLOW) = 6
+fstat(6, {st_mode=S_IFREG|S_ISVTX|0130, st_size=32, ...}) = 0
+close(6)                                = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000}, NULL) = 0
+nanosleep({tv_sec=0, tv_nsec=200000000},  <unfinished ...>) = ?
++++ exited with 0 +++

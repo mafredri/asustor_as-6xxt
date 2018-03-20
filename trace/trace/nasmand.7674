@@ -1,0 +1,90 @@
+set_robust_list(0x7f58b2f359e0, 24)     = 0
+stat("/volume1/Web/", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+stat("/volume1/Web/", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+open("/volume1/Web/", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 2
+fstat(2, {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+getdents(2, /* 5 entries */, 32768)     = 144
+newfstatat(2, "..", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(2, "locale", {st_mode=S_IFDIR|0777, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(2, "favicon.ico", {st_mode=S_IFREG|0777, st_size=894, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(2, "index.php", {st_mode=S_IFREG|0777, st_size=47072, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(2, ".", {st_mode=S_IFDIR|0777, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+getdents(2, /* 0 entries */, 32768)     = 0
+close(2)                                = 0
+stat("/volume1/Web/locale/", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+open("/volume1/Web/locale/", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 2
+fstat(2, {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+getdents(2, /* 24 entries */, 32768)    = 752
+newfstatat(2, "cs.js", {st_mode=S_IFREG|0777, st_size=320, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(2, "sv.js", {st_mode=S_IFREG|0777, st_size=313, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(2, "ja-JP.js", {st_mode=S_IFREG|0777, st_size=358, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(2, "..", {st_mode=S_IFDIR|0777, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(2, "ru-RU.js", {st_mode=S_IFREG|0777, st_size=468, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(2, "pl.js", {st_mode=S_IFREG|0777, st_size=334, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(2, "es.js", {st_mode=S_IFREG|0777, st_size=326, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(2, "de-DE.js", {st_mode=S_IFREG|0777, st_size=369, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(2, "fi.js", {st_mode=S_IFREG|0777, st_size=338, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(2, "hu.js", {st_mode=S_IFREG|0777, st_size=333, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(2, "tr.js", {st_mode=S_IFREG|0777, st_size=397, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(2, "th.js", {st_mode=S_IFREG|0777, st_size=330, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(2, "pt.js", {st_mode=S_IFREG|0777, st_size=295, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(2, "it-IT.js", {st_mode=S_IFREG|0777, st_size=309, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(2, "es-latino.js", {st_mode=S_IFREG|0777, st_size=299, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(2, "zh-TW.js", {st_mode=S_IFREG|0777, st_size=317, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(2, ".", {st_mode=S_IFDIR|0777, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(2, "fr-FR.js", {st_mode=S_IFREG|0777, st_size=339, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(2, "nl-NL.js", {st_mode=S_IFREG|0777, st_size=306, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(2, "no.js", {st_mode=S_IFREG|0777, st_size=290, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(2, "en-US.js", {st_mode=S_IFREG|0777, st_size=341, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(2, "zh-CN.js", {st_mode=S_IFREG|0777, st_size=317, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(2, "da.js", {st_mode=S_IFREG|0777, st_size=277, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(2, "ko-KR.js", {st_mode=S_IFREG|0777, st_size=365, ...}, AT_SYMLINK_NOFOLLOW) = 0
+getdents(2, /* 0 entries */, 32768)     = 0
+close(2)                                = 0
+clock_gettime(CLOCK_MONOTONIC_RAW, {tv_sec=3147, tv_nsec=698452451}) = 0
+clock_gettime(CLOCK_MONOTONIC_RAW, {tv_sec=3147, tv_nsec=698550527}) = 0
+nanosleep({tv_sec=0, tv_nsec=50000000}, 0x7f58b2f34c60) = 0
+open("/var/lock/sharesize.conf.lck", O_RDWR|O_CREAT|O_NOATIME, 0666) = 1
+fcntl(1, F_SETLK, {l_type=F_WRLCK, l_whence=SEEK_SET, l_start=0, l_len=16}) = 0
+stat("/usr/builtin/etc/samba/sharesize.conf", {st_mode=S_IFREG|0644, st_size=291, ...}) = 0
+open("/usr/builtin/etc/samba/sharesize.conf", O_RDONLY) = 2
+read(2, "[global]\nPid = 7670\n\n[Home]\nPath"..., 291) = 291
+close(2)                                = 0
+lstat("/usr", {st_mode=S_IFDIR|0755, st_size=300, ...}) = 0
+lstat("/usr/builtin", {st_mode=S_IFLNK|0777, st_size=20, ...}) = 0
+readlink("/usr/builtin", "/volume0/usr/builtin", 4095) = 20
+lstat("/volume0", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/volume0/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/volume0/usr/builtin", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/volume0/usr/builtin/etc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/volume0/usr/builtin/etc/samba", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/volume0/usr/builtin/etc/samba/sharesize.conf", {st_mode=S_IFREG|0644, st_size=291, ...}) = 0
+open("/volume0/usr/builtin/etc/samba/sharesize.conf.tmp.7670", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 2
+fstat(2, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f58b764d000
+write(2, "[global]\nPid = 7670\n\n[Home]\nPath"..., 289) = 289
+close(2)                                = 0
+munmap(0x7f58b764d000, 4096)            = 0
+rename("/volume0/usr/builtin/etc/samba/sharesize.conf.tmp.7670", "/volume0/usr/builtin/etc/samba/sharesize.conf") = 0
+close(1)                                = 0
+clock_gettime(CLOCK_MONOTONIC_RAW, {tv_sec=3147, tv_nsec=752738030}) = 0
+open("/var/lock/events.stat.lck", O_RDWR|O_CREAT|O_NOATIME, 0666) = 1
+fcntl(1, F_SETLK, {l_type=F_WRLCK, l_whence=SEEK_SET, l_start=0, l_len=16}) = 0
+stat("/var/run/events.stat", {st_mode=S_IFREG|0644, st_size=75, ...}) = 0
+open("/var/run/events.stat", O_RDONLY)  = 2
+read(2, "[Events]\ninited = 1\nshare = 2\nex"..., 75) = 75
+close(2)                                = 0
+lstat("/var", {st_mode=S_IFDIR|0755, st_size=220, ...}) = 0
+lstat("/var/run", {st_mode=S_IFDIR|0755, st_size=640, ...}) = 0
+lstat("/var/run/events.stat", {st_mode=S_IFREG|0644, st_size=75, ...}) = 0
+open("/var/run/events.stat.tmp.7670", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 2
+fstat(2, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f58b764d000
+write(2, "[Events]\ninited = 1\nshare = 2\nex"..., 75) = 75
+close(2)                                = 0
+munmap(0x7f58b764d000, 4096)            = 0
+rename("/var/run/events.stat.tmp.7670", "/var/run/events.stat") = 0
+close(1)                                = 0
+madvise(0x7f58b2735000, 8368128, MADV_DONTNEED) = 0
+exit(0)                                 = ?
++++ exited with 0 +++

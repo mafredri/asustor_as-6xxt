@@ -1,0 +1,73 @@
+rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7f4adc80cd10}, NULL, 8) = 0
+close(10)                               = 0
+execve("/usr/sbin/hdparm", ["/usr/sbin/hdparm", "-C", "/dev/sdb"], 0x8a7c28 /* 24 vars */) = 0
+brk(NULL)                               = 0x1776000
+readlink("/usr/sbin/hdparm", 0x7fffab371f40, 4096) = -1 EINVAL (Invalid argument)
+open(".", O_RDONLY)                     = 3
+chdir("/usr/sbin/")                     = 0
+getcwd("/usr/sbin", 4096)               = 10
+fchdir(3)                               = 0
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa9b1cb6000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=33541, ...}) = 0
+mmap(NULL, 33541, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fa9b1cad000
+close(3)                                = 0
+open("/lib64/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\340\1\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0555, st_size=1679912, ...}) = 0
+mmap(NULL, 3791936, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fa9b16f9000
+mprotect(0x7fa9b188d000, 2097152, PROT_NONE) = 0
+mmap(0x7fa9b1a8d000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x194000) = 0x7fa9b1a8d000
+mmap(0x7fa9b1a93000, 15424, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fa9b1a93000
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa9b1cac000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa9b1cab000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa9b1caa000
+arch_prctl(ARCH_SET_FS, 0x7fa9b1cab700) = 0
+mprotect(0x7fa9b1a8d000, 16384, PROT_READ) = 0
+mprotect(0x7fa9b1cb7000, 4096, PROT_READ) = 0
+munmap(0x7fa9b1cad000, 33541)           = 0
+open("/dev/sdb", O_RDONLY|O_NONBLOCK)   = 3
+fstat(1, {st_mode=S_IFIFO|0600, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa9b1cb5000
+ioctl(3, SG_IO, {interface_id='S', dxfer_direction=SG_DXFER_NONE, cmd_len=16, cmdp="\x85\x06\x20\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x40\xe5\x00", mx_sb_len=32, iovec_count=0, dxfer_len=0, timeout=15000, flags=0, status=0x2, masked_status=0x1, msg_status=0, sb_len_wr=18, sbp="\xf0\x00\x05\x00\x00\x00\x00\x0a\x00\x00\x00\x00\x26\x00\x00\x00\x00\x00", host_status=0, driver_status=0x8, resid=0, duration=0, info=SG_INFO_CHECK}) = 0
+write(2, "SG_IO: bad/missing sense data, s"..., 37) = 37
+write(2, " f0", 3)                      = 3
+write(2, " 00", 3)                      = 3
+write(2, " 05", 3)                      = 3
+write(2, " 00", 3)                      = 3
+write(2, " 00", 3)                      = 3
+write(2, " 00", 3)                      = 3
+write(2, " 00", 3)                      = 3
+write(2, " 0a", 3)                      = 3
+write(2, " 00", 3)                      = 3
+write(2, " 00", 3)                      = 3
+write(2, " 00", 3)                      = 3
+write(2, " 00", 3)                      = 3
+write(2, " 26", 3)                      = 3
+write(2, " 00", 3)                      = 3
+write(2, " 00", 3)                      = 3
+write(2, " 00", 3)                      = 3
+write(2, " 00", 3)                      = 3
+write(2, " 00", 3)                      = 3
+write(2, " 00", 3)                      = 3
+write(2, " 00", 3)                      = 3
+write(2, " 00", 3)                      = 3
+write(2, " 00", 3)                      = 3
+write(2, " 00", 3)                      = 3
+write(2, " 00", 3)                      = 3
+write(2, " 00", 3)                      = 3
+write(2, " 00", 3)                      = 3
+write(2, " 00", 3)                      = 3
+write(2, " 00", 3)                      = 3
+write(2, " 00", 3)                      = 3
+write(2, " 00", 3)                      = 3
+write(2, " 00", 3)                      = 3
+write(2, " 00", 3)                      = 3
+write(2, "\n", 1)                       = 1
+close(3)                                = 0
+write(1, "\n/dev/sdb:\n drive state is:  sta"..., 42) = 42
+exit_group(0)                           = ?
++++ exited with 0 +++

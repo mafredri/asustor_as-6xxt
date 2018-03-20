@@ -1,0 +1,70 @@
+set_robust_list(0x7fadbbfff9e0, 24)     = 0
+write(1, "[EMBOARD] Hdd_Standby_Service_Ha"..., 87) = 87
+open("/dev/sda", O_RDONLY|O_NOCTTY|O_NONBLOCK) = 4
+ioctl(4, HDIO_DRIVE_CMD, 0x7fadbbffe430) = 0
+close(4)                                = 0
+write(1, "[EMBOARD] Hdd_Standby_Service_Ha"..., 85) = 85
+mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7fadac000000
+munmap(0x7fadb0000000, 67108864)        = 0
+mprotect(0x7fadac000000, 135168, PROT_READ|PROT_WRITE) = 0
+pipe2([4, 6], O_CLOEXEC)                = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fadbbfff9d0) = 7008
+close(6)                                = 0
+fcntl(4, F_SETFD, 0)                    = 0
+fstat(4, {st_mode=S_IFIFO|0600, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fadcf5b1000
+read(4, "smartctl 6.3 2017-03-09 r35 [x86"..., 4096) = 142
+read(4, "=== START OF READ SMART DATA SEC"..., 4096) = 41
+read(4, "ScanStatus 0 Progress 100\n", 4096) = 26
+read(4, "SMART Attributes Data Structure "..., 4096) = 52
+read(4, "Vendor Specific SMART Attributes"..., 4096) = 50
+read(4, "ID# ATTRIBUTE_NAME          FLAG"..., 4096) = 97
+read(4, "  1 Raw_Read_Error_Rate     000f"..., 4096) = 95
+read(4, "  3 Spin_Up_Time            0003"..., 4096) = 87
+read(4, "  4 Start_Stop_Count        0032"..., 4096) = 90
+read(4, "  5 Reallocated_Sector_Ct   0033"..., 4096) = 87
+read(4, "  7 Seek_Error_Rate         000f"..., 4096) = 97
+read(4, "  9 Power_On_Hours          0032"..., 4096) = 91
+read(4, " 10 Spin_Retry_Count        0013"..., 4096) = 87
+read(4, " 12 Power_Cycle_Count       0032"..., 4096) = 89
+read(4, "183 Runtime_Bad_Block       0032"..., 4096) = 87
+read(4, "184 End-to-End_Error        0032"..., 4096) = 87
+read(4, "187 Reported_Uncorrect      0032"..., 4096) = 87
+read(4, "188 Command_Timeout         0032"..., 4096) = 91
+read(4, "189 High_Fly_Writes         003a"..., 4096) = 88
+read(4, "190 Airflow_Temperature_Cel 0022"..., 4096) = 104
+close(4)                                = 0
+wait4(7008, [{WIFEXITED(s) && WEXITSTATUS(s) == 141}], 0, NULL) = 7008
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=7008, si_uid=0, si_status=141, si_utime=0, si_stime=0} ---
+munmap(0x7fadcf5b1000, 4096)            = 0
+write(1, "[EMBOARD] Hdd_Standby_Service_Ha"..., 82) = 82
+open("/dev/shm/sem.HWSTATUS_SEMAPHORE", O_RDWR|O_NOFOLLOW) = 3
+fstat(3, {st_mode=S_IFREG|S_ISVTX|0130, st_size=32, ...}) = 0
+close(3)                                = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=10, tv_nsec=0}, 0x7fadbbffe430) = 0
+write(1, "[EMBOARD] Hdd_Standby_Service_Ha"..., 73) = 73
+write(1, "[EMBOARD] Hdd_Standby_Service_Ha"..., 74) = 74
+open("/dev/shm/sem.HWSTATUS_SEMAPHORE", O_RDWR|O_NOFOLLOW) = 4
+fstat(4, {st_mode=S_IFREG|S_ISVTX|0130, st_size=32, ...}) = 0
+close(4)                                = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=10, tv_nsec=0}, 0x7fadbbffe430) = 0
+write(1, "[EMBOARD] Hdd_Standby_Service_Ha"..., 73) = 73
+write(1, "[EMBOARD] Hdd_Standby_Service_Ha"..., 74) = 74
+open("/dev/shm/sem.HWSTATUS_SEMAPHORE", O_RDWR|O_NOFOLLOW) = 3
+fstat(3, {st_mode=S_IFREG|S_ISVTX|0130, st_size=32, ...}) = 0
+close(3)                                = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+nanosleep({tv_sec=10, tv_nsec=0}, 0x7fadbbffe430) = 0
+write(1, "[EMBOARD] Hdd_Standby_Service_Ha"..., 73) = 73
+write(1, "[EMBOARD] Thread_Cleanup_Handler"..., 98) = 98
+madvise(0x7fadbb7ff000, 8368128, MADV_DONTNEED) = 0
+exit(0)                                 = ?
++++ exited with 0 +++

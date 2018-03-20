@@ -1,0 +1,65 @@
+set_robust_list(0x7fb87c89b9e0, 24)     = 0
+clock_gettime(CLOCK_MONOTONIC_RAW, {tv_sec=8885, tv_nsec=976721015}) = 0
+clock_gettime(CLOCK_MONOTONIC_RAW, {tv_sec=8885, tv_nsec=976942789}) = 0
+nanosleep({tv_sec=2, tv_nsec=500000000}, 0x7fb87c89aab0) = 0
+clock_gettime(CLOCK_MONOTONIC_RAW, {tv_sec=8888, tv_nsec=477249359}) = 0
+readlinkat(AT_FDCWD, "/sys/block/sdc", "../devices/pci0000:00/0000:00:1d"..., 160) = 90
+open("/sys/bus/scsi/devices/target11:0:0/power/runtime_active_kids", O_RDONLY) = 3
+read(3, "1\n", 63)                      = 2
+close(3)                                = 0
+open("/dev/sdc", O_RDONLY|O_NONBLOCK)   = 3
+ioctl(3, BLKSSZGET, [512])              = 0
+ioctl(3, BLKGETSIZE64, [1031798784])    = 0
+close(3)                                = 0
+open("/dev/sdc", O_RDONLY|O_NONBLOCK)   = 3
+ioctl(3, HDIO_GET_IDENTITY, 0x7fb87c89a5a0) = -1 EINVAL (Invalid argument)
+close(3)                                = 0
+open("/sys/block/sdc/device/vendor", O_RDONLY) = 3
+read(3, "ADATA   \n", 41)               = 9
+close(3)                                = 0
+open("/sys/block/sdc/device/model", O_RDONLY) = 3
+read(3, "IUM01-001GFHL   \n", 41)       = 17
+close(3)                                = 0
+open("/sys/block/sdc/device/vpd_pg80", O_RDONLY) = -1 ENOENT (No such file or directory)
+readlinkat(AT_FDCWD, "/sys/block/sdc", "../devices/pci0000:00/0000:00:1d"..., 160) = 90
+open("/proc/scsi/usb-storage/11", O_RDONLY) = 3
+mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7fb870000000
+munmap(0x7fb874000000, 67108864)        = 0
+mprotect(0x7fb870000000, 139264, PROT_READ|PROT_WRITE) = 0
+read(3, "   Host scsi11: usb-storage\n    "..., 2048) = 179
+close(3)                                = 0
+stat("/dev/shm/.nas.summary", {st_mode=S_IFREG|0744, st_size=10120, ...}) = 0
+munmap(0x7fb8817f3000, 10120)           = 0
+stat("/dev/shm/.nas.diskstat", {st_mode=S_IFREG|0744, st_size=3536, ...}) = 0
+munmap(0x7fb8817f2000, 3536)            = 0
+stat("/dev/shm/.nas.partstat", {st_mode=S_IFREG|0744, st_size=4080, ...}) = 0
+munmap(0x7fb8817f1000, 4080)            = 0
+open("/dev/shm/.nas.summary", O_RDWR|O_NOFOLLOW|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0744, st_size=10120, ...}) = 0
+mmap(NULL, 10120, PROT_READ|PROT_WRITE, MAP_SHARED, 3, 0) = 0x7fb8817f3000
+close(3)                                = 0
+open("/dev/shm/.nas.diskstat", O_RDWR|O_NOFOLLOW|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0744, st_size=3536, ...}) = 0
+mmap(NULL, 3536, PROT_READ|PROT_WRITE, MAP_SHARED, 3, 0) = 0x7fb8817f2000
+close(3)                                = 0
+open("/dev/shm/.nas.partstat", O_RDWR|O_NOFOLLOW|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0744, st_size=4080, ...}) = 0
+mmap(NULL, 4080, PROT_READ|PROT_WRITE, MAP_SHARED, 3, 0) = 0x7fb8817f1000
+close(3)                                = 0
+clock_gettime(CLOCK_MONOTONIC_RAW, {tv_sec=8888, tv_nsec=482852602}) = 0
+open("/var/lock/.nas.summary.lck", O_RDWR|O_CREAT|O_NOATIME, 0666) = 3
+fcntl(3, F_SETLK, {l_type=F_WRLCK, l_whence=SEEK_SET, l_start=0, l_len=16}) = 0
+close(3)                                = 0
+clock_gettime(CLOCK_MONOTONIC_RAW, {tv_sec=8888, tv_nsec=483252873}) = 0
+nanosleep({tv_sec=0, tv_nsec=481000000}, 0x7fb87c89aab0) = 0
+clock_gettime(CLOCK_MONOTONIC_RAW, {tv_sec=8888, tv_nsec=964487080}) = 0
+nanosleep({tv_sec=0, tv_nsec=22000000}, 0x7fb87c89aab0) = 0
+clock_gettime(CLOCK_MONOTONIC_RAW, {tv_sec=8888, tv_nsec=986718301}) = 0
+clock_gettime(CLOCK_MONOTONIC_RAW, {tv_sec=8888, tv_nsec=986810309}) = 0
+clock_gettime(CLOCK_MONOTONIC_RAW, {tv_sec=8888, tv_nsec=986891267}) = 0
+nanosleep({tv_sec=2, tv_nsec=500000000}, 0x7fb87c89aab0) = 0
+clock_gettime(CLOCK_MONOTONIC_RAW, {tv_sec=8891, tv_nsec=487200488}) = 0
+futex(0x7fb880703634, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+madvise(0x7fb87c09b000, 8368128, MADV_DONTNEED) = 0
+exit(0)                                 = ?
++++ exited with 0 +++

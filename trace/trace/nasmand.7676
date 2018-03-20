@@ -1,0 +1,286 @@
+set_robust_list(0x7f58b27349e0, 24)     = 0
+stat("/share/USB3-2/", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+stat("/share/USB3-2/", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+open("/share/USB3-2/", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 1
+fstat(1, {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7f589c000000
+munmap(0x7f58a0000000, 67108864)        = 0
+mprotect(0x7f589c000000, 167936, PROT_READ|PROT_WRITE) = 0
+getdents(1, /* 5 entries */, 32768)     = 144
+newfstatat(1, ".", {st_mode=S_IFDIR|0777, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "..", {st_mode=S_IFDIR|0755, st_size=1024, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, ".Spotlight-V100", {st_mode=S_IFDIR|0777, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, ".fseventsd", {st_mode=S_IFDIR|0777, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "boot", {st_mode=S_IFDIR|0777, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+getdents(1, /* 0 entries */, 32768)     = 0
+close(1)                                = 0
+stat("/share/USB3-2/boot/", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+open("/share/USB3-2/boot/", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 1
+fstat(1, {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+getdents(1, /* 6 entries */, 32768)     = 168
+newfstatat(1, ".", {st_mode=S_IFDIR|0777, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "..", {st_mode=S_IFDIR|0777, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, ".DS_Store", {st_mode=S_IFREG|0777, st_size=6148, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "._.DS_Store", {st_mode=S_IFREG|0777, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "asloader.efi", {st_mode=S_IFREG|0777, st_size=581120, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "grub", {st_mode=S_IFDIR|0777, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+getdents(1, /* 0 entries */, 32768)     = 0
+close(1)                                = 0
+stat("/share/USB3-2/boot/grub/", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+open("/share/USB3-2/boot/grub/", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 1
+fstat(1, {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+getdents(1, /* 4 entries */, 32768)     = 112
+newfstatat(1, ".", {st_mode=S_IFDIR|0777, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "..", {st_mode=S_IFDIR|0777, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "grub.cfg", {st_mode=S_IFREG|0777, st_size=556, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "grubenv", {st_mode=S_IFREG|0777, st_size=1024, ...}, AT_SYMLINK_NOFOLLOW) = 0
+getdents(1, /* 0 entries */, 32768)     = 0
+close(1)                                = 0
+stat("/share/USB3-2/.fseventsd/", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+open("/share/USB3-2/.fseventsd/", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 1
+fstat(1, {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+getdents(1, /* 5 entries */, 32768)     = 168
+newfstatat(1, ".", {st_mode=S_IFDIR|0777, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "..", {st_mode=S_IFDIR|0777, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "fseventsd-uuid", {st_mode=S_IFREG|0777, st_size=36, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "0000000003017a9f", {st_mode=S_IFREG|0777, st_size=284, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "0000000003017aa0", {st_mode=S_IFREG|0777, st_size=72, ...}, AT_SYMLINK_NOFOLLOW) = 0
+getdents(1, /* 0 entries */, 32768)     = 0
+close(1)                                = 0
+stat("/share/USB3-2/.Spotlight-V100/", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+open("/share/USB3-2/.Spotlight-V100/", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 1
+fstat(1, {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+getdents(1, /* 5 entries */, 32768)     = 160
+newfstatat(1, ".", {st_mode=S_IFDIR|0777, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "..", {st_mode=S_IFDIR|0777, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "Store-V2", {st_mode=S_IFDIR|0777, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "Store-V1", {st_mode=S_IFDIR|0777, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "VolumeConfiguration.plist", {st_mode=S_IFREG|0777, st_size=4113, ...}, AT_SYMLINK_NOFOLLOW) = 0
+getdents(1, /* 0 entries */, 32768)     = 0
+close(1)                                = 0
+stat("/share/USB3-2/.Spotlight-V100/Store-V1/", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+open("/share/USB3-2/.Spotlight-V100/Store-V1/", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 1
+fstat(1, {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+getdents(1, /* 3 entries */, 32768)     = 88
+newfstatat(1, ".", {st_mode=S_IFDIR|0777, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "..", {st_mode=S_IFDIR|0777, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "VolumeConfig.plist", {st_mode=S_IFREG|0777, st_size=348, ...}, AT_SYMLINK_NOFOLLOW) = 0
+getdents(1, /* 0 entries */, 32768)     = 0
+close(1)                                = 0
+stat("/share/USB3-2/.Spotlight-V100/Store-V2/", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+open("/share/USB3-2/.Spotlight-V100/Store-V2/", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 1
+fstat(1, {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+getdents(1, /* 3 entries */, 32768)     = 104
+newfstatat(1, ".", {st_mode=S_IFDIR|0777, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "..", {st_mode=S_IFDIR|0777, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "1642A193-57F6-4DF4-8F62-0F1A4BE8A727", {st_mode=S_IFDIR|0777, st_size=12288, ...}, AT_SYMLINK_NOFOLLOW) = 0
+getdents(1, /* 0 entries */, 32768)     = 0
+close(1)                                = 0
+stat("/share/USB3-2/.Spotlight-V100/Store-V2/1642A193-57F6-4DF4-8F62-0F1A4BE8A727/", {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+open("/share/USB3-2/.Spotlight-V100/Store-V2/1642A193-57F6-4DF4-8F62-0F1A4BE8A727/", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 1
+fstat(1, {st_mode=S_IFDIR|0777, st_size=12288, ...}) = 0
+getdents(1, /* 67 entries */, 32768)    = 2776
+newfstatat(1, ".", {st_mode=S_IFDIR|0777, st_size=12288, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "..", {st_mode=S_IFDIR|0777, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "psid.db", {st_mode=S_IFREG|0777, st_size=8192, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "tmp.SnowLeopard", {st_mode=S_IFREG|0777, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "tmp.Lion", {st_mode=S_IFREG|0777, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "Lion.created", {st_mode=S_IFREG|0777, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "tmp.Cab", {st_mode=S_IFREG|0777, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "Cab.created", {st_mode=S_IFREG|0777, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "indexState", {st_mode=S_IFREG|0777, st_size=28, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "0.indexDirectory", {st_mode=S_IFREG|0777, st_size=2056, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "0.indexCompactDirectory", {st_mode=S_IFREG|0777, st_size=8, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "0.indexArrays", {st_mode=S_IFREG|0777, st_size=66176, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "0.indexHead", {st_mode=S_IFREG|0777, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "0.shadowIndexHead", {st_mode=S_IFREG|0777, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "0.indexIds", {st_mode=S_IFREG|0777, st_size=16, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "0.indexDates", {st_mode=S_IFREG|0777, st_size=4, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "0.indexGroups", {st_mode=S_IFREG|0777, st_size=2, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "0.directoryStoreFile", {st_mode=S_IFREG|0777, st_size=65536, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "live.0.indexDates", {st_mode=S_IFREG|0777, st_size=8192, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "0.directoryStoreFile.shadow", {st_mode=S_IFREG|0777, st_size=1088, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "0.shadowIndexGroups", {st_mode=S_IFREG|0777, st_size=2, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "0.indexUpdates", {st_mode=S_IFREG|0777, st_size=12, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "0.indexPostings", {st_mode=S_IFREG|0777, st_size=90, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "0.indexPositions", {st_mode=S_IFREG|0777, st_size=8, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "store.updates", {st_mode=S_IFREG|0777, st_size=12, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "live.0.indexUpdates", {st_mode=S_IFREG|0777, st_size=3383, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "permStore", {st_mode=S_IFREG|0777, st_size=553, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "store.db", {st_mode=S_IFREG|0777, st_size=118784, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, ".store.db", {st_mode=S_IFREG|0777, st_size=118784, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "reverseDirectoryStore", {st_mode=S_IFREG|0777, st_size=65536, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "tmp.spotlight.state", {st_mode=S_IFREG|0777, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "store_generation", {st_mode=S_IFREG|0777, st_size=4, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "journals.corespotlight", {st_mode=S_IFDIR|0777, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "journals.live", {st_mode=S_IFDIR|0777, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "journals.live_system", {st_mode=S_IFDIR|0777, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "journals.live_user", {st_mode=S_IFDIR|0777, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "journals.live_priority", {st_mode=S_IFDIR|0777, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "journals.assisted_import_pre", {st_mode=S_IFDIR|0777, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "journals.assisted_import_post", {st_mode=S_IFDIR|0777, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "journals.health_check", {st_mode=S_IFDIR|0777, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "journals.migration", {st_mode=S_IFDIR|0777, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "journals.migration_secondchance", {st_mode=S_IFDIR|0777, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "journalExclusion", {st_mode=S_IFREG|0777, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "journals.scan", {st_mode=S_IFDIR|0777, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "shutdown_time", {st_mode=S_IFREG|0777, st_size=4, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "reverseDirectoryStore.shadow", {st_mode=S_IFREG|0777, st_size=3136, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "live.0.indexGroups", {st_mode=S_IFREG|0777, st_size=3277, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "live.0.directoryStoreFile", {st_mode=S_IFREG|0777, st_size=65536, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "live.0.indexPositions", {st_mode=S_IFREG|0777, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "live.0.indexPositionTable", {st_mode=S_IFREG|0777, st_size=8192, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "live.0.indexTermIds", {st_mode=S_IFREG|0777, st_size=8192, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "live.0.shadowIndexTermIds", {st_mode=S_IFREG|0777, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "live.0.indexDirectory", {st_mode=S_IFREG|0777, st_size=8224, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "live.0.indexCompactDirectory", {st_mode=S_IFREG|0777, st_size=1024, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "reverseStore.updates", {st_mode=S_IFREG|0777, st_size=2, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "live.0.indexArrays", {st_mode=S_IFREG|0777, st_size=65536, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "tmp.spotlight.loc", {st_mode=S_IFREG|0777, st_size=7077, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "live.0.shadowIndexArrays", {st_mode=S_IFREG|0777, st_size=65536, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "live.0.indexHead", {st_mode=S_IFREG|0777, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "live.0.indexPostings", {st_mode=S_IFREG|0777, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "live.0.directoryStoreFile.shadow", {st_mode=S_IFREG|0777, st_size=1088, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "live.0.indexIds", {st_mode=S_IFREG|0777, st_size=32768, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "live.0.shadowIndexHead", {st_mode=S_IFREG|0777, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "live.0.shadowIndexGroups", {st_mode=S_IFREG|0777, st_size=1, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "live.0.shadowIndexPositionTable", {st_mode=S_IFREG|0777, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "live.0.shadowIndexDirectory", {st_mode=S_IFREG|0777, st_size=2056, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "live.0.shadowIndexCompactDirectory", {st_mode=S_IFREG|0777, st_size=8, ...}, AT_SYMLINK_NOFOLLOW) = 0
+getdents(1, /* 0 entries */, 32768)     = 0
+close(1)                                = 0
+stat("/share/USB3-2/.Spotlight-V100/Store-V2/1642A193-57F6-4DF4-8F62-0F1A4BE8A727/journals.scan/", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+open("/share/USB3-2/.Spotlight-V100/Store-V2/1642A193-57F6-4DF4-8F62-0F1A4BE8A727/journals.scan/", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 1
+fstat(1, {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+getdents(1, /* 3 entries */, 32768)     = 80
+newfstatat(1, ".", {st_mode=S_IFDIR|0777, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "..", {st_mode=S_IFDIR|0777, st_size=12288, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "retire.2", {st_mode=S_IFREG|0777, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+getdents(1, /* 0 entries */, 32768)     = 0
+close(1)                                = 0
+stat("/share/USB3-2/.Spotlight-V100/Store-V2/1642A193-57F6-4DF4-8F62-0F1A4BE8A727/journals.migration_secondchance/", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+open("/share/USB3-2/.Spotlight-V100/Store-V2/1642A193-57F6-4DF4-8F62-0F1A4BE8A727/journals.migration_secondchance/", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 1
+fstat(1, {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+getdents(1, /* 2 entries */, 32768)     = 48
+newfstatat(1, ".", {st_mode=S_IFDIR|0777, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "..", {st_mode=S_IFDIR|0777, st_size=12288, ...}, AT_SYMLINK_NOFOLLOW) = 0
+getdents(1, /* 0 entries */, 32768)     = 0
+close(1)                                = 0
+stat("/share/USB3-2/.Spotlight-V100/Store-V2/1642A193-57F6-4DF4-8F62-0F1A4BE8A727/journals.migration/", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+open("/share/USB3-2/.Spotlight-V100/Store-V2/1642A193-57F6-4DF4-8F62-0F1A4BE8A727/journals.migration/", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 1
+fstat(1, {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+getdents(1, /* 2 entries */, 32768)     = 48
+newfstatat(1, ".", {st_mode=S_IFDIR|0777, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "..", {st_mode=S_IFDIR|0777, st_size=12288, ...}, AT_SYMLINK_NOFOLLOW) = 0
+getdents(1, /* 0 entries */, 32768)     = 0
+close(1)                                = 0
+stat("/share/USB3-2/.Spotlight-V100/Store-V2/1642A193-57F6-4DF4-8F62-0F1A4BE8A727/journals.health_check/", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+open("/share/USB3-2/.Spotlight-V100/Store-V2/1642A193-57F6-4DF4-8F62-0F1A4BE8A727/journals.health_check/", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 1
+fstat(1, {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+getdents(1, /* 2 entries */, 32768)     = 48
+newfstatat(1, ".", {st_mode=S_IFDIR|0777, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "..", {st_mode=S_IFDIR|0777, st_size=12288, ...}, AT_SYMLINK_NOFOLLOW) = 0
+getdents(1, /* 0 entries */, 32768)     = 0
+close(1)                                = 0
+stat("/share/USB3-2/.Spotlight-V100/Store-V2/1642A193-57F6-4DF4-8F62-0F1A4BE8A727/journals.assisted_import_post/", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+open("/share/USB3-2/.Spotlight-V100/Store-V2/1642A193-57F6-4DF4-8F62-0F1A4BE8A727/journals.assisted_import_post/", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 1
+fstat(1, {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+getdents(1, /* 2 entries */, 32768)     = 48
+newfstatat(1, ".", {st_mode=S_IFDIR|0777, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "..", {st_mode=S_IFDIR|0777, st_size=12288, ...}, AT_SYMLINK_NOFOLLOW) = 0
+getdents(1, /* 0 entries */, 32768)     = 0
+close(1)                                = 0
+stat("/share/USB3-2/.Spotlight-V100/Store-V2/1642A193-57F6-4DF4-8F62-0F1A4BE8A727/journals.assisted_import_pre/", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+open("/share/USB3-2/.Spotlight-V100/Store-V2/1642A193-57F6-4DF4-8F62-0F1A4BE8A727/journals.assisted_import_pre/", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 1
+fstat(1, {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+getdents(1, /* 2 entries */, 32768)     = 48
+newfstatat(1, ".", {st_mode=S_IFDIR|0777, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "..", {st_mode=S_IFDIR|0777, st_size=12288, ...}, AT_SYMLINK_NOFOLLOW) = 0
+getdents(1, /* 0 entries */, 32768)     = 0
+close(1)                                = 0
+stat("/share/USB3-2/.Spotlight-V100/Store-V2/1642A193-57F6-4DF4-8F62-0F1A4BE8A727/journals.live_priority/", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+open("/share/USB3-2/.Spotlight-V100/Store-V2/1642A193-57F6-4DF4-8F62-0F1A4BE8A727/journals.live_priority/", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 1
+fstat(1, {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+getdents(1, /* 2 entries */, 32768)     = 48
+newfstatat(1, ".", {st_mode=S_IFDIR|0777, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "..", {st_mode=S_IFDIR|0777, st_size=12288, ...}, AT_SYMLINK_NOFOLLOW) = 0
+getdents(1, /* 0 entries */, 32768)     = 0
+close(1)                                = 0
+stat("/share/USB3-2/.Spotlight-V100/Store-V2/1642A193-57F6-4DF4-8F62-0F1A4BE8A727/journals.live_user/", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+open("/share/USB3-2/.Spotlight-V100/Store-V2/1642A193-57F6-4DF4-8F62-0F1A4BE8A727/journals.live_user/", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 1
+fstat(1, {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+getdents(1, /* 3 entries */, 32768)     = 80
+newfstatat(1, ".", {st_mode=S_IFDIR|0777, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "..", {st_mode=S_IFDIR|0777, st_size=12288, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "journal.1", {st_mode=S_IFREG|0777, st_size=46, ...}, AT_SYMLINK_NOFOLLOW) = 0
+getdents(1, /* 0 entries */, 32768)     = 0
+close(1)                                = 0
+stat("/share/USB3-2/.Spotlight-V100/Store-V2/1642A193-57F6-4DF4-8F62-0F1A4BE8A727/journals.live_system/", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+open("/share/USB3-2/.Spotlight-V100/Store-V2/1642A193-57F6-4DF4-8F62-0F1A4BE8A727/journals.live_system/", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 1
+fstat(1, {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+getdents(1, /* 2 entries */, 32768)     = 48
+newfstatat(1, ".", {st_mode=S_IFDIR|0777, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "..", {st_mode=S_IFDIR|0777, st_size=12288, ...}, AT_SYMLINK_NOFOLLOW) = 0
+getdents(1, /* 0 entries */, 32768)     = 0
+close(1)                                = 0
+stat("/share/USB3-2/.Spotlight-V100/Store-V2/1642A193-57F6-4DF4-8F62-0F1A4BE8A727/journals.live/", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+open("/share/USB3-2/.Spotlight-V100/Store-V2/1642A193-57F6-4DF4-8F62-0F1A4BE8A727/journals.live/", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 1
+fstat(1, {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+getdents(1, /* 2 entries */, 32768)     = 48
+newfstatat(1, ".", {st_mode=S_IFDIR|0777, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "..", {st_mode=S_IFDIR|0777, st_size=12288, ...}, AT_SYMLINK_NOFOLLOW) = 0
+getdents(1, /* 0 entries */, 32768)     = 0
+close(1)                                = 0
+stat("/share/USB3-2/.Spotlight-V100/Store-V2/1642A193-57F6-4DF4-8F62-0F1A4BE8A727/journals.corespotlight/", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+open("/share/USB3-2/.Spotlight-V100/Store-V2/1642A193-57F6-4DF4-8F62-0F1A4BE8A727/journals.corespotlight/", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 1
+fstat(1, {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+getdents(1, /* 2 entries */, 32768)     = 48
+newfstatat(1, ".", {st_mode=S_IFDIR|0777, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(1, "..", {st_mode=S_IFDIR|0777, st_size=12288, ...}, AT_SYMLINK_NOFOLLOW) = 0
+getdents(1, /* 0 entries */, 32768)     = 0
+close(1)                                = 0
+clock_gettime(CLOCK_MONOTONIC_RAW, {tv_sec=3147, tv_nsec=732176396}) = 0
+open("/var/lock/sharesize.conf.lck", O_RDWR|O_CREAT|O_NOATIME, 0666) = 1
+fcntl(1, F_SETLK, {l_type=F_WRLCK, l_whence=SEEK_SET, l_start=0, l_len=16}) = 0
+stat("/usr/builtin/etc/samba/sharesize.conf", {st_mode=S_IFREG|0644, st_size=293, ...}) = 0
+open("/usr/builtin/etc/samba/sharesize.conf", O_RDONLY) = 2
+read(2, "[global]\nPid = 7670\n\n[Home]\nPath"..., 293) = 293
+close(2)                                = 0
+lstat("/usr", {st_mode=S_IFDIR|0755, st_size=300, ...}) = 0
+lstat("/usr/builtin", {st_mode=S_IFLNK|0777, st_size=20, ...}) = 0
+readlink("/usr/builtin", "/volume0/usr/builtin", 4095) = 20
+lstat("/volume0", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/volume0/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/volume0/usr/builtin", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/volume0/usr/builtin/etc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/volume0/usr/builtin/etc/samba", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/volume0/usr/builtin/etc/samba/sharesize.conf", {st_mode=S_IFREG|0644, st_size=293, ...}) = 0
+open("/volume0/usr/builtin/etc/samba/sharesize.conf.tmp.7670", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 2
+fstat(2, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f58b764d000
+write(2, "[global]\nPid = 7670\n\n[Home]\nPath"..., 291) = 291
+close(2)                                = 0
+munmap(0x7f58b764d000, 4096)            = 0
+rename("/volume0/usr/builtin/etc/samba/sharesize.conf.tmp.7670", "/volume0/usr/builtin/etc/samba/sharesize.conf") = 0
+close(1)                                = 0
+clock_gettime(CLOCK_MONOTONIC_RAW, {tv_sec=3147, tv_nsec=735639567}) = 0
+open("/var/lock/events.stat.lck", O_RDWR|O_CREAT|O_NOATIME, 0666) = 1
+fcntl(1, F_SETLK, {l_type=F_WRLCK, l_whence=SEEK_SET, l_start=0, l_len=16}) = 0
+stat("/var/run/events.stat", {st_mode=S_IFREG|0644, st_size=75, ...}) = 0
+open("/var/run/events.stat", O_RDONLY)  = 2
+read(2, "[Events]\ninited = 1\nshare = 2\nex"..., 75) = 75
+close(2)                                = 0
+lstat("/var", {st_mode=S_IFDIR|0755, st_size=220, ...}) = 0
+lstat("/var/run", {st_mode=S_IFDIR|0755, st_size=640, ...}) = 0
+lstat("/var/run/events.stat", {st_mode=S_IFREG|0644, st_size=75, ...}) = 0
+open("/var/run/events.stat.tmp.7670", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 2
+fstat(2, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f58b764d000
+write(2, "[Events]\ninited = 1\nshare = 2\nex"..., 75) = 75
+close(2)                                = 0
+munmap(0x7f58b764d000, 4096)            = 0
+rename("/var/run/events.stat.tmp.7670", "/var/run/events.stat") = 0
+close(1)                                = 0
+madvise(0x7f58b1f34000, 8368128, MADV_DONTNEED) = 0
+exit(0)                                 = ?
++++ exited with 0 +++
