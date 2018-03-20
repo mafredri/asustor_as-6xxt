@@ -4,6 +4,8 @@ Beware, you will not be able to inspect the boot process without connecting to t
 
 The HDMI port will **not** produce output until you have successfully booted into Linux, if even then ;).
 
+**NOTE:** Do not use any of the internal partitions for `asloader.efi`! They are first in the boot order, meaning you cannot control the boot process via external USB if they are booted first.
+
 ## Disable ASUSTOR custom bootloader (grub)
 
 To mount the internal flash memory, we must first unlock the device:
