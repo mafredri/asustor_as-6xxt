@@ -29,7 +29,7 @@ Pretty much everything I need is working.
 * Blinking leds (this should could be achived relatively easily)
 * What else?
 
-### My setup
+## My setup
 
 If you're interested.
 
