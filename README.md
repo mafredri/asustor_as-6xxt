@@ -8,21 +8,11 @@ There be dragons.
 
 Proceed at your own peril.
 
-## Why did I start this?
-
-Well, this had happened by itself:
-
-<img width="350px" src="resources/very-sad-northbridge.jpg">
-
-And the AS-6XXT series runs a kernel that's TOO... DAMN... OLD. It's 3.12.20 if you must know.
-
-So, I fixed the heatsink and got to work.
-
-### Progress
+## Progress
 
 Pretty much everything I need is working.
 
-#### What works
+### What works
 
 * Heat sensors
 * Automatic fan speed
@@ -32,14 +22,14 @@ Pretty much everything I need is working.
     * Reading button input
     * What else is missing?
 
-#### What doesn't
+### What doesn't
 
 * Turning of the HDD leds (need to access Marvell chip)
 * System buzzer (via it87 chip)
 * Blinking leds (this should could be achived relatively easily)
 * What else?
 
-#### My setup
+### My setup
 
 If you're interested.
 
@@ -52,3 +42,13 @@ If you're interested.
 * Looking for replacement RAM
     * My 2GB module (KVR1333D3S8S9) causes the system to slow to a crawl :(
     * Maybe remove internal 1GB for a total of 4GB
+
+## Why did I start this?
+
+Well, this had happened by itself:
+
+<img width="350px" src="resources/very-sad-northbridge.jpg">
+
+And the AS-6XXT series runs a kernel that's TOO... DAMN... OLD. It's 3.12.20 if you must know.
+
+So, I fixed the heatsink and got to work.
