@@ -1,5 +1,7 @@
 GPIO ports of the LEDs (on the it87 chip):
 
+Numbers refer to `[bank][pin]`, `20` is GPIO bank 2, pin 0.
+
 ```
 20 power red led
 34 usb led

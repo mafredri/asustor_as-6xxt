@@ -14,20 +14,25 @@ Pretty much everything I need is working.
 
 ### What works
 
-* Heat sensors
-* Automatic fan speed
-* Turning leds on/off
+* Heat sensors (CPU, Motherboard)
+* Fan speed adjustment
+    * Via kernel module `it87-wdt` (`pwm1`)
+* Toggling LEDs
+    * Via kernel module `gpio-it87` (see [gpio](gpio.md) for pins)
+* Adjust LED brightness
+    * Via kernel module `it87-wdt` (`pwm3`)
 * LCD (working on a separate project for this)
-    * Writing text
-    * Reading button input
-    * What else is missing?
+    * Display text
+    * Read button input
+    * Sleep
 
 ### What doesn't
 
-* Turning of the HDD leds (need to access Marvell chip)
-* System buzzer (via it87 chip)
-* Blinking leds (this should could be achived relatively easily)
-* What else?
+* Turning of the HDD leds (via [Marvell 88SE9215](datasheets/marvell-storage-88se9215-datasheet-2016-01.pdf))
+    * Don't know how to access the Marvell chip
+* System buzzer (via [ITE IT8728F](datasheets/IT8728F-ITE.pdf))
+* Blinking leds
+    * This could be achieved relatively easily with some modifications to e.g. [tomtastic/qnap-gpio](https://github.com/tomtastic/qnap-gpio) which uses a similar ITE chip
 
 ## My setup
 
@@ -39,9 +44,10 @@ If you're interested.
 * Debian with full disk encryption (raid-1)
     * Unlock via SSH
 * A second raid-1 (scratch disk)
-* Looking for replacement RAM
-    * My 2GB module (KVR1333D3S8S9) causes the system to slow to a crawl :(
-    * Maybe remove internal 1GB for a total of 4GB
+* RAM: 1x 2GB (KVR1333D3S8S9)
+    * Replaces the internal 1GB module (A-Data)
+    * Putting RAM in the expansion slot slows my system to a crawl :(
+    * Replacing with a 4GB module soon
 
 ## Why did I start this?
 
