@@ -47,7 +47,7 @@ If you're interested.
 * RAM: 1x 4GB (ADATA AD3S1333W4G9-R)
     * Replaced the internal 1GB RAM module
     * Upgrading RAM on the system was problematic (slowed system to a crawl)
-        * See [initramfs](initramfs.md) for more info
+        * See [initramfs](initramfs.md#fix-occasional-slow-cpu) for more info
 
 ## Why did I start this?
 
