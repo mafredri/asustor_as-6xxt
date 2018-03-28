@@ -44,10 +44,10 @@ If you're interested.
 * Debian with full disk encryption (raid-1)
     * Unlock via SSH
 * A second raid-1 (scratch disk)
-* RAM: 1x 2GB (KVR1333D3S8S9)
-    * Replaces the internal 1GB module (A-Data)
-    * Putting RAM in the expansion slot slows my system to a crawl :(
-    * Replacing with a 4GB module soon
+* RAM: 1x 4GB (ADATA AD3S1333W4G9-R)
+    * Replaced the internal 1GB RAM module
+    * Upgrading RAM on the system was problematic (slowed system to a crawl)
+        * See [initramfs](initramfs.md) for more info
 
 ## Why did I start this?
 
