@@ -5,11 +5,24 @@ Numbers refer to `[bank][pin]`, `20` is GPIO bank 2, pin 0.
 ```
 20 power red led
 34 usb led
-45 panel1 power
 47 status led
 77 lan led
 80 power blue led
+```
+
+Other GPIOs
+
+```
+45 panel power
+81 lan power
 83 lcd power
+```
+
+ICH GPIOs
+
+```
+offset 27: orange status led
+
 ```
 
 Contents of `/proc/asled`:
