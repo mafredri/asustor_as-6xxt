@@ -25,7 +25,7 @@ cp efi/boot/bootx64.efi boot/asloader.efi
 # TODO(mafredri): Add preseed
 ```
 
-Remember to update `/boot/grub/grub.cfg`:
+Remember to update `boot/grub/grub.cfg`:
 
 ```
 serial --unit=0 --speed=115200 --word=8 --parity=no --stop=1
