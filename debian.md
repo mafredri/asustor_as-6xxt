@@ -22,7 +22,8 @@ cd /tmp/debian-netinst
 # Allow the NAS to boot GRUB.
 cp efi/boot/bootx64.efi boot/asloader.efi
 
-# TODO(mafredri): Add preseed
+# Add preseed to root of USB drive.
+wget -O https://raw.githubusercontent.com/mafredri/asustor_as-6xxt/30132cb2e880b4da68e85c1443bc2a2fb8087051/debian/preseed.cfg
 ```
 
 Remember to update `boot/grub/grub.cfg`:
@@ -44,7 +45,7 @@ menuentry 'Rescue' {
 }
 ```
 
-**NOTE:** `/cdrom/preseed.cfg` = `(usb)/preseed.cfg`!
+**NOTE:** `/cdrom/preseed.cfg` = `(usb)/preseed.cfg`, so keep the above as-is!
 
 Complete the installation via SSH:
 
