@@ -5,7 +5,8 @@ We will use the Debian netinst ISO (booted from a USB drive).
 A `preseed` is needed to automate the installation up until we can SSH into the device (check your DHCP tables!).
 
 ```
-wget https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-9.3.0-amd64-netinst.iso
+# wget https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-9.3.0-amd64-netinst.iso
+wget https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-12.1.0-amd64-netinst.iso
 
 mkdir /tmp/iso
 mount -o loop debian-*-netinst.iso /tmp/iso
